@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/constants.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/routes/app_router.dart';
 import 'package:mentorship_ecommerce/core/routes/routes.dart';
 
@@ -8,13 +8,13 @@ class EcommerceApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        fontFamily: Constants.productSans,
+    return  ScreenUtilInit(
+      designSize: const Size(375, 812),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        initialRoute: Routes.home,
+        onGenerateRoute: AppRouter().generateRouter,
       ),
-      initialRoute: Routes.home,
-      onGenerateRoute: AppRouter().generateRouter,
     );
   }
 }
