@@ -11,7 +11,7 @@ class EcommerceApp extends StatelessWidget {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        fontFamily:kProductSans,
+        fontFamily: Constants.productSans,
       ),
       initialRoute: Routes.home,
       onGenerateRoute: AppRouter().generateRouter,
