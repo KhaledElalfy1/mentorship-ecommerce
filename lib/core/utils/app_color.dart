@@ -7,4 +7,5 @@ abstract class AppColor {
   static const buttonColor = Color(0xff343434);
   static const backBtnColor = Color(0xff1E3354);
   static const titleColor = Color(0xff1D1F22);
+  static const textFiledFilledColor = Color(0xffFAFAFA);
 }

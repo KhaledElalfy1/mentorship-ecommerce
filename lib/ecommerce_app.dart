@@ -12,7 +12,7 @@ class EcommerceApp extends StatelessWidget {
       designSize: const Size(375, 812),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        initialRoute: Routes.home,
+        initialRoute: Routes.search,
         onGenerateRoute: AppRouter().generateRouter,
       ),
     );
