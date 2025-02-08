@@ -1,61 +1,62 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
 abstract class Styles {
-  static const textStyle14 = TextStyle(
-    fontSize: 14.0,
+  static TextStyle textStyle14 = TextStyle(
+    fontSize: 14.0.sp,
     fontWeight: FontWeight.w400,
   );
-  static const textStyle16 = TextStyle(
-    fontSize: 16.0,
+  static TextStyle textStyle16 = TextStyle(
+    fontSize: 16.0.sp,
     fontWeight: FontWeight.bold,
   );
-  static const textStyle12 = TextStyle(
-    fontSize: 12.0,
+  static TextStyle textStyle12 = TextStyle(
+    fontSize: 12.0.sp,
     fontWeight: FontWeight.w400,
   );
-  static const textStyle24 = TextStyle(
-    fontSize: 24.0,
+  static TextStyle textStyle24 = TextStyle(
+    fontSize: 24.0.sp,
     fontWeight: FontWeight.bold,
   );
-  static const textStyle18 = TextStyle(
-    fontSize: 18.0,
+  static TextStyle textStyle18 = TextStyle(
+    fontSize: 18.0.sp,
     fontWeight: FontWeight.bold,
   );
-  static const textStyle20 = TextStyle(
-    fontSize: 20.0,
+  static TextStyle textStyle20 = TextStyle(
+    fontSize: 20.0.sp,
     fontWeight: FontWeight.bold,
   );
-  static const textStyle10 = TextStyle(
-    fontSize: 10.0,
+  static TextStyle textStyle10 = TextStyle(
+    fontSize: 10.0.sp,
     fontWeight: FontWeight.w400,
   );
-  static const textStyle13 = TextStyle(
-    fontSize: 13.0,
+  static TextStyle textStyle13 = TextStyle(
+    fontSize: 13.0.sp,
     fontWeight: FontWeight.w400,
   );
-  static const textStyle22 = TextStyle(
-    fontSize: 22.0,
+  static TextStyle textStyle22 = TextStyle(
+    fontSize: 22.0.sp,
     fontWeight: FontWeight.bold,
   );
-  static const textStyle11 = TextStyle(
-    fontSize: 11.0,
+  static TextStyle textStyle11 = TextStyle(
+    fontSize: 11.0.sp,
     fontWeight: FontWeight.w400,
   );
-  static const textStyle25 = TextStyle(
-    fontSize: 25.0,
+  static TextStyle textStyle25 = TextStyle(
+    fontSize: 25.0.sp,
     fontWeight: FontWeight.bold,
   );
-  static const textStyle17 = TextStyle(
-    fontSize: 17.0,
+  static TextStyle textStyle17 = TextStyle(
+    fontSize: 17.0.sp,
     fontWeight: FontWeight.w400,
   );
-  static const textStyle26 = TextStyle(
-    fontSize: 26.0,
+  static TextStyle textStyle26 = TextStyle(
+    fontSize: 26.0.sp,
     fontWeight: FontWeight.bold,
   );
-  static const textStyle40 = TextStyle(
-    fontSize: 40.0,
+  static TextStyle textStyle40 = TextStyle(
+    fontSize: 40.0.sp,
     fontWeight: FontWeight.bold,
     
   );
