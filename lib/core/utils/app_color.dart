@@ -11,7 +11,5 @@ abstract class AppColor {
   static const selectedTabColor = Color(0xff3A2C27);
   static const unSelectedTabColor = Color(0xff9D9D9D);
 
-
   static const textFiledFilledColor = Color(0xffFAFAFA);
 }
-
