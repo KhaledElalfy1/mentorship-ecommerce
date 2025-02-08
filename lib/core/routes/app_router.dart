@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mentorship_ecommerce/core/routes/routes.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/home_view.dart';
+import 'package:mentorship_ecommerce/features/search/presentation/logic/search_cubit/search_cubit.dart';
 import 'package:mentorship_ecommerce/features/search/presentation/view/search_view.dart';
 
 class AppRouter {
@@ -10,7 +12,12 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const HomeView());
 
       case Routes.search:
-        return MaterialPageRoute(builder: (_) => const SearchView());
+        return MaterialPageRoute(
+          builder: (_) => BlocProvider(
+            create: (context) => SearchCubit(),
+            child: const SearchView(),
+          ),
+        );
 
       default:
         return null;
