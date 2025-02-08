@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 AppBar customSearchAppBar(BuildContext context) {
   return AppBar(
+    actions: [Container()],
     backgroundColor: Colors.white,
     leading: GestureDetector(
       onTap: () => Navigator.pop(context),
