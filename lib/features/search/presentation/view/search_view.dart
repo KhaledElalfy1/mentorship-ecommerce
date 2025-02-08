@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/custom_search_app_bar.dart';
 import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/search_result_header.dart';
+import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/search_result_item.dart';
 import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/search_section.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -19,10 +20,29 @@ class SearchView extends StatelessWidget {
         child: Column(
           children: [
             const SearchSection(),
-             SizedBox(
+            SizedBox(
               height: 20.h,
             ),
             const SearchResultHeader(),
+            SizedBox(
+              height: 20.h,
+            ),
+            const Wrap(
+              children: [
+                SearchResultItem(
+                  text:
+                      'SunglassesSunglassesSunglassesSunglassesSunglassesSunglassesSunglassesSunglassesSunglassesSunglassesSunglasses',
+                ),
+                SearchResultItem(
+                  text: 'Sunglasses',
+                ),
+                SearchResultItem(text: 'Sweater'),
+                SearchResultItem(text: 'Sweater'),
+                SearchResultItem(text: 'Sweater'),
+                SearchResultItem(text: 'sw'),
+                SearchResultItem(text: 'er'),
+              ],
+            )
           ],
         ),
       ),
