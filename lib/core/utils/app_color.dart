@@ -12,4 +12,9 @@ abstract class AppColor {
   static const dotColor =Color(0xff4F4F4F);
   static const starColor = Color(0xff508A7B);
   static const favoriteIconColor =Color(0xffFF6E6E);
+
+  static const selectedTabColor = Color(0xff3A2C27);
+  static const unSelectedTabColor = Color(0xff9D9D9D);
+
+  static const textFiledFilledColor = Color(0xffFAFAFA);
 }
