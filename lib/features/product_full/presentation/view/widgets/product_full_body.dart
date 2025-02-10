@@ -9,19 +9,22 @@ class ProductFullBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SafeArea(
+      bottom: false,
       child: SingleChildScrollView(
-        child: Stack(
-          alignment: Alignment.topCenter,
-          children: [
-            ProductFullCarousel(),
-            Column(
-              children: [
-                CustomAppbar(),
-                ProductFullDetails()
-              ],
-            )
-          ],
-        ),
+        child: 
+          Stack(
+            alignment: Alignment.topCenter,
+            children: [
+              ProductFullCarousel(),
+              Column(
+                children: [
+                  CustomAppbar(),
+                  ProductFullDetails(),
+                ],
+              ),
+            ],
+          ),
+        
       ),
     );
   }

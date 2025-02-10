@@ -18,7 +18,7 @@ class EcommerceApp extends StatelessWidget {
         theme: ThemeData(
           fontFamily: Constants.productSans,
         ),
-        initialRoute: Routes.discover,
+        initialRoute: Routes.productFull,
         onGenerateRoute: AppRouter().generateRouter,
       ),
     );
