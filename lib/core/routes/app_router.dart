@@ -7,6 +7,8 @@ import 'package:mentorship_ecommerce/features/product_full/presentation/view/pro
 import 'package:mentorship_ecommerce/features/search/presentation/logic/search_cubit/search_cubit.dart';
 import 'package:mentorship_ecommerce/features/search/presentation/view/search_view.dart';
 
+import '../../features/my_order/views/my_order_view.dart';
+
 class AppRouter {
   Route? generateRouter(RouteSettings settings) {
     switch (settings.name) {
@@ -24,6 +26,8 @@ class AppRouter {
         );
       case Routes.productFull:
         return MaterialPageRoute(builder: (_) => const ProductFullView());
+        case Routes.myOrder:
+        return MaterialPageRoute(builder: (_) => const MyOrderView());
       default:
         return null;
     }
