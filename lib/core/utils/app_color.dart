@@ -9,6 +9,8 @@ abstract class AppColor {
   static const titleColor = Color(0xff1D1F22);
   static const backgroundColor = Color(0xffFFFCFA);
   static const dividerColor = Color(0xffF3F3F6);
+    static const divider2Color = Color(0xffF3F3F6);
+
   static const dotColor =Color(0xff4F4F4F);
   static const starColor = Color(0xff508A7B);
   static const favoriteIconColor =Color(0xffFF6E6E);

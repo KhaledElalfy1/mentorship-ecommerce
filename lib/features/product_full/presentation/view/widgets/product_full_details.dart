@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
+import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/add_to_cart_widget.dart';
 import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/custom_rating_widget.dart';
 import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/product_description_widget.dart';
 import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/product_reviews_widget.dart';
@@ -16,17 +17,14 @@ class ProductFullDetails extends StatefulWidget {
 class _ProductFullDetailsState extends State<ProductFullDetails> {
   @override
   Widget build(BuildContext context) {
-    double screenHeight = MediaQuery.of(context).size.height;
-    double topMargin = 330.h; 
-    double remainingHeight = screenHeight - topMargin;
-
+    double minHeight = MediaQuery.of(context).size.height - 467.h;
     return Container(
       constraints: BoxConstraints(
-        minHeight: remainingHeight.h, 
+        minHeight: minHeight,
       ),
-    width: MediaQuery.of(context).size.width,
-        margin: EdgeInsets.only(top: 330.h),
-      padding: EdgeInsets.symmetric(horizontal: 32.w, vertical: 32.h),
+      width: MediaQuery.of(context).size.width,
+      margin: EdgeInsets.only(top: 440.h),
+      padding: EdgeInsets.only(top: 32.h),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(20.r),
@@ -43,55 +41,63 @@ class _ProductFullDetailsState extends State<ProductFullDetails> {
         color: Colors.white,
       ),
       child: Column(
-        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          productDetails(),
-          SizedBox(height: 5.h),
-          const Divider(color: Color(0xffF3F3F6)),
-          const ProductDescriptionWidget(),
-          SizedBox(height: 15.h),
-          const ProductReviewsWidget(),
-          SizedBox(height: 15.h),
-          const SimilarProductWidget(),
-          
+          Column(
+            children: [
+              productDetails(),
+              SizedBox(height: 5.h),
+              const Divider(color: Color(0xffF3F3F6)),
+              const ProductDescriptionWidget(),
+              SizedBox(height: 15.h),
+              const ProductReviewsWidget(),
+              SizedBox(height: 15.h),
+              const SimilarProductWidget(),
+            //  SizedBox(height: 10.h),
+            ],
+          ),
+          const AddToCartWidget()
         ],
       ),
     );
   }
 
   Widget productDetails() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              "Sportwear Set",
-              style: Styles.textStyle18,
-            ),
-            SizedBox(height: 10.h),
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                const CustomRatingWidget(
-                  rating: 5,
-                  size: 22,
-                ),
-                Text(
-                  "(83)",
-                  style: Styles.textStyle12,
-                ),
-              ],
-            ),
-          ],
-        ),
-        Text(
-          "\$ 80.00",
-          style: Styles.textStyle26,
-        ),
-      ],
+    return Padding(
+      padding: EdgeInsets.only(left: 32.w, right: 32.w),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "Sportwear Set",
+                style: Styles.textStyle18,
+              ),
+              SizedBox(height: 10.h),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  const CustomRatingWidget(
+                    rating: 5,
+                    size: 22,
+                  ),
+                  Text(
+                    "(83)",
+                    style: Styles.textStyle12,
+                  ),
+                ],
+              ),
+            ],
+          ),
+          Text(
+            "\$ 80.00",
+            style: Styles.textStyle26,
+          ),
+        ],
+      ),
     );
   }
 }
