@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/utils/app_color.dart';
@@ -23,12 +22,14 @@ class UnSelectedTab extends StatelessWidget {
             ),
             child: Icon(
               icon,
-              color: AppColor.unSelectedTabColor,
+              color: AppColor.spanishGrayColor,
               size: 25.r,
             )),
         Text(
           text,
-          style: Styles.textStyle10.copyWith(  color: AppColor.unSelectedTabColor,),
+          style: Styles.textStyle10.copyWith(
+            color: AppColor.spanishGrayColor,
+          ),
         )
       ],
     );

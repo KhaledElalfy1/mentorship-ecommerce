@@ -26,7 +26,7 @@ class HomeViewBody extends StatelessWidget {
               const SizedBox()
             ],
           ),
-        )
+        ),
       ],
     );
   }

@@ -11,7 +11,7 @@ import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/tab
 import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/unselected_tab.dart';
 
 class CustomTabs extends StatefulWidget {
-const CustomTabs({super.key});
+  const CustomTabs({super.key});
 
   @override
   State<CustomTabs> createState() => _CustomTabsState();
@@ -25,11 +25,10 @@ class _CustomTabsState extends State<CustomTabs> {
     TabsModel(icon: FontAwesomeIcons.screwdriver, text: 'Beauty'),
   ];
   final tabs = const <Widget>[
-     WomanPage(),
-     ManPage(),
-     AccessoriesPage(),
-     BeautyPage(),
- 
+    WomanPage(),
+    ManPage(),
+    AccessoriesPage(),
+    BeautyPage(),
   ];
 
   int isSelected = 0;
@@ -40,7 +39,7 @@ class _CustomTabsState extends State<CustomTabs> {
       initialIndex: 0,
       length: list.length,
       child: SizedBox(
-        height: MediaQuery.of(context).size.height * .9,
+        height: MediaQuery.of(context).size.height,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -48,12 +47,14 @@ class _CustomTabsState extends State<CustomTabs> {
               indicatorColor: Colors.transparent,
               labelColor: AppColor.selectedTabColor,
               labelStyle: Styles.textStyle10,
-              unselectedLabelColor: AppColor.unSelectedTabColor,
+              unselectedLabelColor: AppColor.spanishGrayColor,
               tabs: list.map((tab) => tab == list[isSelected] ? SelectedTab(icon: tab.icon, text: tab.text) : UnSelectedTab(icon: tab.icon, text: tab.text)).toList(),
               onTap: (value) => setState(() => isSelected = value),
             ),
             Expanded(
-              child: TabBarView(children:tabs.map((page)=> page ).toList() ,),
+              child: TabBarView(
+                children: tabs.map((page) => page).toList(),
+              ),
             )
           ],
         ),

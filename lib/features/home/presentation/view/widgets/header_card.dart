@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/utils/assets.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/tabs/woman_page/widgets/custom_card.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/tabs/woman_page/widgets/dots_indicator.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/custom_card.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/dots_indicator.dart';
 
-class WomanCard extends StatelessWidget {
-  const WomanCard({super.key, required this.currentPageIndex});
+class HeaderCard extends StatelessWidget {
+  const HeaderCard({super.key, required this.currentPageIndex});
   final int currentPageIndex;
 
   @override

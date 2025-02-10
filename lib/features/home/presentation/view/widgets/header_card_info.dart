@@ -1,15 +1,15 @@
 import 'package:expandable_page_view/expandable_page_view.dart';
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/tabs/woman_page/widgets/woman_card.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/header_card.dart';
 
-class WomanCardInfo extends StatefulWidget {
-  const WomanCardInfo({super.key});
+class HeaderCardInfo extends StatefulWidget {
+  const HeaderCardInfo({super.key});
 
   @override
-  State<WomanCardInfo> createState() => _WomanCardInfoState();
+  State<HeaderCardInfo> createState() => _WomanCardInfoState();
 }
 
-class _WomanCardInfoState extends State<WomanCardInfo> {
+class _WomanCardInfoState extends State<HeaderCardInfo> {
   late PageController pageController;
   int currentPageIndex = 0;
 
@@ -34,7 +34,7 @@ class _WomanCardInfoState extends State<WomanCardInfo> {
       scrollDirection: Axis.horizontal,
       children: List.generate(
           3,
-          (index) => WomanCard(
+          (index) => HeaderCard(
                 currentPageIndex: currentPageIndex,
               )),
     );

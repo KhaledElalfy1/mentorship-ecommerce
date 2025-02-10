@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/tabs/woman_page/widgets/custom_dot_indicator.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/custom_dot_indicator.dart';
 
 class DotsIndicator extends StatelessWidget {
   const DotsIndicator({super.key, required this.currentPageIndex});
