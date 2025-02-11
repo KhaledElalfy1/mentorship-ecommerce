@@ -12,6 +12,9 @@ class Routes {
 
     static const String productFull = '/ProductFull';
     static const String dashboard = '/DashboardView';
+  
+   static const String cart = '/Cart';
+
 
 
 }
