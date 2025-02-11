@@ -44,6 +44,7 @@ class _CustomTabsState extends State<CustomTabs> {
           mainAxisSize: MainAxisSize.min,
           children: [
             TabBar(
+              isScrollable: false,
               indicatorColor: Colors.transparent,
               labelColor: AppColor.selectedTabColor,
               labelStyle: Styles.textStyle10,
@@ -53,7 +54,7 @@ class _CustomTabsState extends State<CustomTabs> {
             ),
             Expanded(
               child: TabBarView(
-                children: tabs.map((page) => page).toList(),
+                children: tabs.map((page) => SingleChildScrollView(child: page)).toList(),
               ),
             )
           ],

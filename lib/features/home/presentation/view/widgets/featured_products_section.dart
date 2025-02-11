@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:mentorship_ecommerce/core/utils/assets.dart';
+import 'package:mentorship_ecommerce/features/home/data/models/featured_product_card_model.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/collection_header.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/featured_product_card.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/featured_card.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/featured_products_items.dart';
 
 class FeaturedProductsSection extends StatelessWidget {
@@ -20,7 +22,13 @@ class FeaturedProductsSection extends StatelessWidget {
         SizedBox(
           height: 11,
         ),
-        FeaturedProductCard(),
+        FeaturedCard(
+          featuredProductCardModel: FeaturedProductCardModel(
+            name: 'NEW COLLECTION',
+            description: 'HANG OUT\n & PARTY',
+            image: Assets.featuredCardImage,
+          ),
+        ),
       ],
     );
   }

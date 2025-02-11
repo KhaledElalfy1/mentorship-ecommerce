@@ -9,9 +9,9 @@ abstract class AppColor {
   static const titleColor = Color(0xff1D1F22);
   static const backgroundColor = Color(0xffFFFCFA);
   static const dividerColor = Color(0xffF3F3F6);
-  static const dotColor =Color(0xff4F4F4F);
+  static const dotColor = Color(0xff4F4F4F);
   static const starColor = Color(0xff508A7B);
-  static const favoriteIconColor =Color(0xffFF6E6E);
+  static const favoriteIconColor = Color(0xffFF6E6E);
 
   static const selectedTabColor = Color(0xff3A2C27);
   static const spanishGrayColor = Color(0xff9D9D9D);
@@ -21,5 +21,5 @@ abstract class AppColor {
   static const featuredcardBackgroundColor = Color(0xffF6F6F8);
   static const textColor = Color(0xFF353945);
   static const gradientColor1 = Color(0xFFEDEDEE);
-
+  static const bottombackgroundColor = Color(0xffEDEDED);
 }

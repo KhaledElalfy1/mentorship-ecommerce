@@ -11,6 +11,7 @@ class Routes {
   static const String notFound = '/not-found';
 
     static const String productFull = '/ProductFull';
+    static const String dashboard = '/DashboardView';
 
 
 }
