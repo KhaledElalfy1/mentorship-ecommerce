@@ -11,7 +11,6 @@ class SelectedTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      spacing: 5.h,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Container(
@@ -41,6 +40,9 @@ class SelectedTab extends StatelessWidget {
                 color: Colors.white,
                 size: 25.r,
               )),
+        ),
+        SizedBox(
+          height: 5.h,
         ),
         Text(
           text,

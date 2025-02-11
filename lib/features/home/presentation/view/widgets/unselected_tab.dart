@@ -11,20 +11,23 @@ class UnSelectedTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      spacing: 5.h,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Container(
-            width: 30.w,
-            height: 30.h,
-            decoration: const BoxDecoration(
-              shape: BoxShape.circle,
-            ),
-            child: Icon(
-              icon,
-              color: AppColor.spanishGrayColor,
-              size: 25.r,
-            )),
+          width: 30.w,
+          height: 30.h,
+          decoration: const BoxDecoration(
+            shape: BoxShape.circle,
+          ),
+          child: Icon(
+            icon,
+            color: AppColor.spanishGrayColor,
+            size: 25.r,
+          ),
+        ),
+        SizedBox(
+          height: 5.h,
+        ),
         Text(
           text,
           style: Styles.textStyle10.copyWith(
