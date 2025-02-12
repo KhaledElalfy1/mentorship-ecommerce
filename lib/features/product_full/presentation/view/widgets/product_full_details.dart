@@ -17,12 +17,13 @@ class ProductFullDetails extends StatefulWidget {
 class _ProductFullDetailsState extends State<ProductFullDetails> {
   @override
   Widget build(BuildContext context) {
+    double minHeight = MediaQuery.of(context).size.height - 467.h;
     return Container(
       constraints: BoxConstraints(
-        minHeight: MediaQuery.of(context).size.height * 0.5,
+        minHeight: minHeight,
       ),
       width: MediaQuery.of(context).size.width,
-      margin: EdgeInsets.only(top: 330.h),
+      margin: EdgeInsets.only(top: 440.h),
       padding: EdgeInsets.only(top: 32.h),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.only(
@@ -52,6 +53,7 @@ class _ProductFullDetailsState extends State<ProductFullDetails> {
               const ProductReviewsWidget(),
               SizedBox(height: 15.h),
               const SimilarProductWidget(),
+            //  SizedBox(height: 10.h),
             ],
           ),
           const AddToCartWidget()
