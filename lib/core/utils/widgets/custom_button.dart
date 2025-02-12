@@ -9,10 +9,10 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
         style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.resolveWith<Color>((states) {
-            if (states.contains(MaterialState.pressed)) {
+          backgroundColor: WidgetStateProperty.resolveWith<Color>((states) {
+            if (states.contains(WidgetState.pressed)) {
               return Colors.teal; // 🔹 عند الضغط
-            } else if (states.contains(MaterialState.disabled)) {
+            } else if (states.contains(WidgetState.disabled)) {
               return Colors.grey; // 🔹 عند التعطيل
             }
             return AppColor.buttonColor; // 🔹 اللون الافتراضي

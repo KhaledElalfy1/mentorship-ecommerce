@@ -17,7 +17,7 @@ class GroupLeftCard extends StatelessWidget {
         height: 194,
         child: Container(
           decoration: ShapeDecoration(
-            color: AppColor.featuredcardBackgroundColor,
+            color: AppColor.featuredCardBackgroundColor,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
             ),
