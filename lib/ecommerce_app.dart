@@ -16,6 +16,7 @@ class EcommerceApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
+          useMaterial3: false,
           fontFamily: Constants.productSans,
         ),
         initialRoute: Routes.productFull,
