@@ -24,4 +24,12 @@ abstract class AppColor {
   static const blackColor = Colors.black;
   static const lightgrey = Color(0xff777E90);
   static const unSelectedTabIconColor = Color(0xffBEBFC4);
+
+  static const divider2Color = Color(0xffF3F3F6);
+  static const spanishGrayColor = Color(0xff9D9D9D);
+  static const productBackgroundColor = Color(0xffE2E2E2);
+  static const featuredcardBackgroundColor = Color(0xffF6F6F8);
+  static const textColor = Color(0xFF353945);
+  static const gradientColor1 = Color(0xFFEDEDEE);
+  static const bottombackgroundColor = Color(0xffEDEDED);
 }

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mentorship_ecommerce/core/routes/routes.dart';
+import 'package:mentorship_ecommerce/features/cart/presentation/views/cart_view.dart';
 import 'package:mentorship_ecommerce/features/discover/presentation/view/discover_view.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/view/dashboard_view.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/home_view.dart';
 import 'package:mentorship_ecommerce/features/product_full/presentation/view/product_full_view.dart';
 import 'package:mentorship_ecommerce/features/search/presentation/logic/search_cubit/search_cubit.dart';
@@ -28,6 +30,12 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const ProductFullView());
         case Routes.myOrder:
         return MaterialPageRoute(builder: (_) => const MyOrderView());
+      case Routes.dashboard:
+        return MaterialPageRoute(builder: (_) => const DashboardView());
+
+      case Routes.cart:
+        return MaterialPageRoute(builder: (_) => const CartView());
+
       default:
         return null;
     }

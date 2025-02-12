@@ -16,6 +16,7 @@ class _SimilarProductWidgetState extends State<SimilarProductWidget> {
   Widget build(BuildContext context) {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 300),
+      padding: EdgeInsets.only(left: 32.w, right: 32.w),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
@@ -36,7 +37,7 @@ class _SimilarProductWidgetState extends State<SimilarProductWidget> {
                       isExpanded = !isExpanded;
                     });
                   },
-                  child:const Icon(
+                  child: const Icon(
                     Icons.keyboard_arrow_down,
                   ),
                 ),
@@ -44,7 +45,7 @@ class _SimilarProductWidgetState extends State<SimilarProductWidget> {
             ],
           ),
           const Divider(
-            color:AppColor.dividerColor,
+            color: AppColor.dividerColor,
           ),
           AnimatedSize(
             duration: const Duration(milliseconds: 500),
@@ -59,7 +60,7 @@ class _SimilarProductWidgetState extends State<SimilarProductWidget> {
 
   Widget productWidget(String image, String productName, String price) {
     return Padding(
-      padding:  EdgeInsets.only(right: 10.w,top: 10.h),
+      padding: EdgeInsets.only(right: 10.w, top: 10.h),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
