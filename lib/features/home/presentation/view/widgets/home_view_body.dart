@@ -9,24 +9,17 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomScrollView(
-      slivers: [
-        SliverToBoxAdapter(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              CustomAppBar(
-                icon: SvgPicture.asset(Assets.homeIcon),
-                title: 'GemStore',
-              ),
-              SizedBox(
-                height: MediaQuery.of(context).size.height / 44,
-              ),
-              const CustomTabs(),
-              const SizedBox()
-            ],
-          ),
+    return ListView(
+      children: [
+        CustomAppBar(
+          icon: SvgPicture.asset(Assets.homeIcon),
+          title: 'GemStore',
         ),
+        SizedBox(
+          height: MediaQuery.of(context).size.height / 44,
+        ),
+        const CustomTabs(),
+        const SizedBox()
       ],
     );
   }

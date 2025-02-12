@@ -18,9 +18,14 @@ class EcommerceApp extends StatelessWidget {
         theme: ThemeData(
           useMaterial3: false,
           fontFamily: Constants.productSans,
+          
         ),
-        initialRoute: Routes.productFull,
+
+        initialRoute: Routes.dashboard,
+
+       
         onGenerateRoute: AppRouter().generateRouter,
+        
       ),
     );
   }

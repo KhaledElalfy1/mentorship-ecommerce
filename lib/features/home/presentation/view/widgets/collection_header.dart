@@ -16,7 +16,7 @@ class CollectionHeader extends StatelessWidget {
         children: [
           Text(
             collectionTitle,
-            style: Styles.textStyle20.copyWith(fontFamily: Constants.productSans),
+            style: Styles.textStyle20,
           ),
           SizedBox(
             width: MediaQuery.sizeOf(context).width / 4.5,
