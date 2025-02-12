@@ -28,21 +28,23 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  cached_network_image: ^3.4.1
+  carousel_slider: ^5.0.0
   cupertino_icons: ^1.0.8
+  curved_navigation_bar: ^1.0.6
   device_preview: ^1.2.0
   dio: ^5.8.0+1
+  expandable_page_view: ^1.0.17
   flutter:
     sdk: flutter
   flutter_bloc: ^9.0.0
+  flutter_rating_bar: ^4.0.1
   flutter_screenutil: ^5.9.3
   flutter_svg: ^2.0.17
   flutter_xlider: ^3.5.0
   font_awesome_flutter: ^10.8.0
   get_it: ^8.0.3
   shared_preferences: ^2.5.1
-  carousel_slider: ^5.0.0
-  flutter_rating_bar: ^4.0.1
-
 
 dev_dependencies:
   flutter_lints: ^4.0.0
@@ -61,6 +63,7 @@ flutter:
   assets:
     - assets/icons/
     - assets/images/
+    - assets/svgs/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

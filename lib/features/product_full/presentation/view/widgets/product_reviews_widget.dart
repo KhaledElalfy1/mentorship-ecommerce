@@ -18,6 +18,8 @@ class _ProductReviewsWidgetState extends State<ProductReviewsWidget> {
   Widget build(BuildContext context) {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 300),
+              padding: EdgeInsets.only(left: 32.w, right: 32.h),
+
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
