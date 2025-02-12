@@ -9,8 +9,12 @@ class Routes {
   static const String about = '/about';
   static const String contact = '/contact';
   static const String notFound = '/not-found';
-  static const String productFull = '/ProductFull';
+
+    static const String productFull = '/ProductFull';
+    static const String dashboard = '/DashboardView';
+  
    static const String cart = '/Cart';
+
 
 
 }

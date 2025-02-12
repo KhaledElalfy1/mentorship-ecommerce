@@ -28,9 +28,12 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  cached_network_image: ^3.4.1
+  carousel_slider: ^5.0.0
   cupertino_icons: ^1.0.8
   device_preview: ^1.2.0
   dio: ^5.8.0+1
+  expandable_page_view: ^1.0.17
   flutter:
     sdk: flutter
   flutter_bloc: ^9.0.0
@@ -40,10 +43,7 @@ dependencies:
   font_awesome_flutter: ^10.8.0
   get_it: ^8.0.3
   shared_preferences: ^2.5.1
-  carousel_slider: ^5.0.0
   flutter_rating_bar: ^4.0.1
-  cached_network_image: ^3.3.1
-
 
 dev_dependencies:
   flutter_lints: ^4.0.0
