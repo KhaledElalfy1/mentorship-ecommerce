@@ -4,6 +4,8 @@ import 'package:mentorship_ecommerce/constants.dart';
 import 'package:mentorship_ecommerce/core/routes/app_router.dart';
 import 'package:mentorship_ecommerce/core/routes/routes.dart';
 
+import 'core/utils/app_color.dart';
+
 class EcommerceApp extends StatelessWidget {
   const EcommerceApp({super.key});
 
@@ -16,7 +18,7 @@ class EcommerceApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          useMaterial3: false,
+          cardColor: AppColor.whiteColor,
           fontFamily: Constants.productSans,
           
         ),
