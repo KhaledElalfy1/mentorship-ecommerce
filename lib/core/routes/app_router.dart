@@ -19,7 +19,7 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const HomeView());
       case Routes.discover:
         return MaterialPageRoute(builder: (_) => const DiscoverView());
-       case Routes.orderInfo:
+      case Routes.orderInfo:
         return MaterialPageRoute(builder: (_) => const OrderInfoView());
       case Routes.search:
         return MaterialPageRoute(
@@ -30,7 +30,7 @@ class AppRouter {
         );
       case Routes.productFull:
         return MaterialPageRoute(builder: (_) => const ProductFullView());
-        case Routes.myOrder:
+      case Routes.myOrder:
         return MaterialPageRoute(builder: (_) => const MyOrderView());
       case Routes.dashboard:
         return MaterialPageRoute(builder: (_) => const DashboardView());
