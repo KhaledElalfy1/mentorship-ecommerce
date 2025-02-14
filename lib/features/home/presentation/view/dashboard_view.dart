@@ -35,34 +35,6 @@ class _DashboardViewState extends State<DashboardView> {
     _buildNavItem(
       Icons.person_2_outlined,
     ),
-    // const BottomNavigationBarItem(
-    //   icon: Icon(
-    //     Icons.home_outlined,
-    //     size: 30,
-    //   ),
-    //   label: '',
-    // ),
-    // const BottomNavigationBarItem(
-    //   icon: Icon(
-    //     Icons.search_outlined,
-    //     size: 24,
-    //   ),
-    //   label: '',
-    // ),
-    // const BottomNavigationBarItem(
-    //   icon: Icon(
-    //     Icons.card_travel_outlined,
-    //     size: 24,
-    //   ),
-    //   label: '',
-    // ),
-    // const BottomNavigationBarItem(
-    //   icon: Icon(
-    //     Icons.person_2_outlined,
-    //     size: 24,
-    //   ),
-    //   label: '',
-    // ),
   ];
 
   void _onItemTapped(int index) {
