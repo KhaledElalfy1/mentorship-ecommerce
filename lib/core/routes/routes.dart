@@ -16,4 +16,5 @@ class Routes {
   static const String dashboard = '/DashboardView';
   static const String cart = '/Cart';
   static const String orderInfo = '/orderInfo';
+  static const String orderRate = '/orderRate';
 }

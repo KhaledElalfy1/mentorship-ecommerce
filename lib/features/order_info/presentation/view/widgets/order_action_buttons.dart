@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/helpers/extention.dart';
+import 'package:mentorship_ecommerce/core/routes/routes.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
 import 'package:mentorship_ecommerce/core/utils/widgets/custom_button.dart';
 
@@ -49,7 +51,9 @@ class OrderActionButtons extends StatelessWidget {
           height: 50.h,
           child: CustomButton(
             buttonText: 'Rate',
-            onPressed: () {},
+            onPressed: () {
+              context.pushNamed(Routes.orderRate);
+            },
           ),
         ),
       ],
