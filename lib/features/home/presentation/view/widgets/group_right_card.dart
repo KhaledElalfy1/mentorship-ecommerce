@@ -18,7 +18,7 @@ class GroupRightCard extends StatelessWidget {
         height: 194,
         child: Container(
           decoration: ShapeDecoration(
-            color: AppColor.featuredcardBackgroundColor,
+            color: AppColor.featuredCardBackgroundColor,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
             ),
@@ -31,7 +31,9 @@ class GroupRightCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(groupCardModel.name, style: Styles.textStyle13.copyWith(color: AppColor.coolGray)),
+                    Text(groupCardModel.name,
+                        style: Styles.textStyle13
+                            .copyWith(color: AppColor.coolGray)),
                     const SizedBox(
                       height: 20,
                     ),

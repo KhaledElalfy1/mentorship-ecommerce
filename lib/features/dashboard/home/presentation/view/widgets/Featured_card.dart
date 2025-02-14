@@ -7,17 +7,16 @@ import 'package:mentorship_ecommerce/features/home/data/models/featured_product_
 
 class FeaturedCard extends StatelessWidget {
   const FeaturedCard({
-    super.key, required this.featuredProductCardModel,
-   
+    super.key,
+    required this.featuredProductCardModel,
   });
   final FeaturedProductCardModel featuredProductCardModel;
- 
 
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: const ShapeDecoration(
-        color: AppColor.featuredcardBackgroundColor,
+        color: AppColor.featuredCardBackgroundColor,
         shape: RoundedRectangleBorder(),
       ),
       child: Row(
@@ -27,7 +26,7 @@ class FeaturedCard extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                 featuredProductCardModel.name ,
+                  featuredProductCardModel.name,
                   style: Styles.textStyle12.copyWith(
                     fontFamily: Constants.productSansLight,
                     color: AppColor.coolGray,

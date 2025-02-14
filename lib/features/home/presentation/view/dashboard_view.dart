@@ -57,15 +57,17 @@ class _DashboardViewState extends State<DashboardView> {
           ),
           child: BottomNavigationBar(
             currentIndex: _selectedIndex,
-            backgroundColor: AppColor.bottombackgroundColor,
+            backgroundColor: AppColor.bottomBackgroundColor,
             elevation: 0,
             items: items.map((item) => item).toList(),
             showSelectedLabels: false,
             showUnselectedLabels: false,
             type: BottomNavigationBarType.fixed,
             enableFeedback: true,
-            selectedIconTheme: const IconThemeData(color: AppColor.gunmetalGray, size: 30),
-            unselectedIconTheme: const IconThemeData(color: AppColor.coolGray,size: 30),
+            selectedIconTheme:
+                const IconThemeData(color: AppColor.gunmetalGray, size: 30),
+            unselectedIconTheme:
+                const IconThemeData(color: AppColor.coolGray, size: 30),
             onTap: _onItemTapped,
           ),
         ));
@@ -77,7 +79,8 @@ BottomNavigationBarItem _buildNavItem(
 ) {
   return BottomNavigationBarItem(
     icon: Padding(
-      padding: const EdgeInsets.only(right: 31, left: 31), // Adjust icon position
+      padding:
+          const EdgeInsets.only(right: 31, left: 31), // Adjust icon position
       child: Icon(icon, size: 30),
     ),
     label: '',

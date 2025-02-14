@@ -60,8 +60,6 @@ android {
             resValue "string", "app_name", "ecommerce production"
         }
     }
-
-
 }
 
 flutter {

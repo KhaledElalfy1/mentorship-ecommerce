@@ -35,7 +35,7 @@ class TopCollectionCard extends StatelessWidget {
         width: width?.w,
         height: height.h,
         decoration: const ShapeDecoration(
-          color: AppColor.featuredcardBackgroundColor,
+          color: AppColor.featuredCardBackgroundColor,
           shape: RoundedRectangleBorder(),
         ),
         child: Row(

@@ -10,7 +10,9 @@ class CartBody extends StatelessWidget {
   Widget build(BuildContext context) {
      return const Column(
       children: [
-         CustomCartAppbar(),
+         CustomCartAppbar(
+          title: "My Cart",
+         ),
         Expanded(
           child: SingleChildScrollView(
             child: Column(
