@@ -15,7 +15,5 @@ class Routes {
   static const String checkOutSuccess = '/checkOutSuccess';
   static const String dashboard = '/DashboardView';
   static const String cart = '/Cart';
-
-
-
+  static const String orderInfo = '/orderInfo';
 }

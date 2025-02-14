@@ -6,6 +6,7 @@ import 'package:mentorship_ecommerce/features/check_out/views/check_out_success_
 import 'package:mentorship_ecommerce/features/discover/presentation/view/discover_view.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/dashboard_view.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/home_view.dart';
+import 'package:mentorship_ecommerce/features/order_info/presentation/view/order_info_view.dart';
 import 'package:mentorship_ecommerce/features/product_full/presentation/view/product_full_view.dart';
 import 'package:mentorship_ecommerce/features/search/presentation/logic/search_cubit/search_cubit.dart';
 import 'package:mentorship_ecommerce/features/search/presentation/view/search_view.dart';
@@ -23,7 +24,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const HomeView());
       case Routes.discover:
         return MaterialPageRoute(builder: (_) => const DiscoverView());
-
+      case Routes.orderInfo:
+        return MaterialPageRoute(builder: (_) => const OrderInfoView());
       case Routes.search:
         return MaterialPageRoute(
           builder: (_) => BlocProvider(
@@ -33,7 +35,7 @@ class AppRouter {
         );
       case Routes.productFull:
         return MaterialPageRoute(builder: (_) => const ProductFullView());
-        case Routes.myOrder:
+      case Routes.myOrder:
         return MaterialPageRoute(builder: (_) => const MyOrderView());
       case Routes.dashboard:
         return MaterialPageRoute(builder: (_) => const DashboardView());

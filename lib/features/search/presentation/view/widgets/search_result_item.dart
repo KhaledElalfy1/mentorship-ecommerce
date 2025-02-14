@@ -34,6 +34,7 @@ class SearchResultItem extends StatelessWidget {
                 color: const Color(
                   0xff6F6D6B,
                 ),
+                fontWeight: FontWeight.w500,
               ),
             ),
           ),
