@@ -31,6 +31,9 @@ abstract class AppColor {
   static const textColor = Color(0xFF353945);
   static const gradientColor1 = Color(0xFFEDEDEE);
   static const bottomBackgroundColor = Color(0xffEDEDED);
+  static const borderColor = Color(0xffF2F2F2);
+  static const shadowColor = Color(0x0F0F0F33);
+  static const svgColor =Color(0xffB1B5C3);
   static const darkGray = Color(0xFFC8C7CC);
   static const labelColor = Color(0xff777E90);
   static const paymentButtonColor = Color(0xff343434);
