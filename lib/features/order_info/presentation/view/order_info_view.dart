@@ -34,6 +34,7 @@ class OrderInfoView extends StatelessWidget {
             const OrderAmountContainer(),
             SizedBox(height: 40.h),
             const OrderActionButtons(),
+            SizedBox(height: 20.h),
           ],
         ),
       ),
