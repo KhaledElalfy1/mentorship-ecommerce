@@ -34,4 +34,7 @@ abstract class AppColor {
   static const darkGray = Color(0xFFC8C7CC);
   static const labelColor = Color(0xff777E90);
   static const paymentButtonColor = Color(0xff343434);
+  static const activeColor = Color(0xffF4F5F6);
+  static const unAvtiveMode = Color(0xff868B90);
+  static const containerMode = Color(0xffF4F4F4);
 }

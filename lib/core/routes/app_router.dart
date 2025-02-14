@@ -17,10 +17,10 @@ import '../../features/my_order/views/my_order_view.dart';
 class AppRouter {
   Route? generateRouter(RouteSettings settings) {
     switch (settings.name) {
-       case Routes.checkOut:
-      return MaterialPageRoute(builder: (_) => const CheckOutView());
+      case Routes.checkOut:
+        return MaterialPageRoute(builder: (_) => const CheckOutView());
       case Routes.checkOutSuccess:
-      return MaterialPageRoute(builder: (_) =>  CheckOutSuccessView());
+        return MaterialPageRoute(builder: (_) => CheckOutSuccessView());
       case Routes.home:
         return MaterialPageRoute(builder: (_) => const HomeView());
       case Routes.discover:
@@ -45,7 +45,7 @@ class AppRouter {
 
       case Routes.cart:
         return MaterialPageRoute(builder: (_) => const CartView());
-     
+
       default:
         return null;
     }
