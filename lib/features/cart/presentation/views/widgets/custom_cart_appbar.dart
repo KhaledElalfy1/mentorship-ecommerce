@@ -5,12 +5,12 @@ import 'package:mentorship_ecommerce/core/utils/styles.dart';
 import 'package:mentorship_ecommerce/core/utils/widgets/appbar_icon_widget.dart';
 
 class CustomCartAppbar extends StatelessWidget {
-  const CustomCartAppbar({super.key});
-
+  const CustomCartAppbar({super.key, required this.title});
+  final String title;
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: 31.w, right: 31.w, top: 60.h),
+      padding: EdgeInsets.only(left:20.w, right: 31.w, top: 60.h),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
@@ -21,10 +21,10 @@ class CustomCartAppbar extends StatelessWidget {
                 Navigator.pop(context);
               }),
           SizedBox(
-            width: 110.w,
+            width: 85.w,
           ),
           Text(
-            "Your Cart",
+            title,
             style: Styles.textStyle18,
           )
         ],

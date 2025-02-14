@@ -24,7 +24,6 @@ abstract class AppColor {
   static const blackColor = Colors.black;
   static const lightgrey = Color(0xff777E90);
   static const unSelectedTabIconColor = Color(0xffBEBFC4);
-
   static const divider2Color = Color(0xffF3F3F6);
   static const spanishGrayColor = Color(0xff9D9D9D);
   static const productBackgroundColor = Color(0xffE2E2E2);
@@ -35,4 +34,7 @@ abstract class AppColor {
   static const borderColor = Color(0xffF2F2F2);
   static const shadowColor = Color(0x0F0F0F33);
   static const svgColor =Color(0xffB1B5C3);
+  static const darkGray = Color(0xFFC8C7CC);
+  static const labelColor = Color(0xff777E90);
+  static const paymentButtonColor = Color(0xff343434);
 }

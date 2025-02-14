@@ -2,24 +2,34 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mentorship_ecommerce/core/routes/routes.dart';
 import 'package:mentorship_ecommerce/features/cart/presentation/views/cart_view.dart';
+import 'package:mentorship_ecommerce/features/check_out/views/check_out_success_view.dart';
 import 'package:mentorship_ecommerce/features/discover/presentation/view/discover_view.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/dashboard_view.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/home_view.dart';
+import 'package:mentorship_ecommerce/features/order_info/presentation/view/order_info_view.dart';
+import 'package:mentorship_ecommerce/features/order_rate/presentation/view/order_rate_view.dart';
 import 'package:mentorship_ecommerce/features/product_full/presentation/view/product_full_view.dart';
 import 'package:mentorship_ecommerce/features/profile/presentation/views/profile_view.dart';
 import 'package:mentorship_ecommerce/features/search/presentation/logic/search_cubit/search_cubit.dart';
 import 'package:mentorship_ecommerce/features/search/presentation/view/search_view.dart';
-
+import '../../features/check_out/views/check_out_view.dart';
 import '../../features/my_order/views/my_order_view.dart';
 
 class AppRouter {
   Route? generateRouter(RouteSettings settings) {
     switch (settings.name) {
+      case Routes.checkOut:
+        return MaterialPageRoute(builder: (_) => const CheckOutView());
+      case Routes.checkOutSuccess:
+        return MaterialPageRoute(builder: (_) => CheckOutSuccessView());
       case Routes.home:
         return MaterialPageRoute(builder: (_) => const HomeView());
       case Routes.discover:
         return MaterialPageRoute(builder: (_) => const DiscoverView());
-
+      case Routes.orderInfo:
+        return MaterialPageRoute(builder: (_) => const OrderInfoView());
+      case Routes.orderRate:
+        return MaterialPageRoute(builder: (_) => const OrderRateView());
       case Routes.search:
         return MaterialPageRoute(
           builder: (_) => BlocProvider(
@@ -29,7 +39,7 @@ class AppRouter {
         );
       case Routes.productFull:
         return MaterialPageRoute(builder: (_) => const ProductFullView());
-        case Routes.myOrder:
+      case Routes.myOrder:
         return MaterialPageRoute(builder: (_) => const MyOrderView());
       case Routes.dashboard:
         return MaterialPageRoute(builder: (_) => const DashboardView());
@@ -37,9 +47,8 @@ class AppRouter {
       case Routes.cart:
         return MaterialPageRoute(builder: (_) => const CartView());
 
-          case Routes.profile:
+      case Routes.profile:
         return MaterialPageRoute(builder: (_) => const ProfileView());
-
 
       default:
         return null;
