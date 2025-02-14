@@ -7,20 +7,24 @@ import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/cus
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
 
+
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: [
-        CustomAppBar(
-          icon: SvgPicture.asset(Assets.homeIcon),
-          title: 'GemStore',
-        ),
-        SizedBox(
-          height: MediaQuery.of(context).size.height / 44,
-        ),
-        const CustomTabs(),
-        const SizedBox()
-      ],
+    return Scaffold(
+      body: ListView(
+        children: [
+          CustomAppBar(
+            icon: SvgPicture.asset(Assets.homeIcon),
+            title: 'GemStore',
+            onPressed: () => Scaffold.of(context).openDrawer(),
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height / 44,
+          ),
+          const CustomTabs(),
+          const SizedBox()
+        ],
+      ),
     );
   }
 }
