@@ -7,5 +7,7 @@ class Svgs {
   static const String settingIcon = 'assets/svgs/Setting.svg';
   static const String favoriteIcon = 'assets/svgs/Favorite_fill.svg';
   static const String logoutIcon = 'assets/svgs/Logout.svg';
-  static const String rightArrowIcon ='assets/icons/right_arrow.svg';
+  static const String rightArrowIcon = 'assets/icons/right_arrow.svg';
+  static const String leftArrowIcon = 'assets/icons/right_arrow.svg';
+  static const String bellIcon = 'assets/svgs/Bell_pin.svg';
 }
