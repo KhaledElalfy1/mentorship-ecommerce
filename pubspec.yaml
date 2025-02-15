@@ -45,6 +45,7 @@ dependencies:
   font_awesome_flutter: ^10.8.0
   get_it: ^8.0.3
   shared_preferences: ^2.5.1
+  
 
 dev_dependencies:
   flutter_lints: ^4.0.0
