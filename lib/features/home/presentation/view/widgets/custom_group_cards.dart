@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/utils/assets.dart';
 import 'package:mentorship_ecommerce/features/home/data/models/group_card_model.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/group_left_card.dart';
@@ -9,25 +10,29 @@ class CustomGroupCards extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.only(left: 32, right: 31),
+    return Padding(
+      padding: const EdgeInsets.only(left: 32, right: 31).w,
       child: Row(
         children: [
-          GroupLeftCard(
-            groupCardModel: GroupCardModel(
-              name: 'T-Shirts',
-              description: 'The \nOffice\nLife',
-              image: Assets.groupImage1,
+          const Expanded(
+            child: GroupLeftCard(
+              groupCardModel: GroupCardModel(
+                name: 'T-Shirts',
+                description: 'The \nOffice\nLife',
+                image: Assets.groupImage1,
+              ),
             ),
           ),
           SizedBox(
-            width: 8,
+            width: 8.w,
           ),
-          GroupRightCard(
-            groupCardModel: GroupCardModel(
-              name: 'Dresses',
-              description: 'Elegant\nDesign',
-              image: Assets.groupImage2,
+          const Expanded(
+            child: GroupRightCard(
+              groupCardModel: GroupCardModel(
+                name: 'Dresses',
+                description: 'Elegant\nDesign',
+                image: Assets.groupImage2,
+              ),
             ),
           )
         ],

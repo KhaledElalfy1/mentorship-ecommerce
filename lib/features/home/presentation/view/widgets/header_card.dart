@@ -17,7 +17,8 @@ class HeaderCard extends StatelessWidget {
       padding: const EdgeInsets.only(
         left: 32,
         right: 32,
-      ),
+        top: 30,
+      ).w,
       width: 312.w,
       height: 168.h,
       child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -31,8 +32,8 @@ class HeaderCard extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(
-          height: 47.5,
+         SizedBox(
+          height: 37.h,
         ),
         Align(alignment: Alignment.bottomCenter, child: DotsIndicator(currentPageIndex: currentPageIndex))
       ]),
