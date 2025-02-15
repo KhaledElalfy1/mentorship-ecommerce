@@ -41,6 +41,9 @@ class SelectedTab extends StatelessWidget {
                 size: 25.r,
               )),
         ),
+        SizedBox(
+          height: 5.h,
+        ),
         Text(
           text,
           style: Styles.textStyle10,
