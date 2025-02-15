@@ -18,4 +18,5 @@ class Routes {
   static const String orderInfo = '/orderInfo';
   static const String orderRate = '/orderRate';
   static const String orderTracking = '/orderTracking';
+  static const String editProfile = '/editProfile';
 }
