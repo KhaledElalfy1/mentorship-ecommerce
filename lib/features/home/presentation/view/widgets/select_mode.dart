@@ -44,4 +44,3 @@ class _SelectModeState extends State<SelectMode> {
     );
   }
 }
-
