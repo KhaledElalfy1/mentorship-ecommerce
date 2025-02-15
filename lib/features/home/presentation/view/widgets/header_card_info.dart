@@ -1,4 +1,3 @@
-
 import 'package:expandable_page_view/expandable_page_view.dart';
 import 'package:flutter/material.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/header_card.dart';
@@ -36,8 +35,8 @@ class _WomanCardInfoState extends State<HeaderCardInfo> {
       children: List.generate(
           3,
           (index) => HeaderCard(
-                currentPageIndex: currentPageIndex,
-              )),
+            currentPageIndex: currentPageIndex,
+          )),
     );
   }
 }

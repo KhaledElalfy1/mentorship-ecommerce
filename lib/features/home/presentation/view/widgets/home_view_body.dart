@@ -9,18 +9,21 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: [
-        CustomAppBar(
-          icon: SvgPicture.asset(Assets.homeIcon),
-          title: 'GemStore',
-        ),
-        SizedBox(
-          height: MediaQuery.of(context).size.height / 44,
-        ),
-        const CustomTabs(),
-        const SizedBox()
-      ],
-    );
+    return  ListView(
+        children: [
+          CustomAppBar(
+            icon: SvgPicture.asset(Assets.homeIcon),
+            title: 'GemStore',
+            onPressed: () {
+              Scaffold.of(context).openDrawer();
+            },
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height / 44,
+          ),
+          const CustomTabs(),
+          const SizedBox()
+        ],
+      );
   }
 }

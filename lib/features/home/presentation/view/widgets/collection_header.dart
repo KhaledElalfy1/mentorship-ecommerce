@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/constants.dart';
 import 'package:mentorship_ecommerce/core/utils/app_color.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
@@ -10,7 +11,7 @@ class CollectionHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 30.0, right: 31),
+      padding: const EdgeInsets.only(left: 30.0, right: 31).w,
       child: Row(
         textBaseline: TextBaseline.ideographic,
         children: [
@@ -18,9 +19,7 @@ class CollectionHeader extends StatelessWidget {
             collectionTitle,
             style: Styles.textStyle20,
           ),
-          SizedBox(
-            width: MediaQuery.sizeOf(context).width / 4.5,
-          ),
+          const Spacer(),
           InkWell(
             onTap: () {},
             child: Text(

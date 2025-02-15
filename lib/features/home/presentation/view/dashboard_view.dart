@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:mentorship_ecommerce/core/utils/app_color.dart';
 import 'package:mentorship_ecommerce/features/discover/presentation/view/discover_view.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/home_view.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/home_drawer.dart';
 import 'package:mentorship_ecommerce/features/product_full/presentation/view/product_full_view.dart';
 import 'package:mentorship_ecommerce/features/search/presentation/view/search_view.dart';
+import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/search_drawer.dart';
 
 class DashboardView extends StatefulWidget {
   const DashboardView({super.key});
@@ -15,6 +17,7 @@ class DashboardView extends StatefulWidget {
 class _DashboardViewState extends State<DashboardView> {
   int _selectedIndex = 0;
   Widget? currentPage;
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
   final List<Widget> _pages = const [
     HomeView(),
@@ -35,34 +38,6 @@ class _DashboardViewState extends State<DashboardView> {
     _buildNavItem(
       Icons.person_2_outlined,
     ),
-    // const BottomNavigationBarItem(
-    //   icon: Icon(
-    //     Icons.home_outlined,
-    //     size: 30,
-    //   ),
-    //   label: '',
-    // ),
-    // const BottomNavigationBarItem(
-    //   icon: Icon(
-    //     Icons.search_outlined,
-    //     size: 24,
-    //   ),
-    //   label: '',
-    // ),
-    // const BottomNavigationBarItem(
-    //   icon: Icon(
-    //     Icons.card_travel_outlined,
-    //     size: 24,
-    //   ),
-    //   label: '',
-    // ),
-    // const BottomNavigationBarItem(
-    //   icon: Icon(
-    //     Icons.person_2_outlined,
-    //     size: 24,
-    //   ),
-    //   label: '',
-    // ),
   ];
 
   void _onItemTapped(int index) {
@@ -74,6 +49,9 @@ class _DashboardViewState extends State<DashboardView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+       key: _scaffoldKey,
+      drawer: _selectedIndex == 0 ? const HomeDrawer() : null, 
+      endDrawer: _selectedIndex == 1 ? const SearchDrawer() : null, 
         body: IndexedStack(
           index: _selectedIndex,
           children: _pages,
