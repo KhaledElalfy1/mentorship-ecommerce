@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:mentorship_ecommerce/core/utils/assets.dart';
-import 'package:mentorship_ecommerce/core/utils/widgets/custom_app_bar.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/custom_tabs.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -10,16 +7,9 @@ class HomeViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      children: [
-        CustomAppBar(
-          icon: SvgPicture.asset(Assets.homeIcon),
-          title: 'GemStore',
-        ),
-        SizedBox(
-          height: MediaQuery.of(context).size.height / 44,
-        ),
-        const CustomTabs(),
-        const SizedBox()
+      children: const [
+        CustomTabs(),
+        SizedBox()
       ],
     );
   }
