@@ -45,4 +45,7 @@ abstract class AppColor {
   static const activeColor = Color(0xffF4F5F6);
   static const unAvtiveMode = Color(0xff868B90);
   static const containerMode = Color(0xffF4F4F4);
+  static const underLineBorder = Color(0xffD6D6D6);
+  static const labelProfileColor = Color(0xffA6AAC3);
+  static const inputColor = Color(0xff42474A);
 }

@@ -4,6 +4,7 @@ import 'package:mentorship_ecommerce/core/routes/routes.dart';
 import 'package:mentorship_ecommerce/features/cart/presentation/views/cart_view.dart';
 import 'package:mentorship_ecommerce/features/check_out/views/check_out_success_view.dart';
 import 'package:mentorship_ecommerce/features/discover/presentation/view/discover_view.dart';
+import 'package:mentorship_ecommerce/features/edit_profile/presentation/views/edit_profile_view.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/dashboard_view.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/home_view.dart';
 import 'package:mentorship_ecommerce/features/order_info/presentation/view/order_info_view.dart';
@@ -54,6 +55,8 @@ class AppRouter {
 
       case Routes.profile:
         return MaterialPageRoute(builder: (_) => const ProfileView());
+      case Routes.editProfile:
+        return MaterialPageRoute(builder: (_) => const EditProfileView());
 
       case Routes.wishListBoard:
         return MaterialPageRoute(builder: (_) => const MyWishlistBoardView());
