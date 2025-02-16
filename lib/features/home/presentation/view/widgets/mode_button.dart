@@ -12,11 +12,15 @@ class ModeButton extends StatelessWidget {
   final bool isActive;
   @override
   Widget build(BuildContext context) {
-    return Card(
-      elevation: isActive ? 10 : 0,
-      color: isActive ? AppColor.whiteColor : AppColor.containerMode,
-      child: SizedBox(
-        width: 84.w,
+    return SizedBox(
+      width: 110.w,
+      height: 30.h,
+      child: Container(
+        decoration: ShapeDecoration(
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(32.w)),
+          color: isActive ? AppColor.whiteColor : AppColor.containerMode,
+        ),
+        clipBehavior: Clip.antiAlias,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,

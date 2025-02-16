@@ -17,6 +17,13 @@ class Routes {
   static const String cart = '/Cart';
   static const String orderInfo = '/orderInfo';
   static const String orderRate = '/orderRate';
+
+  static const String wishListBoard = '/wishListBoard ';
+  static const String wishListItems = '/wishListItems ';
+
   static const String orderTracking = '/orderTracking';
+
   static const String editProfile = '/editProfile';
+
+
 }
