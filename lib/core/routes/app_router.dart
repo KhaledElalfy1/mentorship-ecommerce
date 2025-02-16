@@ -7,6 +7,8 @@ import 'package:mentorship_ecommerce/features/discover/presentation/view/discove
 import 'package:mentorship_ecommerce/features/edit_profile/presentation/views/edit_profile_view.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/dashboard_view.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/home_view.dart';
+import 'package:mentorship_ecommerce/features/onboarding/presentation/views/onboarding_view.dart';
+import 'package:mentorship_ecommerce/features/onboarding/presentation/views/welcome_view.dart';
 import 'package:mentorship_ecommerce/features/order_info/presentation/view/order_info_view.dart';
 import 'package:mentorship_ecommerce/features/order_rate/presentation/view/order_rate_view.dart';
 import 'package:mentorship_ecommerce/features/order_tracking/presentation/view/order_tracking_view.dart';
@@ -61,8 +63,15 @@ class AppRouter {
       case Routes.wishListBoard:
         return MaterialPageRoute(builder: (_) => const MyWishlistBoardView());
 
-         case Routes.wishListItems:
-        return MaterialPageRoute(builder: (_) => const MyWishlistAllItemsView());
+      case Routes.wishListItems:
+        return MaterialPageRoute(
+            builder: (_) => const MyWishlistAllItemsView());
+            
+      case Routes.welcome:
+        return MaterialPageRoute(builder: (_) => const WelcomeView());
+
+      case Routes.onboarding:
+        return MaterialPageRoute(builder: (_) => const OnboardingView());
 
       default:
         return null;
