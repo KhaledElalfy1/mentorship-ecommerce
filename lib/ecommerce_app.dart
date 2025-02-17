@@ -21,8 +21,7 @@ class EcommerceApp extends StatelessWidget {
           cardColor: AppColor.whiteColor,
           fontFamily: Constants.productSans,
         ),
-
-        initialRoute: Routes.editProfile,
+        initialRoute: Routes.dashboard,
         onGenerateRoute: AppRouter().generateRouter,
       ),
     );

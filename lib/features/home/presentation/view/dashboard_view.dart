@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:mentorship_ecommerce/core/utils/app_color.dart';
-import 'package:mentorship_ecommerce/features/discover/presentation/view/discover_view.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/home_view.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/home_drawer.dart';
-import 'package:mentorship_ecommerce/features/product_full/presentation/view/product_full_view.dart';
+import 'package:mentorship_ecommerce/features/my_order/views/my_order_view.dart';
+import 'package:mentorship_ecommerce/features/profile/presentation/views/profile_view.dart';
 import 'package:mentorship_ecommerce/features/search/presentation/view/search_view.dart';
 import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/search_drawer.dart';
 
@@ -22,8 +22,8 @@ class _DashboardViewState extends State<DashboardView> {
   final List<Widget> _pages = const [
     HomeView(),
     SearchView(),
-    ProductFullView(),
-    DiscoverView()
+    MyOrderView(),
+    ProfileView(),
   ];
   final items = [
     _buildNavItem(
@@ -49,9 +49,9 @@ class _DashboardViewState extends State<DashboardView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       key: _scaffoldKey,
-      drawer: _selectedIndex == 0 ? const HomeDrawer() : null, 
-      endDrawer: _selectedIndex == 1 ? const SearchDrawer() : null, 
+        key: _scaffoldKey,
+        drawer: _selectedIndex == 0 ? const HomeDrawer() : null,
+        endDrawer: _selectedIndex == 1 ? const SearchDrawer() : null,
         body: IndexedStack(
           index: _selectedIndex,
           children: _pages,
@@ -63,17 +63,15 @@ class _DashboardViewState extends State<DashboardView> {
           ),
           child: BottomNavigationBar(
             currentIndex: _selectedIndex,
-            backgroundColor: AppColor.bottomBackgroundColor,
+            backgroundColor: AppColor.whiteColor,
             elevation: 0,
             items: items.map((item) => item).toList(),
             showSelectedLabels: false,
             showUnselectedLabels: false,
             type: BottomNavigationBarType.fixed,
             enableFeedback: true,
-            selectedIconTheme:
-                const IconThemeData(color: AppColor.gunmetalGray, size: 30),
-            unselectedIconTheme:
-                const IconThemeData(color: AppColor.coolGray, size: 30),
+            selectedIconTheme: const IconThemeData(color: AppColor.gunmetalGray, size: 30),
+            unselectedIconTheme: const IconThemeData(color: AppColor.coolGray, size: 30),
             onTap: _onItemTapped,
           ),
         ));
@@ -85,8 +83,7 @@ BottomNavigationBarItem _buildNavItem(
 ) {
   return BottomNavigationBarItem(
     icon: Padding(
-      padding:
-          const EdgeInsets.only(right: 31, left: 31), // Adjust icon position
+      padding: const EdgeInsets.only(right: 31, left: 31), // Adjust icon position
       child: Icon(icon, size: 30),
     ),
     label: '',
