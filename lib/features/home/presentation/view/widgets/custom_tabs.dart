@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:mentorship_ecommerce/core/utils/app_color.dart';
+import 'package:mentorship_ecommerce/core/utils/assets.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
+import 'package:mentorship_ecommerce/core/utils/widgets/custom_app_bar.dart';
 import 'package:mentorship_ecommerce/features/home/data/models/tabs_model.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/selected_tab.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/tabs/accessories_page.dart';
@@ -39,25 +42,38 @@ class _CustomTabsState extends State<CustomTabs> {
       initialIndex: 0,
       length: list.length,
       child: SizedBox(
-        height: MediaQuery.of(context).size.height,
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            TabBar(
-              isScrollable: false,
-              indicatorColor: Colors.transparent,
-              labelColor: AppColor.selectedTabColor,
-              labelStyle: Styles.textStyle10,
-              unselectedLabelColor: AppColor.spanishGrayColor,
-              tabs: list.map((tab) => tab == list[isSelected] ? SelectedTab(icon: tab.icon, text: tab.text) : UnSelectedTab(icon: tab.icon, text: tab.text)).toList(),
-              onTap: (value) => setState(() => isSelected = value),
-            ),
-            Expanded(
-              child: TabBarView(
-                children: tabs.map((page) => SingleChildScrollView(child: page)).toList(),
+        height: MediaQuery.of(context).size.height * .83,
+        child: NestedScrollView(
+          headerSliverBuilder: (context, innerBoxIsScrolled) => [
+            SliverToBoxAdapter(
+              child: CustomAppBar(
+                icon: SvgPicture.asset(Assets.homeIcon),
+                title: 'GemStore',
+                onPressed: () {
+                  Scaffold.of(context).openDrawer();
+                },
               ),
-            )
+            ),
+            SliverToBoxAdapter(
+              child: SizedBox(
+                height: MediaQuery.of(context).size.height / 44,
+              ),
+            ),
+            SliverToBoxAdapter(
+              child: TabBar(
+                isScrollable: false,
+                indicatorColor: Colors.transparent,
+                labelColor: AppColor.selectedTabColor,
+                labelStyle: Styles.textStyle10,
+                unselectedLabelColor: AppColor.spanishGrayColor,
+                tabs: list.map((tab) => tab == list[isSelected] ? SelectedTab(icon: tab.icon, text: tab.text) : UnSelectedTab(icon: tab.icon, text: tab.text)).toList(),
+                onTap: (value) => setState(() => isSelected = value),
+              ),
+            ),
           ],
+          body: TabBarView(
+            children: tabs.map((page) => SingleChildScrollView(child: page)).toList(),
+          ),
         ),
       ),
     );

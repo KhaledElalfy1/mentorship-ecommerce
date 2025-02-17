@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/routes/routes.dart';
 import 'package:mentorship_ecommerce/core/utils/app_color.dart';
 import 'package:mentorship_ecommerce/core/utils/svgs.dart';
 import 'package:mentorship_ecommerce/features/profile/presentation/views/widgets/profile_details_widget.dart';
@@ -31,7 +32,10 @@ class ProfileDetails extends StatelessWidget {
             icon: Svgs.favoriteIcon,
             text: "My Wishlist",
             isNeededIcon: true,
-            onPressed: () {},
+            onPressed: () {
+             
+                    Navigator.pushNamed(context, Routes.wishListBoard);
+            },
           ),
           const ProfileDetailsWidget(icon: Svgs.logoutIcon, text: "Log out"),
         ],
