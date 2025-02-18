@@ -48,4 +48,6 @@ abstract class AppColor {
   static const underLineBorder = Color(0xffD6D6D6);
   static const labelProfileColor = Color(0xffA6AAC3);
   static const inputColor = Color(0xff42474A);
+  static const grey2 =Color(0xffE7E8E9);
+  static const blackgrey2 =Color(0xff464447);
 }

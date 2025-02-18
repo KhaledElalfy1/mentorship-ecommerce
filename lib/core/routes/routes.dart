@@ -1,5 +1,7 @@
 class Routes {
-  static const String home = '/';
+  static const String welcome = '/';
+  static const String onboarding = '/onboarding';
+  static const String home = '/home';
   static const String login = '/login';
   static const String register = '/register';
   static const String search = '/search';
@@ -17,13 +19,8 @@ class Routes {
   static const String cart = '/Cart';
   static const String orderInfo = '/orderInfo';
   static const String orderRate = '/orderRate';
-
   static const String wishListBoard = '/wishListBoard ';
   static const String wishListItems = '/wishListItems ';
-
   static const String orderTracking = '/orderTracking';
-
   static const String editProfile = '/editProfile';
-
-
 }
