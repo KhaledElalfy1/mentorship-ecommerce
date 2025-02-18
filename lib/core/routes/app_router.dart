@@ -6,11 +6,15 @@ import 'package:mentorship_ecommerce/features/discover/presentation/view/discove
 import 'package:mentorship_ecommerce/features/edit_profile/presentation/views/edit_profile_view.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/dashboard_view.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/home_view.dart';
+
+import 'package:mentorship_ecommerce/features/login/views/login_screen.dart';
+
 import 'package:mentorship_ecommerce/features/onboarding/presentation/views/onboarding_view.dart';
 import 'package:mentorship_ecommerce/features/onboarding/presentation/views/welcome_view.dart';
 import 'package:mentorship_ecommerce/features/order_info/presentation/view/order_info_view.dart';
 import 'package:mentorship_ecommerce/features/order_rate/presentation/view/order_rate_view.dart';
 import 'package:mentorship_ecommerce/features/order_tracking/presentation/view/order_tracking_view.dart';
+
 import 'package:mentorship_ecommerce/features/product_full/presentation/view/product_full_view.dart';
 import 'package:mentorship_ecommerce/features/profile/presentation/views/profile_view.dart';
 import 'package:mentorship_ecommerce/features/search/presentation/view/search_view.dart';
@@ -45,7 +49,11 @@ class AppRouter {
         );
       case Routes.productFull:
         return MaterialPageRoute(builder: (_) => const ProductFullView());
-      case Routes.myOrder:
+
+         case Routes.login:
+        return MaterialPageRoute(builder: (_) =>  LoginScreen());
+        case Routes.myOrder:
+
         return MaterialPageRoute(builder: (_) => const MyOrderView());
       case Routes.dashboard:
         return MaterialPageRoute(builder: (_) => const DashboardView());

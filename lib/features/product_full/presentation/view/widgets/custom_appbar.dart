@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/routes/routes.dart';
 import 'package:mentorship_ecommerce/core/utils/app_color.dart';
 import 'package:mentorship_ecommerce/core/utils/widgets/appbar_icon_widget.dart';
 
@@ -23,7 +24,9 @@ class CustomAppbar extends StatelessWidget {
             isPadding: false,
               iconWidget: Icons.favorite,
               iconColor: AppColor.favoriteIconColor,
-              onTap: () {}),
+              onTap: () {
+                   Navigator.popAndPushNamed(context, Routes.wishListBoard);
+              }),
         ],
       ),
     );
