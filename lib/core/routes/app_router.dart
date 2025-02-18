@@ -16,6 +16,7 @@ import 'package:mentorship_ecommerce/features/product_full/presentation/view/pro
 import 'package:mentorship_ecommerce/features/profile/presentation/views/profile_view.dart';
 import 'package:mentorship_ecommerce/features/search/presentation/logic/search_cubit/search_cubit.dart';
 import 'package:mentorship_ecommerce/features/search/presentation/view/search_view.dart';
+import 'package:mentorship_ecommerce/features/setting/presentation/view/setting_view.dart';
 import 'package:mentorship_ecommerce/features/wishing_list/presentation/views/my_wishlist_all_items_views.dart';
 import 'package:mentorship_ecommerce/features/wishing_list/presentation/views/my_wishlist_board_view.dart';
 import '../../features/check_out/views/check_out_view.dart';
@@ -38,6 +39,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const OrderRateView());
       case Routes.orderTracking:
         return MaterialPageRoute(builder: (_) => const OrderTrackingView());
+      case Routes.setting:
+        return MaterialPageRoute(builder: (_) => const SettingView());
       case Routes.search:
         return MaterialPageRoute(
           builder: (_) => BlocProvider(

@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:mentorship_ecommerce/features/onboarding/data/onboarding_content';
+import 'package:mentorship_ecommerce/features/onboarding/data/onboarding_content.dart';
 import 'package:mentorship_ecommerce/features/onboarding/presentation/views/widgets/onboarding_widgets/onboarding_body.dart';
 
 class OnboardingPageView extends StatefulWidget {
@@ -24,13 +24,12 @@ class _OnboardingPageViewState extends State<OnboardingPageView> {
         },
         itemBuilder: (_, index) {
           return OnboardingBody(
-              image: content[index].image,
-              text1: content[index].text1,
-              text2: content[index].text2,
-              dotNum: content.length,
-              currentIndex: index,
-
-              );
+            image: content[index].image,
+            text1: content[index].text1,
+            text2: content[index].text2,
+            dotNum: content.length,
+            currentIndex: index,
+          );
         });
   }
 }
