@@ -34,7 +34,7 @@ class OrderActionButtons extends StatelessWidget {
             ),
           ),
           onPressed: () {
-            //TODO: Add Home navigation
+            context.pushReplacementNamed(Routes.home);
           },
           child: Text(
             'Return Home',

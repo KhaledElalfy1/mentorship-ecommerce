@@ -1,7 +1,7 @@
-
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:mentorship_ecommerce/core/utils/assets.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
-
 
 class DrawerHeaderWidget extends StatelessWidget {
   const DrawerHeaderWidget({
@@ -17,9 +17,8 @@ class DrawerHeaderWidget extends StatelessWidget {
           "Filter",
           style: Styles.textStyle20,
         ),
-        const Icon(Icons.filter_list),
+        SvgPicture.asset(Assets.filter),
       ],
     );
   }
 }
-
