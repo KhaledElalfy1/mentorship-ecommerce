@@ -23,7 +23,7 @@ class SearchDrawer extends StatelessWidget {
             SizedBox(
               height: 20.h,
             ),
-          const  DrawerHeaderWidget(),
+            const DrawerHeaderWidget(),
             Divider(
               color: const Color(0xffF3F3F6),
               thickness: 1,
@@ -81,11 +81,13 @@ class SearchDrawer extends StatelessWidget {
             SizedBox(
               height: 20.h,
             ),
-            const FilterActionSection()
+            const FilterActionSection(),
+            SizedBox(
+              height: 20.h,
+            ),
           ],
         ),
       ),
     );
   }
 }
-

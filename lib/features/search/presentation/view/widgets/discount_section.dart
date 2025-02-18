@@ -1,8 +1,6 @@
-
 import 'package:flutter/material.dart';
 import 'package:mentorship_ecommerce/core/utils/app_color.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 
 class DiscountSection extends StatelessWidget {
   const DiscountSection({
@@ -13,67 +11,62 @@ class DiscountSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Wrap(
       children: [
-        FilterChip(
-          color: const WidgetStatePropertyAll(Colors.white),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20),
-            side: const BorderSide(
-              color: AppColor.gunmetalGray,
-            ),
-          ),
-          selected: false,
-          selectedColor: AppColor.gunmetalGray,
-          onDeleted: () {},
-          deleteIcon: const Icon(
-            Icons.close,
-            color: AppColor.gunmetalGray,
-          ),
-          label: const Text('10% off'),
-          onSelected: (bool value) {},
+        CustomDiscountWidget(
+          isSelected: false,
+          discount: '10% off',
+          onSelected: (p0) {},
         ),
         SizedBox(
           width: 10.w,
         ),
-        FilterChip(
-          color: const WidgetStatePropertyAll(Colors.white),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20),
-            side: const BorderSide(
-              color: AppColor.gunmetalGray,
-            ),
-          ),
-          selected: false,
-          selectedColor: AppColor.gunmetalGray,
-          onDeleted: () {},
-          deleteIcon: const Icon(
-            Icons.close,
-            color: AppColor.gunmetalGray,
-          ),
-          label: const Text('20% off'),
-          onSelected: (bool value) {},
+        CustomDiscountWidget(
+          isSelected: false,
+          discount: '20% off',
+          onSelected: (p0) {},
         ),
         SizedBox(
           width: 10.w,
         ),
-        FilterChip(
-          color: const WidgetStatePropertyAll(Colors.white),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20),
-            side: const BorderSide(
-              color: AppColor.gunmetalGray,
-            ),
-          ),
-          selected: false,
-          selectedColor: AppColor.gunmetalGray,
-          onDeleted: () {},
-          deleteIcon: const Icon(
-            Icons.close,
-            color: AppColor.gunmetalGray,
-          ),
-          label: const Text('30% off'),
-          onSelected: (bool value) {},
+        CustomDiscountWidget(
+          isSelected: false,
+          discount: '30% off',
+          onSelected: (p0) {},
         ),
       ],
+    );
+  }
+}
+
+class CustomDiscountWidget extends StatelessWidget {
+  const CustomDiscountWidget({
+    super.key,
+    required this.isSelected,
+    required this.discount,
+    required this.onSelected,
+  });
+  final bool isSelected;
+  final String discount;
+  final Function(bool) onSelected;
+  @override
+  Widget build(BuildContext context) {
+    return FilterChip(
+      backgroundColor: AppColor.whiteColor,
+      color: const WidgetStatePropertyAll(Colors.white),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(20),
+        side: const BorderSide(
+          color: AppColor.gunmetalGray,
+        ),
+      ),
+      selected: isSelected,
+      selectedColor: AppColor.gunmetalGray,
+      onDeleted: () {},
+      deleteIcon: const Icon(
+        Icons.close,
+        color: AppColor.gunmetalGray,
+      ),
+      label: Text(discount),
+      onSelected: onSelected,
     );
   }
 }

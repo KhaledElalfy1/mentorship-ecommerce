@@ -13,7 +13,7 @@ class SearchViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-      final drawerKey = context.read<SearchCubit>();
+    final drawerKey = context.read<SearchCubit>();
 
     return Scaffold(
       key: drawerKey.drawerKey,
@@ -37,7 +37,8 @@ class SearchViewBody extends StatelessWidget {
             const Wrap(
               children: [
                 SearchResultItem(
-                  text: 'SunglassesSunglassesSunglassesSunglassesSunglassesSunglassesSunglassesSunglassesSunglassesSunglassesSunglasses',
+                  text:
+                      'SunglassesSunglassesSunglassesSunglassesSunglassesSunglassesSunglassesSunglassesSunglassesSunglassesSunglasses',
                 ),
                 SearchResultItem(
                   text: 'Sunglasses',

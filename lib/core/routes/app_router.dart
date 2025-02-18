@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mentorship_ecommerce/core/routes/routes.dart';
 import 'package:mentorship_ecommerce/features/cart/presentation/views/cart_view.dart';
 import 'package:mentorship_ecommerce/features/check_out/views/check_out_success_view.dart';
@@ -14,7 +13,6 @@ import 'package:mentorship_ecommerce/features/order_rate/presentation/view/order
 import 'package:mentorship_ecommerce/features/order_tracking/presentation/view/order_tracking_view.dart';
 import 'package:mentorship_ecommerce/features/product_full/presentation/view/product_full_view.dart';
 import 'package:mentorship_ecommerce/features/profile/presentation/views/profile_view.dart';
-import 'package:mentorship_ecommerce/features/search/presentation/logic/search_cubit/search_cubit.dart';
 import 'package:mentorship_ecommerce/features/search/presentation/view/search_view.dart';
 import 'package:mentorship_ecommerce/features/setting/presentation/view/setting_view.dart';
 import 'package:mentorship_ecommerce/features/wishing_list/presentation/views/my_wishlist_all_items_views.dart';
@@ -43,10 +41,7 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const SettingView());
       case Routes.search:
         return MaterialPageRoute(
-          builder: (_) => BlocProvider(
-            create: (context) => SearchCubit(),
-            child: const SearchView(),
-          ),
+          builder: (_) => const SearchView(),
         );
       case Routes.productFull:
         return MaterialPageRoute(builder: (_) => const ProductFullView());
