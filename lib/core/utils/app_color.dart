@@ -32,4 +32,23 @@ abstract class AppColor {
   static const textColor = Color(0xFF353945);
   static const gradientColor1 = Color(0xFFEDEDEE);
   static const bottomBackgroundColor = Color(0xffEDEDED);
+  static const borderColor = Color(0xffF2F2F2);
+  static const shadowColor = Color(0x0F0F0F33);
+  static const svgColor = Color(0xffB1B5C3);
+  static const darkGray = Color(0xFFC8C7CC);
+  static const labelColor = Color(0xff777E90);
+  static const paymentButtonColor = Color(0xff343434);
+
+  static const black2 = Color(0xff121420);
+  static const grey = Color(0xff8A8A8F);
+  static const divider3Color = Color(0xffE8E8E8);
+
+  static const activeColor = Color(0xffF4F5F6);
+  static const unAvtiveMode = Color(0xff868B90);
+  static const containerMode = Color(0xffF4F4F4);
+  static const underLineBorder = Color(0xffD6D6D6);
+  static const labelProfileColor = Color(0xffA6AAC3);
+  static const inputColor = Color(0xff42474A);
+  static const grey2 = Color(0xffE7E8E9);
+  static const blackgrey2 = Color(0xff464447);
 }

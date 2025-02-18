@@ -9,50 +9,73 @@ class CustomRangeSlider extends StatefulWidget {
 }
 
 class _CustomRangeSliderState extends State<CustomRangeSlider> {
-  double _upperValue = 80;
-  double _lowerValue = 10;
+  double _upperValue = 150;
+  double _lowerValue = 80;
   @override
   Widget build(BuildContext context) {
-    return FlutterSlider(
-      handler: FlutterSliderHandler(
-        decoration: const BoxDecoration(),
-        child: Container(
-          width: 25.0,
-          height: 25.0,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            border: Border.all(color: Colors.black),
-            color: Colors.transparent,
+    return Column(
+      children: [
+        FlutterSlider(
+          handler: FlutterSliderHandler(
+            decoration: const BoxDecoration(),
+            child: Container(
+              width: 25.0,
+              height: 25.0,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(color: Colors.black),
+                color: Colors.transparent,
+              ),
+            ),
           ),
-        ),
-      ),
-      rightHandler: FlutterSliderHandler(
-        decoration: const BoxDecoration(),
-        child: Container(
-          width: 25.0,
-          height: 25.0,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            border: Border.all(color: Colors.black),
-            color: Colors.transparent,
+          rightHandler: FlutterSliderHandler(
+            decoration: const BoxDecoration(),
+            child: Container(
+              width: 25.0,
+              height: 25.0,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(color: Colors.black),
+                color: Colors.transparent,
+              ),
+            ),
           ),
+          trackBar: const FlutterSliderTrackBar(
+            activeTrackBarHeight: 5,
+            activeTrackBar: BoxDecoration(
+              color: Color(0xff33302E),
+            ),
+          ),
+          values: [_lowerValue, _upperValue],
+          rangeSlider: true,
+          max: 500,
+          min: 0,
+          onDragging: (handlerIndex, lowerValue, upperValue) {
+            _lowerValue = lowerValue;
+            _upperValue = upperValue;
+            setState(() {});
+          },
         ),
-      ),
-      trackBar: const FlutterSliderTrackBar(
-        activeTrackBarHeight: 5,
-        activeTrackBar: BoxDecoration(
-          color: Color(0xff33302E),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              '\$$_lowerValue',
+              style: const TextStyle(
+                fontSize: 14,
+                color: Colors.black,
+              ),
+            ),
+            Text(
+              '\$$_upperValue',
+              style: const TextStyle(
+                fontSize: 14,
+                color: Colors.black,
+              ),
+            ),
+          ],
         ),
-      ),
-      values: [_lowerValue, _upperValue],
-      rangeSlider: true,
-      max: 500,
-      min: 0,
-      onDragging: (handlerIndex, lowerValue, upperValue) {
-        _lowerValue = lowerValue;
-        _upperValue = upperValue;
-        setState(() {});
-      },
+      ],
     );
   }
 }
