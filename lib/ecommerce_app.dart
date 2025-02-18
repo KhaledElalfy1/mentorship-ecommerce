@@ -22,7 +22,7 @@ class EcommerceApp extends StatelessWidget {
           fontFamily: Constants.productSans,
           useMaterial3: false,
         ),
-        initialRoute: Routes.onboarding,
+        initialRoute: Routes.dashboard,
         onGenerateRoute: AppRouter().generateRouter,
       ),
     );
