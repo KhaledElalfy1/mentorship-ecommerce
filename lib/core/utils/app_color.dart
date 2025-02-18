@@ -24,7 +24,7 @@ abstract class AppColor {
   static const blackColor = Colors.black;
   static const lightgrey = Color(0xff777E90);
   static const unSelectedTabIconColor = Color(0xffBEBFC4);
-
+  static const loginButtonColor = Color(0xff2D201C);
   static const divider2Color = Color(0xffF3F3F6);
   static const spanishGrayColor = Color(0xff9D9D9D);
   static const productBackgroundColor = Color(0xffE2E2E2);

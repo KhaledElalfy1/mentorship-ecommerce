@@ -14,4 +14,9 @@ abstract class Assets {
   static const String topCollectionImage2 = 'assets/images/top_collection_image2.png';
   static const String groupImage1 = 'assets/images/groups_image1.png';
   static const String groupImage2 = 'assets/images/groups_image2.png';
+  static const String googleImage = 'assets/images/google.png';
+  static const String facebookImage = 'assets/images/facebook.png';
+  static const String appleImage = 'assets/images/apple.png';
+
+
 }
