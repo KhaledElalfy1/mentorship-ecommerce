@@ -18,5 +18,8 @@ abstract class Assets {
   static const String locationIcon = 'assets/images/location.png';
   static const String orderCompleted = 'assets/images/order_completed.png';
   static const String avater = 'assets/images/avater.png';
+ static const String onboarding1 = 'assets/images/onboarding1 (2).png';
+  static const String onboarding2 = 'assets/images/onboarding2.png';
+  static const String onboarding3 = 'assets/images/onboarding3.png';
 
 }
