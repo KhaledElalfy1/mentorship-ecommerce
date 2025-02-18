@@ -16,11 +16,19 @@ abstract class Styles {
   );
   static TextStyle textStyle12 = TextStyle(
     fontSize: 12.0.sp,
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeightHelper.regular,
+  );
+    static TextStyle textStyle13Sregular = TextStyle(
+    fontSize: 13.0.sp,
+    fontWeight: FontWeightHelper.regular,
   );
   static TextStyle textStyle24 = TextStyle(
     fontSize: 24.0.sp,
     fontWeight: FontWeight.bold,
+  );
+    static TextStyle textStyle24SemiBold = TextStyle(
+    fontSize: 24.0.sp,
+    fontWeight: FontWeightHelper.medium,
   );
   static TextStyle textStyle18 = TextStyle(
     fontSize: 18.0.sp,
