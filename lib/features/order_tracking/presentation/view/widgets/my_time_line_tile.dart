@@ -66,7 +66,7 @@ class MyTimeLineTile extends StatelessWidget {
         Visibility(
           visible: !isLast,
           child: Padding(
-            padding: EdgeInsets.only(left: 14.0.w),
+            padding: EdgeInsets.only(left: 10.w),
             child: Column(
               children: [
                 SizedBox(
@@ -74,14 +74,14 @@ class MyTimeLineTile extends StatelessWidget {
                 ),
                 const CircleAvatar(
                   backgroundColor: Color(0xff474340),
-                  radius: 2,
+                  radius: 3,
                 ),
                 SizedBox(
                   height: 16.h,
                 ),
                 const CircleAvatar(
                   backgroundColor: Color(0xff474340),
-                  radius: 2,
+                  radius: 3,
                 ),
                 SizedBox(
                   height: 16.h,
