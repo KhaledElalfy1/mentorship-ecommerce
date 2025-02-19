@@ -13,6 +13,8 @@ abstract class Assets {
   static const String language = 'assets/icons/language.svg';
   static const String termsOFUse = 'assets/icons/terms_of_use.svg';
   static const String filter = 'assets/icons/Filter.svg';
+  static const String trash = 'assets/icons/Trash.svg';
+  static const String search = 'assets/icons/search.svg';
 
   static const String recommendedImage1 =
       'assets/images/recommended_image1.png';

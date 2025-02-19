@@ -1,8 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'package:mentorship_ecommerce/core/utils/app_color.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
-
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class FilterActionSection extends StatelessWidget {
   const FilterActionSection({
@@ -25,6 +24,7 @@ class FilterActionSection extends StatelessWidget {
         ),
         ElevatedButton(
           style: ElevatedButton.styleFrom(
+            minimumSize: Size(113.w, 40.h),
             backgroundColor: AppColor.gunmetalGray,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20),
