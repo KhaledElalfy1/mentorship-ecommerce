@@ -1,4 +1,5 @@
 abstract class Assets {
+  static const String welcomeBackground ='assets/images/background.png';
   static const String homeIcon = 'assets/icons/app bar icon.svg';
   static const String cardImage = 'assets/images/shutterstock_1781009285 1.png';
   static const String productImage1 = 'assets/images/product_image1.png';
