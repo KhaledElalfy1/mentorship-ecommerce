@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/helpers/extention.dart';
+import 'package:mentorship_ecommerce/core/helper/extention.dart';
 import 'package:mentorship_ecommerce/core/routes/routes.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
 import 'package:mentorship_ecommerce/core/utils/widgets/custom_button.dart';

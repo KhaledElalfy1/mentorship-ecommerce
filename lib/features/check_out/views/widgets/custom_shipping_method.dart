@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/helper/spacing.dart';
 
-import '../../../../core/helpers/spacing.dart';
+
 import '../../../../core/utils/app_color.dart';
 import '../../../../core/utils/styles.dart';
 import '../../../../core/utils/widgets/font_weight_helper.dart';
