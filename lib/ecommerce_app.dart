@@ -23,7 +23,7 @@ class EcommerceApp extends StatelessWidget {
           useMaterial3: false,
         ),
 
-        initialRoute: Routes.welcome,
+        initialRoute: Routes.productFull,
 
        
         onGenerateRoute: AppRouter().generateRouter,

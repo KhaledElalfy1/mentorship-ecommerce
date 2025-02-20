@@ -43,12 +43,9 @@ class _CustomTabsState extends State<CustomTabs> {
         height: MediaQuery.of(context).size.height * .83,
         child: NestedScrollView(
           headerSliverBuilder: (context, innerBoxIsScrolled) => [
-            SliverToBoxAdapter(
+            const SliverToBoxAdapter(
               child: CustomAppBar(
                 title: 'GemStore',
-                onPressed: () {
-                  Scaffold.of(context).openDrawer();
-                },
               ),
             ),
             SliverToBoxAdapter(
@@ -63,13 +60,18 @@ class _CustomTabsState extends State<CustomTabs> {
                 labelColor: AppColor.selectedTabColor,
                 labelStyle: Styles.textStyle10,
                 unselectedLabelColor: AppColor.spanishGrayColor,
-                tabs: list.map((tab) => tab == list[isSelected] ? SelectedTab(icon: tab.icon, text: tab.text) : UnSelectedTab(icon: tab.icon, text: tab.text)).toList(),
+                tabs: list
+                    .map((tab) => tab == list[isSelected]
+                        ? SelectedTab(icon: tab.icon, text: tab.text)
+                        : UnSelectedTab(icon: tab.icon, text: tab.text))
+                    .toList(),
                 onTap: (value) => setState(() => isSelected = value),
               ),
             ),
           ],
           body: TabBarView(
-            children: tabs.map((page) => SingleChildScrollView(child: page)).toList(),
+            children:
+                tabs.map((page) => SingleChildScrollView(child: page)).toList(),
           ),
         ),
       ),
