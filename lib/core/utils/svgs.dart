@@ -10,4 +10,13 @@ class Svgs {
   static const String rightArrowIcon = 'assets/icons/right_arrow.svg';
   static const String leftArrowIcon = 'assets/icons/right_arrow.svg';
   static const String bellIcon = 'assets/svgs/Bell_pin.svg';
+    static const String filter = 'assets/icons/Filter.svg';
+  static const String trash = 'assets/icons/Trash.svg';
+  static const String search = 'assets/icons/search.svg';
+    static const String rightArrow = 'assets/icons/right_arrow.svg';
+  static const String orderIcon = 'assets/icons/order.svg';
+  static const String orderDone = 'assets/icons/review_done.svg';
+  static const String about = 'assets/icons/about.svg';
+  static const String language = 'assets/icons/language.svg';
+  static const String termsOFUse = 'assets/icons/terms_of_use.svg';
 }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:mentorship_ecommerce/core/utils/app_color.dart';
-import 'package:mentorship_ecommerce/core/utils/assets.dart';
+import 'package:mentorship_ecommerce/core/utils/svgs.dart';
 import 'package:mentorship_ecommerce/features/search/presentation/logic/search_cubit/search_cubit.dart';
 import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/custom_search_text_form_filed.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -36,7 +36,7 @@ class SearchSection extends StatelessWidget {
                   .openEndDrawer();
             },
             icon: SvgPicture.asset(
-              Assets.filter,
+              Svgs.filter,
             ),
           ),
         ),

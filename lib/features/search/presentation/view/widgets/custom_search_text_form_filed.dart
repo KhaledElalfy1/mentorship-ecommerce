@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:mentorship_ecommerce/core/utils/app_color.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/utils/assets.dart';
+import 'package:mentorship_ecommerce/core/utils/svgs.dart';
 
 class CustomSearchTextFormFiled extends StatelessWidget {
   const CustomSearchTextFormFiled({
@@ -33,7 +33,7 @@ class CustomSearchTextFormFiled extends StatelessWidget {
           prefixIcon: Padding(
             padding: const EdgeInsets.all(13.0),
             child: SvgPicture.asset(
-              Assets.search,
+              Svgs.search,
             ),
           ),
         ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:mentorship_ecommerce/core/utils/assets.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
+import 'package:mentorship_ecommerce/core/utils/svgs.dart';
 
 class SearchResultHeader extends StatelessWidget {
   const SearchResultHeader({super.key});
@@ -21,7 +21,7 @@ class SearchResultHeader extends StatelessWidget {
         const Spacer(),
         IconButton(
           onPressed: () {},
-          icon: SvgPicture.asset(Assets.trash),
+          icon: SvgPicture.asset(Svgs.trash),
         ),
       ],
     );
