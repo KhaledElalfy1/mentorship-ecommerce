@@ -15,7 +15,6 @@ class DashboardView extends StatefulWidget {
 }
 
 class _DashboardViewState extends State<DashboardView> {
-  int _selectedIndex = 0;
   int _selectedBottomNavIndex = 0;
   Widget? currentPage;
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
@@ -26,57 +25,29 @@ class _DashboardViewState extends State<DashboardView> {
     MyOrderView(),
     ProfileView(),
   ];
-  // final items = [
-  //   _buildNavItem(
-  //     Icons.home_outlined,
-  //   ),
-  //   _buildNavItem(
-  //     Icons.search_outlined,
-  //   ),
-  //   _buildNavItem(
-  //     Icons.card_travel_outlined,
-  //   ),
-  //   _buildNavItem(
-  //     Icons.person_2_outlined,
-  //   ),
-  // ];
+  
 
-  // void _onItemTapped(int index) {
-  //   setState(() {
-  //     _selectedIndex = index;
-  //   });
-  // }
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedBottomNavIndex = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey,
-      drawer: _selectedIndex == 0 ? const HomeDrawer() : null,
-      endDrawer: _selectedIndex == 1 ? const SearchDrawer() : null,
+      drawer: _selectedBottomNavIndex == 0 ? const HomeDrawer() : null,
+      endDrawer: _selectedBottomNavIndex == 1 ? const SearchDrawer() : null,
       body: IndexedStack(
         index: _selectedBottomNavIndex,
         children: _pages,
       ),
       bottomNavigationBar: BottomNavBar(
         selectedIndex: _selectedBottomNavIndex,
-        onItemTapped: (index) {
-          setState(() {
-            _selectedBottomNavIndex = index; 
-          });
-        },
+        onItemTapped:_onItemTapped,
       ),
     );
   }
 }
 
-// BottomNavigationBarItem _buildNavItem(
-//   IconData icon,
-// ) {
-//   return BottomNavigationBarItem(
-//     icon: Padding(
-//       padding: const EdgeInsets.only(right: 31, left: 31), // Adjust icon position
-//       child: Icon(icon, size: 30),
-//     ),
-//     label: '',
-//   );
-// }
