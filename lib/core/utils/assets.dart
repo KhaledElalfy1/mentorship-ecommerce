@@ -23,6 +23,8 @@ abstract class Assets {
       'assets/images/recommended_image2.png';
   static const String topCollectionImage1 =
       'assets/images/top_collection_image1.png';
+  static const String reviewPerson =
+      'assets/images/person.png';
   static const String topCollectionImage2 =
       'assets/images/top_collection_image2.png';
   static const String groupImage1 = 'assets/images/groups_image1.png';

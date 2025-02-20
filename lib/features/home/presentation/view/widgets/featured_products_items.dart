@@ -19,15 +19,16 @@ class FeaturedProductsItems extends StatelessWidget {
         child: ListView(
           scrollDirection: Axis.horizontal,
           children: List.generate(
-              3,
-              (index) => Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                    child: FeaturedProductItem(
-                      image: list[index],
-                      title: 'Turtleneck Sweater ',
-                      price: 39.99,
-                    ),
-                  )),
+            list.length,
+            (index) => Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10.0),
+              child: FeaturedProductItem(
+                image: list[index],
+                title: 'Turtleneck Sweater ',
+                price: 39.99,
+              ),
+            ),
+          ),
         ),
       ),
     );

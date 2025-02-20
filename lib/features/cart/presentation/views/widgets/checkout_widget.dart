@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/helper/extention.dart';
+import 'package:mentorship_ecommerce/core/routes/routes.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
 import 'package:mentorship_ecommerce/core/utils/widgets/custom_button.dart';
 import 'package:mentorship_ecommerce/features/cart/presentation/views/widgets/check_out_details.dart';
@@ -31,11 +33,11 @@ class CheckoutWidget extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const CheckOutDetails(text1: "Product price",text2:  "\$110"),
+          const CheckOutDetails(text1: "Product price", text2: "\$110"),
           SizedBox(
             height: 15.h,
           ),
-         const  CheckOutDetails(text1: "Shipping",text2:  "Freeship"),
+          const CheckOutDetails(text1: "Shipping", text2: "Freeship"),
           SizedBox(
             height: 10.h,
           ),
@@ -55,11 +57,14 @@ class CheckoutWidget extends StatelessWidget {
           SizedBox(
             height: 30.h,
           ),
-         const CustomButton(buttonText: "Proceed to checkout")
+          CustomButton(
+            onPressed: () {
+              context.pushNamed(Routes.checkOut);
+            },
+            buttonText: "Proceed to checkout",
+          )
         ],
       ),
     );
   }
-
- 
 }
