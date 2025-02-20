@@ -20,10 +20,9 @@ class EcommerceApp extends StatelessWidget {
         theme: ThemeData(
           cardColor: AppColor.whiteColor,
           fontFamily: Constants.productSans,
-          useMaterial3: false,
         ),
 
-        initialRoute: Routes.productFull,
+        initialRoute: Routes.setting,
 
        
         onGenerateRoute: AppRouter().generateRouter,

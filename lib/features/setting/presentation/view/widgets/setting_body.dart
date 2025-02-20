@@ -3,7 +3,6 @@ import 'package:mentorship_ecommerce/core/utils/assets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/features/profile/presentation/views/widgets/profile_details_widget.dart';
 
-
 class SettingBody extends StatelessWidget {
   const SettingBody({
     super.key,
@@ -22,7 +21,7 @@ class SettingBody extends StatelessWidget {
           ),
           ProfileDetailsWidget(
             icon: Assets.termsOFUse,
-            text: 'Notification',
+            text: 'Terms of use',
             isNeededIcon: true,
           ),
           ProfileDetailsWidget(

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/utils/app_color.dart';
 
 class ChooseCategorySection extends StatefulWidget {
   const ChooseCategorySection({super.key});
@@ -18,6 +20,16 @@ class _ChooseCategorySectionState extends State<ChooseCategorySection> {
   Widget build(BuildContext context) {
     return DropdownMenu<String>(
       width: double.infinity,
+      inputDecorationTheme: InputDecorationTheme(
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(
+            50.r,
+          ),
+          borderSide: const BorderSide(
+            color: AppColor.unSelectedTabIconColor,
+          ),
+        ),
+      ),
       initialSelection: categories.first,
       onSelected: (String? value) {
         setState(() {
