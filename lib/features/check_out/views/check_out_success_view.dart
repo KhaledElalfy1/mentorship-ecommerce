@@ -49,7 +49,7 @@ class CheckOutSuccessView extends StatelessWidget {
             CustomShippingButton(
               text: 'Continue Shopping',
               onClicked: () => context.pushNamedAndRemoveUntil(
-                Routes.home,
+                Routes.dashboard,
                 predicate: (route) => false,
               ),
             ),
