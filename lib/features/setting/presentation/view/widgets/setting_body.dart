@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/core/utils/assets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/features/profile/presentation/views/widgets/profile_details_widget.dart';
-
+import 'package:mentorship_ecommerce/core/utils/svgs.dart';
 class SettingBody extends StatelessWidget {
   const SettingBody({
     super.key,
@@ -15,17 +14,17 @@ class SettingBody extends StatelessWidget {
       child: const Column(
         children: [
           ProfileDetailsWidget(
-            icon: Assets.language,
+            icon: Svgs.language,
             text: 'Language',
             isNeededIcon: true,
           ),
           ProfileDetailsWidget(
-            icon: Assets.termsOFUse,
+            icon: Svgs.termsOFUse,
             text: 'Terms of use',
             isNeededIcon: true,
           ),
           ProfileDetailsWidget(
-            icon: Assets.about,
+            icon: Svgs.about,
             text: 'Privacy Policy',
             isNeededIcon: true,
           ),

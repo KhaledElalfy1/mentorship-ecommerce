@@ -19,7 +19,7 @@ class SearchViewBody extends StatelessWidget {
       key: drawerKey.drawerKey,
       endDrawer: const SearchDrawer(),
       backgroundColor: Colors.white,
-      appBar: customSearchAppBar(context),
+      appBar: customSearchAppBar(),
       body: Padding(
         padding: EdgeInsets.symmetric(
           horizontal: 32.0.w,

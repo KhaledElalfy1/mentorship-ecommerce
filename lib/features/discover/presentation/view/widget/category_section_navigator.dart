@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:mentorship_ecommerce/core/utils/assets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
+import 'package:mentorship_ecommerce/core/utils/svgs.dart';
 
 class CategorySectionNavigator extends StatelessWidget {
   const CategorySectionNavigator({
@@ -36,7 +36,7 @@ class CategorySectionNavigator extends StatelessWidget {
               SizedBox(
                 width: 5.w,
               ),
-              SvgPicture.asset(Assets.rightArrow),
+              SvgPicture.asset(Svgs.rightArrow),
             ],
           ),
           const Divider(

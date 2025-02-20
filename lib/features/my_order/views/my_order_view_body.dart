@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/utils/widgets/font_weight_helper.dart';
+import 'package:mentorship_ecommerce/core/widgets/font_weight_helper.dart';
 import 'package:mentorship_ecommerce/features/my_order/widgets/my_order_list_view.dart';
 import '../../../core/utils/app_color.dart';
-import '../widgets/bottom_nav_bar.dart';
 import '../widgets/custom_app_bar.dart';
 
 class MyOrderViewBody extends StatefulWidget {
@@ -15,7 +14,6 @@ class MyOrderViewBody extends StatefulWidget {
 
 class _MyOrderViewBodyState extends State<MyOrderViewBody> {
   int _selectedTabIndex = 0; //* Intialize the index of the selected tab
-  int _selectedBottomNavIndex = 0; //* Intialize the index of the selected bottom navigation item
 
   final List<String> _statuses = ["Pending", "Delivered", "Cancelled"];
 
@@ -43,7 +41,9 @@ class _MyOrderViewBodyState extends State<MyOrderViewBody> {
                     width: 91.w,
                     height: 28.h,
                     decoration: BoxDecoration(
-                      color: isSelected ? AppColor.containerMyOrderColors : Colors.transparent,
+                      color: isSelected
+                          ? AppColor.containerMyOrderColors
+                          : Colors.transparent,
                       borderRadius: BorderRadius.circular(30.r),
                     ),
                     child: Text(
@@ -51,7 +51,8 @@ class _MyOrderViewBodyState extends State<MyOrderViewBody> {
                       style: TextStyle(
                         fontSize: 14.sp,
                         fontWeight: FontWeightHelper.regular,
-                        color: isSelected ? Colors.white : AppColor.myOrderColor,
+                        color:
+                            isSelected ? Colors.white : AppColor.myOrderColor,
                       ),
                     ),
                   ),
@@ -59,16 +60,9 @@ class _MyOrderViewBodyState extends State<MyOrderViewBody> {
               }),
             ),
           ),
-          Expanded(child: MyOrderListView(status: _statuses[_selectedTabIndex])),
+          Expanded(
+              child: MyOrderListView(status: _statuses[_selectedTabIndex])),
         ],
-      ),
-      bottomNavigationBar: BottomNavBar(
-        selectedIndex: _selectedBottomNavIndex,
-        onItemTapped: (index) {
-          setState(() {
-            _selectedBottomNavIndex = index; // تحديث لون الأيقونة عند النقر
-          });
-        },
       ),
     );
   }

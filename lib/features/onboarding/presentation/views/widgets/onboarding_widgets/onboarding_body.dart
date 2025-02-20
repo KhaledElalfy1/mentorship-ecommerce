@@ -73,7 +73,7 @@ class OnboardingBody extends StatelessWidget {
                 width: 210.w,
                 buttonText: "Shopping now",
                 onTap: () {
-                  Navigator.pushNamed(context, Routes.login);
+                  Navigator.pushReplacementNamed(context, Routes.login);
                 })
           ],
         ),

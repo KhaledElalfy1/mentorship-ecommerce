@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/core/utils/widgets/custom_back_button.dart';
-import 'package:mentorship_ecommerce/core/utils/widgets/font_weight_helper.dart';
+import 'package:mentorship_ecommerce/core/widgets/custom_back_button.dart';
+import 'package:mentorship_ecommerce/core/widgets/font_weight_helper.dart';
 
 class CustomEditProfileAppBar extends StatelessWidget {
   const CustomEditProfileAppBar({super.key});

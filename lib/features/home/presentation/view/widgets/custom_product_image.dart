@@ -8,16 +8,13 @@ class CustomProductImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () {},
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(16.r),
-        child: Container(
-          width: 126.w,
-          height: 178.h,
-          color: AppColor.productBackgroundColor,
-          child: Image.asset(imageUrl),
-        ),
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(16.r),
+      child: Container(
+        width: 126.w,
+        height: 178.h,
+        color: AppColor.productBackgroundColor,
+        child: Image.asset(imageUrl),
       ),
     );
   }

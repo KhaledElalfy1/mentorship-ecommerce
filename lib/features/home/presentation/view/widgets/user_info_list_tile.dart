@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/core/utils/widgets/font_weight_helper.dart';
+import 'package:mentorship_ecommerce/core/widgets/font_weight_helper.dart';
 import 'package:mentorship_ecommerce/features/home/data/models/user_info_model.dart';
 
 class UserInfoListTile extends StatelessWidget {

@@ -99,7 +99,7 @@ class _SimilarProductWidgetState extends State<SimilarProductWidget> {
           itemCount: 4,
           itemBuilder: (BuildContext context, int index) {
             return productWidget(
-                "https://s3-alpha-sig.figma.com/img/5c86/d1e9/fefeb1de1a02e52e62f59bb5624dff95?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=YiZUth5vf42D9ZU1cmerKy2UARNjqW72V5f8CeHCtbcpQZuq2XbqWetkjtCCpx5~z3f0kYPFY9SX-CoPfHAmQ0p55qEqBoEM7KgwyjtNRajiMyViKdOlU8tluSVTuPhi6hXZSli~dCO5cD~IrvFbAgW583Ic63uqK1KXpkrV~27INMSgnCa82UsxFbY6hL8HY1~z6pw~tywItLgD3ThLcA2IGef4qSfDeBMLFk-TJTCyz9XodVt88a~~k3coL~OMBA8qK0h8JnY4W6sX7XaOzBDa6zIN4XQkuf--OZe4ET1mFHVCu7jzIRypE~kl92eEXXlhFUn4Lq9OjtatarrMeg__",
+                "https://th.bing.com/th/id/OIP.sOwYHfrpmQ_U261wbOUznQHaLH?rs=1&pid=ImgDetMain",
                 "Rise Crop Hoodie",
                 "43.00");
           }),

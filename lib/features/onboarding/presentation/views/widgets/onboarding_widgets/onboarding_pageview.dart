@@ -15,21 +15,22 @@ class _OnboardingPageViewState extends State<OnboardingPageView> {
   @override
   Widget build(BuildContext context) {
     return PageView.builder(
-        controller: pageController,
-        itemCount: content.length,
-        onPageChanged: (int index) {
-          setState(() {
-            currentIndex = index;
-          });
-        },
-        itemBuilder: (_, index) {
-          return OnboardingBody(
-            image: content[index].image,
-            text1: content[index].text1,
-            text2: content[index].text2,
-            dotNum: content.length,
-            currentIndex: index,
-          );
+      controller: pageController,
+      itemCount: content.length,
+      onPageChanged: (int index) {
+        setState(() {
+          currentIndex = index;
         });
+      },
+      itemBuilder: (_, index) {
+        return OnboardingBody(
+          image: content[index].image,
+          text1: content[index].text1,
+          text2: content[index].text2,
+          dotNum: content.length,
+          currentIndex: index,
+        );
+      },
+    );
   }
 }

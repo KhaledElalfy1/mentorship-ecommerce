@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:mentorship_ecommerce/core/utils/app_color.dart';
-import 'package:mentorship_ecommerce/core/utils/assets.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/utils/widgets/custom_button.dart';
+import 'package:mentorship_ecommerce/core/utils/svgs.dart';
+import 'package:mentorship_ecommerce/core/widgets/custom_button.dart';
 
 class SubmitReviewDialog extends StatelessWidget {
   const SubmitReviewDialog({
@@ -25,7 +25,7 @@ class SubmitReviewDialog extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             SvgPicture.asset(
-              Assets.orderDone,
+              Svgs.orderDone,
             ),
             const SizedBox(height: 20),
             Text(

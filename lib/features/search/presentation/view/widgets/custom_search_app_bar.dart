@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/core/utils/widgets/custom_back_button.dart';
 
-AppBar customSearchAppBar(BuildContext context) {
+AppBar customSearchAppBar() {
   return AppBar(
-    elevation: 0,
+    automaticallyImplyLeading: false,
     actions: [Container()],
     backgroundColor: Colors.white,
-    leading: const CustomBackButton(),
   );
 }

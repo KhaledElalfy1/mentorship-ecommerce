@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:mentorship_ecommerce/core/utils/app_color.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/core/utils/widgets/custom_app_bar.dart';
+import 'package:mentorship_ecommerce/core/widgets/custom_app_bar.dart';
 import 'package:mentorship_ecommerce/features/home/data/models/tabs_model.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/selected_tab.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/tabs/accessories_page.dart';

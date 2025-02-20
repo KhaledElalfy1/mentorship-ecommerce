@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/constants.dart';
 import 'package:mentorship_ecommerce/core/utils/app_color.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/core/utils/widgets/font_weight_helper.dart';
+import 'package:mentorship_ecommerce/core/widgets/font_weight_helper.dart';
 
 class EditProfilePhoneAndGenderSection extends StatefulWidget {
   const EditProfilePhoneAndGenderSection({super.key});
