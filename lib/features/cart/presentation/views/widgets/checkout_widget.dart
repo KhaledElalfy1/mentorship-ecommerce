@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/helper/extention.dart';
 import 'package:mentorship_ecommerce/core/routes/routes.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/core/utils/widgets/custom_button.dart';
+import 'package:mentorship_ecommerce/core/widgets/custom_button.dart';
 import 'package:mentorship_ecommerce/features/cart/presentation/views/widgets/check_out_details.dart';
 
 class CheckoutWidget extends StatelessWidget {

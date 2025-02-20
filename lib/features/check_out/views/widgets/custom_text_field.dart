@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../core/utils/styles.dart';
-import '../../../../core/utils/widgets/font_weight_helper.dart';
+import '../../../../core/widgets/font_weight_helper.dart';
 
 class CustomTextField extends StatefulWidget {
   final String? label;

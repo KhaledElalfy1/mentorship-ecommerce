@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../core/utils/app_color.dart';
 import '../../../../core/utils/styles.dart';
-import '../../../../core/utils/widgets/font_weight_helper.dart';
+import '../../../../core/widgets/font_weight_helper.dart';
 
 class CustomShippingButton extends StatelessWidget {
   const CustomShippingButton({

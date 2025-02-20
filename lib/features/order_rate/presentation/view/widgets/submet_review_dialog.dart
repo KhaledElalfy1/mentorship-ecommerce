@@ -4,7 +4,7 @@ import 'package:mentorship_ecommerce/core/utils/app_color.dart';
 import 'package:mentorship_ecommerce/core/utils/assets.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/utils/widgets/custom_button.dart';
+import 'package:mentorship_ecommerce/core/widgets/custom_button.dart';
 
 class SubmitReviewDialog extends StatelessWidget {
   const SubmitReviewDialog({

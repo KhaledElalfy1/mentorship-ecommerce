@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/core/utils/widgets/custom_back_button.dart';
+import 'package:mentorship_ecommerce/core/widgets/custom_back_button.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/features/order_info/presentation/view/widgets/order_action_buttons.dart';
 import 'package:mentorship_ecommerce/features/order_info/presentation/view/widgets/order_amount_container.dart';

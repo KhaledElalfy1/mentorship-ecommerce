@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/helper/extention.dart';
 import 'package:mentorship_ecommerce/core/helper/spacing.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/core/utils/widgets/font_weight_helper.dart';
+import 'package:mentorship_ecommerce/core/widgets/font_weight_helper.dart';
 import 'package:mentorship_ecommerce/features/check_out/views/widgets/custom_text_field.dart';
 
 import '../../../core/routes/routes.dart';

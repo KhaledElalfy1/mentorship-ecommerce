@@ -7,7 +7,7 @@ import 'package:mentorship_ecommerce/features/check_out/views/widgets/custom_shi
 import '../../../core/routes/routes.dart';
 import '../../../core/utils/assets.dart';
 import '../../../core/utils/styles.dart';
-import '../../../core/utils/widgets/font_weight_helper.dart';
+import '../../../core/widgets/font_weight_helper.dart';
 import '../../cart/presentation/views/widgets/custom_cart_appbar.dart';
 import 'widgets/custom_align_text.dart';
 import 'widgets/custom_progress_order.dart';

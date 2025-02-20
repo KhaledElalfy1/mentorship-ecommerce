@@ -5,7 +5,7 @@ import 'package:mentorship_ecommerce/core/helper/spacing.dart';
 
 import '../../../../core/utils/app_color.dart';
 import '../../../../core/utils/styles.dart';
-import '../../../../core/utils/widgets/font_weight_helper.dart';
+import '../../../../core/widgets/font_weight_helper.dart';
 import 'custom_align_text.dart';
 
 class CustomShippingMethod extends StatelessWidget {
