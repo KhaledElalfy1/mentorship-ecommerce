@@ -22,7 +22,7 @@ class CustomAppBar extends StatelessWidget {
               onPressed: () {
                 Scaffold.of(context).openDrawer();
               },
-              icon: SvgPicture.asset('assets/icons/app bar icon.svg')),
+              icon: SvgPicture.asset(Svgs.appBarIcon)),
           isNeedBellIcon == false
               ? SizedBox(
                   width: MediaQuery.of(context).size.width / 5,
