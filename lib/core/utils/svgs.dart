@@ -1,4 +1,5 @@
 class Svgs {
+  static const String appBarIcon = 'assets/svgs/app_bar_icon.svg';
   static const String menuIcon = 'assets/svgs/Menu_svg.svg';
   static const String homeIcon = 'assets/svgs/home_icon.svg';
   static const String bugIcon = 'assets/svgs/bug_icon.svg';
