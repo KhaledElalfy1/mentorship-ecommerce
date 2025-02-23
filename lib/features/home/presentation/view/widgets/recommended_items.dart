@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/utils/assets.dart';
-import 'package:mentorship_ecommerce/features/home/data/models/recommended_item_model.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/recommended_item.dart';
+import '../../../../../core/utils/assets.dart';
+import '../../../data/models/recommended_item_model.dart';
+import 'recommended_item.dart';
 
 class RecommendedItems extends StatelessWidget {
   const RecommendedItems({super.key});

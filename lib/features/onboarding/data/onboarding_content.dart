@@ -1,5 +1,5 @@
 
-import 'package:mentorship_ecommerce/core/utils/assets.dart';
+import '../../../core/utils/assets.dart';
 
 class OnBoardingContent{
    final String image;

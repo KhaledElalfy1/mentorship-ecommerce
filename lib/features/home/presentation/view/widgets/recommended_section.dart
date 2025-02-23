@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/collection_header.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/recommended_items.dart';
+import 'collection_header.dart';
+import 'recommended_items.dart';
 
 class RecommendedSection extends StatelessWidget {
   const RecommendedSection({super.key});

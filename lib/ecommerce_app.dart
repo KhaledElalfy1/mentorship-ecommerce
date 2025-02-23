@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/constants.dart';
-import 'package:mentorship_ecommerce/core/routes/app_router.dart';
-import 'package:mentorship_ecommerce/core/routes/routes.dart';
+import 'constants.dart';
+import 'core/routes/app_router.dart';
+import 'core/routes/routes.dart';
 
 import 'core/utils/app_color.dart';
 

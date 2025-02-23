@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/constants.dart';
-import 'package:mentorship_ecommerce/core/utils/app_color.dart';
-import 'package:mentorship_ecommerce/core/utils/assets.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/features/home/data/models/top_collection_main_card_model.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/collection_header.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/custom_group_cards.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/top_collection_card.dart';
+import '../../../../../constants.dart';
+import '../../../../../core/utils/app_color.dart';
+import '../../../../../core/utils/assets.dart';
+import '../../../../../core/utils/styles.dart';
+import '../../../data/models/top_collection_main_card_model.dart';
+import 'collection_header.dart';
+import 'custom_group_cards.dart';
+import 'top_collection_card.dart';
 
 class TopCollectionSection extends StatelessWidget {
   const TopCollectionSection({super.key});

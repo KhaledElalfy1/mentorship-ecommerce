@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/utils/app_color.dart';
+import '../../../../../core/utils/app_color.dart';
 
 class ChooseCategorySection extends StatefulWidget {
   const ChooseCategorySection({super.key});

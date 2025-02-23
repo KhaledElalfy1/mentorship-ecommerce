@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/core/widgets/custom_back_button.dart';
+import '../../../../core/widgets/custom_back_button.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/widgets/custom_button.dart';
-import 'package:mentorship_ecommerce/features/order_rate/presentation/view/widgets/review_container.dart';
-import 'package:mentorship_ecommerce/features/order_rate/presentation/view/widgets/stars_section.dart';
-import 'package:mentorship_ecommerce/features/order_rate/presentation/view/widgets/submet_review_dialog.dart';
+import '../../../../core/widgets/custom_button.dart';
+import 'widgets/review_container.dart';
+import 'widgets/stars_section.dart';
+import 'widgets/submet_review_dialog.dart';
 
 class OrderRateView extends StatelessWidget {
   const OrderRateView({super.key});

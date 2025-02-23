@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/core/utils/app_color.dart';
-import 'package:mentorship_ecommerce/core/widgets/custom_app_bar.dart';
+import '../../../../core/utils/app_color.dart';
+import '../../../../core/widgets/custom_app_bar.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/features/setting/presentation/view/widgets/setting_body.dart';
+import 'widgets/setting_body.dart';
 
 class SettingView extends StatelessWidget {
   const SettingView({super.key});

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/helper/extention.dart';
-import 'package:mentorship_ecommerce/core/helper/spacing.dart';
-import 'package:mentorship_ecommerce/features/check_out/views/widgets/custom_shipping_button.dart';
+import '../../../core/helper/extention.dart';
+import '../../../core/helper/spacing.dart';
+import 'widgets/custom_shipping_button.dart';
 
 import '../../../core/routes/routes.dart';
 import '../../../core/utils/assets.dart';

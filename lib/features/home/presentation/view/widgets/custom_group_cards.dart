@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/utils/assets.dart';
-import 'package:mentorship_ecommerce/features/home/data/models/group_card_model.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/group_left_card.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/group_right_card.dart';
+import '../../../../../core/utils/assets.dart';
+import '../../../data/models/group_card_model.dart';
+import 'group_left_card.dart';
+import 'group_right_card.dart';
 
 class CustomGroupCards extends StatelessWidget {
   const CustomGroupCards({super.key});

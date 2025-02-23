@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/routes/routes.dart';
-import 'package:mentorship_ecommerce/core/utils/app_color.dart';
+import '../../../../../core/routes/routes.dart';
+import '../../../../../core/utils/app_color.dart';
 
 class AddToCartWidget extends StatelessWidget {
   const AddToCartWidget({super.key});

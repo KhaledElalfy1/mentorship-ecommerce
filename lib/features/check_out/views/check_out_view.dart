@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/features/check_out/views/check_out_view_body.dart';
+import 'check_out_view_body.dart';
 
 class CheckOutView extends StatelessWidget {
   const CheckOutView({super.key});

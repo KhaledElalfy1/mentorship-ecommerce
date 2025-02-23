@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/core/utils/svgs.dart';
+import '../utils/styles.dart';
+import '../utils/svgs.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({super.key, this.title, this.isNeedBellIcon = false});

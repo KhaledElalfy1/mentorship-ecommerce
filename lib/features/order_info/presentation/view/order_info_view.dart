@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/core/widgets/custom_back_button.dart';
+import '../../../../core/utils/styles.dart';
+import '../../../../core/widgets/custom_back_button.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/features/order_info/presentation/view/widgets/order_action_buttons.dart';
-import 'package:mentorship_ecommerce/features/order_info/presentation/view/widgets/order_amount_container.dart';
-import 'package:mentorship_ecommerce/features/order_info/presentation/view/widgets/order_details_container.dart';
-import 'package:mentorship_ecommerce/features/order_info/presentation/view/widgets/order_state_container.dart';
+import 'widgets/order_action_buttons.dart';
+import 'widgets/order_amount_container.dart';
+import 'widgets/order_details_container.dart';
+import 'widgets/order_state_container.dart';
 
 class OrderInfoView extends StatelessWidget {
   const OrderInfoView({super.key});

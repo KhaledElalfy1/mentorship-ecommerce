@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/utils/assets.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/custom_card.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/dots_indicator.dart';
+import '../../../../../core/utils/assets.dart';
+import '../../../../../core/utils/styles.dart';
+import 'custom_card.dart';
+import 'dots_indicator.dart';
 
 class HeaderCard extends StatelessWidget {
   const HeaderCard({super.key, required this.currentPageIndex});

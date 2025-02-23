@@ -1,6 +1,6 @@
 import 'package:expandable_page_view/expandable_page_view.dart';
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/header_card.dart';
+import 'header_card.dart';
 
 class HeaderCardInfo extends StatefulWidget {
   const HeaderCardInfo({super.key});

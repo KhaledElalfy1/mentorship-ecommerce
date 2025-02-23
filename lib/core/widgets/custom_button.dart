@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/utils/app_color.dart';
+import '../utils/app_color.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({super.key, required this.buttonText, this.onPressed});

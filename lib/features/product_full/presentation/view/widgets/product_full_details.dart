@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/add_to_cart_widget.dart';
-import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/custom_rating_widget.dart';
-import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/product_description_widget.dart';
-import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/product_reviews_widget.dart';
-import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/similar_product_widget.dart';
+import '../../../../../core/utils/styles.dart';
+import 'add_to_cart_widget.dart';
+import 'custom_rating_widget.dart';
+import 'product_description_widget.dart';
+import 'product_reviews_widget.dart';
+import 'similar_product_widget.dart';
 
 class ProductFullDetails extends StatefulWidget {
   const ProductFullDetails({super.key});

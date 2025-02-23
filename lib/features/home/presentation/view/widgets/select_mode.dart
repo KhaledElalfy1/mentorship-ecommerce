@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/utils/app_color.dart';
-import 'package:mentorship_ecommerce/features/home/data/models/mode_model.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/mode_button.dart';
+import '../../../../../core/utils/app_color.dart';
+import '../../../data/models/mode_model.dart';
+import 'mode_button.dart';
 
 class SelectMode extends StatefulWidget {
   const SelectMode({super.key});

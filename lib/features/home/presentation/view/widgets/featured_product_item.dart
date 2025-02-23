@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/constants.dart';
-import 'package:mentorship_ecommerce/core/helper/extention.dart';
-import 'package:mentorship_ecommerce/core/routes/routes.dart';
-import 'package:mentorship_ecommerce/core/utils/app_color.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/custom_product_image.dart';
+import '../../../../../constants.dart';
+import '../../../../../core/helper/extention.dart';
+import '../../../../../core/routes/routes.dart';
+import '../../../../../core/utils/app_color.dart';
+import '../../../../../core/utils/styles.dart';
+import 'custom_product_image.dart';
 
 class FeaturedProductItem extends StatelessWidget {
   const FeaturedProductItem(

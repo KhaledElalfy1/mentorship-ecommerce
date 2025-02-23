@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/routes/routes.dart';
-import 'package:mentorship_ecommerce/core/utils/app_color.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/features/onboarding/presentation/views/widgets/custom_button_onboarding_widget.dart';
-import 'package:mentorship_ecommerce/features/onboarding/presentation/views/widgets/onboarding_widgets/dots_listview.dart';
+import '../../../../../../core/routes/routes.dart';
+import '../../../../../../core/utils/app_color.dart';
+import '../../../../../../core/utils/styles.dart';
+import '../custom_button_onboarding_widget.dart';
+import 'dots_listview.dart';
 
 class OnboardingBody extends StatelessWidget {
   const OnboardingBody({super.key, required this.image, required this.text1, required this.text2, required this.dotNum, required this.currentIndex});

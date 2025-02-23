@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/core/utils/assets.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/featured_product_item.dart';
+import '../../../../../core/utils/assets.dart';
+import 'featured_product_item.dart';
 
 class FeaturedProductsItems extends StatelessWidget {
   const FeaturedProductsItems({super.key});

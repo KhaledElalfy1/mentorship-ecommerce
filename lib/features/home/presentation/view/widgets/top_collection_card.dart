@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/constants.dart';
-import 'package:mentorship_ecommerce/core/utils/app_color.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/features/home/data/models/top_collection_main_card_model.dart';
+import '../../../../../constants.dart';
+import '../../../../../core/utils/app_color.dart';
+import '../../../../../core/utils/styles.dart';
+import '../../../data/models/top_collection_main_card_model.dart';
 
 class TopCollectionCard extends StatelessWidget {
   const TopCollectionCard({

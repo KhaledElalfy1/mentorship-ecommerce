@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/utils/app_color.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/features/home/data/models/drawer_item_model.dart';
+import '../../../../../core/utils/app_color.dart';
+import '../../../../../core/utils/styles.dart';
+import '../../../data/models/drawer_item_model.dart';
 
 class DrawerItem extends StatelessWidget {
   const DrawerItem({super.key, required this.drawerItemModel, required this.isActive});

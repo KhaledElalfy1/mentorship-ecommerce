@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/features/home/data/models/drawer_item_model.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/drawer_item.dart';
+import '../../../data/models/drawer_item_model.dart';
+import 'drawer_item.dart';
 
 class DrawerListView extends StatefulWidget {
   const DrawerListView({super.key});

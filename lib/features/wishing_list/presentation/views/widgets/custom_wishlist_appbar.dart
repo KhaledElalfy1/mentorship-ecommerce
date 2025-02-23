@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:mentorship_ecommerce/core/utils/app_color.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/core/utils/svgs.dart';
+import '../../../../../core/utils/app_color.dart';
+import '../../../../../core/utils/styles.dart';
+import '../../../../../core/utils/svgs.dart';
 
 class CustomWishlistAppbar extends StatelessWidget {
   const CustomWishlistAppbar({super.key});

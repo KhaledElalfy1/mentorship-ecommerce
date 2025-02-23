@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/core/utils/app_color.dart';
+import '../../../../../core/utils/app_color.dart';
 
 class CustomDiscountWidget extends StatelessWidget {
   const CustomDiscountWidget({

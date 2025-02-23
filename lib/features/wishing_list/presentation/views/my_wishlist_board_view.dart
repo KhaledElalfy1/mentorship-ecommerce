@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/core/utils/app_color.dart';
-import 'package:mentorship_ecommerce/features/wishing_list/presentation/views/widgets/my_wishlist_board_widgets/my_wishlist_board_body.dart';
+import '../../../../core/utils/app_color.dart';
+import 'widgets/my_wishlist_board_widgets/my_wishlist_board_body.dart';
 
 class MyWishlistBoardView extends StatelessWidget {
   const MyWishlistBoardView({super.key});

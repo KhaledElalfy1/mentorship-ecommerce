@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/home_view.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/home_drawer.dart';
-import 'package:mentorship_ecommerce/features/my_order/views/my_order_view.dart';
-import 'package:mentorship_ecommerce/features/my_order/widgets/bottom_nav_bar.dart';
-import 'package:mentorship_ecommerce/features/profile/presentation/views/profile_view.dart';
-import 'package:mentorship_ecommerce/features/search/presentation/view/search_view.dart';
-import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/search_drawer.dart';
+import 'home_view.dart';
+import 'widgets/home_drawer.dart';
+import '../../../my_order/views/my_order_view.dart';
+import '../../../my_order/widgets/bottom_nav_bar.dart';
+import '../../../profile/presentation/views/profile_view.dart';
+import '../../../search/presentation/view/search_view.dart';
+import '../../../search/presentation/view/widgets/search_drawer.dart';
 
 class DashboardView extends StatefulWidget {
   const DashboardView({super.key});

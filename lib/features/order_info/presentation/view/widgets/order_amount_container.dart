@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/features/order_info/presentation/view/widgets/order_amount_row.dart';
+import 'order_amount_row.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class OrderAmountContainer extends StatelessWidget {

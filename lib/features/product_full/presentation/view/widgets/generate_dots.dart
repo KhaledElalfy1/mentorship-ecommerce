@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/utils/app_color.dart';
+import '../../../../../core/utils/app_color.dart';
 
 class GenerateDots extends StatelessWidget {
   const GenerateDots({super.key, required this.imageList, required this.currentIndex});

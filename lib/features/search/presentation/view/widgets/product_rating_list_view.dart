@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/product_rating_item.dart';
+import 'product_rating_item.dart';
 
 class ProductRatingListView extends StatefulWidget {
   const ProductRatingListView({super.key});

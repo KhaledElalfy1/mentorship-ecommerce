@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/core/widgets/custom_back_button.dart';
+import '../../../../core/utils/styles.dart';
+import '../../../../core/widgets/custom_back_button.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/features/order_tracking/presentation/view/widgets/my_time_line_tile.dart';
+import 'widgets/my_time_line_tile.dart';
 
 class OrderTrackingView extends StatelessWidget {
   const OrderTrackingView({super.key});

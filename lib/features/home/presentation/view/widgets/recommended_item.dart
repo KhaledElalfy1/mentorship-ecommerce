@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/constants.dart';
-import 'package:mentorship_ecommerce/core/utils/app_color.dart';
-import 'package:mentorship_ecommerce/core/utils/assets.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/features/home/data/models/recommended_item_model.dart';
+import '../../../../../constants.dart';
+import '../../../../../core/utils/app_color.dart';
+import '../../../../../core/utils/assets.dart';
+import '../../../../../core/utils/styles.dart';
+import '../../../data/models/recommended_item_model.dart';
 
 class RecommendedItem extends StatelessWidget {
   const RecommendedItem({super.key, required this.recommendedItemModel});

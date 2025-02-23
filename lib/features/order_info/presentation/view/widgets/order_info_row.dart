@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
+import '../../../../../core/utils/styles.dart';
 
 class OrderInfoRow extends StatelessWidget {
   const OrderInfoRow({

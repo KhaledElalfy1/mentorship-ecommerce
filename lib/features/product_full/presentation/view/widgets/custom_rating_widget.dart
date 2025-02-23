@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/utils/app_color.dart';
+import '../../../../../core/utils/app_color.dart';
 
 class CustomRatingWidget extends StatefulWidget {
   const CustomRatingWidget({super.key, required this.rating,required this.size});

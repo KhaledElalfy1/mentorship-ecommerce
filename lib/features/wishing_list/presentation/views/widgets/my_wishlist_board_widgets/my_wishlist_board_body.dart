@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/features/wishing_list/presentation/views/widgets/custom_wishlist_appbar.dart';
-import 'package:mentorship_ecommerce/features/wishing_list/presentation/views/widgets/my_wishlist_board_widgets/my_wishlist_board_category_widget.dart';
+import '../custom_wishlist_appbar.dart';
+import 'my_wishlist_board_category_widget.dart';
 
 class MyWishlistBoardBody extends StatelessWidget {
   const MyWishlistBoardBody({super.key});

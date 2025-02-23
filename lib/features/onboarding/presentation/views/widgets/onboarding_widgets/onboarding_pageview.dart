@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:mentorship_ecommerce/features/onboarding/data/onboarding_content.dart';
-import 'package:mentorship_ecommerce/features/onboarding/presentation/views/widgets/onboarding_widgets/onboarding_body.dart';
+import '../../../../data/onboarding_content.dart';
+import 'onboarding_body.dart';
 
 class OnboardingPageView extends StatefulWidget {
   const OnboardingPageView({super.key});

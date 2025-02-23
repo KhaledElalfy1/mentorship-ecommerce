@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/features/cart/presentation/views/widgets/checkout_widget.dart';
-import 'package:mentorship_ecommerce/features/cart/presentation/views/widgets/custom_cart_appbar.dart';
-import 'package:mentorship_ecommerce/features/cart/presentation/views/widgets/product_cart_listview.dart';
+import 'checkout_widget.dart';
+import 'custom_cart_appbar.dart';
+import 'product_cart_listview.dart';
 
 class CartBody extends StatelessWidget {
   const CartBody({super.key});

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/utils/app_color.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/core/widgets/appbar_icon_widget.dart';
+import '../../../../../core/utils/app_color.dart';
+import '../../../../../core/utils/styles.dart';
+import '../../../../../core/widgets/appbar_icon_widget.dart';
 
 class CustomCartAppbar extends StatelessWidget {
   const CustomCartAppbar({super.key, required this.title});

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/core/widgets/custom_app_bar.dart';
-import 'package:mentorship_ecommerce/features/discover/presentation/view/widget/category_section_list_view.dart';
-import 'package:mentorship_ecommerce/features/discover/presentation/view/widget/custom_category_container.dart';
-import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/search_section.dart';
+import '../../../../core/widgets/custom_app_bar.dart';
+import 'widget/category_section_list_view.dart';
+import 'widget/custom_category_container.dart';
+import '../../../search/presentation/view/widgets/search_section.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class DiscoverView extends StatelessWidget {

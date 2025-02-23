@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/helper/extention.dart';
-import 'package:mentorship_ecommerce/core/helper/spacing.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/features/login/widgets/custom_login_text_field.dart';
+import '../../../core/helper/extention.dart';
+import '../../../core/helper/spacing.dart';
+import '../../../core/utils/styles.dart';
+import '../widgets/custom_login_text_field.dart';
 import '../../../core/routes/routes.dart';
 import '../widgets/custom_log_into.dart';
 import '../widgets/custom_login_button.dart';

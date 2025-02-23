@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
+import '../../../../../core/utils/styles.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/choose_category_section.dart';
-import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/custom_range_slider.dart';
-import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/discount_section.dart';
-import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/drawer_header_widget.dart';
-import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/filter_action_section.dart';
-import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/product_rating_list_view.dart';
-import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/select_color_section.dart';
+import 'choose_category_section.dart';
+import 'custom_range_slider.dart';
+import 'discount_section.dart';
+import 'drawer_header_widget.dart';
+import 'filter_action_section.dart';
+import 'product_rating_list_view.dart';
+import 'select_color_section.dart';
 
 class SearchDrawer extends StatelessWidget {
   const SearchDrawer({super.key});

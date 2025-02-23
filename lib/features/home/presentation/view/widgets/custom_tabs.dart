@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:mentorship_ecommerce/core/utils/app_color.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/core/widgets/custom_app_bar.dart';
-import 'package:mentorship_ecommerce/features/home/data/models/tabs_model.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/selected_tab.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/tabs/accessories_page.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/tabs/beauty_page.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/tabs/man_page.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/tabs/woman_page/woman_page.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/unselected_tab.dart';
+import '../../../../../core/utils/app_color.dart';
+import '../../../../../core/utils/styles.dart';
+import '../../../../../core/widgets/custom_app_bar.dart';
+import '../../../data/models/tabs_model.dart';
+import 'selected_tab.dart';
+import 'tabs/accessories_page.dart';
+import 'tabs/beauty_page.dart';
+import 'tabs/man_page.dart';
+import 'tabs/woman_page/woman_page.dart';
+import 'unselected_tab.dart';
 
 class CustomTabs extends StatefulWidget {
   const CustomTabs({super.key});

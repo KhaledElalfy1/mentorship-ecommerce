@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/features/search/presentation/logic/search_cubit/search_cubit.dart';
-import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/custom_search_app_bar.dart';
-import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/search_drawer.dart';
-import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/search_result_header.dart';
-import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/search_result_item.dart';
-import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/search_section.dart';
+import '../../logic/search_cubit/search_cubit.dart';
+import 'custom_search_app_bar.dart';
+import 'search_drawer.dart';
+import 'search_result_header.dart';
+import 'search_result_item.dart';
+import 'search_section.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

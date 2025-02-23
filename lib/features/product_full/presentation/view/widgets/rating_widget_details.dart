@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/custom_rating_widget.dart';
+import '../../../../../core/utils/styles.dart';
+import 'custom_rating_widget.dart';
 
 class RatingWidgetDetails extends StatelessWidget {
   const RatingWidgetDetails({super.key});

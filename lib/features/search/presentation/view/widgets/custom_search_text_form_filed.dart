@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:mentorship_ecommerce/core/utils/app_color.dart';
+import '../../../../../core/utils/app_color.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/utils/svgs.dart';
+import '../../../../../core/utils/svgs.dart';
 
 class CustomSearchTextFormFiled extends StatelessWidget {
   const CustomSearchTextFormFiled({

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
+import '../../../../../core/utils/styles.dart';
 
 class ReviewContainer extends StatelessWidget {
   const ReviewContainer({super.key});

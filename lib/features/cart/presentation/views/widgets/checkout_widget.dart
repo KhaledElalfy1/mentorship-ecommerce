@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/helper/extention.dart';
-import 'package:mentorship_ecommerce/core/routes/routes.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/core/widgets/custom_button.dart';
-import 'package:mentorship_ecommerce/features/cart/presentation/views/widgets/check_out_details.dart';
+import '../../../../../core/helper/extention.dart';
+import '../../../../../core/routes/routes.dart';
+import '../../../../../core/utils/styles.dart';
+import '../../../../../core/widgets/custom_button.dart';
+import 'check_out_details.dart';
 
 class CheckoutWidget extends StatelessWidget {
   const CheckoutWidget({super.key});

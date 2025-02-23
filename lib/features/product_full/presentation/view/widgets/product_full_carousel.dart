@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/custom_appbar.dart';
-import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/generate_dots.dart';
+import 'custom_appbar.dart';
+import 'generate_dots.dart';
 
 class ProductFullCarousel extends StatefulWidget {
   const ProductFullCarousel({super.key});

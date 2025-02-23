@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/features/cart/presentation/views/widgets/product_cart.dart';
+import 'product_cart.dart';
 
 class ProductCartListview extends StatelessWidget {
   const ProductCartListview({super.key});

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/features/cart/presentation/views/widgets/check_box_widget.dart';
+import '../../../../../core/utils/styles.dart';
+import 'check_box_widget.dart';
 
 class ProductCart extends StatefulWidget {
   const ProductCart(

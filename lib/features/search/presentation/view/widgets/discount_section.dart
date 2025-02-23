@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/custom_discount_widget.dart';
+import 'custom_discount_widget.dart';
 
 class DiscountSection extends StatelessWidget {
   const DiscountSection({
