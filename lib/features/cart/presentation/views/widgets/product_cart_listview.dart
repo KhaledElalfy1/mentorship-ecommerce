@@ -29,23 +29,21 @@ class ProductCartListview extends StatelessWidget {
           productPrice: " 30.00",
           productSize: "L",
           productColor: "Black"),
-          
-          ProductCart(
+      ProductCart(
           productImage:
               "https://www.figma.com/file/9Ysj9V1IaSveAbnkcTnFSu/image/ac4448f9289ba74dc8e260cf2469fe907263ed9b",
           productName: "Cotton T-shirt",
           productPrice: " 30.00",
           productSize: "L",
           productColor: "Black"),
-          
-         
     ];
     return SizedBox(
-      width:310.w ,
+      width: 310.w,
       child: ListView.builder(
-        scrollDirection: Axis.vertical,
-        physics: const NeverScrollableScrollPhysics(),
-        shrinkWrap: true,
+          scrollDirection: Axis.vertical,
+          physics: const NeverScrollableScrollPhysics(),
+          //TODO: Avoid using 'shrink' here. It builds all children at once, bypassing ListView.builder's lazy loading, which can lead to memory leaks with large lists. Use an alternative approach.
+          shrinkWrap: true,
           itemCount: productCart.length,
           itemBuilder: (BuildContext context, int index) {
             return productCart[index];

@@ -14,7 +14,7 @@ class CustomButton extends StatelessWidget {
           if (states.contains(WidgetState.pressed)) {
             return Colors.teal; // 🔹 عند الضغط
           } else if (states.contains(WidgetState.disabled)) {
-            return Colors.grey; // 🔹 عند التعطيل
+            return AppColor.grey; // 🔹 عند التعطيل
           }
           return AppColor.buttonColor; // 🔹 اللون الافتراضي
         }),
@@ -23,6 +23,7 @@ class CustomButton extends StatelessWidget {
       child: Center(
         child: Text(
           buttonText,
+          //TODO: Try using the Styles class
           style: TextStyle(color: Colors.white, fontSize: 16.sp),
         ),
       ),

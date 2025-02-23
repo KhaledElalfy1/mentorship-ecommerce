@@ -7,13 +7,19 @@ import '../../../../../core/utils/styles.dart';
 import '../../../../../core/widgets/font_weight_helper.dart';
 
 class EditProfilePhoneAndGenderSection extends StatefulWidget {
+  // TODO: Refactor file. Keep classes, functions, and files under 50 lines to improve readability.
+
   const EditProfilePhoneAndGenderSection({super.key});
 
   @override
-  State<EditProfilePhoneAndGenderSection> createState() => _EditProfilePhoneAndGenderSectionState();
+  State<EditProfilePhoneAndGenderSection> createState() =>
+      _EditProfilePhoneAndGenderSectionState();
 }
 
-class _EditProfilePhoneAndGenderSectionState extends State<EditProfilePhoneAndGenderSection> {
+class _EditProfilePhoneAndGenderSectionState
+    extends State<EditProfilePhoneAndGenderSection> {
+  // TODO: Ensure controllers are disposed properly throughout the project
+
   TextEditingController genderController = TextEditingController();
   TextEditingController phoneController = TextEditingController();
 
@@ -34,13 +40,16 @@ class _EditProfilePhoneAndGenderSectionState extends State<EditProfilePhoneAndGe
                 ),
               ),
               border: const UnderlineInputBorder(
-                borderSide: BorderSide(color: AppColor.underLineBorder, width: 1.0),
+                borderSide:
+                    BorderSide(color: AppColor.underLineBorder, width: 1.0),
               ),
               focusedBorder: const UnderlineInputBorder(
-                borderSide: BorderSide(color: AppColor.underLineBorder, width: 1.0),
+                borderSide:
+                    BorderSide(color: AppColor.underLineBorder, width: 1.0),
               ),
               enabledBorder: const UnderlineInputBorder(
-                borderSide: BorderSide(color: AppColor.underLineBorder, width: 1.0),
+                borderSide:
+                    BorderSide(color: AppColor.underLineBorder, width: 1.0),
               ),
             ),
             style: Styles.textStyle16.copyWith(
@@ -58,6 +67,7 @@ class _EditProfilePhoneAndGenderSectionState extends State<EditProfilePhoneAndGe
           child: TextFormField(
             inputFormatters: [
               LengthLimitingTextInputFormatter(11),
+              //TODO:use regex class instead.
               FilteringTextInputFormatter.allow(RegExp('[0-9]+'))
             ],
             controller: phoneController,
@@ -72,13 +82,16 @@ class _EditProfilePhoneAndGenderSectionState extends State<EditProfilePhoneAndGe
                 ),
               ),
               border: const UnderlineInputBorder(
-                borderSide: BorderSide(color: AppColor.underLineBorder, width: 1.0),
+                borderSide:
+                    BorderSide(color: AppColor.underLineBorder, width: 1.0),
               ),
               focusedBorder: const UnderlineInputBorder(
-                borderSide: BorderSide(color: AppColor.underLineBorder, width: 1.0),
+                borderSide:
+                    BorderSide(color: AppColor.underLineBorder, width: 1.0),
               ),
               enabledBorder: const UnderlineInputBorder(
-                borderSide: BorderSide(color: AppColor.underLineBorder, width: 1.0),
+                borderSide:
+                    BorderSide(color: AppColor.underLineBorder, width: 1.0),
               ),
             ),
             style: Styles.textStyle16.copyWith(

@@ -1,4 +1,5 @@
 abstract class Assets {
+  // TODO: Convert asset paths (assets/images/) into variables and use them.
   static const String welcomeBackground = 'assets/images/background.png';
 
   static const String cardImage = 'assets/images/shutterstock_1781009285 1.png';

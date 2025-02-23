@@ -11,7 +11,7 @@ class ProductWishlistWidget extends StatelessWidget {
       required this.productImage,
       required this.productName,
       required this.productPrice,
-       this.productNewPrice,
+      this.productNewPrice,
       required this.rating,
       required this.num,
       this.hasLowPrice = false});

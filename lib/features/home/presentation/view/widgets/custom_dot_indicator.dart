@@ -7,7 +7,5 @@ class CustomDotIndicator extends StatelessWidget {
   final bool isActive;
   @override
   Widget build(BuildContext context) =>
-    isActive ?  const ActiveDot() : const UnActiveDot();
-  
+      isActive ? const ActiveDot() : const UnActiveDot();
 }
-

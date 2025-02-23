@@ -12,6 +12,8 @@ class EditProfileEmail extends StatefulWidget {
 }
 
 class _EditProfileNameState extends State<EditProfileEmail> {
+  // TODO: Ensure all app controllers are disposed properly throughout the project
+
   TextEditingController emailController = TextEditingController();
 
   @override

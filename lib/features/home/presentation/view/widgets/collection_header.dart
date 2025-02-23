@@ -24,7 +24,9 @@ class CollectionHeader extends StatelessWidget {
             onTap: () {},
             child: Text(
               'Show all',
-              style: Styles.textStyle13.copyWith(color: AppColor.spanishGrayColor, fontFamily: Constants.productSansMedium),
+              style: Styles.textStyle13.copyWith(
+                  color: AppColor.spanishGrayColor,
+                  fontFamily: Constants.productSansMedium),
             ),
           ),
         ],

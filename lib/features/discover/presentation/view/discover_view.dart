@@ -6,6 +6,8 @@ import '../../../search/presentation/view/widgets/search_section.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class DiscoverView extends StatelessWidget {
+  // TODO: Refactor file. Keep classes, functions, and files under 50 lines to improve readability.
+
   const DiscoverView({super.key});
 
   @override
@@ -30,6 +32,7 @@ class DiscoverView extends StatelessWidget {
                   height: 20.h,
                 ),
                 const CustomCategoryContainer(
+                  //TODO: Use assets file and colors file
                   backgroundColor: 0xffA3A798,
                   circleColor: 0xffC2C7B5,
                   category: 'Clothing',

@@ -7,6 +7,7 @@ class CustomTextField extends StatefulWidget {
   final TextEditingController? controller;
   final String? Function(String?)? validator;
   final Icon? suffixIcon;
+// TODO: Add this to the core .
 
   const CustomTextField({
     super.key,
@@ -53,7 +54,8 @@ class _CustomTextFieldState extends State<CustomTextField> {
       validator: (value) {
         setState(() {
           // تغيير لون النجمة بناءً على إدخال المستخدم
-          starColor = (value == null || value.isEmpty) ? Colors.red : Colors.green;
+          starColor =
+              (value == null || value.isEmpty) ? Colors.red : Colors.green;
         });
 
         if (value == null || value.isEmpty) {
@@ -71,13 +73,15 @@ class _CustomTextFieldState extends State<CustomTextField> {
         ),
         label: RichText(
           text: TextSpan(
-            text: widget.label?.replaceAll(' *', ''), // إزالة النجمة من النص الأساسي
+            text: widget.label
+                ?.replaceAll(' *', ''), // إزالة النجمة من النص الأساسي
             style: Styles.textStyle14.copyWith(
               fontWeight: FontWeightHelper.semiBold,
               color: Colors.black, // لون النص العادي
             ),
             children: [
-              const WidgetSpan(child: SizedBox(width: 4)), // مسافة صغيرة بين النص والنجمة
+              const WidgetSpan(
+                  child: SizedBox(width: 4)), // مسافة صغيرة بين النص والنجمة
               TextSpan(
                 text: '*',
                 style: Styles.textStyle14.copyWith(

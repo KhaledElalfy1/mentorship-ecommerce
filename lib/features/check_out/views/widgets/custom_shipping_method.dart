@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../core/helper/spacing.dart';
 
-
 import '../../../../core/utils/app_color.dart';
 import '../../../../core/utils/styles.dart';
 import '../../../../core/widgets/font_weight_helper.dart';
 import 'custom_align_text.dart';
 
 class CustomShippingMethod extends StatelessWidget {
+  // TODO: Refactor file. Keep classes, functions, and files under 50 lines to improve readability.
+
   const CustomShippingMethod({
     super.key,
   });
@@ -69,4 +70,3 @@ class CustomShippingMethod extends StatelessWidget {
     );
   }
 }
-

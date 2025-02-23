@@ -5,6 +5,8 @@ import '../../../../../core/widgets/custom_back_button.dart';
 import '../../../../../core/widgets/font_weight_helper.dart';
 
 class CustomEditProfileAppBar extends StatelessWidget {
+  // TODO: Create a global app bar for reuse across the project.
+
   const CustomEditProfileAppBar({super.key});
 
   @override

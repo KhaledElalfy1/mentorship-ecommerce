@@ -21,6 +21,10 @@ class ActiveDot extends StatelessWidget {
         width: 8.w,
         height: 8.h,
         decoration: ShapeDecoration(
+          // TODO: Use the Colors class.
+          //! Why? Imagine the main app color is hardcoded in 250 places. If the
+          //! customer wants to change it, it could take days to update. With a
+          //! centralized Colors class, you can update the color in seconds.
           color: const Color(0xFFE7E7E7),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12.r),
@@ -30,4 +34,3 @@ class ActiveDot extends StatelessWidget {
     );
   }
 }
-

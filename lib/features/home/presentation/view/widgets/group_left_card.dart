@@ -32,10 +32,12 @@ class GroupLeftCard extends StatelessWidget {
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                    SizedBox(
-                      height: 42.h,
-                    ),
-                  Text(groupCardModel.name,style: Styles.textStyle13.copyWith(color: AppColor.coolGray)),
+                  SizedBox(
+                    height: 42.h,
+                  ),
+                  Text(groupCardModel.name,
+                      style: Styles.textStyle13
+                          .copyWith(color: AppColor.coolGray)),
                   SizedBox(
                     height: 16.h,
                   ),

@@ -1,26 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:mentorship_ecommerce/core/routes/routes_exports.dart';
 import 'routes.dart';
-import '../../features/cart/presentation/views/cart_view.dart';
-import '../../features/check_out/views/check_out_success_view.dart';
-import '../../features/discover/presentation/view/discover_view.dart';
-import '../../features/edit_profile/presentation/views/edit_profile_view.dart';
-import '../../features/home/presentation/view/dashboard_view.dart';
-import '../../features/home/presentation/view/home_view.dart';
-import '../../features/login/views/login_screen.dart';
-import '../../features/onboarding/presentation/views/onboarding_view.dart';
-import '../../features/onboarding/presentation/views/welcome_view.dart';
-import '../../features/order_info/presentation/view/order_info_view.dart';
-import '../../features/order_rate/presentation/view/order_rate_view.dart';
-import '../../features/order_tracking/presentation/view/order_tracking_view.dart';
-import '../../features/product_full/presentation/view/product_full_view.dart';
-import '../../features/profile/presentation/views/profile_view.dart';
-import '../../features/search/presentation/view/search_view.dart';
-import '../../features/setting/presentation/view/setting_view.dart';
-import '../../features/wishing_list/presentation/views/my_wishlist_all_items_views.dart';
-import '../../features/wishing_list/presentation/views/my_wishlist_board_view.dart';
 
-import '../../features/check_out/views/check_out_view.dart';
-import '../../features/my_order/views/my_order_view.dart';
 
 class AppRouter {
   Route? generateRouter(RouteSettings settings) {
@@ -67,7 +48,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const MyWishlistBoardView());
 
       case Routes.wishListItems:
-        return MaterialPageRoute(builder: (_) => const MyWishlistAllItemsView());
+        return MaterialPageRoute(
+            builder: (_) => const MyWishlistAllItemsView());
 
       case Routes.welcome:
         return MaterialPageRoute(builder: (_) => const WelcomeView());

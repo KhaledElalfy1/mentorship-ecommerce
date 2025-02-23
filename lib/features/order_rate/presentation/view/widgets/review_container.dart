@@ -27,6 +27,8 @@ class ReviewContainer extends StatelessWidget {
       child: Column(
         children: [
           Text(
+            // TODO: Create or use app strings class
+
             'Would you like to write anything about this product?',
             style: Styles.textStyle12.copyWith(
               color: const Color(0xff5A5A5A),

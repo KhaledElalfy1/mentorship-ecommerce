@@ -1,11 +1,10 @@
-
 import 'package:flutter/material.dart';
 import '../../../../../core/utils/styles.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-
 class CustomCategoryContainer extends StatelessWidget {
   const CustomCategoryContainer({
+    // TODO: Clean Code advises against using more than 2 arguments. Use a model to enhance testability, readability, maintainability, and clarity.
     super.key,
     required this.backgroundColor,
     required this.circleColor,

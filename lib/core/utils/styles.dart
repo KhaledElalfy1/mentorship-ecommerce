@@ -2,15 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../widgets/font_weight_helper.dart';
 
-
 abstract class Styles {
   static TextStyle textStyle14 = TextStyle(
     fontSize: 14.0.sp,
     fontWeight: FontWeight.w400,
-    
   );
   static TextStyle textStyle16 = TextStyle(
-    
     fontSize: 16.0.sp,
     fontWeight: FontWeight.bold,
   );
@@ -18,7 +15,7 @@ abstract class Styles {
     fontSize: 12.0.sp,
     fontWeight: FontWeightHelper.regular,
   );
-    static TextStyle textStyle13Sregular = TextStyle(
+  static TextStyle textStyle13Sregular = TextStyle(
     fontSize: 13.0.sp,
     fontWeight: FontWeightHelper.regular,
   );
@@ -26,7 +23,7 @@ abstract class Styles {
     fontSize: 24.0.sp,
     fontWeight: FontWeight.bold,
   );
-    static TextStyle textStyle24SemiBold = TextStyle(
+  static TextStyle textStyle24SemiBold = TextStyle(
     fontSize: 24.0.sp,
     fontWeight: FontWeightHelper.medium,
   );
@@ -69,7 +66,5 @@ abstract class Styles {
   static TextStyle textStyle40 = TextStyle(
     fontSize: 40.0.sp,
     fontWeight: FontWeight.bold,
-    
-  
   );
 }

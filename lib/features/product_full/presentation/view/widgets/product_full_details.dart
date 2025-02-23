@@ -53,7 +53,7 @@ class _ProductFullDetailsState extends State<ProductFullDetails> {
               const ProductReviewsWidget(),
               SizedBox(height: 15.h),
               const SimilarProductWidget(),
-            //  SizedBox(height: 10.h),
+              //  SizedBox(height: 10.h),
             ],
           ),
           const AddToCartWidget()

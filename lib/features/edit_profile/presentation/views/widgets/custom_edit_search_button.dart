@@ -10,7 +10,7 @@ class CustomEditSearchButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 84.0),
+      padding: EdgeInsets.symmetric(horizontal: 84.0.h),
       child: SizedBox(
         height: 48.h,
         child: ElevatedButton(

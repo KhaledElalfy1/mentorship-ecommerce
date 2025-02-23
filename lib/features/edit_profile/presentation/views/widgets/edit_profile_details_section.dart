@@ -14,7 +14,7 @@ class EditProfileDetailsSection extends StatelessWidget {
       child: Column(
         children: [
           const EditProfileNameSection(),
-          SizedBox(height: 30.h), 
+          SizedBox(height: 30.h),
           const EditProfileEmail(),
           SizedBox(height: 30.h),
           const EditProfilePhoneAndGenderSection(),

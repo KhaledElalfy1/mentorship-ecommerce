@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/utils/app_color.dart';
 import '../../../core/helper/extention.dart';
 import '../../../core/helper/spacing.dart';
 import 'widgets/custom_shipping_button.dart';
@@ -13,13 +14,15 @@ import 'widgets/custom_align_text.dart';
 import 'widgets/custom_progress_order.dart';
 
 class CheckOutSuccessView extends StatelessWidget {
+  // TODO: Refactor file. Keep classes, functions, and files under 50 lines to improve readability.
+
   CheckOutSuccessView({super.key});
   final formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColor.whiteColor,
       resizeToAvoidBottomInset: true,
       body: Center(
         child: Column(

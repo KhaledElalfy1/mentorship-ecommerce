@@ -6,6 +6,8 @@ import '../../../../../core/utils/styles.dart';
 import '../../../../../core/widgets/font_weight_helper.dart';
 
 class EditProfileNameSection extends StatefulWidget {
+  // TODO: Refactor file. Keep classes, functions, and files under 50 lines to improve readability.
+
   const EditProfileNameSection({super.key});
 
   @override
@@ -13,6 +15,8 @@ class EditProfileNameSection extends StatefulWidget {
 }
 
 class _EditProfileNameState extends State<EditProfileNameSection> {
+  // TODO: Ensure all app controllers are disposed properly throughout the project
+
   TextEditingController firstNameController = TextEditingController();
   TextEditingController lastNameController = TextEditingController();
 
@@ -34,13 +38,16 @@ class _EditProfileNameState extends State<EditProfileNameSection> {
                 ),
               ),
               border: const UnderlineInputBorder(
-                borderSide: BorderSide(color: AppColor.underLineBorder, width: 1.0),
+                borderSide:
+                    BorderSide(color: AppColor.underLineBorder, width: 1.0),
               ),
               focusedBorder: const UnderlineInputBorder(
-                borderSide: BorderSide(color: AppColor.underLineBorder, width: 1.0),
+                borderSide:
+                    BorderSide(color: AppColor.underLineBorder, width: 1.0),
               ),
               enabledBorder: const UnderlineInputBorder(
-                borderSide: BorderSide(color: AppColor.underLineBorder, width: 1.0),
+                borderSide:
+                    BorderSide(color: AppColor.underLineBorder, width: 1.0),
               ),
             ),
             style: Styles.textStyle16.copyWith(
@@ -66,13 +73,16 @@ class _EditProfileNameState extends State<EditProfileNameSection> {
                 ),
               ),
               border: const UnderlineInputBorder(
-                borderSide: BorderSide(color: AppColor.underLineBorder, width: 1.0),
+                borderSide:
+                    BorderSide(color: AppColor.underLineBorder, width: 1.0),
               ),
               focusedBorder: const UnderlineInputBorder(
-                borderSide: BorderSide(color: AppColor.underLineBorder, width: 1.0),
+                borderSide:
+                    BorderSide(color: AppColor.underLineBorder, width: 1.0),
               ),
               enabledBorder: const UnderlineInputBorder(
-                borderSide: BorderSide(color: AppColor.underLineBorder, width: 1.0),
+                borderSide:
+                    BorderSide(color: AppColor.underLineBorder, width: 1.0),
               ),
             ),
             style: Styles.textStyle16.copyWith(

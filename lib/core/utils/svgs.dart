@@ -1,4 +1,6 @@
 class Svgs {
+  // TODO: Convert asset paths (assets/svgs/) into variables and use them.
+
   static const String appBarIcon = 'assets/svgs/app_bar_icon.svg';
   static const String menuIcon = 'assets/svgs/Menu_svg.svg';
   static const String homeIcon = 'assets/svgs/home_icon.svg';
@@ -11,10 +13,10 @@ class Svgs {
   static const String rightArrowIcon = 'assets/svgs/right_arrow.svg';
   static const String leftArrowIcon = 'assets/svgs/right_arrow.svg';
   static const String bellIcon = 'assets/svgs/Bell_pin.svg';
-    static const String filter = 'assets/svgs/Filter.svg';
+  static const String filter = 'assets/svgs/Filter.svg';
   static const String trash = 'assets/svgs/Trash.svg';
   static const String search = 'assets/svgs/search.svg';
-    static const String rightArrow = 'assets/svgs/right_arrow.svg';
+  static const String rightArrow = 'assets/svgs/right_arrow.svg';
   static const String orderIcon = 'assets/svgs/order.svg';
   static const String orderDone = 'assets/svgs/review_done.svg';
   static const String about = 'assets/svgs/about.svg';

@@ -7,6 +7,8 @@ import '../../../../../core/widgets/custom_button.dart';
 import 'check_out_details.dart';
 
 class CheckoutWidget extends StatelessWidget {
+  // TODO: Refactor file. Keep classes, functions, and files under 50 lines to improve readability.
+
   const CheckoutWidget({super.key});
 
   @override

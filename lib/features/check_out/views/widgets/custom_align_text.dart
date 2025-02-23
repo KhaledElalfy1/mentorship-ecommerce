@@ -11,6 +11,8 @@ class CustomAlignText extends StatelessWidget {
   final TextStyle style;
   @override
   Widget build(BuildContext context) {
+    //TODO: Convert the align widget into an extension and use it.
+
     return Align(
         alignment: Alignment.centerLeft,
         child: Padding(

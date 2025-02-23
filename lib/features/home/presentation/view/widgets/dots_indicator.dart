@@ -7,12 +7,14 @@ class DotsIndicator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.center,
-      children: List.generate(3, (index)=>  Padding(
-        padding:const  EdgeInsets.only(right: 6.0),
-        child: CustomDotIndicator(isActive: index==currentPageIndex),
-      )),
+      children: List.generate(
+          3,
+          (index) => Padding(
+                padding: const EdgeInsets.only(right: 6.0),
+                child: CustomDotIndicator(isActive: index == currentPageIndex),
+              )),
     );
   }
 }

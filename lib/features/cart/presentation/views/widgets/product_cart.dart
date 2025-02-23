@@ -4,6 +4,8 @@ import '../../../../../core/utils/styles.dart';
 import 'check_box_widget.dart';
 
 class ProductCart extends StatefulWidget {
+  // TODO: Refactor file. Keep classes, functions, and files under 50 lines to improve readability.
+
   const ProductCart(
       {super.key,
       required this.productImage,
@@ -11,7 +13,7 @@ class ProductCart extends StatefulWidget {
       required this.productPrice,
       required this.productSize,
       required this.productColor});
-
+// TODO: Clean Code book advises against passing more than 2 arguments. Use a model to enhance testability, readability, maintainability, and clarity.
   final String productImage;
   final String productName;
   final String productPrice;

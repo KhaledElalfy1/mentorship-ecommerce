@@ -22,7 +22,7 @@ class FeaturedCard extends StatelessWidget {
       child: Row(
         children: [
           Padding(
-            padding: const EdgeInsets.only(left: 60.0, top: 44.0),
+            padding: EdgeInsets.only(left: 60.0.w, top: 44.0.h),
             child: Column(
               children: [
                 Text(
@@ -32,8 +32,8 @@ class FeaturedCard extends StatelessWidget {
                     color: AppColor.coolGray,
                   ),
                 ),
-                const SizedBox(
-                  height: 20,
+                SizedBox(
+                  height: 20.h,
                 ),
                 Text(
                   featuredProductCardModel.description,

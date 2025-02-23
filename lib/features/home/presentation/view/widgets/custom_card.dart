@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class CustomCard extends StatelessWidget {
   const CustomCard({
+    // TODO: Clean Code advises against using more than 2 arguments. Use a model to enhance testability, readability, maintainability, and clarity.
     super.key,
     required this.child,
     required this.padding,

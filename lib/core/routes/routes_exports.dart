@@ -1,0 +1,21 @@
+// TODO: Move all route paths to a separate file for a cleaner AppRouter.
+export '../../features/cart/presentation/views/cart_view.dart';
+export '../../features/check_out/views/check_out_success_view.dart';
+export '../../features/discover/presentation/view/discover_view.dart';
+export '../../features/edit_profile/presentation/views/edit_profile_view.dart';
+export '../../features/home/presentation/view/dashboard_view.dart';
+export '../../features/home/presentation/view/home_view.dart';
+export '../../features/login/views/login_screen.dart';
+export '../../features/onboarding/presentation/views/onboarding_view.dart';
+export '../../features/onboarding/presentation/views/welcome_view.dart';
+export '../../features/order_info/presentation/view/order_info_view.dart';
+export '../../features/order_rate/presentation/view/order_rate_view.dart';
+export '../../features/order_tracking/presentation/view/order_tracking_view.dart';
+export '../../features/product_full/presentation/view/product_full_view.dart';
+export '../../features/profile/presentation/views/profile_view.dart';
+export '../../features/search/presentation/view/search_view.dart';
+export '../../features/setting/presentation/view/setting_view.dart';
+export '../../features/wishing_list/presentation/views/my_wishlist_all_items_views.dart';
+export '../../features/wishing_list/presentation/views/my_wishlist_board_view.dart';
+export '../../features/check_out/views/check_out_view.dart';
+export '../../features/my_order/views/my_order_view.dart';

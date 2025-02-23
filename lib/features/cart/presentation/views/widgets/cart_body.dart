@@ -8,21 +8,21 @@ class CartBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     return const Column(
+    return const Column(
       children: [
-         CustomCartAppbar(
+        CustomCartAppbar(
           title: "My Cart",
-         ),
+        ),
         Expanded(
           child: SingleChildScrollView(
             child: Column(
-              children:  [
+              children: [
                 ProductCartListview(),
               ],
             ),
           ),
         ),
-        CheckoutWidget(), 
+        CheckoutWidget(),
       ],
     );
   }

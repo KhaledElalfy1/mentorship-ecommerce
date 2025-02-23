@@ -12,6 +12,8 @@ import 'tabs/woman_page/woman_page.dart';
 import 'unselected_tab.dart';
 
 class CustomTabs extends StatefulWidget {
+  // TODO: Refactor file. Keep classes, functions, and files under 50 lines to improve readability.
+
   const CustomTabs({super.key});
 
   @override
@@ -19,6 +21,7 @@ class CustomTabs extends StatefulWidget {
 }
 
 class _CustomTabsState extends State<CustomTabs> {
+  // TODO: Add the list in a seperated file
   final list = const [
     TabsModel(icon: Icons.female, text: 'woman'),
     TabsModel(icon: Icons.male, text: 'man'),

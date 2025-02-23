@@ -10,7 +10,7 @@ class CustomCartAppbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left:20.w, right: 31.w, top: 60.h),
+      padding: EdgeInsets.only(left: 20.w, right: 31.w, top: 60.h),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [

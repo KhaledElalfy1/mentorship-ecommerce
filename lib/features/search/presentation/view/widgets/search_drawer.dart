@@ -20,6 +20,8 @@ class SearchDrawer extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 24.0.w),
         child: ListView(
           children: [
+            // TODO: There is a lot of repeted widgts here , try to adhere DRY Princple ...
+
             SizedBox(
               height: 20.h,
             ),

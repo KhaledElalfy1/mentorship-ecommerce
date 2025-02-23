@@ -13,6 +13,7 @@ class CustomProductImage extends StatelessWidget {
       child: Container(
         width: 126.w,
         height: 178.h,
+        // TODO: Create a reusable image display widget in code/widgets
         color: AppColor.productBackgroundColor,
         child: Image.asset(imageUrl),
       ),

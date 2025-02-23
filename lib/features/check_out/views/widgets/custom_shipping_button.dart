@@ -24,6 +24,7 @@ class CustomShippingButton extends StatelessWidget {
       child: SizedBox(
         width: double.infinity,
         height: 50.h,
+        //TODO: Use core's button
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
             backgroundColor: AppColor.paymentButtonColor,
@@ -33,13 +34,8 @@ class CustomShippingButton extends StatelessWidget {
           ),
           onPressed: () {
             // التحقق من صحة النموذج فقط إذا كان formKey موجودًا
-            if (formKey == null || formKey!.currentState?.validate() == true) {
-              //* ✅ إذا كان التحقق ناجحًا، أو لم يتم توفير formKey، نفذ onClicked
-              onClicked?.call();
-            } else {
-              //* ❌ إذا كان هناك أخطاء، عرض رسالة تنبيهية
-              print("Some fields are empty!");
-            }
+            // TODO: Extract method and apply this approach to all other validations (e.g., TextFormField)
+            _customShippingButtonValidating();
           },
           child: Text(
             text,
@@ -51,5 +47,15 @@ class CustomShippingButton extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  void _customShippingButtonValidating() {
+    if (formKey == null || formKey!.currentState?.validate() == true) {
+      //* ✅ إذا كان التحقق ناجحًا، أو لم يتم توفير formKey، نفذ onClicked
+      onClicked?.call();
+    } else {
+      //* ❌ إذا كان هناك أخطاء، عرض رسالة تنبيهية
+      print("Some fields are empty!");
+    }
   }
 }

@@ -6,6 +6,6 @@ class CheckOutView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const  CheckoutAppViewBody();
+    return const CheckoutAppViewBody();
   }
 }

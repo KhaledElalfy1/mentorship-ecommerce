@@ -8,15 +8,17 @@ class AppbarIconWidget extends StatelessWidget {
       required this.iconWidget,
       required this.iconColor,
       required this.onTap,
-      this.isPadding = true, this.height=36, this.width=36, this.size=20});
+      this.isPadding = true,
+      this.height = 36,
+      this.width = 36,
+      this.size = 20});
   final IconData iconWidget;
   final Color iconColor;
   final Function() onTap;
   final bool isPadding;
-    final double? height;
+  final double? height;
   final double? width;
   final double? size;
-
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +27,7 @@ class AppbarIconWidget extends StatelessWidget {
       splashColor: AppColor.gunmetalGray,
       child: Container(
         height: height,
-        width:width,
+        width: width,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           color: Colors.white,

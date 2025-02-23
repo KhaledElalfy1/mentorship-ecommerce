@@ -35,7 +35,7 @@ class CustomAppBar extends StatelessWidget {
           isNeedBellIcon == true
               ? IconButton(
                   onPressed: () {
-                 //   Navigator.popAndPushNamed(context, Routes.wishListBoard);
+                    //   Navigator.popAndPushNamed(context, Routes.wishListBoard);
                   },
                   icon: SvgPicture.asset(Svgs.bellIcon))
               : const SizedBox.shrink(),

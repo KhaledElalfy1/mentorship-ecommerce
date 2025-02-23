@@ -3,12 +3,12 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../core/helper/spacing.dart';
 import 'custom_list_circle_avatar.dart';
 
-
 import '../../../../core/utils/app_color.dart';
 
 class CustomProgressOrder extends StatelessWidget {
   const CustomProgressOrder({
-    super.key,  this.color,
+    super.key,
+    this.color,
   });
   final Color? color;
 
@@ -20,8 +20,7 @@ class CustomProgressOrder extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          const Icon(Icons.location_on,
-              color: AppColor.blackColor, size: 28),
+          const Icon(Icons.location_on, color: AppColor.blackColor, size: 28),
           horizontalSpace(12.w),
           const CustomListCircleAvatar(),
           horizontalSpace(80.w),
@@ -29,13 +28,11 @@ class CustomProgressOrder extends StatelessWidget {
           horizontalSpace(12.w),
           CircleAvatar(
             radius: 10.r,
-            backgroundColor:color?? AppColor.darkGray,
-            child: Icon(Icons.check,
-                color: AppColor.whiteColor, size: 15.sp),
+            backgroundColor: color ?? AppColor.darkGray,
+            child: Icon(Icons.check, color: AppColor.whiteColor, size: 15.sp),
           ),
         ],
       ),
     );
   }
 }
-

@@ -14,11 +14,14 @@ import 'widgets/custom_shipping_button.dart';
 import 'widgets/custom_shipping_method.dart';
 
 class CheckoutAppViewBody extends StatefulWidget {
+  // TODO: Refactor file. Keep classes, functions, and files under 50 lines to improve readability.
+
   const CheckoutAppViewBody({super.key});
 
   @override
   State<CheckoutAppViewBody> createState() => _CheckoutAppViewBodyState();
 }
+
 class _CheckoutAppViewBodyState extends State<CheckoutAppViewBody> {
   final formKey = GlobalKey<FormState>();
 
@@ -52,7 +55,7 @@ class _CheckoutAppViewBodyState extends State<CheckoutAppViewBody> {
               // Progress Row
               const CustomProgressOrder(),
               verticalSpace(29.h),
- 
+
               CustomAlignText(
                 text: 'STEP 1',
                 style: Styles.textStyle11
@@ -76,18 +79,15 @@ class _CheckoutAppViewBodyState extends State<CheckoutAppViewBody> {
                       return Column(
                         children: [
                           CustomTextField(
-                            label:  label,
-                            
+                            label: label,
+
                             controller: controllers[label]!,
                             suffixIcon: label == 'Country *'
                                 ? const Icon(Icons.keyboard_arrow_down,
                                     color: Colors.black)
                                 : null, // إضافة الأيقونة فقط لحقل Country
                             validator: (value) {
-                              if (value == null || value.isEmpty) {
-                                return 'This field is required';
-                              }
-                              return null;
+                              return _validateCountery(value);
                             },
                           ),
                           verticalSpace(20.h),
@@ -100,12 +100,14 @@ class _CheckoutAppViewBodyState extends State<CheckoutAppViewBody> {
               verticalSpace(20.h),
 
               // Shipping Method Section
-             const  CustomShippingMethod(),
+              const CustomShippingMethod(),
               verticalSpace(30.h),
 
               //* Continue to Payment Button
-              CustomShippingButton(text: 'Continue to Payment',onClicked: 
-              () => context.pushNamed(Routes.checkOutSuccess),formKey:formKey ,
+              CustomShippingButton(
+                text: 'Continue to Payment',
+                onClicked: () => context.pushNamed(Routes.checkOutSuccess),
+                formKey: formKey,
               ),
               verticalSpace(30.h),
             ],
@@ -114,5 +116,11 @@ class _CheckoutAppViewBodyState extends State<CheckoutAppViewBody> {
       ),
     );
   }
-}
 
+  String? _validateCountery(String? value) {
+    if (value == null || value.isEmpty) {
+      return 'This field is required';
+    }
+    return null;
+  }
+}

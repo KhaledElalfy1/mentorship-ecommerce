@@ -27,7 +27,8 @@ class CustomEditProfileImage extends StatelessWidget {
         Align(
           alignment: Alignment.bottomRight,
           child: Container(
-            decoration: const ShapeDecoration(shape: CircleBorder(), color: AppColor.textColor),
+            decoration: const ShapeDecoration(
+                shape: CircleBorder(), color: AppColor.textColor),
             child: IconButton(
               onPressed: () {},
               icon: const Icon(

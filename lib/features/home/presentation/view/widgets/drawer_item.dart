@@ -5,7 +5,8 @@ import '../../../../../core/utils/styles.dart';
 import '../../../data/models/drawer_item_model.dart';
 
 class DrawerItem extends StatelessWidget {
-  const DrawerItem({super.key, required this.drawerItemModel, required this.isActive});
+  const DrawerItem(
+      {super.key, required this.drawerItemModel, required this.isActive});
   final DrawerItemModel drawerItemModel;
   final bool isActive;
 

@@ -3,5 +3,6 @@ class GroupCardModel {
   final String description;
   final String image;
 
-  const GroupCardModel({required this.name, required this.description, required this.image});
+  const GroupCardModel(
+      {required this.name, required this.description, required this.image});
 }
