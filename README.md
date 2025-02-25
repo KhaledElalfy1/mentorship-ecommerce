@@ -85,3 +85,8 @@ Whether you need to keep track of personal tasks or manage professional projects
 
 
 ![image](screenshots/profile.png)
+
+
+```sh
+flutter pub global activate intl_utils
+```
