@@ -1,1 +1,12 @@
-{}
+{
+    "price": "Price",
+    "color": "Color",
+    "rating": "Star Rating",
+    "category": "Category",
+    "discount": "Discount",
+    "filter": "Filter",
+    "clear": "Clear",
+    "apply": "Apply",
+    "search": "Search",
+    "recentSearch": "Recent Search"
+}

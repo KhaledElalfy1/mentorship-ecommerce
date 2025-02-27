@@ -21,5 +21,16 @@ class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'ar';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{};
+  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "apply": MessageLookupByLibrary.simpleMessage("تطبيق"),
+        "category": MessageLookupByLibrary.simpleMessage("الفئة"),
+        "clear": MessageLookupByLibrary.simpleMessage("مسح"),
+        "color": MessageLookupByLibrary.simpleMessage("اللون"),
+        "discount": MessageLookupByLibrary.simpleMessage("الخصم"),
+        "filter": MessageLookupByLibrary.simpleMessage("تصفية"),
+        "price": MessageLookupByLibrary.simpleMessage("السعر"),
+        "rating": MessageLookupByLibrary.simpleMessage("تقييم النجوم"),
+        "recentSearch": MessageLookupByLibrary.simpleMessage("البحث الأخير"),
+        "search": MessageLookupByLibrary.simpleMessage("بحث")
+      };
 }

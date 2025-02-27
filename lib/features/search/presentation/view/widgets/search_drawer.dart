@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mentorship_ecommerce/generated/l10n.dart';
 import '../../../../../core/utils/styles.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'choose_category_section.dart';
@@ -32,7 +33,7 @@ class SearchDrawer extends StatelessWidget {
               height: 60.h,
             ),
             Text(
-              "price",
+              S.of(context).price,
               style: Styles.textStyle14,
             ),
             SizedBox(
@@ -43,7 +44,7 @@ class SearchDrawer extends StatelessWidget {
               height: 20.h,
             ),
             Text(
-              "Color",
+              S.of(context).color,
               style: Styles.textStyle14,
             ),
             SizedBox(
@@ -54,7 +55,7 @@ class SearchDrawer extends StatelessWidget {
               height: 20.h,
             ),
             Text(
-              "Star Rating",
+              S.of(context).rating,
               style: Styles.textStyle14,
             ),
             SizedBox(
@@ -65,7 +66,7 @@ class SearchDrawer extends StatelessWidget {
               height: 20,
             ),
             Text(
-              "Category",
+              S.of(context).category,
               style: Styles.textStyle14,
             ),
             SizedBox(
@@ -75,7 +76,7 @@ class SearchDrawer extends StatelessWidget {
             SizedBox(
               height: 20.h,
             ),
-            Text('DisCount', style: Styles.textStyle14),
+            Text(S.of(context).discount, style: Styles.textStyle14),
             SizedBox(
               height: 20.h,
             ),

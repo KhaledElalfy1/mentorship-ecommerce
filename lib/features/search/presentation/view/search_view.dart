@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../logic/search_cubit/search_cubit.dart';
-import 'widgets/search_view_body.dart';
+import 'package:mentorship_ecommerce/features/search/presentation/logic/search_cubit/search_cubit.dart';
+import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/search_view_body.dart';
 
 class SearchView extends StatelessWidget {
   const SearchView({super.key});
