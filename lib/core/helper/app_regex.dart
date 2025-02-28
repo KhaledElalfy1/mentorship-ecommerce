@@ -25,4 +25,5 @@ class AppRegex {
   static bool hasMinLength(String password) {
     return RegExp(r'^(?=.{8,})').hasMatch(password);
   }
+  static final RegExp onlyNumbers = RegExp(r'^[0-9]+$');
 }

@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+
 import '../utils/styles.dart';
 import '../utils/svgs.dart';
 
 class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key, this.title, this.isNeedBellIcon = false});
+  const CustomAppBar({
+    super.key,
+    this.title,
+    this.isNeedBellIcon = false,
+  });
   final String? title;
   final bool? isNeedBellIcon;
 
@@ -14,9 +19,7 @@ class CustomAppBar extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(left: 21.w, right: 21.w),
       child: Row(
-        mainAxisAlignment: isNeedBellIcon == true
-            ? MainAxisAlignment.spaceBetween
-            : MainAxisAlignment.start,
+        mainAxisAlignment: isNeedBellIcon == true ? MainAxisAlignment.spaceBetween : MainAxisAlignment.start,
         children: [
           IconButton(
               onPressed: () {

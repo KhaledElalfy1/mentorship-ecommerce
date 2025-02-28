@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../../../constants.dart';
-import '../../../../../core/utils/app_color.dart';
-import '../../../../../core/utils/styles.dart';
-import '../../../../../core/widgets/font_weight_helper.dart';
+import 'package:mentorship_ecommerce/features/edit_profile/presentation/views/widgets/first_name_text_field.dart';
+import 'package:mentorship_ecommerce/features/edit_profile/presentation/views/widgets/last_name_text_field.dart';
 
 class EditProfileNameSection extends StatefulWidget {
-  // TODO: Refactor file. Keep classes, functions, and files under 50 lines to improve readability.
-
   const EditProfileNameSection({super.key});
 
   @override
@@ -15,83 +11,16 @@ class EditProfileNameSection extends StatefulWidget {
 }
 
 class _EditProfileNameState extends State<EditProfileNameSection> {
-  // TODO: Ensure all app controllers are disposed properly throughout the project
-
-  TextEditingController firstNameController = TextEditingController();
-  TextEditingController lastNameController = TextEditingController();
-
+  @override
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Expanded(
-          flex: 2,
-          child: TextFormField(
-            controller: firstNameController,
-            decoration: InputDecoration(
-              label: Text(
-                'First Name',
-                style: Styles.textStyle14.copyWith(
-                  fontFamily: Constants.productSansMedium,
-                  fontWeight: FontWeightHelper.medium,
-                  color: AppColor.labelProfileColor,
-                ),
-              ),
-              border: const UnderlineInputBorder(
-                borderSide:
-                    BorderSide(color: AppColor.underLineBorder, width: 1.0),
-              ),
-              focusedBorder: const UnderlineInputBorder(
-                borderSide:
-                    BorderSide(color: AppColor.underLineBorder, width: 1.0),
-              ),
-              enabledBorder: const UnderlineInputBorder(
-                borderSide:
-                    BorderSide(color: AppColor.underLineBorder, width: 1.0),
-              ),
-            ),
-            style: Styles.textStyle16.copyWith(
-              color: AppColor.inputColor,
-              fontFamily: Constants.productSansMedium,
-              fontWeight: FontWeightHelper.medium,
-            ),
-          ),
-        ),
+        const FirstNameTextField(),
         SizedBox(
           width: 8.w,
         ),
-        Expanded(
-          child: TextFormField(
-            controller: lastNameController,
-            decoration: InputDecoration(
-              label: Text(
-                'First Name',
-                style: Styles.textStyle14.copyWith(
-                  fontFamily: Constants.productSansMedium,
-                  fontWeight: FontWeightHelper.medium,
-                  color: AppColor.labelProfileColor,
-                ),
-              ),
-              border: const UnderlineInputBorder(
-                borderSide:
-                    BorderSide(color: AppColor.underLineBorder, width: 1.0),
-              ),
-              focusedBorder: const UnderlineInputBorder(
-                borderSide:
-                    BorderSide(color: AppColor.underLineBorder, width: 1.0),
-              ),
-              enabledBorder: const UnderlineInputBorder(
-                borderSide:
-                    BorderSide(color: AppColor.underLineBorder, width: 1.0),
-              ),
-            ),
-            style: Styles.textStyle16.copyWith(
-              color: AppColor.inputColor,
-              fontFamily: Constants.productSansMedium,
-              fontWeight: FontWeightHelper.medium,
-            ),
-          ),
-        ),
+        const LastNameTextField(),
       ],
     );
   }
