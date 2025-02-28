@@ -18,6 +18,7 @@ class _CustomTabBarState extends State<CustomTabBar> {
   @override
   Widget build(BuildContext context) {
     return TabBar(
+      dividerHeight: 0,
       isScrollable: false,
       indicatorColor: Colors.transparent,
       labelColor: AppColor.selectedTabColor,
