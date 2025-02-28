@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mentorship_ecommerce/core/utils/app_color.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/home_lists.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/selected_tab.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/tabs_data.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/unselected_tab.dart';
 
 class CustomTabBar extends StatefulWidget {
@@ -23,7 +23,19 @@ class _CustomTabBarState extends State<CustomTabBar> {
       labelColor: AppColor.selectedTabColor,
       labelStyle: Styles.textStyle10,
       unselectedLabelColor: AppColor.spanishGrayColor,
-      tabs: list.map((tab) => tab == list[isSelected] ? SelectedTab(icon: tab.icon, text: tab.text) : UnSelectedTab(icon: tab.icon, text: tab.text)).toList(),
+      tabs: listOfTabsIcons
+          .map(
+            (tab) => tab == listOfTabsIcons[isSelected]
+                ? SelectedTab(
+                    icon: tab.icon,
+                    text: tab.text,
+                  )
+                : UnSelectedTab(
+                    icon: tab.icon,
+                    text: tab.text,
+                  ),
+          )
+          .toList(),
       onTap: (value) => setState(() => isSelected = value),
     );
   }

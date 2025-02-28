@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mentorship_ecommerce/core/widgets/custom_app_bar.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/custom_tab_bar.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/tabs_data.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/home_lists.dart';
 
 class CustomTabs extends StatefulWidget {
   const CustomTabs({super.key});
@@ -14,7 +14,7 @@ class _CustomTabsState extends State<CustomTabs> {
   Widget build(BuildContext context) {
     return DefaultTabController(
       initialIndex: 0,
-      length: list.length,
+      length: listOfTabsIcons.length,
       child: SizedBox(
         height: MediaQuery.of(context).size.height * .83,
         child: NestedScrollView(
@@ -34,7 +34,7 @@ class _CustomTabsState extends State<CustomTabs> {
             ),
           ],
           body: TabBarView(
-            children: tabs.map((page) => SingleChildScrollView(child: page)).toList(),
+            children: tabsScreens.map((page) => SingleChildScrollView(child: page)).toList(),
           ),
         ),
       ),
