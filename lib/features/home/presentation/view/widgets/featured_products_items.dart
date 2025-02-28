@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:mentorship_ecommerce/features/home/data/models/featured_product_item_model.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/home_lists.dart';
+
 import 'featured_product_item.dart';
 
 class FeaturedProductsItems extends StatelessWidget {
   const FeaturedProductsItems({super.key});
-
 
   @override
   Widget build(BuildContext context) {
@@ -19,9 +20,11 @@ class FeaturedProductsItems extends StatelessWidget {
             (index) => Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10.0),
               child: FeaturedProductItem(
-                image: featuredProductlist[index],
-                title: 'Turtleneck Sweater ',
-                price: 39.99,
+                featuredProductItemModel: FeaturedProductItemModel(
+                  imageUrl: featuredProductlist[index],
+                  title: 'Turtleneck Sweater ',
+                  price: 39.99,
+                ),
               ),
             ),
           ),

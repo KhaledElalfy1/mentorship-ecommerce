@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/home_lists.dart';
+
 import '../../../../../core/utils/app_color.dart';
-import '../../../data/models/mode_model.dart';
 import 'mode_button.dart';
 
 class SelectMode extends StatefulWidget {
@@ -12,10 +13,6 @@ class SelectMode extends StatefulWidget {
 }
 
 class _SelectModeState extends State<SelectMode> {
-  final list = const [
-    ModeModel(icon: Icons.wb_sunny_outlined, title: 'Light'),
-    ModeModel(icon: Icons.nightlight_outlined, title: 'Light'),
-  ];
   int activeIndex = 0;
 
   @override
@@ -31,11 +28,11 @@ class _SelectModeState extends State<SelectMode> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: List.generate(
-          list.length,
+          modeList.length,
           (index) => GestureDetector(
             onTap: () => setState(() => activeIndex = index),
             child: ModeButton(
-              modeModel: list[index],
+              modeModel: modeList[index],
               isActive: activeIndex == index,
             ),
           ),
