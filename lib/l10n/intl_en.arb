@@ -8,5 +8,11 @@
     "clear": "Clear",
     "apply": "Apply",
     "search": "Search",
-    "recentSearch": "Recent Search"
+    "recentSearch": "Recent Search",
+    "discover": "Discover",
+    "clothing": "Clothing",
+    "shoes": "Shoes",
+    "accessories": "Accessories",
+    "collection": "Collection",
+    "items": "Items"
 }

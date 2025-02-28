@@ -8,5 +8,11 @@
     "clear": "مسح",
     "apply": "تطبيق",
     "search": "بحث",
-    "recentSearch": "البحث الأخير"
+    "recentSearch": "البحث الأخير",
+    "discover": "اكتشف",
+    "clothing": "ملابس",
+    "shoes": "أحذية",
+    "accessories": "إكسسوارات",
+    "collection": "مجموعة",
+    "items": "العناصر"
 }
