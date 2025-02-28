@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
-import '../../../../../core/utils/assets.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/home_lists.dart';
 import 'featured_product_item.dart';
 
 class FeaturedProductsItems extends StatelessWidget {
   const FeaturedProductsItems({super.key});
-  final list = const [
-    Assets.productImage1,
-    Assets.productImage2,
-    Assets.productImage3,
-  ];
+
 
   @override
   Widget build(BuildContext context) {
@@ -19,11 +15,11 @@ class FeaturedProductsItems extends StatelessWidget {
         child: ListView(
           scrollDirection: Axis.horizontal,
           children: List.generate(
-            list.length,
+            featuredProductlist.length,
             (index) => Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10.0),
               child: FeaturedProductItem(
-                image: list[index],
+                image: featuredProductlist[index],
                 title: 'Turtleneck Sweater ',
                 price: 39.99,
               ),

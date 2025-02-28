@@ -23,8 +23,12 @@ class _WomanCardInfoState extends State<HeaderCardInfo> {
         setState(() {});
       },
     );
-
     super.initState();
+  }
+  @override
+  void dispose() {
+    pageController.dispose();
+    super.dispose();
   }
 
   @override
@@ -35,8 +39,8 @@ class _WomanCardInfoState extends State<HeaderCardInfo> {
       children: List.generate(
           3,
           (index) => HeaderCard(
-            currentPageIndex: currentPageIndex,
-          )),
+                currentPageIndex: currentPageIndex,
+              )),
     );
   }
 }
