@@ -37,9 +37,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "done": MessageLookupByLibrary.simpleMessage("تم"),
         "filter": MessageLookupByLibrary.simpleMessage("تصفية"),
         "items": MessageLookupByLibrary.simpleMessage("العناصر"),
+        "language": MessageLookupByLibrary.simpleMessage("اللغة"),
         "order": MessageLookupByLibrary.simpleMessage("طلب"),
         "orderNumber": MessageLookupByLibrary.simpleMessage("رقم الطلب"),
         "price": MessageLookupByLibrary.simpleMessage("السعر"),
+        "privacyPolicy": MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
         "rate": MessageLookupByLibrary.simpleMessage("تقييم"),
         "rateProduct": MessageLookupByLibrary.simpleMessage("تقييم المنتج"),
         "rateProductToGet": MessageLookupByLibrary.simpleMessage(
@@ -49,8 +51,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "returnHome":
             MessageLookupByLibrary.simpleMessage("العودة للصفحة الرئيسية"),
         "search": MessageLookupByLibrary.simpleMessage("بحث"),
+        "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
         "shoes": MessageLookupByLibrary.simpleMessage("أحذية"),
         "submitReview": MessageLookupByLibrary.simpleMessage("إرسال المراجعة"),
+        "termsOFUse": MessageLookupByLibrary.simpleMessage("شروط الاستخدام"),
         "thankYouForYourFeedback":
             MessageLookupByLibrary.simpleMessage("!شكرًا لك على ملاحظاتك"),
         "trackOrder": MessageLookupByLibrary.simpleMessage("تتبع الطلب"),

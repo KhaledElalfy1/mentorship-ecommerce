@@ -30,5 +30,9 @@
     "weAppreciatedYourFeedback": "نقدر ملاحظاتك.\nسنستخدم ملاحظاتك لتحسين\n تجربتك.",
     "done": "تم",
     "trackOrder":"تتبع الطلب",
-    "deliveredOn":":يُستلم فى"
+    "deliveredOn":":يُستلم فى",
+    "settings":"الإعدادات",
+    "language":"اللغة",
+    "termsOFUse":"شروط الاستخدام",
+    "privacyPolicy":"سياسة الخصوصية"
 }

@@ -30,5 +30,10 @@
     "weAppreciatedYourFeedback":"We appreciated your feedback.\nWe'll use your feedback to improve\n your experience.",
     "done":"Done",
     "trackOrder":"Track Order",
-    "deliveredOn":"Delivered on:"
+    "deliveredOn":"Delivered on:",
+    "settings":"Settings",
+    "language":"Language",
+    "termsOFUse":"Terms of Use",
+    "privacyPolicy":"Privacy Policy"
+
 }

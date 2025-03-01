@@ -37,9 +37,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "done": MessageLookupByLibrary.simpleMessage("Done"),
         "filter": MessageLookupByLibrary.simpleMessage("Filter"),
         "items": MessageLookupByLibrary.simpleMessage("Items"),
+        "language": MessageLookupByLibrary.simpleMessage("Language"),
         "order": MessageLookupByLibrary.simpleMessage("Order"),
         "orderNumber": MessageLookupByLibrary.simpleMessage("Order Number"),
         "price": MessageLookupByLibrary.simpleMessage("Price"),
+        "privacyPolicy": MessageLookupByLibrary.simpleMessage("Privacy Policy"),
         "rate": MessageLookupByLibrary.simpleMessage("Rate"),
         "rateProduct": MessageLookupByLibrary.simpleMessage("Rate Product"),
         "rateProductToGet": MessageLookupByLibrary.simpleMessage(
@@ -48,8 +50,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "recentSearch": MessageLookupByLibrary.simpleMessage("Recent Search"),
         "returnHome": MessageLookupByLibrary.simpleMessage("Return Home"),
         "search": MessageLookupByLibrary.simpleMessage("Search"),
+        "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "shoes": MessageLookupByLibrary.simpleMessage("Shoes"),
         "submitReview": MessageLookupByLibrary.simpleMessage("Submit Review"),
+        "termsOFUse": MessageLookupByLibrary.simpleMessage("Terms of Use"),
         "thankYouForYourFeedback": MessageLookupByLibrary.simpleMessage(
             "Thank you for your feedback!"),
         "trackOrder": MessageLookupByLibrary.simpleMessage("Track Order"),
