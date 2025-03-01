@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/helper/extention.dart';
+
 import '../../../../../constants.dart';
 import '../../../../../core/utils/app_color.dart';
 import '../../../../../core/utils/assets.dart';
@@ -21,9 +23,7 @@ class RecommendedItem extends StatelessWidget {
               Assets.recommendedImage1,
               fit: BoxFit.cover,
             ),
-            const SizedBox(
-              width: 10,
-            ),
+            10.addHorizontalSpace,
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,

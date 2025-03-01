@@ -27,7 +27,7 @@ class _LastNameTextFieldState extends State<LastNameTextField> {
         controller: lastNameController,
         decoration: InputDecoration(
           label: Text(
-            'First Name',
+            'Last Name',
             style: Styles.textStyle14.copyWith(
               fontFamily: Constants.productSansMedium,
               fontWeight: FontWeightHelper.medium,

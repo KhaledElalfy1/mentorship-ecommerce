@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/helper/extention.dart';
+
 import '../../../../../core/utils/assets.dart';
 import '../../../data/models/group_card_model.dart';
 import 'group_left_card.dart';
@@ -23,9 +25,7 @@ class CustomGroupCards extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
-            width: 8.w,
-          ),
+          8.addHorizontalSpace,
           const Expanded(
             child: GroupRightCard(
               groupCardModel: GroupCardModel(

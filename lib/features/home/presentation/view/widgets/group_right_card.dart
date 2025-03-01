@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/helper/extention.dart';
+
 import '../../../../../constants.dart';
 import '../../../../../core/utils/app_color.dart';
 import '../../../../../core/utils/styles.dart';
@@ -32,15 +34,9 @@ class GroupRightCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SizedBox(
-                      height: 40.h,
-                    ),
-                    Text(groupCardModel.name,
-                        style: Styles.textStyle13
-                            .copyWith(color: AppColor.coolGray)),
-                    SizedBox(
-                      height: 20.h,
-                    ),
+                    0.addVerticalSpace,
+                    Text(groupCardModel.name, style: Styles.textStyle13.copyWith(color: AppColor.coolGray)),
+                    20.addVerticalSpace,
                     Text(
                       groupCardModel.description,
                       style: Styles.textStyle18.copyWith(

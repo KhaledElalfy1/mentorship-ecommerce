@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mentorship_ecommerce/core/helper/extention.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/top_collection_first_card.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/top_collection_second_card.dart';
 
@@ -10,26 +11,18 @@ class TopCollectionSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       children: [
-        CollectionHeader(
+        const CollectionHeader(
           collectionTitle: 'Top Collection',
         ),
-        SizedBox(
-          height: 33,
-        ),
-        TopCollectionFirstCard(),
-        SizedBox(
-          height: 19,
-        ),
-        TopCollectionSecondCard(),
-        SizedBox(
-          height: 16,
-        ),
-        CustomGroupCards(),
-        SizedBox(
-          height: 10,
-        )
+        33.addVerticalSpace,
+        const TopCollectionFirstCard(),
+        19.addVerticalSpace,
+        const TopCollectionSecondCard(),
+        16.addVerticalSpace,
+        const CustomGroupCards(),
+        10.addVerticalSpace,
       ],
     );
   }

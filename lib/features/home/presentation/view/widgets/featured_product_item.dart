@@ -26,9 +26,7 @@ class FeaturedProductItem extends StatelessWidget {
           CustomProductImage(
             imageUrl: featuredProductItemModel.imageUrl,
           ),
-          const SizedBox(
-            height: 14,
-          ),
+          14.addVerticalSpace,
           Text(
             featuredProductItemModel.title,
             style: Styles.textStyle12.copyWith(

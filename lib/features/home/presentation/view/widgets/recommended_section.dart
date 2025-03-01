@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mentorship_ecommerce/core/helper/extention.dart';
+
 import 'collection_header.dart';
 import 'recommended_items.dart';
 
@@ -7,13 +9,11 @@ class RecommendedSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       children: [
-        CollectionHeader(collectionTitle: 'Recommended'),
-        SizedBox(
-          height: 30,
-        ),
-        RecommendedItems(),
+        const CollectionHeader(collectionTitle: 'Recommended'),
+        30.addVerticalSpace,
+        const RecommendedItems(),
       ],
     );
   }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/helper/extention.dart';
 import 'package:mentorship_ecommerce/features/home/data/models/main_card_model.dart';
 
 import '../../../../../core/utils/assets.dart';
@@ -35,9 +36,7 @@ class HeaderCard extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
-            height: 37.h,
-          ),
+          37.addVerticalSpace,
           Align(alignment: Alignment.bottomCenter, child: DotsIndicator(currentPageIndex: currentPageIndex))
         ]),
       ),
