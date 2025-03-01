@@ -51,4 +51,5 @@ abstract class AppColor {
   static const inputColor = Color(0xff42474A);
   static const grey2 = Color(0xffE7E8E9);
   static const blackgrey2 = Color(0xff464447);
+  static const dotsBackground = Color(0xFFE7E7E7);
 }

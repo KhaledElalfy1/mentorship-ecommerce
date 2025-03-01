@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/helper/extention.dart';
+
 import '../../../../../constants.dart';
 import '../../../../../core/utils/app_color.dart';
 import '../../../../../core/utils/styles.dart';
@@ -26,21 +28,13 @@ class GroupLeftCard extends StatelessWidget {
           child: Row(
             children: [
               Image.asset(groupCardModel.image),
-              SizedBox(
-                width: 5.w,
-              ),
+              5.addHorizontalSpace,
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SizedBox(
-                    height: 42.h,
-                  ),
-                  Text(groupCardModel.name,
-                      style: Styles.textStyle13
-                          .copyWith(color: AppColor.coolGray)),
-                  SizedBox(
-                    height: 16.h,
-                  ),
+                  42.addVerticalSpace,
+                  Text(groupCardModel.name, style: Styles.textStyle13.copyWith(color: AppColor.coolGray)),
+                  16.addVerticalSpace,
                   Text(
                     groupCardModel.description,
                     style: Styles.textStyle17.copyWith(

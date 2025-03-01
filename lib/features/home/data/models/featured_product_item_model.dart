@@ -1,8 +1,7 @@
-abstract class FeaturedProductItemModel {
+class FeaturedProductItemModel {
   final String imageUrl;
   final String title;
-  final int price;
+  final double price;
 
-  const FeaturedProductItemModel(
-      {required this.imageUrl, required this.title, required this.price});
+  const FeaturedProductItemModel({required this.imageUrl, required this.title, required this.price});
 }

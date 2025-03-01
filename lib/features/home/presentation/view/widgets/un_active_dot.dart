@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/utils/app_color.dart';
 
 class UnActiveDot extends StatelessWidget {
   const UnActiveDot({super.key});
@@ -11,7 +12,7 @@ class UnActiveDot extends StatelessWidget {
       width: 8.w,
       height: 8.h,
       decoration: ShapeDecoration(
-        color: const Color(0xFFE7E7E7),
+        color: AppColor.dotsBackground,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12.r),
         ),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/helper/extention.dart';
+
 import '../../../../../core/utils/assets.dart';
 import '../../../data/models/user_info_model.dart';
 import 'drawer_list_view.dart';
@@ -19,19 +21,13 @@ class HomeDrawer extends StatelessWidget {
       ),
       child: Column(
         children: [
-          SizedBox(
-            height: 68.h,
-          ),
+          68.addVerticalSpace,
           const UserInfoListTile(
             userInfoModel: UserInfoModel(image: Assets.avater, title: 'Sunie Pham', email: 'sunieux@gmail.com'),
           ),
-          SizedBox(
-            height: 93.h,
-          ),
+          93.addVerticalSpace,
           const DrawerListView(),
-          SizedBox(
-            height: 73.h,
-          ),
+          73.addVerticalSpace,
           const SelectMode(),
         ],
       ),

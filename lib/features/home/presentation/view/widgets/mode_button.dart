@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/helper/extention.dart';
+
 import '../../../../../constants.dart';
 import '../../../../../core/utils/app_color.dart';
 import '../../../../../core/utils/styles.dart';
@@ -31,9 +33,7 @@ class ModeButton extends StatelessWidget {
               size: 21.w,
               color: isActive ? AppColor.gunmetalGray : AppColor.unAvtiveMode,
             ),
-            SizedBox(
-              width: 8.w,
-            ),
+            8.addHorizontalSpace,
             Text(
               modeModel.title,
               style: Styles.textStyle14.copyWith(

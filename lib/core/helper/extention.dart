@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 extension Navigation on BuildContext {
   Future<dynamic> pushNamed(String routeName, {Object? arguments}) {
@@ -12,14 +13,11 @@ extension Navigation on BuildContext {
   /// given `context`, and the previous route is removed from the navigator.
   ///
   Future<dynamic> pushReplacementNamed(String routeName, {Object? arguments}) {
-    return Navigator.of(this)
-        .pushReplacementNamed(routeName, arguments: arguments);
+    return Navigator.of(this).pushReplacementNamed(routeName, arguments: arguments);
   }
 
-  Future<dynamic> pushNamedAndRemoveUntil(String routeName,
-      {Object? arguments, required RoutePredicate predicate}) {
-    return Navigator.of(this)
-        .pushNamedAndRemoveUntil(routeName, predicate, arguments: arguments);
+  Future<dynamic> pushNamedAndRemoveUntil(String routeName, {Object? arguments, required RoutePredicate predicate}) {
+    return Navigator.of(this).pushNamedAndRemoveUntil(routeName, predicate, arguments: arguments);
   }
 
   void pop() => Navigator.of(this).pop();
@@ -31,4 +29,9 @@ extension StringExtension on String? {
 
 extension ListExtension<T> on List<T>? {
   bool isNullOrEmpty() => this == null || this!.isEmpty;
+}
+
+extension SpaceExtensions on num {
+  SizedBox get addVerticalSpace    => SizedBox(height: h);
+  SizedBox get addHorizontalSpace     => SizedBox(width: w);
 }

@@ -1,23 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../../../core/utils/assets.dart';
-import '../../../data/models/recommended_item_model.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/home_lists.dart';
+
 import 'recommended_item.dart';
 
 class RecommendedItems extends StatelessWidget {
   const RecommendedItems({super.key});
-  final list = const [
-    RecommendedItemModel(
-      imageUrl: Assets.recommendedImage1,
-      title: 'White fashion hoodie',
-      price: 39.99,
-    ),
-    RecommendedItemModel(
-      imageUrl: Assets.recommendedImage2,
-      title: 'Cotton T-shirt',
-      price: 30.99,
-    ),
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -27,11 +15,11 @@ class RecommendedItems extends StatelessWidget {
         padding: const EdgeInsets.only(left: 30.0),
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
-          itemCount: list.length,
+          itemCount: recommendedItemslist.length,
           itemBuilder: (context, index) => Padding(
             padding: const EdgeInsets.only(right: 15.0),
             child: RecommendedItem(
-              recommendedItemModel: list[index],
+              recommendedItemModel: recommendedItemslist[index],
             ),
           ),
         ),

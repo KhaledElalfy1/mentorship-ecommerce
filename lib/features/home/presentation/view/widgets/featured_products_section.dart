@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mentorship_ecommerce/core/helper/extention.dart';
+
 import '../../../../../core/utils/assets.dart';
 import '../../../data/models/featured_product_card_model.dart';
 import 'collection_header.dart';
@@ -10,19 +12,17 @@ class FeaturedProductsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       children: [
-        CollectionHeader(
+        const CollectionHeader(
           collectionTitle: 'Featured Products',
         ),
-        SizedBox(
-          height: 20,
-        ),
-        FeaturedProductsItems(),
-        SizedBox(
+        20.addVerticalSpace,
+        const FeaturedProductsItems(),
+        const SizedBox(
           height: 11,
         ),
-        FeaturedCard(
+        const FeaturedCard(
           featuredProductCardModel: FeaturedProductCardModel(
             name: 'NEW COLLECTION',
             description: 'HANG OUT\n & PARTY',

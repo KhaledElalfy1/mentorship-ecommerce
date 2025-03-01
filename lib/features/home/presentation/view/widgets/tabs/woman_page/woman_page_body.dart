@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mentorship_ecommerce/core/helper/extention.dart';
+
 import '../../featured_products_section.dart';
 import '../../header_card_info.dart';
 import '../../recommended_section.dart';
@@ -9,22 +11,16 @@ class WomanPageBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        HeaderCardInfo(),
-        SizedBox(
-          height: 35,
-        ),
-        FeaturedProductsSection(),
-        SizedBox(
-          height: 32,
-        ),
-        RecommendedSection(),
-        SizedBox(
-          height: 34,
-        ),
-        TopCollectionSection(),
+        const HeaderCardInfo(),
+        35.addVerticalSpace,
+        const FeaturedProductsSection(),
+        32.addVerticalSpace,
+        const RecommendedSection(),
+        34.addVerticalSpace,
+        const TopCollectionSection(),
       ],
     );
   }

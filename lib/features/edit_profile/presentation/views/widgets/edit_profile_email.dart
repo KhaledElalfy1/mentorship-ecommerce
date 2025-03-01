@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mentorship_ecommerce/features/edit_profile/presentation/views/widgets/border_of_text_field.dart';
+
 import '../../../../../constants.dart';
 import '../../../../../core/utils/app_color.dart';
 import '../../../../../core/utils/styles.dart';
@@ -12,9 +14,12 @@ class EditProfileEmail extends StatefulWidget {
 }
 
 class _EditProfileNameState extends State<EditProfileEmail> {
-  // TODO: Ensure all app controllers are disposed properly throughout the project
-
   TextEditingController emailController = TextEditingController();
+  @override
+  void dispose() {
+    emailController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -30,15 +35,9 @@ class _EditProfileNameState extends State<EditProfileEmail> {
             color: AppColor.labelProfileColor,
           ),
         ),
-        border: const UnderlineInputBorder(
-          borderSide: BorderSide(color: AppColor.underLineBorder, width: 1.0),
-        ),
-        focusedBorder: const UnderlineInputBorder(
-          borderSide: BorderSide(color: AppColor.underLineBorder, width: 1.0),
-        ),
-        enabledBorder: const UnderlineInputBorder(
-          borderSide: BorderSide(color: AppColor.underLineBorder, width: 1.0),
-        ),
+        border: borderOfTextField(),
+        focusedBorder: borderOfTextField(),
+        enabledBorder: borderOfTextField(),
       ),
       style: Styles.textStyle16.copyWith(
         color: AppColor.inputColor,

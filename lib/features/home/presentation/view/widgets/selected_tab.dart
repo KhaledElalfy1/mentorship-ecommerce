@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/helper/extention.dart';
+
 import '../../../../../core/utils/app_color.dart';
 import '../../../../../core/utils/styles.dart';
 
@@ -41,9 +43,7 @@ class SelectedTab extends StatelessWidget {
                 size: 25.r,
               )),
         ),
-        SizedBox(
-          height: 5.h,
-        ),
+        5.addVerticalSpace,
         Text(
           text,
           style: Styles.textStyle10,
