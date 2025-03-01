@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../../../core/utils/styles.dart';
-import '../../../../../core/utils/app_color.dart';
+import '../../../../../core/routes/routes_exports.dart';
 
 class SimilarProductWidget extends StatefulWidget {
   const SimilarProductWidget({super.key});
@@ -47,62 +44,9 @@ class _SimilarProductWidgetState extends State<SimilarProductWidget> {
           const Divider(
             color: AppColor.dividerColor,
           ),
-          AnimatedSize(
-            duration: const Duration(milliseconds: 500),
-            curve: Curves.easeOutCirc,
-            child:
-                isExpanded ? similarProductListview() : const SizedBox.shrink(),
-          ),
+          ProductWidgetDetails(isExpanded: isExpanded),
         ],
       ),
-    );
-  }
-
-  Widget productWidget(String image, String productName, String price) {
-    return Padding(
-      padding: EdgeInsets.only(right: 10.w, top: 10.h),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          ClipRRect(
-            borderRadius: BorderRadius.circular(15.r),
-            child: Image.network(
-              height: 192.h,
-              width: 126.w,
-              image,
-            ),
-          ),
-          SizedBox(
-            height: 5.h,
-          ),
-          Text(
-            productName,
-            style: Styles.textStyle12,
-          ),
-          SizedBox(
-            height: 5.h,
-          ),
-          Text(
-            "\$ $price",
-            style: Styles.textStyle16,
-          )
-        ],
-      ),
-    );
-  }
-
-  Widget similarProductListview() {
-    return SizedBox(
-      height: 260.h,
-      child: ListView.builder(
-          scrollDirection: Axis.horizontal,
-          itemCount: 4,
-          itemBuilder: (BuildContext context, int index) {
-            return productWidget(
-                "https://th.bing.com/th/id/OIP.sOwYHfrpmQ_U261wbOUznQHaLH?rs=1&pid=ImgDetMain",
-                "Rise Crop Hoodie",
-                "43.00");
-          }),
     );
   }
 }

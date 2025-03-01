@@ -19,3 +19,26 @@ export '../../features/wishing_list/presentation/views/my_wishlist_all_items_vie
 export '../../features/wishing_list/presentation/views/my_wishlist_board_view.dart';
 export '../../features/check_out/views/check_out_view.dart';
 export '../../features/my_order/views/my_order_view.dart';
+export 'package:flutter/material.dart';
+export 'package:flutter_screenutil/flutter_screenutil.dart';
+export '../../../../../core/utils/app_color.dart';
+export '../../../../../core/utils/styles.dart';
+export 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/product_description.dart';
+export 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/add_to_cart_widget.dart';
+export 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/product_description_widget.dart';
+export 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/product_full_details_widget.dart';
+export 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/product_reviews_widget.dart';
+export 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/similar_product_widget.dart';
+export 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/product_widget_details.dart';
+export 'package:flutter_svg/svg.dart';
+export 'package:mentorship_ecommerce/core/utils/svgs.dart';
+export 'package:mentorship_ecommerce/features/cart/presentation/views/widgets/check_box_widget.dart';
+export 'package:mentorship_ecommerce/features/cart/presentation/views/widgets/container_number_of_product.dart';
+export 'package:mentorship_ecommerce/features/cart/presentation/views/widgets/product_details.dart';
+export 'package:mentorship_ecommerce/core/routes/routes.dart';
+export 'package:mentorship_ecommerce/features/onboarding/presentation/views/widgets/custom_button_onboarding_widget.dart';
+export 'package:mentorship_ecommerce/features/onboarding/presentation/views/widgets/onboarding_widgets/dots_listview.dart';
+export 'package:mentorship_ecommerce/features/onboarding/presentation/views/widgets/onboarding_widgets/onboarding_image.dart';
+export 'package:mentorship_ecommerce/core/widgets/appbar_icon_widget.dart';
+export 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/custom_rating_widget.dart';
+

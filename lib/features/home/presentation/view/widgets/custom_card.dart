@@ -1,38 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:mentorship_ecommerce/features/home/data/models/main_card_model.dart';
 
 class CustomCard extends StatelessWidget {
   const CustomCard({
-    // TODO: Clean Code advises against using more than 2 arguments. Use a model to enhance testability, readability, maintainability, and clarity.
     super.key,
-    required this.child,
-    required this.padding,
-    required this.width,
-    required this.height,
-    required this.image,
-    required this.borderRadius,
-    this.backgroundColor,
+    required this.mainCardModel,
   });
-  final Widget child;
-  final EdgeInsetsGeometry padding;
-  final double width;
-  final double height;
-  final String image;
-  final BorderRadiusGeometry borderRadius;
-  final Color? backgroundColor;
+  final MainCardModel mainCardModel;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: padding,
+      padding: mainCardModel.padding,
       child: Container(
-        width: width,
-        height: height,
+        width: mainCardModel.width,
+        height: mainCardModel.height,
         decoration: ShapeDecoration(
-          image: DecorationImage(image: AssetImage(image), fit: BoxFit.cover),
-          shape: RoundedRectangleBorder(borderRadius: borderRadius),
-          color: backgroundColor ?? Colors.transparent,
+          image: DecorationImage(image: AssetImage(mainCardModel.image), fit: BoxFit.cover),
+          shape: RoundedRectangleBorder(borderRadius: mainCardModel.borderRadius),
+          color: mainCardModel.backgroundColor ?? Colors.transparent,
         ),
-        child: child,
+        child: mainCardModel.child,
       ),
     );
   }

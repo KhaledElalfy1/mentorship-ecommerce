@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/utils/app_color.dart';
 
 class ActiveDot extends StatelessWidget {
   const ActiveDot({super.key});
@@ -21,11 +22,7 @@ class ActiveDot extends StatelessWidget {
         width: 8.w,
         height: 8.h,
         decoration: ShapeDecoration(
-          // TODO: Use the Colors class.
-          //! Why? Imagine the main app color is hardcoded in 250 places. If the
-          //! customer wants to change it, it could take days to update. With a
-          //! centralized Colors class, you can update the color in seconds.
-          color: const Color(0xFFE7E7E7),
+          color: AppColor.dotsBackground,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12.r),
           ),

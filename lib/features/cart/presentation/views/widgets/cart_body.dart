@@ -14,13 +14,7 @@ class CartBody extends StatelessWidget {
           title: "My Cart",
         ),
         Expanded(
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                ProductCartListview(),
-              ],
-            ),
-          ),
+          child: ProductCartListview(),
         ),
         CheckoutWidget(),
       ],

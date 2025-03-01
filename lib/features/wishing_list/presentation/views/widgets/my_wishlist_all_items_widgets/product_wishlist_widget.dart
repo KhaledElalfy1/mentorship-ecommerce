@@ -1,9 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../../../../core/utils/app_color.dart';
-import '../../../../../../core/utils/styles.dart';
-import '../../../../../../core/widgets/appbar_icon_widget.dart';
-import '../../../../../product_full/presentation/view/widgets/custom_rating_widget.dart';
+import 'package:mentorship_ecommerce/features/wishing_list/presentation/views/widgets/my_wishlist_all_items_widgets/product_wish_list_details.dart';
+import 'package:mentorship_ecommerce/features/wishing_list/presentation/views/widgets/my_wishlist_all_items_widgets/product_wish_list_image.dart';
+import '../../../../../../core/routes/routes_exports.dart';
 
 class ProductWishlistWidget extends StatelessWidget {
   const ProductWishlistWidget(
@@ -32,31 +29,7 @@ class ProductWishlistWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(
-            height: 186.h,
-            width: 141.w,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15.r),
-                image: DecorationImage(
-                    fit: BoxFit.cover, image: NetworkImage(productImage))),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                Padding(
-                  padding: EdgeInsets.only(top: 8.h, right: 10.w),
-                  child: AppbarIconWidget(
-                      isPadding: false,
-                      height: 25,
-                      width: 25,
-                      size: 15,
-                      iconWidget: Icons.favorite,
-                      iconColor: AppColor.favoriteIconColor,
-                      onTap: () {}),
-                ),
-              ],
-            ),
-          ),
+          ProductWishListImage(productImage: productImage),
           SizedBox(
             height: 5.h,
           ),
@@ -67,22 +40,10 @@ class ProductWishlistWidget extends StatelessWidget {
           SizedBox(
             height: 2.h,
           ),
-          Row(
-            children: [
-              Text("\$ $productPrice",
-                  style: Styles.textStyle16
-                      .copyWith(color: AppColor.gunmetalGray)),
-              SizedBox(
-                width: 10.w,
-              ),
-              hasLowPrice == true
-                  ? Text("\$ $productNewPrice",
-                      style: Styles.textStyle12.copyWith(
-                          color: AppColor.unSelectedTabIconColor,
-                          decoration: TextDecoration.lineThrough,
-                          decorationColor: AppColor.unSelectedTabIconColor))
-                  : const SizedBox.shrink()
-            ],
+          ProductWishListDetails(
+            productPrice: productPrice,
+            productNewPrice: productNewPrice,
+            hasLowPrice: hasLowPrice,
           ),
           SizedBox(
             height: 2.h,

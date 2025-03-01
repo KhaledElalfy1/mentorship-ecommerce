@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../../../../core/routes/routes.dart';
+import 'package:mentorship_ecommerce/features/onboarding/presentation/views/widgets/welcome_widgets/welcome_content_widget.dart';
 import '../../../../../../core/utils/app_color.dart';
 import '../../../../../../core/utils/assets.dart';
-import '../../../../../../core/utils/styles.dart';
-import '../custom_button_onboarding_widget.dart';
+
 
 class WelcomeBody extends StatelessWidget {
   const WelcomeBody({super.key});
@@ -16,41 +15,14 @@ class WelcomeBody extends StatelessWidget {
       width: MediaQuery.sizeOf(context).width,
       decoration: BoxDecoration(
           image: DecorationImage(
-              fit: BoxFit.cover,
-              colorFilter: ColorFilter.mode(
-                  AppColor.blackColor.withOpacity(.5), BlendMode.hardLight),
-              image: const AssetImage(Assets.welcomeBackground),)),
+        fit: BoxFit.cover,
+        colorFilter: ColorFilter.mode(
+            AppColor.blackColor.withOpacity(.5), BlendMode.hardLight),
+        image: const AssetImage(Assets.welcomeBackground),
+      )),
       child: Padding(
-        padding: EdgeInsets.only(bottom: 100.h),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Text(
-              "Welcome to GemStore! ",
-              style: Styles.textStyle25.copyWith(color: AppColor.whiteColor),
-            ),
-            SizedBox(
-              height: 20.h,
-            ),
-            Text(
-              " The home for a fashionista",
-              style: Styles.textStyle16.copyWith(color: AppColor.whiteColor),
-            ),
-            SizedBox(
-              height: 80.h,
-            ),
-            CustomButtonOnboardingWidget(
-              height: 53.h,
-              width: 193.w,
-              buttonText: 'Get Started',
-              onTap: () {
-                Navigator.pushNamed(context, Routes.onboarding);
-              },
-            )
-          ],
-        ),
-      ),
+          padding: EdgeInsets.only(bottom: 100.h),
+          child: const WelcomeContentWidget()),
     );
   }
 }

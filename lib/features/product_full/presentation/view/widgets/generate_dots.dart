@@ -46,6 +46,5 @@ class GenerateDots extends StatelessWidget {
         ),
       ),
     );
-
   }
 }

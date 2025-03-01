@@ -45,5 +45,4 @@ class RatingWidgetDetails extends StatelessWidget {
       ],
     );
   }
-
 }
