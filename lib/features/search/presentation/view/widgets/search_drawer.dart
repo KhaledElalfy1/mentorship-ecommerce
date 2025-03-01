@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mentorship_ecommerce/features/search/presentation/view/widgets/search_drawer_widgets_section.dart';
 import 'package:mentorship_ecommerce/generated/l10n.dart';
-import '../../../../../core/utils/styles.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'choose_category_section.dart';
 import 'custom_range_slider.dart';
@@ -18,76 +18,36 @@ class SearchDrawer extends StatelessWidget {
     return Drawer(
       backgroundColor: Colors.white,
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 24.0.w),
+        padding: EdgeInsets.symmetric(horizontal: 24.0.w, vertical: 20.h),
         child: ListView(
           children: [
-            // TODO: There is a lot of repeted widgts here , try to adhere DRY Princple ...
-
-            SizedBox(
-              height: 20.h,
-            ),
             const DrawerHeaderWidget(),
             Divider(
               color: const Color(0xffF3F3F6),
               thickness: 1,
               height: 60.h,
             ),
-            Text(
-              S.of(context).price,
-              style: Styles.textStyle14,
+            SearchDrawerWidgetsSection(
+              text: S.of(context).price,
+              widget: const CustomRangeSlider(),
             ),
-            SizedBox(
-              height: 20.h,
+            SearchDrawerWidgetsSection(
+              text: S.of(context).color,
+              widget: const SelectColorSection(),
             ),
-            const CustomRangeSlider(),
-            SizedBox(
-              height: 20.h,
+            SearchDrawerWidgetsSection(
+              text: S.of(context).rating,
+              widget: const ProductRatingListView(),
             ),
-            Text(
-              S.of(context).color,
-              style: Styles.textStyle14,
+            SearchDrawerWidgetsSection(
+              text: S.of(context).category,
+              widget: const ChooseCategorySection(),
             ),
-            SizedBox(
-              height: 20.h,
-            ),
-            const SelectColorSection(),
-            SizedBox(
-              height: 20.h,
-            ),
-            Text(
-              S.of(context).rating,
-              style: Styles.textStyle14,
-            ),
-            SizedBox(
-              height: 20.h,
-            ),
-            const ProductRatingListView(),
-            const SizedBox(
-              height: 20,
-            ),
-            Text(
-              S.of(context).category,
-              style: Styles.textStyle14,
-            ),
-            SizedBox(
-              height: 20.h,
-            ),
-            const ChooseCategorySection(),
-            SizedBox(
-              height: 20.h,
-            ),
-            Text(S.of(context).discount, style: Styles.textStyle14),
-            SizedBox(
-              height: 20.h,
-            ),
-            const DiscountSection(),
-            SizedBox(
-              height: 20.h,
+            SearchDrawerWidgetsSection(
+              text: S.of(context).discount,
+              widget: const DiscountSection(),
             ),
             const FilterActionSection(),
-            SizedBox(
-              height: 20.h,
-            ),
           ],
         ),
       ),
