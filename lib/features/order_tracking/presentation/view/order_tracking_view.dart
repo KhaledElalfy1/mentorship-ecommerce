@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mentorship_ecommerce/generated/l10n.dart';
 import '../../../../core/utils/styles.dart';
 import '../../../../core/widgets/custom_back_button.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -15,7 +16,7 @@ class OrderTrackingView extends StatelessWidget {
         backgroundColor: Colors.white,
         leading: const CustomBackButton(),
         title: Text(
-          'Track Order',
+          S.of(context).trackOrder,
           style: Styles.textStyle18.copyWith(
             fontWeight: FontWeight.w500,
           ),
@@ -29,7 +30,7 @@ class OrderTrackingView extends StatelessWidget {
             SizedBox(height: 50.h),
             Text.rich(
               TextSpan(
-                text: 'Delivered On: ',
+                text: S.of(context).deliveredOn,
                 style: Styles.textStyle13.copyWith(
                   color: Colors.grey,
                   fontWeight: FontWeight.w400,
@@ -49,7 +50,7 @@ class OrderTrackingView extends StatelessWidget {
             SizedBox(height: 16.h),
             Text.rich(
               TextSpan(
-                text: 'Tracking Number: ',
+                text: S.of(context).trackingNumber,
                 style: Styles.textStyle13.copyWith(
                   color: Colors.grey,
                   fontWeight: FontWeight.w400,

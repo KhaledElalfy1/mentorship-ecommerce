@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mentorship_ecommerce/generated/l10n.dart';
 import '../../../../core/utils/styles.dart';
 import '../../../../core/widgets/custom_back_button.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -16,7 +17,7 @@ class OrderInfoView extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: Text(
-          'Order #1514',
+          '${S.of(context).order} #1514',
           style: Styles.textStyle18,
         ),
         centerTitle: true,

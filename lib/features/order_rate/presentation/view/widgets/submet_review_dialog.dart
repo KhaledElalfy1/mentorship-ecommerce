@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:mentorship_ecommerce/generated/l10n.dart';
 import '../../../../../core/utils/app_color.dart';
 import '../../../../../core/utils/styles.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -29,7 +30,7 @@ class SubmitReviewDialog extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Text(
-              'Thank you for your feedback!',
+              S.of(context).thankYouForYourFeedback,
               style: Styles.textStyle16.copyWith(
                 fontWeight: FontWeight.w500,
                 color: AppColor.containerMyOrderColors,
@@ -37,7 +38,7 @@ class SubmitReviewDialog extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Text(
-              'We appreciated your feedback.\nWe\'ll use your feedback to improve\n your experience.',
+              S.of(context).weAppreciatedYourFeedback,
               textAlign: TextAlign.center,
               style: Styles.textStyle14.copyWith(
                 color: const Color(
@@ -48,7 +49,7 @@ class SubmitReviewDialog extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             CustomButton(
-              buttonText: 'Done',
+              buttonText:S.of(context).done,
               onPressed: () {
                 Navigator.pop(context);
               },

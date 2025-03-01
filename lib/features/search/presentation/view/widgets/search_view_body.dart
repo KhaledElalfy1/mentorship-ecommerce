@@ -34,21 +34,11 @@ class SearchViewBody extends StatelessWidget {
             SizedBox(
               height: 20.h,
             ),
-            const Wrap(
-              children: [
-                SearchResultItem(
-                  text:
-                      'SunglassesSunglassesSunglassesSunglassesSunglassesSunglassesSunglassesSunglassesSunglassesSunglassesSunglasses',
-                ),
-                SearchResultItem(
-                  text: 'Sunglasses',
-                ),
-                SearchResultItem(text: 'Sweater'),
-                SearchResultItem(text: 'Sweater'),
-                SearchResultItem(text: 'Sweater'),
-                SearchResultItem(text: 'sw'),
-                SearchResultItem(text: 'er'),
-              ],
+            Wrap(
+              children: List.generate(
+                5,
+                (index) => SearchResultItem(text: 'we' * (index + 1)),
+              ),
             )
           ],
         ),

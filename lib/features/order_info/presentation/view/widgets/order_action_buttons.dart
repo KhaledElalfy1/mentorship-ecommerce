@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/generated/l10n.dart';
 import '../../../../../core/helper/extention.dart';
 import '../../../../../core/routes/routes.dart';
 import '../../../../../core/utils/styles.dart';
@@ -37,7 +38,7 @@ class OrderActionButtons extends StatelessWidget {
             context.pushReplacementNamed(Routes.home);
           },
           child: Text(
-            'Return Home',
+           S.of(context).returnHome,
             style: Styles.textStyle16.copyWith(
               fontWeight: FontWeight.normal,
               color: const Color(
@@ -50,7 +51,7 @@ class OrderActionButtons extends StatelessWidget {
           width: 120.w,
           height: 50.h,
           child: CustomButton(
-            buttonText: 'Rate',
+            buttonText:S.of(context).rate,
             onPressed: () {
               context.pushNamed(Routes.orderRate);
             },

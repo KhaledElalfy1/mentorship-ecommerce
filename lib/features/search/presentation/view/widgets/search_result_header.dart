@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:mentorship_ecommerce/generated/l10n.dart';
 import '../../../../../core/utils/styles.dart';
 import '../../../../../core/utils/svgs.dart';
 
@@ -11,7 +12,7 @@ class SearchResultHeader extends StatelessWidget {
     return Row(
       children: [
         Text(
-          'Recent Searches',
+          S.of(context).recentSearch,
           style: Styles.textStyle16.copyWith(
             color: const Color(
               0xff9B9A99,

@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:mentorship_ecommerce/core/utils/assets.dart';
+import 'package:mentorship_ecommerce/features/discover/data/models/category_model.dart';
+import 'package:mentorship_ecommerce/generated/l10n.dart';
+
 import 'category_section_navigator.dart';
 
 class CategorySectionListView extends StatelessWidget {
@@ -6,18 +10,24 @@ class CategorySectionListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      //TODO: Avoid using 'shrink' here. It builds all children at once, bypassing ListView.builder's lazy loading, which can lead to memory leaks with large lists. Use an alternative approach.
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
-      itemCount: 5,
-      itemBuilder: (context, index) {
-        return CategorySectionNavigator(
-          category: 'Clothing',
-          items: '12 items',
-          onTap: () {},
-        );
-      },
+    return SizedBox(
+      height: 5 * 50,
+      child: ListView.builder(
+        physics: const NeverScrollableScrollPhysics(),
+        itemCount: 5,
+        itemBuilder: (context, index) {
+          return CategorySectionNavigator(
+            category: CategoryModel(
+              category:S.of(context).clothing,
+              numberOfItems: '5',
+              backgroundColor: 0xffA3A798,
+              circleColor: 0xffC2C7B5,
+              image: Assets.clothing,
+            ),
+            onTap: () {},
+          );
+        },
+      ),
     );
   }
 }

@@ -49,6 +49,366 @@ class S {
   static S? maybeOf(BuildContext context) {
     return Localizations.of<S>(context, S);
   }
+
+  /// `Price`
+  String get price {
+    return Intl.message(
+      'Price',
+      name: 'price',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Color`
+  String get color {
+    return Intl.message(
+      'Color',
+      name: 'color',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Star Rating`
+  String get rating {
+    return Intl.message(
+      'Star Rating',
+      name: 'rating',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Category`
+  String get category {
+    return Intl.message(
+      'Category',
+      name: 'category',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Discount`
+  String get discount {
+    return Intl.message(
+      'Discount',
+      name: 'discount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Filter`
+  String get filter {
+    return Intl.message(
+      'Filter',
+      name: 'filter',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Clear`
+  String get clear {
+    return Intl.message(
+      'Clear',
+      name: 'clear',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Apply`
+  String get apply {
+    return Intl.message(
+      'Apply',
+      name: 'apply',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search`
+  String get search {
+    return Intl.message(
+      'Search',
+      name: 'search',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Recent Search`
+  String get recentSearch {
+    return Intl.message(
+      'Recent Search',
+      name: 'recentSearch',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Discover`
+  String get discover {
+    return Intl.message(
+      'Discover',
+      name: 'discover',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Clothing`
+  String get clothing {
+    return Intl.message(
+      'Clothing',
+      name: 'clothing',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Shoes`
+  String get shoes {
+    return Intl.message(
+      'Shoes',
+      name: 'shoes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Accessories`
+  String get accessories {
+    return Intl.message(
+      'Accessories',
+      name: 'accessories',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Collection`
+  String get collection {
+    return Intl.message(
+      'Collection',
+      name: 'collection',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Items`
+  String get items {
+    return Intl.message(
+      'Items',
+      name: 'items',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your order is delivered`
+  String get yourOrderIsDelivered {
+    return Intl.message(
+      'Your order is delivered',
+      name: 'yourOrderIsDelivered',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Rate Product to get 5 points for collect`
+  String get rateProductToGet {
+    return Intl.message(
+      'Rate Product to get 5 points for collect',
+      name: 'rateProductToGet',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Order Number`
+  String get orderNumber {
+    return Intl.message(
+      'Order Number',
+      name: 'orderNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tracking Number`
+  String get trackingNumber {
+    return Intl.message(
+      'Tracking Number',
+      name: 'trackingNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delivered Address`
+  String get deliveredAddress {
+    return Intl.message(
+      'Delivered Address',
+      name: 'deliveredAddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Return Home`
+  String get returnHome {
+    return Intl.message(
+      'Return Home',
+      name: 'returnHome',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Rate`
+  String get rate {
+    return Intl.message(
+      'Rate',
+      name: 'rate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Order`
+  String get order {
+    return Intl.message(
+      'Order',
+      name: 'order',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Rate Product`
+  String get rateProduct {
+    return Intl.message(
+      'Rate Product',
+      name: 'rateProduct',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Submit Review`
+  String get submitReview {
+    return Intl.message(
+      'Submit Review',
+      name: 'submitReview',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Would you like to write a review for this product?`
+  String get wouldYouLikeToWrite {
+    return Intl.message(
+      'Would you like to write a review for this product?',
+      name: 'wouldYouLikeToWrite',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Thank you for your feedback!`
+  String get thankYouForYourFeedback {
+    return Intl.message(
+      'Thank you for your feedback!',
+      name: 'thankYouForYourFeedback',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We appreciated your feedback.\nWe'll use your feedback to improve\n your experience.`
+  String get weAppreciatedYourFeedback {
+    return Intl.message(
+      'We appreciated your feedback.\nWe\'ll use your feedback to improve\n your experience.',
+      name: 'weAppreciatedYourFeedback',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Done`
+  String get done {
+    return Intl.message(
+      'Done',
+      name: 'done',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Track Order`
+  String get trackOrder {
+    return Intl.message(
+      'Track Order',
+      name: 'trackOrder',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delivered on:`
+  String get deliveredOn {
+    return Intl.message(
+      'Delivered on:',
+      name: 'deliveredOn',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Settings`
+  String get settings {
+    return Intl.message(
+      'Settings',
+      name: 'settings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Language`
+  String get language {
+    return Intl.message(
+      'Language',
+      name: 'language',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Terms of Use`
+  String get termsOFUse {
+    return Intl.message(
+      'Terms of Use',
+      name: 'termsOFUse',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Privacy Policy`
+  String get privacyPolicy {
+    return Intl.message(
+      'Privacy Policy',
+      name: 'privacyPolicy',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
