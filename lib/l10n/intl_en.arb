@@ -28,5 +28,7 @@
     "wouldYouLikeToWrite":"Would you like to write a review for this product?",
     "thankYouForYourFeedback":"Thank you for your feedback!",
     "weAppreciatedYourFeedback":"We appreciated your feedback.\nWe'll use your feedback to improve\n your experience.",
-    "done":"Done"
+    "done":"Done",
+    "trackOrder":"Track Order",
+    "deliveredOn":"Delivered on:"
 }

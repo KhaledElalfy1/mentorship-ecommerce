@@ -349,6 +349,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Track Order`
+  String get trackOrder {
+    return Intl.message(
+      'Track Order',
+      name: 'trackOrder',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delivered on:`
+  String get deliveredOn {
+    return Intl.message(
+      'Delivered on:',
+      name: 'deliveredOn',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

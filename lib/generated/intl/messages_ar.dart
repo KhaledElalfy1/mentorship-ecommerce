@@ -31,6 +31,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "color": MessageLookupByLibrary.simpleMessage("اللون"),
         "deliveredAddress":
             MessageLookupByLibrary.simpleMessage("عنوان التسليم"),
+        "deliveredOn": MessageLookupByLibrary.simpleMessage(":يُستلم فى"),
         "discount": MessageLookupByLibrary.simpleMessage("الخصم"),
         "discover": MessageLookupByLibrary.simpleMessage("اكتشف"),
         "done": MessageLookupByLibrary.simpleMessage("تم"),
@@ -52,6 +53,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "submitReview": MessageLookupByLibrary.simpleMessage("إرسال المراجعة"),
         "thankYouForYourFeedback":
             MessageLookupByLibrary.simpleMessage("!شكرًا لك على ملاحظاتك"),
+        "trackOrder": MessageLookupByLibrary.simpleMessage("تتبع الطلب"),
         "trackingNumber": MessageLookupByLibrary.simpleMessage("رقم التتبع"),
         "weAppreciatedYourFeedback": MessageLookupByLibrary.simpleMessage(
             "نقدر ملاحظاتك.\nسنستخدم ملاحظاتك لتحسين\n تجربتك."),

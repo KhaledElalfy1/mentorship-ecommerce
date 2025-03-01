@@ -31,6 +31,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "color": MessageLookupByLibrary.simpleMessage("Color"),
         "deliveredAddress":
             MessageLookupByLibrary.simpleMessage("Delivered Address"),
+        "deliveredOn": MessageLookupByLibrary.simpleMessage("Delivered on:"),
         "discount": MessageLookupByLibrary.simpleMessage("Discount"),
         "discover": MessageLookupByLibrary.simpleMessage("Discover"),
         "done": MessageLookupByLibrary.simpleMessage("Done"),
@@ -51,6 +52,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "submitReview": MessageLookupByLibrary.simpleMessage("Submit Review"),
         "thankYouForYourFeedback": MessageLookupByLibrary.simpleMessage(
             "Thank you for your feedback!"),
+        "trackOrder": MessageLookupByLibrary.simpleMessage("Track Order"),
         "trackingNumber":
             MessageLookupByLibrary.simpleMessage("Tracking Number"),
         "weAppreciatedYourFeedback": MessageLookupByLibrary.simpleMessage(

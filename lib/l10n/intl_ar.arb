@@ -28,5 +28,7 @@
     "wouldYouLikeToWrite": "هل ترغب في كتابة مراجعة لهذا المنتج؟",
     "thankYouForYourFeedback": "!شكرًا لك على ملاحظاتك",
     "weAppreciatedYourFeedback": "نقدر ملاحظاتك.\nسنستخدم ملاحظاتك لتحسين\n تجربتك.",
-    "done": "تم"
+    "done": "تم",
+    "trackOrder":"تتبع الطلب",
+    "deliveredOn":":يُستلم فى"
 }
