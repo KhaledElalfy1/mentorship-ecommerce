@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/helper/extention.dart';
 
 import 'custom_edit_profile_app_bar.dart';
 import 'custom_edit_profile_image.dart';
@@ -16,17 +16,11 @@ class EditProfileViewBody extends StatelessWidget {
         child: Column(
           children: [
             const CustomEditProfileAppBar(),
-            SizedBox(
-              height: 40.h,
-            ),
+            40.addVerticalSpace,
             const CustomEditProfileImage(),
-            SizedBox(
-              height: 94.h,
-            ),
+            94.addVerticalSpace,
             const EditProfileDetailsSection(),
-            SizedBox(
-              height: 113.h,
-            ),
+            113.addVerticalSpace,
             const CustomEditSearchButton()
           ],
         ),

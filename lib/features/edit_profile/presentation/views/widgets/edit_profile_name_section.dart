@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/helper/extention.dart';
 import 'package:mentorship_ecommerce/features/edit_profile/presentation/views/widgets/first_name_text_field.dart';
 import 'package:mentorship_ecommerce/features/edit_profile/presentation/views/widgets/last_name_text_field.dart';
 
@@ -17,9 +17,7 @@ class _EditProfileNameState extends State<EditProfileNameSection> {
     return Row(
       children: [
         const FirstNameTextField(),
-        SizedBox(
-          width: 8.w,
-        ),
+        8.addHorizontalSpace,
         const LastNameTextField(),
       ],
     );

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/helper/extention.dart';
 import 'package:mentorship_ecommerce/features/edit_profile/presentation/views/widgets/gender_text_form_field.dart';
 import 'package:mentorship_ecommerce/features/edit_profile/presentation/views/widgets/phone_text_form_field.dart';
 
@@ -16,9 +16,7 @@ class _EditProfilePhoneAndGenderSectionState extends State<EditProfilePhoneAndGe
     return Row(
       children: [
         const GenderTextFormField(),
-        SizedBox(
-          width: 8.w,
-        ),
+        8.addHorizontalSpace,
         const PhoneTextFormField(),
       ],
     );
