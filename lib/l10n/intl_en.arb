@@ -14,5 +14,19 @@
     "shoes": "Shoes",
     "accessories": "Accessories",
     "collection": "Collection",
-    "items": "Items"
+    "items": "Items",
+    "yourOrderIsDelivered": "Your order is delivered",
+    "rateProductToGet": "Rate Product to get 5 points for collect",
+    "orderNumber": "Order Number",
+    "trackingNumber": "Tracking Number",
+    "deliveredAddress": "Delivered Address",
+    "returnHome": "Return Home",
+    "rate": "Rate",
+    "order": "Order",
+    "rateProduct":"Rate Product",
+    "submitReview":"Submit Review",
+    "wouldYouLikeToWrite":"Would you like to write a review for this product?",
+    "thankYouForYourFeedback":"Thank you for your feedback!",
+    "weAppreciatedYourFeedback":"We appreciated your feedback.\nWe'll use your feedback to improve\n your experience.",
+    "done":"Done"
 }

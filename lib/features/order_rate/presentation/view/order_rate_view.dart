@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mentorship_ecommerce/generated/l10n.dart';
 import '../../../../core/widgets/custom_back_button.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../core/widgets/custom_button.dart';
@@ -14,7 +15,7 @@ class OrderRateView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: const CustomBackButton(),
-        title: const Text('Rate Product'),
+        title:  Text(S.of(context).rateProduct),
         centerTitle: true,
       ),
       body: ListView(
@@ -29,7 +30,7 @@ class OrderRateView extends StatelessWidget {
             child: SizedBox(
               height: 50.h,
               child: CustomButton(
-                buttonText: 'Submit Review',
+                buttonText: S.of(context).submitReview,
                 onPressed: () {
                   showDialog(
                       context: context,

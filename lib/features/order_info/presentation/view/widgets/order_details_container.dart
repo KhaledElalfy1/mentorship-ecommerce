@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/generated/l10n.dart';
 import 'order_info_row.dart';
 
 
@@ -17,20 +18,20 @@ class OrderDetailsContainer extends StatelessWidget {
         borderRadius: BorderRadius.circular(10.r),
         color: Colors.white,
       ),
-      child: const Column(
+      child:  Column(
         children: [
           OrderInfoRow(
-            title: 'Order number',
+            title: S.of(context).orderNumber,
             value: '#1514',
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           OrderInfoRow(
-            title: 'Tracking Number',
+            title: S.of(context).trackingNumber,
             value: 'IK987362341',
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           OrderInfoRow(
-            title: 'Delivery address',
+            title: S.of(context).deliveredAddress,
             value: 'SBI Building, Software Park',
           ),
         ],

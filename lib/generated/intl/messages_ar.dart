@@ -29,14 +29,35 @@ class MessageLookup extends MessageLookupByLibrary {
         "clothing": MessageLookupByLibrary.simpleMessage("ملابس"),
         "collection": MessageLookupByLibrary.simpleMessage("مجموعة"),
         "color": MessageLookupByLibrary.simpleMessage("اللون"),
+        "deliveredAddress":
+            MessageLookupByLibrary.simpleMessage("عنوان التسليم"),
         "discount": MessageLookupByLibrary.simpleMessage("الخصم"),
         "discover": MessageLookupByLibrary.simpleMessage("اكتشف"),
+        "done": MessageLookupByLibrary.simpleMessage("تم"),
         "filter": MessageLookupByLibrary.simpleMessage("تصفية"),
         "items": MessageLookupByLibrary.simpleMessage("العناصر"),
+        "order": MessageLookupByLibrary.simpleMessage("طلب"),
+        "orderNumber": MessageLookupByLibrary.simpleMessage("رقم الطلب"),
         "price": MessageLookupByLibrary.simpleMessage("السعر"),
+        "rate": MessageLookupByLibrary.simpleMessage("تقييم"),
+        "rateProduct": MessageLookupByLibrary.simpleMessage("تقييم المنتج"),
+        "rateProductToGet": MessageLookupByLibrary.simpleMessage(
+            "قيم المنتج للحصول على 5 نقاط للتجميع"),
         "rating": MessageLookupByLibrary.simpleMessage("تقييم النجوم"),
         "recentSearch": MessageLookupByLibrary.simpleMessage("البحث الأخير"),
+        "returnHome":
+            MessageLookupByLibrary.simpleMessage("العودة للصفحة الرئيسية"),
         "search": MessageLookupByLibrary.simpleMessage("بحث"),
-        "shoes": MessageLookupByLibrary.simpleMessage("أحذية")
+        "shoes": MessageLookupByLibrary.simpleMessage("أحذية"),
+        "submitReview": MessageLookupByLibrary.simpleMessage("إرسال المراجعة"),
+        "thankYouForYourFeedback":
+            MessageLookupByLibrary.simpleMessage("!شكرًا لك على ملاحظاتك"),
+        "trackingNumber": MessageLookupByLibrary.simpleMessage("رقم التتبع"),
+        "weAppreciatedYourFeedback": MessageLookupByLibrary.simpleMessage(
+            "نقدر ملاحظاتك.\nسنستخدم ملاحظاتك لتحسين\n تجربتك."),
+        "wouldYouLikeToWrite": MessageLookupByLibrary.simpleMessage(
+            "هل ترغب في كتابة مراجعة لهذا المنتج؟"),
+        "yourOrderIsDelivered":
+            MessageLookupByLibrary.simpleMessage("تم تسليم طلبك")
       };
 }

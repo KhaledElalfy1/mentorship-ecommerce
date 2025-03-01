@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:mentorship_ecommerce/generated/l10n.dart';
 import '../../../../../core/utils/styles.dart';
 import '../../../../../core/utils/svgs.dart';
 
@@ -23,13 +24,13 @@ class OrderStateContainer extends StatelessWidget {
           Column(
             children: [
               Text(
-                'Your order is delivered',
+                S.of(context).yourOrderIsDelivered,
                 style: Styles.textStyle16.copyWith(
                   color: Colors.white,
                 ),
               ),
               Text(
-                'Rate product to get 5 points for collect.',
+                S.of(context).rateProductToGet,
                 style: Styles.textStyle10.copyWith(
                   color: Colors.white,
                 ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/generated/l10n.dart';
 import '../../../../../core/utils/styles.dart';
 
 class ReviewContainer extends StatelessWidget {
@@ -27,9 +28,7 @@ class ReviewContainer extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            // TODO: Create or use app strings class
-
-            'Would you like to write anything about this product?',
+            S.of(context).wouldYouLikeToWrite,
             style: Styles.textStyle12.copyWith(
               color: const Color(0xff5A5A5A),
               fontWeight: FontWeight.w300,

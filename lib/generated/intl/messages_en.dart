@@ -29,14 +29,35 @@ class MessageLookup extends MessageLookupByLibrary {
         "clothing": MessageLookupByLibrary.simpleMessage("Clothing"),
         "collection": MessageLookupByLibrary.simpleMessage("Collection"),
         "color": MessageLookupByLibrary.simpleMessage("Color"),
+        "deliveredAddress":
+            MessageLookupByLibrary.simpleMessage("Delivered Address"),
         "discount": MessageLookupByLibrary.simpleMessage("Discount"),
         "discover": MessageLookupByLibrary.simpleMessage("Discover"),
+        "done": MessageLookupByLibrary.simpleMessage("Done"),
         "filter": MessageLookupByLibrary.simpleMessage("Filter"),
         "items": MessageLookupByLibrary.simpleMessage("Items"),
+        "order": MessageLookupByLibrary.simpleMessage("Order"),
+        "orderNumber": MessageLookupByLibrary.simpleMessage("Order Number"),
         "price": MessageLookupByLibrary.simpleMessage("Price"),
+        "rate": MessageLookupByLibrary.simpleMessage("Rate"),
+        "rateProduct": MessageLookupByLibrary.simpleMessage("Rate Product"),
+        "rateProductToGet": MessageLookupByLibrary.simpleMessage(
+            "Rate Product to get 5 points for collect"),
         "rating": MessageLookupByLibrary.simpleMessage("Star Rating"),
         "recentSearch": MessageLookupByLibrary.simpleMessage("Recent Search"),
+        "returnHome": MessageLookupByLibrary.simpleMessage("Return Home"),
         "search": MessageLookupByLibrary.simpleMessage("Search"),
-        "shoes": MessageLookupByLibrary.simpleMessage("Shoes")
+        "shoes": MessageLookupByLibrary.simpleMessage("Shoes"),
+        "submitReview": MessageLookupByLibrary.simpleMessage("Submit Review"),
+        "thankYouForYourFeedback": MessageLookupByLibrary.simpleMessage(
+            "Thank you for your feedback!"),
+        "trackingNumber":
+            MessageLookupByLibrary.simpleMessage("Tracking Number"),
+        "weAppreciatedYourFeedback": MessageLookupByLibrary.simpleMessage(
+            "We appreciated your feedback.\nWe\'ll use your feedback to improve\n your experience."),
+        "wouldYouLikeToWrite": MessageLookupByLibrary.simpleMessage(
+            "Would you like to write a review for this product?"),
+        "yourOrderIsDelivered":
+            MessageLookupByLibrary.simpleMessage("Your order is delivered")
       };
 }

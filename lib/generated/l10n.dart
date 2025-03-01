@@ -209,6 +209,146 @@ class S {
       args: [],
     );
   }
+
+  /// `Your order is delivered`
+  String get yourOrderIsDelivered {
+    return Intl.message(
+      'Your order is delivered',
+      name: 'yourOrderIsDelivered',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Rate Product to get 5 points for collect`
+  String get rateProductToGet {
+    return Intl.message(
+      'Rate Product to get 5 points for collect',
+      name: 'rateProductToGet',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Order Number`
+  String get orderNumber {
+    return Intl.message(
+      'Order Number',
+      name: 'orderNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tracking Number`
+  String get trackingNumber {
+    return Intl.message(
+      'Tracking Number',
+      name: 'trackingNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delivered Address`
+  String get deliveredAddress {
+    return Intl.message(
+      'Delivered Address',
+      name: 'deliveredAddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Return Home`
+  String get returnHome {
+    return Intl.message(
+      'Return Home',
+      name: 'returnHome',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Rate`
+  String get rate {
+    return Intl.message(
+      'Rate',
+      name: 'rate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Order`
+  String get order {
+    return Intl.message(
+      'Order',
+      name: 'order',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Rate Product`
+  String get rateProduct {
+    return Intl.message(
+      'Rate Product',
+      name: 'rateProduct',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Submit Review`
+  String get submitReview {
+    return Intl.message(
+      'Submit Review',
+      name: 'submitReview',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Would you like to write a review for this product?`
+  String get wouldYouLikeToWrite {
+    return Intl.message(
+      'Would you like to write a review for this product?',
+      name: 'wouldYouLikeToWrite',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Thank you for your feedback!`
+  String get thankYouForYourFeedback {
+    return Intl.message(
+      'Thank you for your feedback!',
+      name: 'thankYouForYourFeedback',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We appreciated your feedback.\nWe'll use your feedback to improve\n your experience.`
+  String get weAppreciatedYourFeedback {
+    return Intl.message(
+      'We appreciated your feedback.\nWe\'ll use your feedback to improve\n your experience.',
+      name: 'weAppreciatedYourFeedback',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Done`
+  String get done {
+    return Intl.message(
+      'Done',
+      name: 'done',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
