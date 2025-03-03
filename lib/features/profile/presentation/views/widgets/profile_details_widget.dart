@@ -19,14 +19,13 @@ class ProfileDetailsWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        ProfileDetailsIcons(icon: icon, text: text,isNeededIcon: isNeededIcon,onPressed: onPressed,),
-        isNeededIcon == true
-            ? SizedBox(
-                height: 10.h,
-              )
-            : SizedBox(
-                height: 20.h,
-              ),
+        ProfileDetailsIcons(
+          icon: icon,
+          text: text,
+          isNeededIcon: isNeededIcon,
+          onPressed: onPressed,
+        ),
+        isNeededIcon == true ? SizedBox(height: 10.h) : SizedBox(height: 20.h),
         const Divider(
           color: AppColor.dividerColor,
         )
