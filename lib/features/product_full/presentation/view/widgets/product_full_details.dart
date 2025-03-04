@@ -1,9 +1,10 @@
 import 'package:mentorship_ecommerce/core/routes/routes_exports.dart';
+import 'package:mentorship_ecommerce/features/product_full/data/models/product_model.dart';
 import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/product_full_details_body.dart';
 
 class ProductFullDetails extends StatefulWidget {
-  const ProductFullDetails({super.key});
-
+  const ProductFullDetails({super.key, required this.productModel});
+  final ProductModel productModel;
   @override
   State<ProductFullDetails> createState() => _ProductFullDetailsState();
 }
@@ -34,6 +35,6 @@ class _ProductFullDetailsState extends State<ProductFullDetails> {
           ],
           color: Colors.white,
         ),
-        child: const ProductFullDetailsBody());
+        child:  ProductFullDetailsBody(productModel:widget.productModel,));
   }
 }

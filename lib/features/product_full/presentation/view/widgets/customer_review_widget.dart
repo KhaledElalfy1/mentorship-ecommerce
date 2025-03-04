@@ -1,19 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/features/product_full/data/models/product_review_model.dart';
 import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/customer_review_details.dart';
 import '../../../../../core/utils/styles.dart';
 
 class CustomerReviewWidget extends StatelessWidget {
-  const CustomerReviewWidget(
-      {super.key,
-      required this.customerName,
-      required this.image,
-      required this.time,
-      required this.review});
-  final String customerName;
-  final String image;
-  final String time;
-  final String review;
+  const CustomerReviewWidget({
+    super.key,
+    required this.reviewModel,
+  });
+  final ReviewModel reviewModel;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -23,9 +19,10 @@ class CustomerReviewWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             CustomerReviewDetails(
-                customerName: customerName, image: image, time: time),
+              reviewModel:reviewModel,
+            ),
             Text(
-              time,
+              " ${reviewModel.timeAgo}m ago",
               style: Styles.textStyle11,
             )
           ],
@@ -36,7 +33,7 @@ class CustomerReviewWidget extends StatelessWidget {
         SizedBox(
             width: 313.w,
             child: Text(
-              review,
+              reviewModel.review,
               style: Styles.textStyle11,
             )),
         SizedBox(

@@ -1,10 +1,11 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:mentorship_ecommerce/core/routes/routes_exports.dart';
-import 'package:mentorship_ecommerce/features/product_full/data/image_list.dart';
+import 'package:mentorship_ecommerce/features/product_full/data/models/product_model.dart';
 
 class CarouselWidget extends StatefulWidget {
-  const CarouselWidget({super.key, required this.currentIndex});
+  const CarouselWidget({super.key, required this.currentIndex, required this.productModel});
   final ValueNotifier<int> currentIndex;
+  final ProductModel productModel;
   @override
   State<CarouselWidget> createState() => _CarouselWidgetState();
 }
@@ -14,12 +15,12 @@ class _CarouselWidgetState extends State<CarouselWidget> {
   Widget build(BuildContext context) {
     return CarouselSlider(
       items: [
-        for (int i = 0; i < imageList.length; i++)
+        for (int i = 0; i < widget.productModel.productImage.length; i++)
           Container(
             decoration: BoxDecoration(
                 image: DecorationImage(
               image: NetworkImage(
-                imageList[i],
+                widget.productModel.productImage[i],
               ),
             )),
           )

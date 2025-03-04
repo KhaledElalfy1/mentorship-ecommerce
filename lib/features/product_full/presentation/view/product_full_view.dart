@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mentorship_ecommerce/features/product_full/data/models/product_model.dart';
 import '../../../../core/utils/app_color.dart';
 import 'widgets/product_full_body.dart';
 
@@ -12,9 +13,9 @@ class ProductFullView extends StatefulWidget {
 class _MyWidgetState extends State<ProductFullView> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
       backgroundColor:AppColor.backgroundColor,
-      body: ProductFullBody(),
+      body: ProductFullBody(productModel: products,),
     );
   }
 }

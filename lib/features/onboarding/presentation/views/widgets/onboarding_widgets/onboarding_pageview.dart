@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:mentorship_ecommerce/features/onboarding/data/onboarding_model.dart';
 import '../../../../data/onboarding_content.dart';
 import 'onboarding_body.dart';
 
@@ -24,11 +25,12 @@ class _OnboardingPageViewState extends State<OnboardingPageView> {
       },
       itemBuilder: (_, index) {
         return OnboardingBody(
-          image: content[index].image,
-          text1: content[index].text1,
-          text2: content[index].text2,
-          dotNum: content.length,
-          currentIndex: index,
+          onboardingModel: OnboardingModel(
+              image: content[index].image,
+              text1: content[index].text1,
+              text2: content[index].text2,
+              dotNum: content.length,
+              currentIndex: currentIndex),
         );
       },
     );
