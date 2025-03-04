@@ -1,8 +1,10 @@
+import 'package:mentorship_ecommerce/features/product_full/data/models/product_model.dart';
+
 import '../../../../../core/routes/routes_exports.dart';
 
 class ProductDescriptionWidget extends StatefulWidget {
-  const ProductDescriptionWidget({super.key});
-
+  const ProductDescriptionWidget({super.key, required this.productModel});
+  final ProductModel productModel;
   @override
   State<ProductDescriptionWidget> createState() =>
       _ProductDescriptionWidgetState();
@@ -44,7 +46,7 @@ class _ProductDescriptionWidgetState extends State<ProductDescriptionWidget> {
           const Divider(
             color: AppColor.dividerColor,
           ),
-          ProductDescription(isExpanded: isExpanded)
+          ProductDescription(isExpanded: isExpanded, productModel: widget.productModel,)
         ],
       ),
     );

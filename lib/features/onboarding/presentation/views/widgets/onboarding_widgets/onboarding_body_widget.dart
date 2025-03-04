@@ -1,18 +1,10 @@
+import 'package:mentorship_ecommerce/features/onboarding/data/onboarding_model.dart';
 import '../../../../../../core/routes/routes_exports.dart';
 
 class OnboardingBodyWidget extends StatelessWidget {
-  const OnboardingBodyWidget(
-      {super.key,
-      required this.image,
-      required this.text1,
-      required this.text2,
-      required this.dotNum,
-      required this.currentIndex});
-  final String image;
-  final String text1;
-  final String text2;
-  final int dotNum;
-  final int currentIndex;
+  const OnboardingBodyWidget({super.key, required this.onboardingModel});
+  final OnboardingModel onboardingModel;
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -20,26 +12,28 @@ class OnboardingBodyWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text(
-          text1,
+          onboardingModel.text1,
           style: Styles.textStyle20.copyWith(color: AppColor.blackColor),
         ),
         SizedBox(
           height: 20.h,
         ),
         Text(
-          text2,
+          onboardingModel.text2,
           style: Styles.textStyle14.copyWith(color: AppColor.blackColor),
         ),
         SizedBox(
           height: 30.h,
         ),
         OnboardingImage(
-          image: image,
+          onboardingModel: onboardingModel,
         ),
         SizedBox(
           height: 70.h,
         ),
-        DotsListView(dotCount: dotNum, currentIndex2: currentIndex),
+        DotsListView(
+            dotCount: onboardingModel.dotNum,
+            currentIndex2: onboardingModel.currentIndex),
         SizedBox(
           height: 40.h,
         ),

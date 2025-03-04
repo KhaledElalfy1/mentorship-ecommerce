@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:mentorship_ecommerce/features/product_full/data/models/product_model.dart';
 import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/similar_product_listview.dart';
 
 class ProductWidgetDetails extends StatefulWidget {
-  const ProductWidgetDetails({super.key, required this.isExpanded});
+  const ProductWidgetDetails({super.key, required this.isExpanded, required this.productModel});
   final bool isExpanded;
+  final ProductModel productModel;
   @override
   State<ProductWidgetDetails> createState() => _ProductWidgetDetailsState();
 }
@@ -15,7 +17,7 @@ class _ProductWidgetDetailsState extends State<ProductWidgetDetails> {
       duration: const Duration(milliseconds: 500),
       curve: Curves.easeOutCirc,
       child: widget.isExpanded
-          ? const SimilarProductListview()
+          ?  SimilarProductListview(similarProducts: widget.productModel.similarProducts,)
           : const SizedBox.shrink(),
     );
   }

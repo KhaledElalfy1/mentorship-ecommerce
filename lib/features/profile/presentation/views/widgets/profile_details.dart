@@ -33,8 +33,7 @@ class ProfileDetails extends StatelessWidget {
             text: "My Wishlist",
             isNeededIcon: true,
             onPressed: () {
-             
-                    Navigator.pushNamed(context, Routes.wishListBoard);
+              Navigator.pushNamed(context, Routes.wishListBoard);
             },
           ),
           const ProfileDetailsWidget(icon: Svgs.logoutIcon, text: "Log out"),

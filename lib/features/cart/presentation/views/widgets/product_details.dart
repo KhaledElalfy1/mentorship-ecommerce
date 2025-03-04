@@ -1,18 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
+import 'package:mentorship_ecommerce/features/cart/data/product_cart.dart';
 
 class ProductDetails extends StatelessWidget {
-  const ProductDetails(
-      {super.key,
-      required this.productName,
-      required this.productPrice,
-      required this.productSize,
-      required this.productColor});
-  final String productName;
-  final String productPrice;
-  final String productSize;
-  final String productColor;
+  const ProductDetails({
+    super.key,
+    required this.productCartModel,
+  });
+  final ProductCartModel productCartModel;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -22,15 +18,15 @@ class ProductDetails extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            productName,
+            productCartModel.productName,
             style: Styles.textStyle13,
           ),
           Text(
-            "\$ $productPrice",
+            "\$ ${productCartModel.productPrice}",
             style: Styles.textStyle16,
           ),
           Text(
-            "Size: $productSize  |  Color: $productColor",
+            "Size: ${productCartModel.productSize}  |  Color: ${productCartModel.productColor}",
             style: Styles.textStyle10,
           ),
         ],

@@ -5,7 +5,6 @@ import '../../../../../../core/utils/app_color.dart';
 class BuildDots extends StatelessWidget {
   final int currentIndex;
   final int index1;
-
   const BuildDots(
       {super.key, required this.index1, required this.currentIndex});
 

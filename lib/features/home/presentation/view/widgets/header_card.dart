@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/helper/extention.dart';
 import 'package:mentorship_ecommerce/features/home/data/models/main_card_model.dart';
 
-import '../../../../../core/utils/assets.dart';
 import '../../../../../core/utils/styles.dart';
 import 'custom_card.dart';
 import 'dots_indicator.dart';
@@ -16,7 +15,7 @@ class HeaderCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomCard(
       mainCardModel: MainCardModel(
-        image: Assets.cardImage,
+        image: "https://i.pinimg.com/736x/fd/3d/0b/fd3d0bf30cdd3f80c3732b61b02b6f18.jpg",
         borderRadius: BorderRadius.circular(15.r),
         padding: const EdgeInsets.only(
           left: 32,

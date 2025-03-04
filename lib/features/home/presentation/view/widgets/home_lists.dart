@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:mentorship_ecommerce/core/utils/assets.dart';
 import 'package:mentorship_ecommerce/features/home/data/models/drawer_item_model.dart';
 import 'package:mentorship_ecommerce/features/home/data/models/mode_model.dart';
 import 'package:mentorship_ecommerce/features/home/data/models/recommended_item_model.dart';
@@ -35,19 +34,19 @@ const List<Widget> tabsScreens = <Widget>[
 ];
 
 const featuredProductlist = [
-  Assets.productImage1,
-  Assets.productImage2,
-  Assets.productImage3,
+ "https://i.pinimg.com/736x/f3/f5/ba/f3f5ba216c8f16b8dee66cc43f79208c.jpg",
+ "https://i.pinimg.com/736x/08/36/46/083646721338b3dfcd81f40abaf40fc5.jpg",
+"https://i.pinimg.com/736x/03/3a/be/033abee363e218f731b299617ca48c69.jpg" 
 ];
 
 const recommendedItemslist = [
   RecommendedItemModel(
-    imageUrl: Assets.recommendedImage1,
+    imageUrl: "https://i.pinimg.com/736x/03/3a/be/033abee363e218f731b299617ca48c69.jpg",
     title: 'White fashion hoodie',
     price: 39.99,
   ),
   RecommendedItemModel(
-    imageUrl: Assets.recommendedImage2,
+    imageUrl:"https://i.pinimg.com/736x/03/3a/be/033abee363e218f731b299617ca48c69.jpg",
     title: 'Cotton T-shirt',
     price: 30.99,
   ),

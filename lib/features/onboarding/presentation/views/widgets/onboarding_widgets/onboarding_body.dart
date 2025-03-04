@@ -1,23 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/features/onboarding/data/onboarding_model.dart';
 import 'package:mentorship_ecommerce/features/onboarding/presentation/views/widgets/onboarding_widgets/onboarding_body_widget.dart';
 import '../../../../../../core/utils/app_color.dart';
 
-
 class OnboardingBody extends StatelessWidget {
-  const OnboardingBody(
-      {super.key,
-      required this.image,
-      required this.text1,
-      required this.text2,
-      required this.dotNum,
-      required this.currentIndex});
-  final String image;
-  final String text1;
-  final String text2;
-  final int dotNum;
-  final int currentIndex;
-
+  const OnboardingBody({super.key, required this.onboardingModel});
+  final OnboardingModel onboardingModel;
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -33,11 +22,8 @@ class OnboardingBody extends StatelessWidget {
         Padding(
             padding: EdgeInsets.only(top: 90.h),
             child: OnboardingBodyWidget(
-                image: image,
-                text1: text1,
-                text2: text2,
-                dotNum: dotNum,
-                currentIndex: currentIndex)),
+              onboardingModel: onboardingModel,
+            )),
       ],
     );
   }

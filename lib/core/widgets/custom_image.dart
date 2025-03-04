@@ -14,7 +14,7 @@ class CustomProductImage extends StatelessWidget {
         width: 126.w,
         height: 178.h,
         color: AppColor.productBackgroundColor,
-        child: Image.asset(imageUrl),
+        child: Image.network(imageUrl,fit: BoxFit.fill,),
       ),
     );
   }

@@ -1,16 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
+import 'package:mentorship_ecommerce/features/product_full/data/models/similar_product_model.dart';
 
 class ProductWidget extends StatelessWidget {
   const ProductWidget(
-      {super.key,
-      required this.image,
-      required this.productName,
-      required this.price});
-  final String image;
-  final String productName;
-  final String price;
+      {super.key, required this.similarProductModel,
+      });
+ final SimilarProductModel similarProductModel;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -23,21 +20,21 @@ class ProductWidget extends StatelessWidget {
             child: Image.network(
               height: 192.h,
               width: 126.w,
-              image,
+              similarProductModel.productImage,
             ),
           ),
           SizedBox(
             height: 5.h,
           ),
           Text(
-            productName,
+            similarProductModel.productName,
             style: Styles.textStyle12,
           ),
           SizedBox(
             height: 5.h,
           ),
           Text(
-            "\$ $price",
+            "\$ ${similarProductModel.productPrice}",
             style: Styles.textStyle16,
           )
         ],
