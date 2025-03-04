@@ -26,6 +26,7 @@ class ProfileDetailsWidget extends StatelessWidget {
           onPressed: onPressed,
         ),
         isNeededIcon == true ? SizedBox(height: 10.h) : SizedBox(height: 20.h),
+
         const Divider(
           color: AppColor.dividerColor,
         )
