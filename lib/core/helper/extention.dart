@@ -35,3 +35,12 @@ extension SpaceExtensions on num {
   SizedBox get addVerticalSpace    => SizedBox(height: h);
   SizedBox get addHorizontalSpace     => SizedBox(width: w);
 }
+
+extension AlignExtension on Widget {
+  Widget align({required Alignment alignment ,required Widget child}) {
+    return Align(
+      alignment: alignment,
+      child: child,
+    );
+  }
+}

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/helper/spacing.dart';
 import '../../../../core/utils/styles.dart';
 import '../../../../core/widgets/font_weight_helper.dart';
 
@@ -7,7 +9,6 @@ class CustomTextField extends StatefulWidget {
   final TextEditingController? controller;
   final String? Function(String?)? validator;
   final Icon? suffixIcon;
-// TODO: Add this to the core .
 
   const CustomTextField({
     super.key,
@@ -23,25 +24,24 @@ class CustomTextField extends StatefulWidget {
 
 class _CustomTextFieldState extends State<CustomTextField> {
   Color starColor = Colors.green; // اللون الافتراضي للنجمة
-  late FocusNode _focusNode; // إزالة nullable (?) وإضافة late
+  late FocusNode _focusNode;
 
   @override
   void initState() {
     super.initState();
     _focusNode = FocusNode();
 
-    // مراقبة متى يتم التركيز على الحقل
+    // مراقبة متى يتم التركيز أو فقدان التركيز على الحقل
     _focusNode.addListener(() {
-      if (_focusNode.hasFocus) {
-        setState(() {
-          starColor = Colors.red; // بمجرد الضغط على الحقل، تصبح النجمة حمراء
-        });
-      }
+      setState(() {
+        starColor = _focusNode.hasFocus ? Colors.red : Colors.green;
+      });
     });
   }
 
   @override
   void dispose() {
+    widget.controller?.dispose(); // التأكد من أن controller غير null قبل استدعاء dispose
     _focusNode.dispose();
     super.dispose();
   }
@@ -50,12 +50,10 @@ class _CustomTextFieldState extends State<CustomTextField> {
   Widget build(BuildContext context) {
     return TextFormField(
       controller: widget.controller,
-      focusNode: _focusNode, // ربط الحقل بـ FocusNode
+      focusNode: _focusNode,
       validator: (value) {
         setState(() {
-          // تغيير لون النجمة بناءً على إدخال المستخدم
-          starColor =
-              (value == null || value.isEmpty) ? Colors.red : Colors.green;
+          starColor = (value == null || value.isEmpty) ? Colors.red : Colors.green;
         });
 
         if (value == null || value.isEmpty) {
@@ -73,22 +71,23 @@ class _CustomTextFieldState extends State<CustomTextField> {
         ),
         label: RichText(
           text: TextSpan(
-            text: widget.label
-                ?.replaceAll(' *', ''), // إزالة النجمة من النص الأساسي
-            style: Styles.textStyle14.copyWith(
+            text: widget.label?.trim() ?? '',
+            style: Styles.textStyle12.copyWith(
               fontWeight: FontWeightHelper.semiBold,
-              color: Colors.black, // لون النص العادي
+              color: Colors.black,
             ),
+            
             children: [
-              const WidgetSpan(
-                  child: SizedBox(width: 4)), // مسافة صغيرة بين النص والنجمة
+              WidgetSpan(child: horizontalSpace(3.w)), 
               TextSpan(
                 text: '*',
                 style: Styles.textStyle14.copyWith(
-                  color: starColor, // لون النجمة متغير حسب الإدخال
+                  fontWeight: FontWeightHelper.semiBold,
+                  color: starColor,
                 ),
               ),
             ],
+           
           ),
         ),
       ),

@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/utils/app_color.dart';
 import '../../../core/helper/extention.dart';
 import '../../../core/helper/spacing.dart';
-import 'widgets/custom_shipping_button.dart';
+import '../../../core/widgets/custom_shipping_button.dart';
 
 import '../../../core/routes/routes.dart';
 import '../../../core/utils/assets.dart';
@@ -29,8 +29,8 @@ class CheckOutSuccessView extends StatelessWidget {
           children: [
             const CustomCartAppbar(title: "Check out"),
             verticalSpace(28.h),
-            const CustomProgressOrder(
-              color: Colors.black,
+             const CustomProgressOrder(
+              color:AppColor.backgroundColor,
             ),
             verticalSpace(43.h),
             CustomAlignText(
