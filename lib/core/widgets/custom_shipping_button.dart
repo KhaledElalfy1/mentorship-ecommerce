@@ -14,7 +14,7 @@ class CustomShippingButton extends StatelessWidget {
       
           style: ElevatedButton.styleFrom(
             elevation: 0.5,
-            fixedSize: const Size(double.infinity, 50),
+            minimumSize: const Size(double.infinity, 48),
             backgroundColor: AppColor.paymentButtonColor,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(60.r),
