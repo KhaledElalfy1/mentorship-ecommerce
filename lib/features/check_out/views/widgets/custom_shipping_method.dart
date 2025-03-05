@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../core/helper/spacing.dart';
-
-import '../../../../core/utils/app_color.dart';
 import '../../../../core/utils/styles.dart';
 import '../../../../core/widgets/font_weight_helper.dart';
 import 'custom_align_text.dart';
+import 'delivery_from3to7_widget.dart';
+import 'free_delivery_to_home.dart';
 
 class CustomShippingMethod extends StatelessWidget {
   // TODO: Refactor file. Keep classes, functions, and files under 50 lines to improve readability.
@@ -13,7 +13,6 @@ class CustomShippingMethod extends StatelessWidget {
   const CustomShippingMethod({
     super.key,
   });
-
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -22,7 +21,7 @@ class CustomShippingMethod extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           CustomAlignText(
-            text: 'Shipping method',
+            text: 'Shipping Method',
             style: Styles.textStyle18
                 .copyWith(fontWeight: FontWeightHelper.medium),
           ),
@@ -35,34 +34,8 @@ class CustomShippingMethod extends StatelessWidget {
               onChanged: (value) {},
               activeColor: const Color(0xff508A7B),
             ),
-            title: RichText(
-              text: TextSpan(
-                children: [
-                  TextSpan(
-                    text: 'Free ',
-                    style: Styles.textStyle14.copyWith(
-                        color: AppColor.blackColor,
-                        fontWeight: FontWeightHelper.regular),
-                  ),
-                  WidgetSpan(child: horizontalSpace(10.w)),
-                  TextSpan(
-                    text: 'Delivery to home',
-                    style: Styles.textStyle14.copyWith(
-                        color: const Color(0xff737680),
-                        fontWeight: FontWeightHelper.regular),
-                  ),
-                ],
-              ),
-            ),
-            subtitle: Padding(
-              padding: EdgeInsets.only(top: 10.h),
-              child: Text(
-                'Delivery from 3 to 7 business days',
-                style: Styles.textStyle14.copyWith(
-                    color: const Color(0xffA3A5AD),
-                    fontWeight: FontWeightHelper.light),
-              ),
-            ),
+            title: const FreeDeliveryToHomeWidget(),
+            subtitle: deliveryFrom3to7(),
           ),
           const Divider(color: Color(0xffF1F2F3), thickness: 2),
         ],

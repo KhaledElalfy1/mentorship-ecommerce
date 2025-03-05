@@ -4,7 +4,6 @@ import '../../../core/helper/extention.dart';
 import '../../../core/routes/routes.dart';
 import '../../../core/utils/app_color.dart';
 import '../../../core/widgets/font_weight_helper.dart';
-
 import '../../../core/utils/styles.dart';
 import 'custom_outline_button.dart';
 
