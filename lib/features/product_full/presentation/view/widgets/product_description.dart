@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
+import 'package:mentorship_ecommerce/features/product_full/data/models/product_model.dart';
 
 class ProductDescription extends StatefulWidget {
-  const ProductDescription({super.key, required this.isExpanded});
+  const ProductDescription({super.key, required this.isExpanded, required this.productModel});
   final bool isExpanded;
+  final ProductModel productModel;
   @override
   State<ProductDescription> createState() => _ProductDescriptionState();
 }
@@ -24,7 +26,7 @@ class _ProductDescriptionState extends State<ProductDescription> {
                       children: [
                     TextSpan(
                       text:
-                          "Sportswear is no longer under culture,it is no longer indie or cobbled together as it once was. Sport is fashion today. The top is oversized in fit and style, may need to size down.\t\t\t",
+                          "${widget.productModel.productDescription}\t\t\t",
                       style: Styles.textStyle12,
                     ),
                     TextSpan(

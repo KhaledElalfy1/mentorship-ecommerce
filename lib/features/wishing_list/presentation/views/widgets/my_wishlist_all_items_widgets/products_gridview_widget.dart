@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/features/wishing_list/data/product_wishlist.dart';
+import 'package:mentorship_ecommerce/features/wishing_list/presentation/views/widgets/my_wishlist_all_items_widgets/product_wishlist_widget.dart';
 
 class ProductsGridviewWidget extends StatelessWidget {
   const ProductsGridviewWidget({super.key});
@@ -18,7 +19,7 @@ class ProductsGridviewWidget extends StatelessWidget {
       ),
       itemCount: productWidget.length,
       itemBuilder: (context, index) {
-        return productWidget[index];
+        return ProductWishlistWidget(productWishlist: productWidget[index]);
       },
     );
   }

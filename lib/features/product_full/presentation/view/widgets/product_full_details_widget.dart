@@ -1,9 +1,9 @@
 import 'package:mentorship_ecommerce/core/routes/routes_exports.dart';
-import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/custom_rating_widget.dart';
+import 'package:mentorship_ecommerce/features/product_full/data/models/product_model.dart';
 
 class ProductFullDetailsWidget extends StatelessWidget {
-  const ProductFullDetailsWidget({super.key});
-
+  const ProductFullDetailsWidget({super.key, required this.productModel});
+ final ProductModel productModel;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -16,19 +16,19 @@ class ProductFullDetailsWidget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Sportwear Set",
+                productModel.productName,
                 style: Styles.textStyle18,
               ),
               SizedBox(height: 10.h),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  const CustomRatingWidget(
-                    rating: 5,
+                   CustomRatingWidget(
+                    rating:productModel.productStarRating ,
                     size: 22,
                   ),
                   Text(
-                    "(83)",
+                    "(${productModel.productNumOfRating})",
                     style: Styles.textStyle12,
                   ),
                 ],
@@ -36,7 +36,7 @@ class ProductFullDetailsWidget extends StatelessWidget {
             ],
           ),
           Text(
-            "\$ 80.00",
+            "\$ ${productModel.productPrice}",
             style: Styles.textStyle26,
           ),
         ],

@@ -1,18 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
+import 'package:mentorship_ecommerce/features/product_full/data/models/product_review_model.dart';
 import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/custom_rating_widget.dart';
 
 class CustomerReviewDetails extends StatelessWidget {
   const CustomerReviewDetails(
-      {super.key,
-      required this.customerName,
-      required this.image,
-      required this.time});
-  final String customerName;
-  final String image;
-  final String time;
-
+      {super.key, required this.reviewModel,
+     });
+  
+   final ReviewModel reviewModel;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -22,7 +19,7 @@ class CustomerReviewDetails extends StatelessWidget {
         ClipRRect(
           borderRadius: BorderRadius.circular(20.r),
           child:
-              Image.network(height: 36.h, width: 36.w, fit: BoxFit.fill, image),
+              Image.network(height: 36.h, width: 36.w, fit: BoxFit.fill, reviewModel.reviewerImage),
         ),
         SizedBox(
           width: 15.w,
@@ -31,11 +28,11 @@ class CustomerReviewDetails extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              customerName,
+              reviewModel.reviewerName,
               style: Styles.textStyle13,
             ),
-            const CustomRatingWidget(
-              rating: 5,
+             CustomRatingWidget(
+              rating:reviewModel.rating ,
               size: 13,
             )
           ],

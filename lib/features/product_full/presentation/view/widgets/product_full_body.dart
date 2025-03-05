@@ -1,19 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:mentorship_ecommerce/features/product_full/data/models/product_model.dart';
 import 'product_full_carousel.dart';
 import 'product_full_details.dart';
 
 class ProductFullBody extends StatelessWidget {
-  const ProductFullBody({super.key});
-
+  const ProductFullBody({super.key, required this.productModel});
+  final ProductModel productModel;
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
+    return SafeArea(
       bottom: false,
       child: SingleChildScrollView(
         child: Stack(
           children: [
-             ProductFullCarousel(),
-              ProductFullDetails(),
+            ProductFullCarousel(productModel: productModel),
+            ProductFullDetails(
+              productModel: productModel,
+            ),
           ],
         ),
       ),

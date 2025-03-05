@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/features/product_full/data/models/product_model.dart';
 import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/product_review.dart';
 import '../../../../../core/utils/app_color.dart';
 import '../../../../../core/utils/styles.dart';
 
 class ProductReviewsWidget extends StatefulWidget {
-  const ProductReviewsWidget({super.key});
-
+  const ProductReviewsWidget({super.key, required this.productModel});
+  final ProductModel productModel;
   @override
   State<ProductReviewsWidget> createState() => _ProductReviewsWidgetState();
 }
+
 class _ProductReviewsWidgetState extends State<ProductReviewsWidget> {
   bool isExpanded = false;
   @override
@@ -42,7 +44,8 @@ class _ProductReviewsWidgetState extends State<ProductReviewsWidget> {
           const Divider(
             color: AppColor.dividerColor,
           ),
-          ProductReview(isExpanded: isExpanded)
+          ProductReview(
+              isExpanded: isExpanded,  productModel: widget.productModel,)
         ],
       ),
     );

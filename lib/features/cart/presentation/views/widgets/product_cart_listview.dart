@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/features/cart/data/product_cart.dart';
-
+import 'package:mentorship_ecommerce/features/cart/presentation/views/widgets/product_cart.dart';
 
 class ProductCartListview extends StatelessWidget {
   const ProductCartListview({super.key});
@@ -14,7 +14,7 @@ class ProductCartListview extends StatelessWidget {
           scrollDirection: Axis.vertical,
           itemCount: productCart.length,
           itemBuilder: (BuildContext context, int index) {
-            return productCart[index];
+            return ProductCart(productCartModel: productCart[index]);
           }),
     );
   }

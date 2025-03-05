@@ -1,8 +1,10 @@
+import 'package:mentorship_ecommerce/features/product_full/data/models/product_model.dart';
+
 import '../../../../../core/routes/routes_exports.dart';
 
 class SimilarProductWidget extends StatefulWidget {
-  const SimilarProductWidget({super.key});
-
+  const SimilarProductWidget({super.key, required this.productModel});
+   final ProductModel productModel;
   @override
   State<SimilarProductWidget> createState() => _SimilarProductWidgetState();
 }
@@ -44,7 +46,7 @@ class _SimilarProductWidgetState extends State<SimilarProductWidget> {
           const Divider(
             color: AppColor.dividerColor,
           ),
-          ProductWidgetDetails(isExpanded: isExpanded),
+          ProductWidgetDetails(isExpanded: isExpanded, productModel: widget.productModel,),
         ],
       ),
     );

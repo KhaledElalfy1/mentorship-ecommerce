@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/utils/app_color.dart';
+import 'package:mentorship_ecommerce/features/onboarding/data/onboarding_model.dart';
 
 class OnboardingImage extends StatelessWidget {
-  const OnboardingImage({super.key, required this.image});
-  final String image;
+  const OnboardingImage({super.key, required this.onboardingModel});
+final OnboardingModel onboardingModel;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -18,7 +19,7 @@ class OnboardingImage extends StatelessWidget {
                   height: 349.h,
                   width: 217.w,
                   fit: BoxFit.contain,
-                  image,
+                  onboardingModel.image,
                 ),
               );
   }

@@ -4,7 +4,6 @@ import 'package:mentorship_ecommerce/features/onboarding/presentation/views/widg
 import '../../../../../../core/utils/app_color.dart';
 import '../../../../../../core/utils/assets.dart';
 
-
 class WelcomeBody extends StatelessWidget {
   const WelcomeBody({super.key});
 

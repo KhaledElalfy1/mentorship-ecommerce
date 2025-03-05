@@ -1,21 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/features/cart/data/product_cart.dart';
 import 'package:mentorship_ecommerce/features/cart/presentation/views/widgets/product_details_widget.dart';
 
 class ProductCart extends StatefulWidget {
-  const ProductCart(
-      {super.key,
-      required this.productImage,
-      required this.productName,
-      required this.productPrice,
-      required this.productSize,
-      required this.productColor});
-  final String productImage;
-  final String productName;
-  final String productPrice;
-  final String productSize;
-  final String productColor;
+  const ProductCart({
+    super.key,
+    required this.productCartModel,
+  });
 
+  final ProductCartModel productCartModel;
   @override
   State<ProductCart> createState() => _ProductCartState();
 }
@@ -39,10 +33,7 @@ class _ProductCartState extends State<ProductCart> {
               )
             ]),
         child: ProductDetailsWidget(
-            productImage: widget.productImage,
-            productName: widget.productName,
-            productPrice: widget.productPrice,
-            productSize: widget.productSize,
-            productColor: widget.productColor));
+          productCartModel: widget.productCartModel,
+        ));
   }
 }
