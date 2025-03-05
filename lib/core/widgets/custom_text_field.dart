@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/helper/spacing.dart';
-import '../../../../core/utils/styles.dart';
-import '../../../../core/widgets/font_weight_helper.dart';
-
+import '../../features/check_out/views/widgets/custom_star_rich_text.dart';
 class CustomTextField extends StatefulWidget {
   final String? label;
   final TextEditingController? controller;
@@ -38,7 +34,6 @@ class _CustomTextFieldState extends State<CustomTextField> {
       });
     });
   }
-
   @override
   void dispose() {
     widget.controller?.dispose(); // التأكد من أن controller غير null قبل استدعاء dispose
@@ -69,27 +64,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
         focusedBorder: UnderlineInputBorder(
           borderSide: BorderSide(color: Colors.red.withOpacity(0.7), width: 2),
         ),
-        label: RichText(
-          text: TextSpan(
-            text: widget.label?.trim() ?? '',
-            style: Styles.textStyle12.copyWith(
-              fontWeight: FontWeightHelper.semiBold,
-              color: Colors.black,
-            ),
-            
-            children: [
-              WidgetSpan(child: horizontalSpace(3.w)), 
-              TextSpan(
-                text: '*',
-                style: Styles.textStyle14.copyWith(
-                  fontWeight: FontWeightHelper.semiBold,
-                  color: starColor,
-                ),
-              ),
-            ],
-           
-          ),
-        ),
+        label: CustomRichText(widget: widget, starColor: starColor),
       ),
     );
   }
