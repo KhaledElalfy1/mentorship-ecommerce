@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../features/check_out/views/widgets/custom_star_rich_text.dart';
+import '../../features/check_out/views/widgets/custom_rich_text.dart';
 class CustomTextField extends StatefulWidget {
   final String? label;
   final TextEditingController? controller;
