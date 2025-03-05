@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/helper/extention.dart';
 
 class CustomAlignText extends StatelessWidget {
   const CustomAlignText({
@@ -12,11 +13,16 @@ class CustomAlignText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //TODO: Convert the align widget into an extension and use it.
-
-    return Align(
+      return align(
         alignment: Alignment.centerLeft,
         child: Padding(
-            padding: EdgeInsets.only(left: 32.w),
-            child: Text(text, style: style)));
+          padding: EdgeInsets.only(left: 20.w),
+          child: Text(
+            text,
+            style: style,
+          ),
+        ),
+      );
   }
 }
+ 
