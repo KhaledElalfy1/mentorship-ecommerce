@@ -30,7 +30,7 @@ class EcommerceApp extends StatelessWidget {
           fontFamily: Constants.productSans,
         ),
 
-        initialRoute: Routes.productFull,
+        initialRoute: Routes.welcome,
 
         onGenerateRoute: AppRouter().generateRouter,
       ),

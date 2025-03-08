@@ -35,19 +35,20 @@ dependencies:
   device_preview: ^1.2.0
   dio: ^5.8.0+1
   expandable_page_view: ^1.0.17
+  firebase_core: ^3.12.1
   flutter:
     sdk: flutter
+  flutter_bloc: ^9.0.0
   flutter_localizations:
     sdk: flutter
-  flutter_bloc: ^9.0.0
   flutter_rating_bar: ^4.0.1
   flutter_screenutil: ^5.9.3
+  flutter_staggered_grid_view: ^0.7.0
   flutter_svg: ^2.0.17
   flutter_xlider: ^3.5.0
   font_awesome_flutter: ^10.8.0
   get_it: ^8.0.3
   shared_preferences: ^2.5.1
-  flutter_staggered_grid_view: ^0.7.0
   smooth_page_indicator: ^1.2.0+3
 
 dev_dependencies:

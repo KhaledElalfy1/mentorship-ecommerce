@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "498736246572",
+    "project_id": "e-commerce-mentor-prod",
+    "storage_bucket": "e-commerce-mentor-prod.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498736246572:android:02cac52a622ea05aa30689",
+        "android_client_info": {
+          "package_name": "com.example.mentorship_ecommerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5uQMIzUXHDO4c20MhkSd0SebTWkqior8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
