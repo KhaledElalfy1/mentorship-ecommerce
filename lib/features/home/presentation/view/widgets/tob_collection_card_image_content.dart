@@ -17,7 +17,7 @@ class TobCollectionCardImageContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: topCollectionCardConfigModel.padding ?? const EdgeInsets.all(0),
-      child: Stack(children: [
+      child: Stack(alignment: Alignment.topRight, children: [
         Center(
           child: Container(
             width: topCollectionCardConfigModel.ellipseWidth.w,
@@ -37,7 +37,12 @@ class TobCollectionCardImageContent extends StatelessWidget {
             ),
           ),
         ),
-        Image.asset(topCollectionMainCardModel.image),
+        Image.network(
+          topCollectionMainCardModel.image,
+          width: 120.w,
+          height:200.h,
+          fit: BoxFit.fill,
+        ),
       ]),
     );
   }

@@ -22,11 +22,12 @@ class _CarouselWidgetState extends State<CarouselWidget> {
               image: NetworkImage(
                 widget.productModel.productImage[i],
               ),
+              fit: BoxFit.fill
             )),
           )
       ],
       options: CarouselOptions(
-        height: 532.h,
+        height: 550.h,
         viewportFraction: 1,
         initialPage: 0,
         enableInfiniteScroll: true,

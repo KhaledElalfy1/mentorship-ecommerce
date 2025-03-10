@@ -4,7 +4,6 @@ import 'package:mentorship_ecommerce/core/helper/extention.dart';
 
 import '../../../../../constants.dart';
 import '../../../../../core/utils/app_color.dart';
-import '../../../../../core/utils/assets.dart';
 import '../../../../../core/utils/styles.dart';
 import '../../../data/models/recommended_item_model.dart';
 
@@ -19,8 +18,8 @@ class RecommendedItem extends StatelessWidget {
       child: Card(
         child: Row(
           children: [
-            Image.asset(
-              Assets.recommendedImage1,
+            Image.network(
+             "https://i.pinimg.com/736x/74/10/a2/7410a228cfd8a06233b8b6103ac90b90.jpg",
               fit: BoxFit.cover,
             ),
             10.addHorizontalSpace,
