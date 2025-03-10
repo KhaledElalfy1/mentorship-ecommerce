@@ -6,6 +6,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/routes/routes_exports.dart';
 import 'package:mentorship_ecommerce/core/utils/app_color.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class CustomButton extends StatelessWidget {
   final String label;
@@ -13,15 +15,29 @@ class CustomButton extends StatelessWidget {
   final String ImageLabel = Platform.isIOS
       ? "assets/svgs/Apple store.svg"
       : "assets/svgs/App Store.svg";
-  final  Color textColor= Platform.isIOS
-                            ? AppColor.whiteColor
-                            : AppColor.blackColor;
+  final Color textColor = Platform.isIOS
+      ? AppColor.whiteColor
+      : AppColor.blackColor;
 
    CustomButton({
     super.key,
     required this.label,
     this.onPressed,
   });
+
+   Future<void> _launchStore() async {
+    final Uri storeUrl = Uri.parse(
+        Platform.isIOS
+            ? "itms-apps://apps.apple.com" // Apple App Store
+            : "https://play.google.com/store" // Google Play Store
+        );
+
+    if (await canLaunchUrl(storeUrl)) {
+      await launchUrl(storeUrl, mode: LaunchMode.externalApplication);
+    } else {
+      throw 'Could not launch $storeUrl';
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -41,20 +57,18 @@ class CustomButton extends StatelessWidget {
         ],
       ),
       child: CupertinoButton(
-        onPressed: onPressed,
+        onPressed: onPressed ?? _launchStore,
         child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  SvgPicture.asset(ImageLabel),
-                  const SizedBox(width: 20),
-                  Text(
-                    label,
-                    style:
-                        Styles.textStyle17.copyWith(color: textColor),
-                  ),
-                ],
-              ),
-          
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SvgPicture.asset(ImageLabel),
+            const SizedBox(width: 20),
+            Text(
+              label,
+              style: Styles.textStyle17.copyWith(color: textColor),
+            ),
+          ],
+        ),
       ),
     );
   }
