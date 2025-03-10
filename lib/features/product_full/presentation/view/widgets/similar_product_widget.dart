@@ -16,6 +16,7 @@ class _SimilarProductWidgetState extends State<SimilarProductWidget> {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 300),
       padding: EdgeInsets.only(left: 32.w, right: 32.w),
+     
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [

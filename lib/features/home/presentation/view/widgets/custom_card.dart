@@ -16,7 +16,7 @@ class CustomCard extends StatelessWidget {
         width: mainCardModel.width,
         height: mainCardModel.height,
         decoration: ShapeDecoration(
-          image: DecorationImage(image: AssetImage(mainCardModel.image), fit: BoxFit.cover),
+          image: DecorationImage(image: NetworkImage(mainCardModel.image), fit: BoxFit.fill),
           shape: RoundedRectangleBorder(borderRadius: mainCardModel.borderRadius),
           color: mainCardModel.backgroundColor ?? Colors.transparent,
         ),

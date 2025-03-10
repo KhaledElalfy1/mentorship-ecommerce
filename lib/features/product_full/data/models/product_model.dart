@@ -61,22 +61,22 @@ final ProductModel products = ProductModel(
     similarProducts: [
       SimilarProductModel(
           productImage:
-              "https://s3-alpha-sig.figma.com/img/5c86/d1e9/fefeb1de1a02e52e62f59bb5624dff95?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Dj2C8Oh0HT58G4pNyQ6t1WjptQB3lgWJe87JUbXzzPDhYtqHj5F5~9D8OrwDMZ2fyWEaFJKp40mB3IMP5XTgLLTy3umFSSJSDDMBD9drzXiwvwRQ1oH5aO2pZ94F1LAfb2R8P2-xcsIY2xU2bazI2XhuTKypQPP6l-~BUWn7QnwFVbKqC-JkAyNo81JlANAMi41UGGFM3476PNf2WDCEo89~RtI7dWB~33jRtwW8~SbU14P2tMEaMfsE~U~bbKXsFwdjFeA50FmRPgVTTWv~~Bl1z~8sS67MuhrUli6zxQL2M3VnhUeycZX3abG~Z5KJ2QVqwBgfxl4aDa8B0Sl9pg__",
+               "https://i.pinimg.com/736x/c7/05/67/c705673b6c1adc68aab098d7ea82017b.jpg",
           productName: "Rise Crop Hoodie",
           productPrice: 43.00),
       SimilarProductModel(
           productImage:
-              "https://s3-alpha-sig.figma.com/img/5c86/d1e9/fefeb1de1a02e52e62f59bb5624dff95?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Dj2C8Oh0HT58G4pNyQ6t1WjptQB3lgWJe87JUbXzzPDhYtqHj5F5~9D8OrwDMZ2fyWEaFJKp40mB3IMP5XTgLLTy3umFSSJSDDMBD9drzXiwvwRQ1oH5aO2pZ94F1LAfb2R8P2-xcsIY2xU2bazI2XhuTKypQPP6l-~BUWn7QnwFVbKqC-JkAyNo81JlANAMi41UGGFM3476PNf2WDCEo89~RtI7dWB~33jRtwW8~SbU14P2tMEaMfsE~U~bbKXsFwdjFeA50FmRPgVTTWv~~Bl1z~8sS67MuhrUli6zxQL2M3VnhUeycZX3abG~Z5KJ2QVqwBgfxl4aDa8B0Sl9pg__",
+               "https://i.pinimg.com/736x/c7/05/67/c705673b6c1adc68aab098d7ea82017b.jpg",
           productName: "Gym Crop Top",
           productPrice: 55.00),
       SimilarProductModel(
           productImage:
-              "https://s3-alpha-sig.figma.com/img/5c86/d1e9/fefeb1de1a02e52e62f59bb5624dff95?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Dj2C8Oh0HT58G4pNyQ6t1WjptQB3lgWJe87JUbXzzPDhYtqHj5F5~9D8OrwDMZ2fyWEaFJKp40mB3IMP5XTgLLTy3umFSSJSDDMBD9drzXiwvwRQ1oH5aO2pZ94F1LAfb2R8P2-xcsIY2xU2bazI2XhuTKypQPP6l-~BUWn7QnwFVbKqC-JkAyNo81JlANAMi41UGGFM3476PNf2WDCEo89~RtI7dWB~33jRtwW8~SbU14P2tMEaMfsE~U~bbKXsFwdjFeA50FmRPgVTTWv~~Bl1z~8sS67MuhrUli6zxQL2M3VnhUeycZX3abG~Z5KJ2QVqwBgfxl4aDa8B0Sl9pg__",
+               "https://i.pinimg.com/736x/c7/05/67/c705673b6c1adc68aab098d7ea82017b.jpg",
           productName: "Gym Crop Top",
           productPrice: 100.00),
     ],
     productImage: [
-      "https://s3-alpha-sig.figma.com/img/550c/3057/49d6c4a8efe5849bb6952d297db4e2c1?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=LdvliusyWMrcd2NfHniIInrYELdc03QMIlaSm1p~getJSOHH2eZSVH5B8ZUvvcG901CsqKxNYzZ5t0vYBrsiJktwim6EuSD4aDOjAuXq4jWHFprAWzQdxrdSqtPIQBtCiix8uhYuUC5tDA6lNKx8yH69YhykvjGRSykr9RJR6mRZKHNdf7CeP2APcj3leH~H2qowQ-ft~YFZfn5Q66XgdO~av5YZuat0FIJRJuDffr~fJci0jw9YK~FGkw1VBdLH6ZTinfzyl4Vtv1SWrZ~1~oT8a1zKY6QdjzSrLQyQuDe7k3WSHhVsMddDuXLsX9DoZ1VW1G8TnejIYri-rOgErg__",
-      "https://s3-alpha-sig.figma.com/img/550c/3057/49d6c4a8efe5849bb6952d297db4e2c1?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=LdvliusyWMrcd2NfHniIInrYELdc03QMIlaSm1p~getJSOHH2eZSVH5B8ZUvvcG901CsqKxNYzZ5t0vYBrsiJktwim6EuSD4aDOjAuXq4jWHFprAWzQdxrdSqtPIQBtCiix8uhYuUC5tDA6lNKx8yH69YhykvjGRSykr9RJR6mRZKHNdf7CeP2APcj3leH~H2qowQ-ft~YFZfn5Q66XgdO~av5YZuat0FIJRJuDffr~fJci0jw9YK~FGkw1VBdLH6ZTinfzyl4Vtv1SWrZ~1~oT8a1zKY6QdjzSrLQyQuDe7k3WSHhVsMddDuXLsX9DoZ1VW1G8TnejIYri-rOgErg__",
-      "https://s3-alpha-sig.figma.com/img/550c/3057/49d6c4a8efe5849bb6952d297db4e2c1?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=LdvliusyWMrcd2NfHniIInrYELdc03QMIlaSm1p~getJSOHH2eZSVH5B8ZUvvcG901CsqKxNYzZ5t0vYBrsiJktwim6EuSD4aDOjAuXq4jWHFprAWzQdxrdSqtPIQBtCiix8uhYuUC5tDA6lNKx8yH69YhykvjGRSykr9RJR6mRZKHNdf7CeP2APcj3leH~H2qowQ-ft~YFZfn5Q66XgdO~av5YZuat0FIJRJuDffr~fJci0jw9YK~FGkw1VBdLH6ZTinfzyl4Vtv1SWrZ~1~oT8a1zKY6QdjzSrLQyQuDe7k3WSHhVsMddDuXLsX9DoZ1VW1G8TnejIYri-rOgErg__",
+               "https://i.pinimg.com/736x/c7/05/67/c705673b6c1adc68aab098d7ea82017b.jpg",
+               "https://i.pinimg.com/736x/c7/05/67/c705673b6c1adc68aab098d7ea82017b.jpg",
+               "https://i.pinimg.com/736x/c7/05/67/c705673b6c1adc68aab098d7ea82017b.jpg",
     ]);

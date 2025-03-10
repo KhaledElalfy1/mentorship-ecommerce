@@ -27,7 +27,7 @@ class GroupLeftCard extends StatelessWidget {
           ),
           child: Row(
             children: [
-              Image.asset(groupCardModel.image),
+              Image.network(groupCardModel.image,width: 70.w,height: 194.h,fit: BoxFit.fill,),
               5.addHorizontalSpace,
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,

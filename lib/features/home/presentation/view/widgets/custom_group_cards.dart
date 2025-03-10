@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/helper/extention.dart';
-
-import '../../../../../core/utils/assets.dart';
 import '../../../data/models/group_card_model.dart';
 import 'group_left_card.dart';
 import 'group_right_card.dart';
@@ -21,7 +19,7 @@ class CustomGroupCards extends StatelessWidget {
               groupCardModel: GroupCardModel(
                 name: 'T-Shirts',
                 description: 'The \nOffice\nLife',
-                image: Assets.groupImage1,
+                image: "https://i.pinimg.com/736x/74/10/a2/7410a228cfd8a06233b8b6103ac90b90.jpg",
               ),
             ),
           ),
@@ -31,7 +29,7 @@ class CustomGroupCards extends StatelessWidget {
               groupCardModel: GroupCardModel(
                 name: 'Dresses',
                 description: 'Elegant\nDesign',
-                image: Assets.groupImage2,
+                image: "https://i.pinimg.com/736x/74/10/a2/7410a228cfd8a06233b8b6103ac90b90.jpg",
               ),
             ),
           )

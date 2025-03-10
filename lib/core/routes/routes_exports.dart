@@ -5,7 +5,7 @@ export '../../features/discover/presentation/view/discover_view.dart';
 export '../../features/edit_profile/presentation/views/edit_profile_view.dart';
 export '../../features/home/presentation/view/dashboard_view.dart';
 export '../../features/home/presentation/view/home_view.dart';
-export '../../features/login/views/login_screen.dart';
+export '../../features/login/presentation/views/login_screen.dart';
 export '../../features/onboarding/presentation/views/onboarding_view.dart';
 export '../../features/onboarding/presentation/views/welcome_view.dart';
 export '../../features/order_info/presentation/view/order_info_view.dart';
