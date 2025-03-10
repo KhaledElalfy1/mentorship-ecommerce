@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../utils/app_color.dart';
-
+import '../utils/styles.dart';
 class CustomButton extends StatelessWidget {
   const CustomButton({super.key, required this.buttonText, this.onPressed});
   final String buttonText;
@@ -24,7 +23,7 @@ class CustomButton extends StatelessWidget {
         child: Text(
           buttonText,
           //TODO: Try using the Styles class
-          style: TextStyle(color: Colors.white, fontSize: 16.sp),
+          style: Styles.textStyle16.copyWith(color: AppColor.whiteColor),
         ),
       ),
     );

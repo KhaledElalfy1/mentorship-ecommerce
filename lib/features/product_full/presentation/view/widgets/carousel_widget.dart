@@ -3,8 +3,7 @@ import 'package:mentorship_ecommerce/core/routes/routes_exports.dart';
 import 'package:mentorship_ecommerce/features/product_full/data/models/product_model.dart';
 
 class CarouselWidget extends StatefulWidget {
-  const CarouselWidget(
-      {super.key, required this.currentIndex, required this.productModel});
+  const CarouselWidget({super.key, required this.currentIndex, required this.productModel});
   final ValueNotifier<int> currentIndex;
   final ProductModel productModel;
   @override

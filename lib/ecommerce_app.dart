@@ -5,7 +5,6 @@ import 'package:mentorship_ecommerce/generated/l10n.dart';
 import 'constants.dart';
 import 'core/routes/app_router.dart';
 import 'core/routes/routes.dart';
-
 import 'core/utils/app_color.dart';
 
 class EcommerceApp extends StatelessWidget {

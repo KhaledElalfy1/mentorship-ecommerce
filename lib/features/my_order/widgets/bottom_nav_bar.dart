@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import '../../../core/utils/svgs.dart';
-
 import '../../../core/utils/app_color.dart';
 
 class BottomNavBar extends StatelessWidget {
