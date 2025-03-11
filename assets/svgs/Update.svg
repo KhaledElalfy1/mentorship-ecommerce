@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="152" height="152" viewBox="0 0 152 152">
+	<defs>
+		<filter id="filter7689327120" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feComponentTransfer in="SourceAlpha" result="componentTransfer9715425142">
+				<feFuncR type="linear" slope="0" intercept="0"/>
+				<feFuncG type="linear" slope="0" intercept="0"/>
+				<feFuncB type="linear" slope="0" intercept="0"/>
+				<feFuncA type="linear" slope="10000" intercept="0"/>
+			</feComponentTransfer>
+			<feComponentTransfer in="componentTransfer9715425142" result="componentTransfer4796049996">
+				<feFuncA type="linear" slope="0.1" intercept="0"/>
+			</feComponentTransfer>
+			<feMorphology operator="erode" radius="4" in="componentTransfer4796049996" result="morphology6399544194"/>
+			<feOffset dx="0" dy="4" in="morphology6399544194" result="offset0759815731"/>
+			<feGaussianBlur stdDeviation="3" in="offset0759815731" result="gaussianBlur2612649039"/>
+			<feComponentTransfer in="SourceAlpha" result="componentTransfer1162731581">
+				<feFuncR type="linear" slope="0" intercept="0"/>
+				<feFuncG type="linear" slope="0" intercept="0"/>
+				<feFuncB type="linear" slope="0" intercept="0"/>
+				<feFuncA type="linear" slope="10000" intercept="0"/>
+			</feComponentTransfer>
+			<feComponentTransfer in="componentTransfer1162731581" result="componentTransfer8972664042">
+				<feFuncA type="linear" slope="0.1" intercept="0"/>
+			</feComponentTransfer>
+			<feMorphology operator="erode" radius="3" in="componentTransfer8972664042" result="morphology4770232698"/>
+			<feOffset dx="0" dy="10" in="morphology4770232698" result="offset1076750796"/>
+			<feGaussianBlur stdDeviation="7.5" in="offset1076750796" result="gaussianBlur0301151592"/>
+			<feMerge>
+				<feMergeNode in="gaussianBlur2612649039"/>
+				<feMergeNode in="gaussianBlur0301151592"/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+	</defs>
+	<g filter="url(#filter7689327120)">
+		<defs>
+			<linearGradient id="linearGradient8044751508" gradientTransform="matrix(90.5097 90.5097 -90.5097 90.5097 64 -26.5097)" gradientUnits="userSpaceOnUse" x1="0" y1="0.5" x2="1" y2="0.5">
+				<stop offset="0" stop-color="rgb(0, 122, 255)"/>
+				<stop offset="1" stop-color="rgb(0, 162, 255)"/>
+			</linearGradient>
+		</defs>
+		<path transform="matrix(1 0 0 1 12 2)" d="M64 0C28.6538 0 0 28.6538 0 64L0 64.096C0 99.4422 28.5578 128 63.904 128L64 128C99.3462 128 128 99.4422 128 64.096L128 64C128 28.6538 99.4422 0 64.096 0L64 0Z" fill-rule="nonzero" fill="url(#linearGradient8044751508)"/>
+		<defs>
+			<clipPath id="clipPath2758681107">
+				<path transform="matrix(1 0 0 1 12 2)" d="M64 0C28.6538 0 0 28.6538 0 64L0 64.096C0 99.4422 28.5578 128 63.904 128L64 128C99.3462 128 128 99.4422 128 64.096L128 64C128 28.6538 99.4422 0 64.096 0L64 0Z" fill-rule="nonzero"/>
+			</clipPath>
+		</defs>
+		<g clip-path="url(#clipPath2758681107)">
+			<defs>
+				<clipPath id="clipPath1591588493">
+					<path transform="matrix(1 0 0 1 44 34)" d="M0 0L64 0L64 64L0 64L0 0Z" fill-rule="nonzero"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#clipPath1591588493)">
+				<defs>
+					<clipPath id="clipPath9170237492">
+						<path transform="matrix(1 0 0 1 44 34)" d="M0 0L64 0L64 64L0 64L0 0Z" fill-rule="nonzero"/>
+					</clipPath>
+				</defs>
+				<g clip-path="url(#clipPath9170237492)">
+					<path transform="matrix(1 0 0 1 46 41.9737)" d="M47.5 36L38 36C36.8954 36 36 36.8954 36 38C36 39.1046 36.8954 40 38 40L47.5 40Q50.3929 40 52.9286 39.2388Q55.5752 38.4443 57.5562 36.9031Q59.6729 35.2563 60.8104 32.9295Q62 30.4963 62 27.55Q62 24.599 60.6319 22.12Q59.4094 19.9048 57.2082 18.2698Q55.2626 16.8246 52.7775 15.9925Q51.2858 15.4931 49.7677 15.2674Q49.2059 11.9447 47.7989 9.06461Q46.1096 5.60681 43.3551 3.0871Q40.654 0.616255 37.2176 -0.692379Q33.7839 -2 30 -2Q26.5432 -2 23.4484 -0.901819Q20.5843 0.114543 18.2041 2.00542Q16.0023 3.75456 14.4033 6.09625Q13.2684 7.75823 12.5381 9.56598Q10.1082 9.93631 7.90172 10.8244Q5.02474 11.9822 2.8649 13.8863Q0.563024 15.9156 -0.679683 18.5796Q-2 21.41 -2 24.7Q-2 28.0168 -0.624935 30.929Q0.689844 33.7135 3.09897 35.7942Q5.44218 37.818 8.50686 38.9057Q11.5903 40 15 40L22 40C23.1046 40 24 39.1046 24 38C24 36.8954 23.1046 36 22 36L15 36Q12.2791 36 9.84471 35.136Q7.4881 34.2997 5.71353 32.767Q3.94531 31.2398 2.99212 29.2211Q2 27.12 2 24.7Q2 22.2971 2.94531 20.2706Q3.83486 18.3637 5.5101 16.8868Q7.155 15.4367 9.39516 14.5351Q11.6349 13.6337 14.1891 13.391Q14.3345 13.3772 14.4763 13.3425Q14.618 13.3077 14.7533 13.2527Q14.8885 13.1977 15.0143 13.1237Q15.1401 13.0497 15.2539 12.9581Q15.3676 12.8666 15.4668 12.7595Q15.5661 12.6525 15.6487 12.5321Q15.7314 12.4118 15.7956 12.2807Q15.8599 12.1497 15.9045 12.0106Q16.5208 10.0884 17.7066 8.35192Q18.9643 6.51007 20.6922 5.1374Q22.5503 3.66126 24.7861 2.86787Q27.2318 2 30 2Q33.048 2 35.7941 3.04574Q38.5172 4.08278 40.6552 6.03853Q42.8491 8.04538 44.2049 10.8205Q45.6398 13.7575 46.0108 17.3079Q46.0201 17.396 46.037 17.483Q46.054 17.57 46.0786 17.6552Q46.1032 17.7403 46.1352 17.823Q46.1673 17.9056 46.2065 17.9851Q46.2457 18.0646 46.2918 18.1403Q46.3379 18.216 46.3905 18.2873Q46.4431 18.3586 46.5019 18.425Q46.5606 18.4914 46.6249 18.5523Q46.6893 18.6133 46.7588 18.6683Q46.8283 18.7233 46.9024 18.7719Q46.9765 18.8205 47.0546 18.8624Q47.1327 18.9043 47.2142 18.9392Q47.2957 18.974 47.38 19.0015Q47.4642 19.0289 47.5506 19.0489Q47.637 19.0688 47.7247 19.081Q47.8125 19.0932 47.9011 19.0976Q49.722 19.1878 51.5076 19.7856Q53.3887 20.4154 54.823 21.4808Q56.3269 22.598 57.1298 24.0528Q58 25.6295 58 27.55Q58 29.5708 57.2169 31.1726Q56.4859 32.6677 55.1 33.746Q53.7091 34.8282 51.7785 35.4077Q49.8055 36 47.5 36Z" fill-rule="evenodd" fill="rgb(255, 255, 255)"/>
+					<path transform="matrix(1 0 0 1 68 57.9737)" d="M14.5858 9.41421L10 4.82843L10 32.0525C10 33.1571 9.10456 34.0525 8 34.0525C6.89544 34.0525 6 33.1571 6 32.0525L6 4.82843L1.41421 9.41421C0.633172 10.1953 -0.633172 10.1953 -1.41421 9.41421C-2.19526 8.63317 -2.19526 7.36683 -1.41421 6.58579L6.58579 -1.41421Q6.72507 -1.5535 6.88886 -1.66294Q7.05264 -1.77238 7.23463 -1.84776Q7.41662 -1.92314 7.60982 -1.96157Q7.80302 -2 8 -2Q8.19698 -2 8.39018 -1.96157Q8.58338 -1.92314 8.76537 -1.84776Q8.94736 -1.77238 9.11114 -1.66294Q9.27493 -1.5535 9.41421 -1.41421L17.4142 6.58579C18.1953 7.36683 18.1953 8.63317 17.4142 9.41421C16.6332 10.1953 15.3668 10.1953 14.5858 9.41421Z" fill-rule="evenodd" fill="rgb(255, 255, 255)"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
