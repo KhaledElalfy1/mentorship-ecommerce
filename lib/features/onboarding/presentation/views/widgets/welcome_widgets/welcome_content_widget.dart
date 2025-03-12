@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/functions/firebase_analytics_log_event.dart';
@@ -35,8 +34,8 @@ class WelcomeContentWidget extends StatelessWidget {
           height: 53.h,
           width: 193.w,
           buttonText: 'Get Started',
-          onTap: () {
-            firebaseAnalyticsLogEvent(
+          onTap: () async {
+            await firebaseAnalyticsLogEvent(
               firebaseAnalyticsEventModel: FirebaseAnalyticsEventModel(
                 parameters: {
                   'action': "User clicked on Get Started button",
@@ -45,7 +44,9 @@ class WelcomeContentWidget extends StatelessWidget {
                 },
               ),
             );
-            Navigator.pushNamed(context, Routes.onboarding);
+            if (context.mounted) {
+              Navigator.pushNamed(context, Routes.onboarding);
+            }
           },
         )
       ],
