@@ -8,18 +8,16 @@ class ProductFullBody extends StatelessWidget {
   final ProductModel productModel;
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      bottom: false,
-      child: SingleChildScrollView(
-        child: Stack(
-          children: [
-            ProductFullCarousel(productModel: productModel),
-            ProductFullDetails(
-              productModel: productModel,
-            ),
-          ],
-        ),
+    return SingleChildScrollView(
+      child: Stack(
+        children: [
+          ProductFullCarousel(productModel: productModel),
+          ProductFullDetails(
+            productModel: productModel,
+          ),
+        ],
       ),
     );
   }
 }
+

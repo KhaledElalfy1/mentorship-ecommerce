@@ -24,4 +24,5 @@ class Routes {
   static const String orderTracking = '/orderTracking';
   static const String editProfile = '/editProfile';
   static const String setting = '/setting';
+  static const String update = '/update';
 }

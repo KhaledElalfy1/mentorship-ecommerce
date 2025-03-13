@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/utils/app_color.dart';
-import '../../../core/utils/styles.dart';
+import '../../../../../core/utils/app_color.dart';
+import '../../../../../core/utils/styles.dart';
 
 class CustomLoginButton extends StatelessWidget {
   const CustomLoginButton({super.key, required this.onPressed});

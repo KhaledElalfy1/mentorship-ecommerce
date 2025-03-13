@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/functions/firebase_analytics_log_event.dart';
 import 'package:mentorship_ecommerce/core/models/firebase_analytics_event_model.dart';
-import '../../../core/helper/extention.dart';
-import '../../../core/helper/spacing.dart';
-import '../../../core/utils/styles.dart';
-import '../widgets/custom_login_text_field.dart';
-import '../../../core/routes/routes.dart';
-import '../widgets/custom_log_into.dart';
-import '../widgets/custom_login_button.dart';
-import '../widgets/social_media_button.dart';
+import '../../../../core/helper/extention.dart';
+import '../../../../core/helper/spacing.dart';
+import '../../../../core/utils/styles.dart';
+import 'widgets/custom_login_text_field.dart';
+import '../../../../core/routes/routes.dart';
+import 'widgets/custom_log_into.dart';
+import 'widgets/custom_login_button.dart';
+import 'widgets/social_media_button.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -119,7 +119,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                   verticalSpace(23.h),
-                  const SocialMediaButtons(),
+                   SocialMediaButtons(),
                 ],
               ),
             ),

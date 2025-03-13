@@ -5,7 +5,7 @@ export '../../features/discover/presentation/view/discover_view.dart';
 export '../../features/edit_profile/presentation/views/edit_profile_view.dart';
 export '../../features/home/presentation/view/dashboard_view.dart';
 export '../../features/home/presentation/view/home_view.dart';
-export '../../features/login/views/login_screen.dart';
+export '../../features/login/presentation/views/login_screen.dart';
 export '../../features/onboarding/presentation/views/onboarding_view.dart';
 export '../../features/onboarding/presentation/views/welcome_view.dart';
 export '../../features/order_info/presentation/view/order_info_view.dart';
@@ -41,4 +41,6 @@ export 'package:mentorship_ecommerce/features/onboarding/presentation/views/widg
 export 'package:mentorship_ecommerce/features/onboarding/presentation/views/widgets/onboarding_widgets/onboarding_image.dart';
 export 'package:mentorship_ecommerce/core/widgets/appbar_icon_widget.dart';
 export 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/custom_rating_widget.dart';
+export 'package:mentorship_ecommerce/features/update/presentation/view/widgets/update_screen_body.dart';
+export 'package:mentorship_ecommerce/features/update/presentation/view/update_view.dart';
 

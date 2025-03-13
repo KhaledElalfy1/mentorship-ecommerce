@@ -26,7 +26,8 @@ class FeaturedCardImageContent extends StatelessWidget {
           ),
         ),
       ),
-      Image.asset(featuredProductCardModel.image),
+      Image.network(featuredProductCardModel.image,fit: BoxFit.fill, width: 50.w,
+          height: 132.h,),
     ]);
   }
 }

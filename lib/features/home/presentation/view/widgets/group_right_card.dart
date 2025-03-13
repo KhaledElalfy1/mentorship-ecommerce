@@ -49,7 +49,7 @@ class GroupRightCard extends StatelessWidget {
                 ),
               ),
               const Spacer(),
-              Image.asset(groupCardModel.image),
+              Image.network(groupCardModel.image,width: 70.w,height: 194.h,fit: BoxFit.fill,),
             ],
           ),
         ),

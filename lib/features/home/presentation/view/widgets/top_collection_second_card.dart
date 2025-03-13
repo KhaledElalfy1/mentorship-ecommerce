@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/constants.dart';
 import 'package:mentorship_ecommerce/core/utils/app_color.dart';
-import 'package:mentorship_ecommerce/core/utils/assets.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
 import 'package:mentorship_ecommerce/features/home/data/models/top_collection_card_config_model.dart';
 import 'package:mentorship_ecommerce/features/home/data/models/top_collection_main_card_model.dart';
@@ -19,7 +18,7 @@ class TopCollectionSecondCard extends StatelessWidget {
             topCollectionMainCardModel: const TopCollectionMainCardModel(
               name: 'Summer Collection 2021',
               description: 'Most sexy\n& fabulous\ndesign ',
-              image: Assets.topCollectionImage2,
+              image: "https://i.pinimg.com/736x/74/10/a2/7410a228cfd8a06233b8b6103ac90b90.jpg",
             ),
             topCollectionCardConfigModel: TopCollectionCardConfigModel(
               height: 209.h,
