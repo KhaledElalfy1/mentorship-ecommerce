@@ -34,9 +34,10 @@ class WelcomeContentWidget extends StatelessWidget {
           height: 53.h,
           width: 193.w,
           buttonText: 'Get Started',
-          onTap: () async {
-            await firebaseAnalyticsLogEvent(
+          onTap: ()  {
+             firebaseAnalyticsLogEvent(
               firebaseAnalyticsEventModel: FirebaseAnalyticsEventModel(
+                name: "click_button",
                 parameters: {
                   'action': "User clicked on Get Started button",
                   'current_route': "Welcome Screen",

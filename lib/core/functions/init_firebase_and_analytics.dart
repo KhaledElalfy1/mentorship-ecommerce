@@ -7,5 +7,6 @@ Future<void> initFirebaseAndAnalytics(
   await Firebase.initializeApp(
     options: options,
   );
-  FirebaseAnalytics.instance.setAnalyticsCollectionEnabled(isAnalyticsEnabled);
+  FirebaseAnalytics analytics = FirebaseAnalytics.instance;
+  await analytics.setAnalyticsCollectionEnabled(isAnalyticsEnabled);
 }
