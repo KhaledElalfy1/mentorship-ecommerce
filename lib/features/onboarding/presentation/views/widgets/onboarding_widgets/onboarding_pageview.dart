@@ -1,4 +1,6 @@
 import 'package:flutter/cupertino.dart';
+import 'package:mentorship_ecommerce/core/functions/firebase_analytics_log_event.dart';
+import 'package:mentorship_ecommerce/core/models/firebase_analytics_event_model.dart';
 import 'package:mentorship_ecommerce/features/onboarding/data/onboarding_model.dart';
 import '../../../../data/onboarding_content.dart';
 import 'onboarding_body.dart';
@@ -21,6 +23,15 @@ class _OnboardingPageViewState extends State<OnboardingPageView> {
       onPageChanged: (int index) {
         setState(() {
           currentIndex = index;
+          firebaseAnalyticsLogEvent(
+              firebaseAnalyticsEventModel: FirebaseAnalyticsEventModel(
+            name: "onboarding_page_changed",
+            parameters: {
+              'action': "User swiped to the next page",
+              'current_page': "Onboarding Page $currentIndex",
+              'next_page': "Onboarding Page ${currentIndex + 1}"
+            },
+          ));
         });
       },
       itemBuilder: (_, index) {

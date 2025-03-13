@@ -1,6 +1,6 @@
 import 'package:device_preview/device_preview.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:mentorship_ecommerce/core/functions/init_firebase_and_analytics.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mentorship_ecommerce/features/login/data/repo/login_repo_implementation.dart';
 import 'package:mentorship_ecommerce/features/login/presentation/manager/login_cubit.dart';
@@ -9,9 +9,12 @@ import 'ecommerce_app.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
+  await initFirebaseAndAnalytics(
     options: DefaultFirebaseOptions.currentPlatform,
+    isAnalyticsEnabled: false,
   );
+
+
   runApp(MultiBlocProvider(
     providers: [
       BlocProvider(

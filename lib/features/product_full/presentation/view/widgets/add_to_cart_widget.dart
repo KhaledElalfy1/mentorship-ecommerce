@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/functions/firebase_analytics_log_event.dart';
+import 'package:mentorship_ecommerce/core/models/firebase_analytics_event_model.dart';
 import '../../../../../core/routes/routes.dart';
 import '../../../../../core/utils/app_color.dart';
 
@@ -10,6 +12,13 @@ class AddToCartWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
+        firebaseAnalyticsLogEvent(
+          firebaseAnalyticsEventModel: FirebaseAnalyticsEventModel(
+        name: "add_cart",
+        parameters: {
+          'action': 'Add to Cart',
+        },
+      ));
         Navigator.pushNamed(context, Routes.cart);
       },
       child: Container(

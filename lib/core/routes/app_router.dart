@@ -1,15 +1,23 @@
-import 'package:flutter/material.dart';
+import 'package:mentorship_ecommerce/core/functions/firebase_analytics_log_event.dart';
+import 'package:mentorship_ecommerce/core/models/firebase_analytics_event_model.dart';
 import 'package:mentorship_ecommerce/core/routes/routes_exports.dart';
-import 'routes.dart';
-
 
 class AppRouter {
   Route? generateRouter(RouteSettings settings) {
+    firebaseAnalyticsLogEvent(
+      firebaseAnalyticsEventModel: FirebaseAnalyticsEventModel(
+        parameters: {
+          'screen_name': settings.name ?? 'no route',
+          'action': 'User navigated to ${settings.name}',
+        },
+      ),
+    );
+
     switch (settings.name) {
       case Routes.checkOut:
         return MaterialPageRoute(builder: (_) => const CheckOutView());
       case Routes.checkOutSuccess:
-        return MaterialPageRoute(builder: (_) => CheckOutSuccessView());
+        return MaterialPageRoute(builder: (_) => const CheckOutSuccessView());
       case Routes.home:
         return MaterialPageRoute(builder: (_) => const HomeView());
       case Routes.discover:
@@ -23,37 +31,28 @@ class AppRouter {
       case Routes.setting:
         return MaterialPageRoute(builder: (_) => const SettingView());
       case Routes.search:
-        return MaterialPageRoute(
-          builder: (_) => const SearchView(),
-        );
+        return MaterialPageRoute(builder: (_) => const SearchView());
       case Routes.productFull:
         return MaterialPageRoute(builder: (_) => const ProductFullView());
-
       case Routes.login:
         return MaterialPageRoute(builder: (_) => const LoginScreen());
       case Routes.myOrder:
         return MaterialPageRoute(builder: (_) => const MyOrderView());
       case Routes.dashboard:
         return MaterialPageRoute(builder: (_) => const DashboardView());
-
       case Routes.cart:
         return MaterialPageRoute(builder: (_) => const CartView());
-
       case Routes.profile:
         return MaterialPageRoute(builder: (_) => const ProfileView());
       case Routes.editProfile:
         return MaterialPageRoute(builder: (_) => const EditProfileView());
-
       case Routes.wishListBoard:
         return MaterialPageRoute(builder: (_) => const MyWishlistBoardView());
-
       case Routes.wishListItems:
         return MaterialPageRoute(
             builder: (_) => const MyWishlistAllItemsView());
-
       case Routes.welcome:
         return MaterialPageRoute(builder: (_) => const WelcomeView());
-
       case Routes.onboarding:
         return MaterialPageRoute(builder: (_) => const OnboardingView());
       case Routes.update:

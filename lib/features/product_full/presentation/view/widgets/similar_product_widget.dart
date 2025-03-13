@@ -1,10 +1,12 @@
+import 'package:mentorship_ecommerce/core/functions/firebase_analytics_log_event.dart';
+import 'package:mentorship_ecommerce/core/models/firebase_analytics_event_model.dart';
 import 'package:mentorship_ecommerce/features/product_full/data/models/product_model.dart';
 
 import '../../../../../core/routes/routes_exports.dart';
 
 class SimilarProductWidget extends StatefulWidget {
   const SimilarProductWidget({super.key, required this.productModel});
-   final ProductModel productModel;
+  final ProductModel productModel;
   @override
   State<SimilarProductWidget> createState() => _SimilarProductWidgetState();
 }
@@ -36,6 +38,15 @@ class _SimilarProductWidgetState extends State<SimilarProductWidget> {
                     setState(() {
                       isExpanded = !isExpanded;
                     });
+                    firebaseAnalyticsLogEvent(
+                        firebaseAnalyticsEventModel:
+                            FirebaseAnalyticsEventModel(
+                      name: "similar_Product",
+                      parameters: {
+                        'action':
+                            "similarProduct for ${widget.productModel.productName}",
+                      },
+                    ));
                   },
                   child: const Icon(
                     Icons.keyboard_arrow_down,
@@ -47,7 +58,10 @@ class _SimilarProductWidgetState extends State<SimilarProductWidget> {
           const Divider(
             color: AppColor.dividerColor,
           ),
-          ProductWidgetDetails(isExpanded: isExpanded, productModel: widget.productModel,),
+          ProductWidgetDetails(
+            isExpanded: isExpanded,
+            productModel: widget.productModel,
+          ),
         ],
       ),
     );

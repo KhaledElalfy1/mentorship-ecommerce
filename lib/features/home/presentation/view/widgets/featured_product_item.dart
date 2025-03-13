@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mentorship_ecommerce/core/functions/firebase_analytics_log_event.dart';
+import 'package:mentorship_ecommerce/core/models/firebase_analytics_event_model.dart';
 import 'package:mentorship_ecommerce/core/widgets/custom_image.dart';
 import 'package:mentorship_ecommerce/features/home/data/models/featured_product_item_model.dart';
 
@@ -18,6 +20,14 @@ class FeaturedProductItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
+        firebaseAnalyticsLogEvent(
+            firebaseAnalyticsEventModel: FirebaseAnalyticsEventModel(
+          name: "product_full_page",
+          parameters: {
+            'action': "User clicked on product item",
+            'product_name': featuredProductItemModel.title,
+          },
+        ));
         context.pushNamed(Routes.productFull);
       },
       child: Column(
@@ -33,7 +43,8 @@ class FeaturedProductItem extends StatelessWidget {
               fontFamily: Constants.productSansMedium,
             ),
           ),
-          Text('\$ ${featuredProductItemModel.price}', style: Styles.textStyle16.copyWith(color: AppColor.gunmetalGray)),
+          Text('\$ ${featuredProductItemModel.price}',
+              style: Styles.textStyle16.copyWith(color: AppColor.gunmetalGray)),
         ],
       ),
     );
