@@ -1,76 +1,40 @@
 import 'package:flutter/material.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/custom_appbar.dart';
-import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/generate_dots.dart';
+import 'package:mentorship_ecommerce/features/product_full/data/models/product_model.dart';
+import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/carousel_widget.dart';
+import 'custom_appbar.dart';
+import 'generate_dots.dart';
 
 class ProductFullCarousel extends StatefulWidget {
-  const ProductFullCarousel({super.key});
-
+  const ProductFullCarousel({super.key, required this.productModel});
+   final ProductModel productModel;
   @override
   State<ProductFullCarousel> createState() => _ProductFullCarouselState();
 }
 
-List imageList = [
-  "https://s3-alpha-sig.figma.com/img/550c/3057/49d6c4a8efe5849bb6952d297db4e2c1?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=mCmhzWkEegxJsbedA~zbfpR8bsdJ9uCk-IsVRDxht0vS3t8vO1bE~84xhzCzRQUUOl-YqHQ1YuzmsaeEQBpd8FJRYKagn8ZRWEP~zmbq7UQmBEpiVXl2RtEh8q4JDc6nFpwX1Y9zRnWXiPUxCu7mPyFtKPgbA90wtxR46nKIk2GGIMMzJYz~dFiIlgPEcDSGQestIK0yFS7Ytb9tq1pyv8CFPRLpsuRzitwjao6gFZm7yXjcSGWmbNQZDVjFSNOd0t1X3wRqY6qGJpsXp8c1VmyoZaShRF~soW5uWL9xOoBq9WjKeynMxovvmszElYSalkk7l3DdrPAR0EJRXKUybw__",
-  "https://s3-alpha-sig.figma.com/img/550c/3057/49d6c4a8efe5849bb6952d297db4e2c1?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=mCmhzWkEegxJsbedA~zbfpR8bsdJ9uCk-IsVRDxht0vS3t8vO1bE~84xhzCzRQUUOl-YqHQ1YuzmsaeEQBpd8FJRYKagn8ZRWEP~zmbq7UQmBEpiVXl2RtEh8q4JDc6nFpwX1Y9zRnWXiPUxCu7mPyFtKPgbA90wtxR46nKIk2GGIMMzJYz~dFiIlgPEcDSGQestIK0yFS7Ytb9tq1pyv8CFPRLpsuRzitwjao6gFZm7yXjcSGWmbNQZDVjFSNOd0t1X3wRqY6qGJpsXp8c1VmyoZaShRF~soW5uWL9xOoBq9WjKeynMxovvmszElYSalkk7l3DdrPAR0EJRXKUybw__",
-  "https://s3-alpha-sig.figma.com/img/550c/3057/49d6c4a8efe5849bb6952d297db4e2c1?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=mCmhzWkEegxJsbedA~zbfpR8bsdJ9uCk-IsVRDxht0vS3t8vO1bE~84xhzCzRQUUOl-YqHQ1YuzmsaeEQBpd8FJRYKagn8ZRWEP~zmbq7UQmBEpiVXl2RtEh8q4JDc6nFpwX1Y9zRnWXiPUxCu7mPyFtKPgbA90wtxR46nKIk2GGIMMzJYz~dFiIlgPEcDSGQestIK0yFS7Ytb9tq1pyv8CFPRLpsuRzitwjao6gFZm7yXjcSGWmbNQZDVjFSNOd0t1X3wRqY6qGJpsXp8c1VmyoZaShRF~soW5uWL9xOoBq9WjKeynMxovvmszElYSalkk7l3DdrPAR0EJRXKUybw__",
-];
-
 class _ProductFullCarouselState extends State<ProductFullCarousel> {
-  int _currentIndex = 0;
-
+  final ValueNotifier<int> _currentIndexNotifier = ValueNotifier(0);
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        CarouselSlider(
-          items: [
-            for (int i = 0; i < imageList.length; i++)
-              Container(
-                decoration: BoxDecoration(
-                    image: DecorationImage(
-                  image: NetworkImage(
-                    imageList[i],
-                  ),
-                )),
-                // width: MediaQuery.of(context).size.width,
-                //  height: 532.h,
-              )
-          ],
-          options: CarouselOptions(
-            height: 532.h,
-            viewportFraction: 1,
-            initialPage: 0,
-            enableInfiniteScroll: true,
-            reverse: false,
-            autoPlay: false,
-            autoPlayInterval: const Duration(seconds: 5),
-            autoPlayAnimationDuration: const Duration(milliseconds: 800),
-            autoPlayCurve: Curves.fastOutSlowIn,
-            enlargeCenterPage: false,
-            enlargeFactor: 0.0,
-            onPageChanged: (index, reason) {
-              setState(() {
-                _currentIndex = index;
-              });
-            },
-            scrollDirection: Axis.horizontal,
-          ),
-        ),
+        CarouselWidget(currentIndex: _currentIndexNotifier, productModel: widget.productModel,),
         const Positioned(
-          top: 0, // تثبيت الـ AppBar في الأعلى
+          top: 0,
           left: 0,
           right: 0,
-          child:  CustomAppbar(),
+          child: CustomAppbar(),
         ),
         Positioned(
-          bottom: 110.h, // تثبيت النقاط في الأسفل
-          left: 0,
-          right: 0,
-          child: GenerateDots(
-              imageList: imageList, currentIndex: _currentIndex),
-        )
+            bottom: 110.h,
+            left: 0,
+            right: 0,
+            child: ValueListenableBuilder(
+                valueListenable: _currentIndexNotifier,
+                builder: (context, currentIndex, _) {
+                  return GenerateDots(
+                      imageList: widget.productModel.productImage, currentIndex: currentIndex);
+                }))
       ],
     );
   }

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/core/utils/app_color.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:mentorship_ecommerce/generated/l10n.dart';
+import '../../../../../core/utils/app_color.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../../../../core/utils/svgs.dart';
 
 class CustomSearchTextFormFiled extends StatelessWidget {
   const CustomSearchTextFormFiled({
@@ -22,13 +25,18 @@ class CustomSearchTextFormFiled extends StatelessWidget {
         decoration: InputDecoration(
           fillColor: AppColor.textFiledFilledColor,
           filled: true,
-          hintText: 'Search',
+          hintText: S.of(context).search,
           border: borderStyle(),
           errorBorder: borderStyle(),
           focusedBorder: borderStyle(),
           focusedErrorBorder: borderStyle(),
           enabledBorder: borderStyle(),
-          prefixIcon: const Icon(Icons.search),
+          prefixIcon: Padding(
+            padding: const EdgeInsets.all(13.0),
+            child: SvgPicture.asset(
+              Svgs.search,
+            ),
+          ),
         ),
       ),
     );

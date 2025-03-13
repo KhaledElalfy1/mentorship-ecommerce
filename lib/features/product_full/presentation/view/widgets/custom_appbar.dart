@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/utils/app_color.dart';
-import 'package:mentorship_ecommerce/core/utils/widgets/appbar_icon_widget.dart';
+import '../../../../../core/routes/routes.dart';
+import '../../../../../core/utils/app_color.dart';
+import '../../../../../core/widgets/appbar_icon_widget.dart';
 
 class CustomAppbar extends StatelessWidget {
   const CustomAppbar({super.key});
@@ -9,7 +10,7 @@ class CustomAppbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: 30.w, right: 30.w, top: 40.h),
+      padding: EdgeInsets.only(left: 30.w, right: 30.w, top: 60.h),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -23,7 +24,9 @@ class CustomAppbar extends StatelessWidget {
             isPadding: false,
               iconWidget: Icons.favorite,
               iconColor: AppColor.favoriteIconColor,
-              onTap: () {}),
+              onTap: () {
+                   Navigator.popAndPushNamed(context, Routes.wishListBoard);
+              }),
         ],
       ),
     );

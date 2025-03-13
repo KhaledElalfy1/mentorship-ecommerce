@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/utils/app_color.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
+import '../../../../../core/utils/app_color.dart';
+import '../../../../../core/utils/styles.dart';
 
 class CheckOutDetails extends StatelessWidget {
   const CheckOutDetails({super.key, required this.text1, required this.text2});
@@ -32,7 +32,5 @@ class CheckOutDetails extends StatelessWidget {
         )
       ],
     );
-  
-
   }
 }

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:mentorship_ecommerce/generated/l10n.dart';
+import '../../../../../core/utils/styles.dart';
+import '../../../../../core/utils/svgs.dart';
 
 class SearchResultHeader extends StatelessWidget {
   const SearchResultHeader({super.key});
@@ -9,7 +12,7 @@ class SearchResultHeader extends StatelessWidget {
     return Row(
       children: [
         Text(
-          'Recent Searches',
+          S.of(context).recentSearch,
           style: Styles.textStyle16.copyWith(
             color: const Color(
               0xff9B9A99,
@@ -19,10 +22,7 @@ class SearchResultHeader extends StatelessWidget {
         const Spacer(),
         IconButton(
           onPressed: () {},
-          icon: const Icon(
-            Icons.delete,
-            color: Color(0xff9B9A99),
-          ),
+          icon: SvgPicture.asset(Svgs.trash),
         ),
       ],
     );

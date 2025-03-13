@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/custom_rating_widget.dart';
+import 'package:mentorship_ecommerce/features/product_full/data/models/product_model.dart';
+import '../../../../../core/utils/styles.dart';
+import 'custom_rating_widget.dart';
 
 class RatingWidgetDetails extends StatelessWidget {
-  const RatingWidgetDetails({super.key});
+  const RatingWidgetDetails({super.key, required this.productModel});
+  final ProductModel productModel;
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +16,7 @@ class RatingWidgetDetails extends StatelessWidget {
         Row(
           children: [
             Text(
-              "4.9",
+              "${productModel.rating}",
               style: Styles.textStyle40,
             ),
             SizedBox(
@@ -29,15 +31,15 @@ class RatingWidgetDetails extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            const CustomRatingWidget(
-              rating: 5,
+            CustomRatingWidget(
+              rating: productModel.productStarRating,
               size: 22,
             ),
             SizedBox(
               height: 5.h,
             ),
             Text(
-              "83 ratings",
+              "(${productModel.productNumOfRating})",
               style: Styles.textStyle10,
             )
           ],
@@ -45,5 +47,4 @@ class RatingWidgetDetails extends StatelessWidget {
       ],
     );
   }
-
 }

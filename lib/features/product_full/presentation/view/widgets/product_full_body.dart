@@ -1,22 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/product_full_carousel.dart';
-import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/product_full_details.dart';
+import 'package:mentorship_ecommerce/features/product_full/data/models/product_model.dart';
+import 'product_full_carousel.dart';
+import 'product_full_details.dart';
 
 class ProductFullBody extends StatelessWidget {
-  const ProductFullBody({super.key});
-
+  const ProductFullBody({super.key, required this.productModel});
+  final ProductModel productModel;
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
-      bottom: false,
-      child: SingleChildScrollView(
-        child: Stack(
-          children: [
-             ProductFullCarousel(),
-              ProductFullDetails(),
-          ],
-        ),
+    return SingleChildScrollView(
+      child: Stack(
+        children: [
+          ProductFullCarousel(productModel: productModel),
+          ProductFullDetails(
+            productModel: productModel,
+          ),
+        ],
       ),
     );
   }
 }
+

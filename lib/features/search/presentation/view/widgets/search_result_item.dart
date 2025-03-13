@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/core/utils/app_color.dart';
-import 'package:mentorship_ecommerce/core/utils/styles.dart';
+import '../../../../../core/utils/app_color.dart';
+import '../../../../../core/utils/styles.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SearchResultItem extends StatelessWidget {
@@ -34,6 +34,7 @@ class SearchResultItem extends StatelessWidget {
                 color: const Color(
                   0xff6F6D6B,
                 ),
+                fontWeight: FontWeight.w500,
               ),
             ),
           ),
