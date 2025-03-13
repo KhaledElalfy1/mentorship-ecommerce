@@ -1,6 +1,9 @@
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mentorship_ecommerce/core/functions/firebase_analytics_log_event.dart';
 import 'package:mentorship_ecommerce/core/models/firebase_analytics_event_model.dart';
 import 'package:mentorship_ecommerce/core/routes/routes_exports.dart';
+import 'package:mentorship_ecommerce/features/login/data/repo/login_repo_implementation.dart';
+import 'package:mentorship_ecommerce/features/login/presentation/manager/login_cubit.dart';
 
 class AppRouter {
   Route? generateRouter(RouteSettings settings) {
@@ -34,8 +37,11 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const SearchView());
       case Routes.productFull:
         return MaterialPageRoute(builder: (_) => const ProductFullView());
-      case Routes.login:
-        return MaterialPageRoute(builder: (_) => const LoginScreen());
+     case Routes.login:
+        return MaterialPageRoute(
+            builder: (_) => BlocProvider(
+                create: (context) => LoginCubit(UserAuthRepoImplementaion()),
+                child: const LoginScreen()));
       case Routes.myOrder:
         return MaterialPageRoute(builder: (_) => const MyOrderView());
       case Routes.dashboard:
