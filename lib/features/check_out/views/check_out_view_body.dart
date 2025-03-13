@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/functions/firebase_analytics_log_event.dart';
 import 'package:mentorship_ecommerce/core/helper/extention.dart';
+import 'package:mentorship_ecommerce/core/models/firebase_analytics_event_model.dart';
 import '../../../core/helper/spacing.dart';
 import '../../../core/utils/styles.dart';
 import '../../../core/widgets/font_weight_helper.dart';
@@ -66,12 +68,14 @@ class _CheckoutAppViewBodyState extends State<CheckoutAppViewBody> {
               verticalSpace(29.h),
               CustomAlignText(
                 text: 'STEP 1',
-                style: Styles.textStyle11.copyWith(fontWeight: FontWeightHelper.regular),
+                style: Styles.textStyle11
+                    .copyWith(fontWeight: FontWeightHelper.regular),
               ),
               verticalSpace(10.h),
               CustomAlignText(
                 text: 'Shipping',
-                style: Styles.textStyle25.copyWith(fontWeight: FontWeightHelper.medium),
+                style: Styles.textStyle25
+                    .copyWith(fontWeight: FontWeightHelper.medium),
               ),
               verticalSpace(20.h),
               ShippingForm(
@@ -85,6 +89,14 @@ class _CheckoutAppViewBodyState extends State<CheckoutAppViewBody> {
                 text: 'Continue to Payment',
                 onClicked: () {
                   if (formKey.currentState!.validate()) {
+                    firebaseAnalyticsLogEvent(
+                      firebaseAnalyticsEventModel: FirebaseAnalyticsEventModel(
+                        name: "proceed_to_payment",
+                        parameters: {
+                          "action": "proceed_to_payment",
+                        },
+                      ),
+                    );
                     context.pushNamed(Routes.checkOutSuccess);
                   }
                 },

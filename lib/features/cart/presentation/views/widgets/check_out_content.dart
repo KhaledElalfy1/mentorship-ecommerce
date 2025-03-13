@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/functions/firebase_analytics_log_event.dart';
 import 'package:mentorship_ecommerce/core/helper/extention.dart';
+import 'package:mentorship_ecommerce/core/models/firebase_analytics_event_model.dart';
 import 'package:mentorship_ecommerce/core/routes/routes.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
 import 'package:mentorship_ecommerce/core/widgets/custom_button.dart';
@@ -40,6 +42,14 @@ class CheckOutContent extends StatelessWidget {
           ),
           CustomButton(
             onPressed: () {
+              firebaseAnalyticsLogEvent(
+                firebaseAnalyticsEventModel: FirebaseAnalyticsEventModel(
+                  name: "proceed_to_checkout",
+                  parameters: {
+                    "product_price": 110, // product price
+                  },
+                ),
+              );
               context.pushNamed(Routes.checkOut);
             },
             buttonText: "Proceed to checkout",
