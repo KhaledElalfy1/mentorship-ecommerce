@@ -56,6 +56,8 @@ class AppRouter {
 
       case Routes.onboarding:
         return MaterialPageRoute(builder: (_) => const OnboardingView());
+      case Routes.update:
+        return MaterialPageRoute(builder: (_) => const UpdateView());
 
       default:
         return null;

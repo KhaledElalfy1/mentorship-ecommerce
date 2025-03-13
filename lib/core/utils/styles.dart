@@ -67,4 +67,9 @@ abstract class Styles {
     fontSize: 40.0.sp,
     fontWeight: FontWeight.bold,
   );
+  static TextStyle textStyle30 = TextStyle(
+    fontSize: 16.0.sp,
+    fontWeight: FontWeight.normal,
+     color:const Color(0xff666666)
+  );
 }

@@ -41,4 +41,6 @@ export 'package:mentorship_ecommerce/features/onboarding/presentation/views/widg
 export 'package:mentorship_ecommerce/features/onboarding/presentation/views/widgets/onboarding_widgets/onboarding_image.dart';
 export 'package:mentorship_ecommerce/core/widgets/appbar_icon_widget.dart';
 export 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/custom_rating_widget.dart';
+export 'package:mentorship_ecommerce/features/update/presentation/view/widgets/update_screen_body.dart';
+export 'package:mentorship_ecommerce/features/update/presentation/view/update_view.dart';
 
