@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/functions/firebase_analytics_log_event.dart';
+import 'package:mentorship_ecommerce/core/models/firebase_analytics_event_model.dart';
 import '../../../core/helper/extention.dart';
 import '../../../core/helper/spacing.dart';
 import '../../../core/utils/styles.dart';
@@ -32,7 +34,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: SingleChildScrollView(  
+        child: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.only(top: 30.h, left: 33.w, right: 33.w),
             child: Form(
@@ -96,6 +98,14 @@ class _LoginScreenState extends State<LoginScreen> {
                       ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(content: Text("Login Successful!")),
                       );
+                      firebaseAnalyticsLogEvent(
+                          firebaseAnalyticsEventModel:
+                              FirebaseAnalyticsEventModel(
+                        name: "button_click",
+                        parameters: {
+                          'action': 'User clicked on login button',
+                        },
+                      ));
                       context.pushReplacementNamed(Routes.dashboard);
                     }
                   }),

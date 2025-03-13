@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mentorship_ecommerce/core/functions/firebase_analytics_log_event.dart';
+import 'package:mentorship_ecommerce/core/models/firebase_analytics_event_model.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/home_lists.dart';
 
 import '../../../my_order/widgets/bottom_nav_bar.dart';
@@ -20,6 +22,15 @@ class _DashboardViewState extends State<DashboardView> {
   void _onItemTapped(int index) {
     setState(() {
       _selectedBottomNavIndex = index;
+      firebaseAnalyticsLogEvent(
+          firebaseAnalyticsEventModel: FirebaseAnalyticsEventModel(
+        name: "buttonNav_click",
+        parameters: {
+          'action': "User swiped to the next page",
+          'current_page':
+              "Dashboard Page ${bottomNavigationPages[_selectedBottomNavIndex]}",
+        },
+      ));
     });
   }
 
