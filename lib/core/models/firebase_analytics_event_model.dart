@@ -3,7 +3,7 @@ class FirebaseAnalyticsEventModel {
   final Map<String, Object> parameters;
   
   FirebaseAnalyticsEventModel({
-     this.name='user_action',
+     this.name='user_navigation',
     required this.parameters,
   });
 

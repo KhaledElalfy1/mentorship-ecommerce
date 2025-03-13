@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/functions/firebase_analytics_log_event.dart';
+import 'package:mentorship_ecommerce/core/models/firebase_analytics_event_model.dart';
 import 'package:mentorship_ecommerce/features/product_full/data/models/product_model.dart';
 import 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/product_review.dart';
 import '../../../../../core/utils/app_color.dart';
@@ -35,6 +37,15 @@ class _ProductReviewsWidgetState extends State<ProductReviewsWidget> {
                     setState(() {
                       isExpanded = !isExpanded;
                     });
+                    firebaseAnalyticsLogEvent(
+                        firebaseAnalyticsEventModel:
+                            FirebaseAnalyticsEventModel(
+                      name: "product_reviews",
+                      parameters: {
+                        'action':
+                            "show reviews for ${widget.productModel.productName}",
+                      },
+                    ));
                   },
                   child: const Icon(Icons.keyboard_arrow_down),
                 ),
@@ -45,7 +56,9 @@ class _ProductReviewsWidgetState extends State<ProductReviewsWidget> {
             color: AppColor.dividerColor,
           ),
           ProductReview(
-              isExpanded: isExpanded,  productModel: widget.productModel,)
+            isExpanded: isExpanded,
+            productModel: widget.productModel,
+          )
         ],
       ),
     );
