@@ -50,6 +50,9 @@ dependencies:
   get_it: ^8.0.3
   shared_preferences: ^2.5.1
   smooth_page_indicator: ^1.2.0+3
+  google_sign_in: ^6.2.1
+  firebase_auth: ^5.5.1
+  dartz: ^0.10.1
   url_launcher: ^6.3.1
 
 dev_dependencies:
