@@ -1,3 +1,5 @@
+
+
 import 'package:flutter/material.dart';
 import 'package:mentorship_ecommerce/core/functions/init_firebase_and_analytics.dart';
 import 'ecommerce_app.dart';
@@ -9,5 +11,6 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
     isAnalyticsEnabled: true,
   );
+
   runApp(const EcommerceApp());
 }
