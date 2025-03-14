@@ -1,3 +1,5 @@
+import 'package:mentorship_ecommerce/core/functions/firebase_analytics_log_event.dart';
+import 'package:mentorship_ecommerce/core/models/firebase_analytics_event_model.dart';
 import 'package:mentorship_ecommerce/features/product_full/data/models/product_model.dart';
 
 import '../../../../../core/routes/routes_exports.dart';
@@ -37,6 +39,15 @@ class _ProductDescriptionWidgetState extends State<ProductDescriptionWidget> {
                     setState(() {
                       isExpanded = !isExpanded;
                     });
+                    firebaseAnalyticsLogEvent(
+                        firebaseAnalyticsEventModel:
+                            FirebaseAnalyticsEventModel(
+                      name: "product_description",
+                      parameters: {
+                        'action': 'expand',
+                        'product_id': widget.productModel.productName,
+                      },
+                    ));
                   },
                   child: const Icon(Icons.keyboard_arrow_down),
                 ),
@@ -46,7 +57,10 @@ class _ProductDescriptionWidgetState extends State<ProductDescriptionWidget> {
           const Divider(
             color: AppColor.dividerColor,
           ),
-          ProductDescription(isExpanded: isExpanded, productModel: widget.productModel,)
+          ProductDescription(
+            isExpanded: isExpanded,
+            productModel: widget.productModel,
+          )
         ],
       ),
     );
