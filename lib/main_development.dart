@@ -8,7 +8,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initFirebaseAndAnalytics(
     options: DefaultFirebaseOptions.currentPlatform,
-    isAnalyticsEnabled: false,
+    isAnalyticsEnabled: true,
   );
 
   runApp(DevicePreview(builder: (context) {
