@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mentorship_ecommerce/core/routes/routes.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/home_lists.dart';
 
 import 'drawer_item.dart';
@@ -21,6 +22,9 @@ class _DrawerListViewState extends State<DrawerListView> {
           onTap: () {
             if (activeIndex != index) {
               setState(() => activeIndex = index);
+            }
+            if (activeIndex == 0) {
+              Navigator.pushNamed(context, Routes.update);
             }
           },
           child: DrawerItem(
