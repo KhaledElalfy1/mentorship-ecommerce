@@ -12,6 +12,7 @@ class LoginCubit extends Cubit<LoginState>{
     userAuthWithGoogle.fold((ifLeft){
       emit(GoogleAuthFailureState(error: ifLeft.error));
     }, (ifRight){
+
       emit(GoogleAuthSuccessState());
     });
 
