@@ -13,9 +13,9 @@ class SocialMediaButtons extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocConsumer<LoginCubit, LoginState>(
       listener: (context, state) {
-        if (state is GoogleAuthSuccessState ) {
-          context.pushNamed(Routes.home);
-        } else if (state is GoogleAuthFailureState ) {
+        if (state is GoogleAuthSuccessState) {
+          Navigator.of(context).pushNamed(Routes.dashboard);
+        } else if (state is GoogleAuthFailureState) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(content: Text(state.error)),
           );
@@ -29,11 +29,13 @@ class SocialMediaButtons extends StatelessWidget {
           children: [
             IconButton(
               icon: Image.asset(Assets.appleImage),
-              onPressed: () {},
+              onPressed: () {
+                context.pushNamed(Routes.home);
+              },
             ),
             const SizedBox(width: 20),
             IconButton(
-              icon:  Image.asset(Assets.googleImage),
+              icon: Image.asset(Assets.googleImage),
               onPressed: isLoading
                   ? null
                   : () {
@@ -43,7 +45,9 @@ class SocialMediaButtons extends StatelessWidget {
             const SizedBox(width: 20),
             IconButton(
               icon: Image.asset(Assets.facebookImage),
-              onPressed: () {},
+              onPressed: () {
+                context.pushNamed(Routes.home);
+              },
             ),
           ],
         );
