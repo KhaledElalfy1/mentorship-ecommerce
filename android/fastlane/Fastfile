@@ -21,10 +21,10 @@ platform :android do
     sh "flutter clean"
     sh "flutter build apk --release --flavor production --target lib/main_production.dart --no-tree-shake-icons"
     release = firebase_app_distribution(
-      app: "1:498736246572:android:02cac52a622ea05aa30689",
-      firebase_cli_token:"",
+      app: ENV['PRODUCTION_APP_ID'],
+      firebase_cli_token:ENV['FIREBASE_CLI_TOKEN'],
       android_artifact_type:"APK",
-      android_artifact_path: "../build/app/outputs/flutter-apk/app-production-release.apk"
+      android_artifact_path: "../build/app/outputs/flutter-apk/app-production-release.apk",
       testers: "mobiledevelopment2002@gmail.com",
       release_notes: "Lots of amazing new features to test out!"
   )
@@ -35,12 +35,20 @@ platform :android do
     sh "flutter clean"
     sh "flutter build apk --release --flavor development --target lib/main_development.dart --no-tree-shake-icons"    
     release = firebase_app_distribution(
-      app: "1:498736246572:android:02cac52a622ea05aa30689",
-      firebase_cli_token:"",
+      app: ENV['DEVELOPMENT_APP_ID'],
+      firebase_cli_token:ENV['FIREBASE_CLI_TOKEN'],
       android_artifact_type:"APK",
-      android_artifact_path: "../build/app/outputs/flutter-apk/app-development-release.apk"
+      android_artifact_path: "../build/app/outputs/flutter-apk/app-development-release.apk",
       testers: "mobiledevelopment2002@gmail.com",
       release_notes: "Lots of amazing new features to test out!"
   )
   end
+
+  desc "Demo using different .env files print sample"
+  lane :sampleTest do
+      # sampleTest
+      print "Current app Id = #{ENV['FIREBASE_CLI_TOKEN']} and api key = #{ENV['PRODUCTION_APP_ID']}"
+      # You can add other commands here
+  end 
+
 end
