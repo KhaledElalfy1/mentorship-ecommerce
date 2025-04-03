@@ -69,6 +69,31 @@ android {
             resValue "string", "app_name", "ecommerce production"
         }
     }
+
+    //     flavorDimensions "environment"
+    // productFlavors {
+    //     development {
+    //         dimension "environment"
+    //         applicationIdSuffix ".dev"  # مثال: com.example.app.dev
+    //     }
+    //     production {
+    //         dimension "environment"
+    //         applicationIdSuffix ""      # مثال: com.example.app
+    //     }
+    // }
+
+    // نسخ google-services.json المناسب لكل Flavor
+    applicationVariants.all { variant ->
+        def flavor = variant.flavorName
+        def targetPath = "src/${flavor}/${variant.buildType.name}/google-services.json"
+        copy {
+            from targetPath
+            into "."
+            rename { String fileName ->
+                "google-services.json"
+            }
+        }
+    }
 }
 
 flutter {
