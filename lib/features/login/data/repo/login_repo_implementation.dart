@@ -10,7 +10,7 @@ class UserAuthRepoImplementaion implements UserAuthRepo {
   @override
   Future<Either<Failure, UserCredential>> signInWithGoogle() async {
     try {
-      final GoogleSignIn googleSignIn = GoogleSignIn(scopes: ['email']);
+      final GoogleSignIn googleSignIn = GoogleSignIn(scopes: ['email'],serverClientId: "162070365442-eufs7sdjsmaat5higbc6g8jn6tbl93l2.apps.googleusercontent.com");
       try {
         await googleSignIn.signOut();
       } catch (e) {
