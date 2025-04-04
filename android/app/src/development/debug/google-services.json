@@ -48,6 +48,50 @@
           ]
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162070365442:android:6c0ad226a7460ebd14ae1b",
+        "android_client_info": {
+          "package_name": "com.example.mentorship_ecommerce.dev.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162070365442-bha1oa62ql51dq3sfmk42hkouoaji9pu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mentorship_ecommerce.dev.debug",
+            "certificate_hash": "1c287d7a77dd3135b09387077aab432b6603a48c"
+          }
+        },
+        {
+          "client_id": "162070365442-eufs7sdjsmaat5higbc6g8jn6tbl93l2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0_dN5k1E4JHFOD4phh4Ggiv7mAVFxMXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "162070365442-eufs7sdjsmaat5higbc6g8jn6tbl93l2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "162070365442-42gjnjsgfdo1km3cbgtik0i3jonh7v4k.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mentorshipEcommerce.dev"
+              }
+            }
+          ]
+        }
+      }
     }
   ],
   "configuration_version": "1"
