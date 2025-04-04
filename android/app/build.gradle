@@ -38,10 +38,21 @@ android {
      buildConfig = true
     }
 
+    // buildTypes {
+    //     release {
+    //         // TODO: Add your own signing config for the release build.
+    //         // Signing with the debug keys for now, so flutter run --release works.
+    //         signingConfig = signingConfigs.debug
+    //         buildConfigField "boolean", "FIREBASE_CRASHLYTICS_ENABLED", "true"
+    //     }
+    // }
+
     buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+            buildConfigField "boolean", "FIREBASE_CRASHLYTICS_ENABLED", "false"
+        }
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so flutter run --release works.
             signingConfig = signingConfigs.debug
             buildConfigField "boolean", "FIREBASE_CRASHLYTICS_ENABLED", "true"
         }
@@ -114,6 +125,7 @@ flutter {
     source = "../.."
 }
 dependencies {
+    implementation platform('com.google.firebase:firebase-bom:32.7.0')
     implementation 'com.google.firebase:firebase-crashlytics'
-}
-apply plugin: 'com.google.gms.google-services'
+    implementation 'com.google.firebase:firebase-analytics'}
+// apply plugin: 'com.google.gms.google-services'
