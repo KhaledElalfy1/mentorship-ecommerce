@@ -25,7 +25,7 @@ platform :android do
       firebase_cli_token:ENV['FIREBASE_CLI_TOKEN'],
       android_artifact_type:"APK",
       android_artifact_path: "../build/app/outputs/flutter-apk/app-production-release.apk",
-      testers: "mobiledevelopment2002@gmail.com",
+      testers: "ayahame99@gmail.com, bahnas114@gmail.com, mohamedshehta819@gmail.com",
       release_notes: "Lots of amazing new features to test out!"
   )
   end
@@ -39,7 +39,7 @@ platform :android do
       firebase_cli_token:ENV['FIREBASE_CLI_TOKEN'],
       android_artifact_type:"APK",
       android_artifact_path: "../build/app/outputs/flutter-apk/app-development-release.apk",
-      testers: "mobiledevelopment2002@gmail.com",
+      testers: "habatrka@gmail.com, salmaehaba703@gmail.com",
       release_notes: "Lots of amazing new features to test out!"
   )
   end
