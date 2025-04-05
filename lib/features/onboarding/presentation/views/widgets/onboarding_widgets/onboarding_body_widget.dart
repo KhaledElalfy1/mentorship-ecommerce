@@ -1,3 +1,5 @@
+import 'package:mentorship_ecommerce/constants.dart';
+import 'package:mentorship_ecommerce/core/services/prefs.dart';
 import 'package:mentorship_ecommerce/features/onboarding/data/onboarding_model.dart';
 import '../../../../../../core/routes/routes_exports.dart';
 
@@ -31,9 +33,7 @@ class OnboardingBodyWidget extends StatelessWidget {
         SizedBox(
           height: 70.h,
         ),
-        DotsListView(
-            dotCount: onboardingModel.dotNum,
-            currentIndex2: onboardingModel.currentIndex),
+        DotsListView(dotCount: onboardingModel.dotNum, currentIndex2: onboardingModel.currentIndex),
         SizedBox(
           height: 40.h,
         ),
@@ -42,6 +42,7 @@ class OnboardingBodyWidget extends StatelessWidget {
             width: 210.w,
             buttonText: "Shopping now",
             onTap: () {
+              Prefs.setBool(key: Constants.kIsBoardingViewSeen, value: true);
               Navigator.pushReplacementNamed(context, Routes.login);
             })
       ],

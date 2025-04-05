@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/constants.dart';
 import 'package:mentorship_ecommerce/core/functions/firebase_analytics_log_event.dart';
 import 'package:mentorship_ecommerce/core/models/firebase_analytics_event_model.dart';
 import 'package:mentorship_ecommerce/core/routes/routes.dart';
+import 'package:mentorship_ecommerce/core/services/prefs.dart';
 import 'package:mentorship_ecommerce/core/utils/app_color.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
 import 'package:mentorship_ecommerce/features/onboarding/presentation/views/widgets/custom_button_onboarding_widget.dart';
@@ -34,8 +36,8 @@ class WelcomeContentWidget extends StatelessWidget {
           height: 53.h,
           width: 193.w,
           buttonText: 'Get Started',
-          onTap: ()  {
-             firebaseAnalyticsLogEvent(
+          onTap: () {
+            firebaseAnalyticsLogEvent(
               firebaseAnalyticsEventModel: FirebaseAnalyticsEventModel(
                 name: "click_button",
                 parameters: {
@@ -45,8 +47,13 @@ class WelcomeContentWidget extends StatelessWidget {
                 },
               ),
             );
-            if (context.mounted) {
-              Navigator.pushNamed(context, Routes.onboarding);
+            bool isBoardingViewSeen = Prefs.getBool(key: Constants.kIsBoardingViewSeen);
+            if (isBoardingViewSeen) {
+              Navigator.pushReplacementNamed(context, Routes.login);
+            } else {
+              if (context.mounted) {
+                Navigator.pushNamed(context, Routes.onboarding);
+              }
             }
           },
         )
