@@ -1,48 +1,92 @@
 {
   "project_info": {
-    "project_number": "162070365442",
-    "project_id": "e-commerce-mentor-dev",
-    "storage_bucket": "e-commerce-mentor-dev.firebasestorage.app"
+    "project_number": "498736246572",
+    "project_id": "e-commerce-mentor-prod",
+    "storage_bucket": "e-commerce-mentor-prod.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:162070365442:android:dce46cc303d5c25414ae1b",
+        "mobilesdk_app_id": "1:498736246572:android:02cac52a622ea05aa30689",
         "android_client_info": {
-          "package_name": "com.example.mentorship_ecommerce.dev"
+          "package_name": "com.example.mentorship_ecommerce"
         }
       },
       "oauth_client": [
         {
-          "client_id": "162070365442-rgrbu7th2uspiv9odattlhi7coi5l9ls.apps.googleusercontent.com",
+          "client_id": "498736246572-p2il77sgd17k5chbdg4g9pdkkqp4434c.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.mentorship_ecommerce.dev",
-            "certificate_hash": "233dd1b22f4de268b0e51fba94bb932780f1b3ea"
+            "package_name": "com.example.mentorship_ecommerce",
+            "certificate_hash": "1c287d7a77dd3135b09387077aab432b6603a48c"
           }
         },
         {
-          "client_id": "162070365442-eufs7sdjsmaat5higbc6g8jn6tbl93l2.apps.googleusercontent.com",
+          "client_id": "498736246572-0crnjal1sef9b2imopvpnpgr1phsvp4k.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB0_dN5k1E4JHFOD4phh4Ggiv7mAVFxMXI"
+          "current_key": "AIzaSyB5uQMIzUXHDO4c20MhkSd0SebTWkqior8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "162070365442-eufs7sdjsmaat5higbc6g8jn6tbl93l2.apps.googleusercontent.com",
+              "client_id": "498736246572-0crnjal1sef9b2imopvpnpgr1phsvp4k.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "162070365442-42gjnjsgfdo1km3cbgtik0i3jonh7v4k.apps.googleusercontent.com",
+              "client_id": "498736246572-qtpf9vusl6ja6obqputn1opj0kc35imb.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.mentorshipEcommerce.dev"
+                "bundle_id": "com.example.mentorshipEcommerce"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498736246572:android:f96399413fe77ac2a30689",
+        "android_client_info": {
+          "package_name": "com.example.mentorship_ecommerce.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "498736246572-fb1kt4det16a3tv8mjooegcqovtf5cnl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mentorship_ecommerce.debug",
+            "certificate_hash": "1c287d7a77dd3135b09387077aab432b6603a48c"
+          }
+        },
+        {
+          "client_id": "498736246572-0crnjal1sef9b2imopvpnpgr1phsvp4k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5uQMIzUXHDO4c20MhkSd0SebTWkqior8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "498736246572-0crnjal1sef9b2imopvpnpgr1phsvp4k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "498736246572-qtpf9vusl6ja6obqputn1opj0kc35imb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mentorshipEcommerce"
               }
             }
           ]

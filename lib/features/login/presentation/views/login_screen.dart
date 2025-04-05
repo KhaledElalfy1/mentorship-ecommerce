@@ -1,4 +1,3 @@
-import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/functions/firebase_analytics_log_event.dart';
@@ -121,14 +120,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   verticalSpace(23.h),
                   const SocialMediaButtons(),
-                  Center(
-                    child: ElevatedButton(
-                    onPressed: () {
-                        FirebaseCrashlytics.instance.crash();
-                     },
-                          child: Text("Test Crash"),
-                    ),
-                  )
+                
                 ],
               ),
             ),
