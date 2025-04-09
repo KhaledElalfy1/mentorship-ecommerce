@@ -42,7 +42,7 @@ class OnboardingBodyWidget extends StatelessWidget {
             width: 210.w,
             buttonText: "Shopping now",
             onTap: () {
-              Prefs.setBool(key: Constants.kIsBoardingViewSeen, value: true);
+              Prefs.setBool(key: Constants.isBoardingViewSeen, value: true);
               Navigator.pushReplacementNamed(context, Routes.login);
             })
       ],
