@@ -47,8 +47,11 @@ class WelcomeContentWidget extends StatelessWidget {
                 },
               ),
             );
-            bool isBoardingViewSeen = Prefs.getBool(key: Constants.kIsBoardingViewSeen);
-            if (isBoardingViewSeen) {
+            bool isBoardingViewSeen = Prefs.getBool(key: Constants.isBoardingViewSeen);
+            bool isSigndIn = Prefs.getBool(key: Constants.isSigndIn);
+            if (isSigndIn) {
+              Navigator.pushReplacementNamed(context, Routes.dashboard);
+            } else if (isBoardingViewSeen) {
               Navigator.pushReplacementNamed(context, Routes.login);
             } else {
               if (context.mounted) {
