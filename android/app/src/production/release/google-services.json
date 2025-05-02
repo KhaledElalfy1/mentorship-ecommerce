@@ -14,11 +14,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "498736246572-p2il77sgd17k5chbdg4g9pdkkqp4434c.apps.googleusercontent.com",
+          "client_id": "498736246572-3a69pbducg6bj8khm59fgeuugpm8ck41.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.mentorship_ecommerce",
-            "certificate_hash": "1c287d7a77dd3135b09387077aab432b6603a48c"
+            "certificate_hash": "108d7f8b1f00ecaae8c7747d63f71e280a5c0509"
           }
         },
         {
@@ -58,11 +58,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "498736246572-fb1kt4det16a3tv8mjooegcqovtf5cnl.apps.googleusercontent.com",
+          "client_id": "498736246572-vnqeeceg9mu20h13q1aks3mbi7glltg2.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.mentorship_ecommerce.debug",
-            "certificate_hash": "1c287d7a77dd3135b09387077aab432b6603a48c"
+            "certificate_hash": "108d7f8b1f00ecaae8c7747d63f71e280a5c0509"
           }
         },
         {

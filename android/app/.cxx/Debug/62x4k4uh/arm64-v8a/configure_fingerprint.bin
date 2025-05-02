@@ -2,6 +2,7 @@ C/C++ Structured LogW
 U
 SC:\Development\flutter\packages\flutter_tools\gradle\src\main\groovy\CMakeLists.txtC
 A
+<<<<<<< HEAD
 ?com.android.build.gradle.internal.cxx.io.EncodedFileFingerPrint	ï’”à2§ ¤ ¦½Ú2v
 t
 rC:\Users\hebak\Desktop\mentorship-ecommerce\android\app\.cxx\Debug\62x4k4uh\arm64-v8a\additional_project_files.txt	ï’”à2 ›î’”à2s
@@ -26,3 +27,29 @@ j
 hC:\Users\hebak\Desktop\mentorship-ecommerce\android\app\.cxx\Debug\62x4k4uh\arm64-v8a\prefab_config.json	ï’”à2( Ôî’”à2q
 o
 mC:\Users\hebak\Desktop\mentorship-ecommerce\android\app\.cxx\Debug\62x4k4uh\arm64-v8a\symbol_folder_index.txt	ï’”à2d Öî’”à2
+=======
+?com.android.build.gradle.internal.cxx.io.EncodedFileFingerPrint	æêÑ•à2§ ¤ ¦½Ú2v
+t
+rC:\Users\hebak\Desktop\mentorship-ecommerce\android\app\.cxx\Debug\62x4k4uh\arm64-v8a\additional_project_files.txt	æêÑ•à2 ×¥•à2s
+q
+oC:\Users\hebak\Desktop\mentorship-ecommerce\android\app\.cxx\Debug\62x4k4uh\arm64-v8a\android_gradle_build.json	æêÑ•à2× —×¥•à2x
+v
+tC:\Users\hebak\Desktop\mentorship-ecommerce\android\app\.cxx\Debug\62x4k4uh\arm64-v8a\android_gradle_build_mini.json	æêÑ•à2î È×¥•à2e
+c
+aC:\Users\hebak\Desktop\mentorship-ecommerce\android\app\.cxx\Debug\62x4k4uh\arm64-v8a\build.ninja	æêÑ•à2­« þÓ¥•à2i
+g
+eC:\Users\hebak\Desktop\mentorship-ecommerce\android\app\.cxx\Debug\62x4k4uh\arm64-v8a\build.ninja.txt	æêÑ•à2n
+l
+jC:\Users\hebak\Desktop\mentorship-ecommerce\android\app\.cxx\Debug\62x4k4uh\arm64-v8a\build_file_index.txt	æêÑ•à2S ã×¥•à2o
+m
+kC:\Users\hebak\Desktop\mentorship-ecommerce\android\app\.cxx\Debug\62x4k4uh\arm64-v8a\compile_commands.json	æêÑ•à2	s
+q
+oC:\Users\hebak\Desktop\mentorship-ecommerce\android\app\.cxx\Debug\62x4k4uh\arm64-v8a\compile_commands.json.bin	æêÑ•à2
+y
+w
+uC:\Users\hebak\Desktop\mentorship-ecommerce\android\app\.cxx\Debug\62x4k4uh\arm64-v8a\metadata_generation_command.txt	çêÑ•à2„ Ù×¥•à2l
+j
+hC:\Users\hebak\Desktop\mentorship-ecommerce\android\app\.cxx\Debug\62x4k4uh\arm64-v8a\prefab_config.json	çêÑ•à2( Ú×¥•à2q
+o
+mC:\Users\hebak\Desktop\mentorship-ecommerce\android\app\.cxx\Debug\62x4k4uh\arm64-v8a\symbol_folder_index.txt	çêÑ•à2d á×¥•à2
+>>>>>>> 3aab056b0ae36c802dde85165f758a456cb46857
