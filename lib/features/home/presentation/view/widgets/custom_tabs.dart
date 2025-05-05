@@ -16,7 +16,7 @@ class _CustomTabsState extends State<CustomTabs> {
       initialIndex: 0,
       length: listOfTabsIcons.length,
       child: SizedBox(
-        height: MediaQuery.of(context).size.height * .83,
+        height: MediaQuery.of(context).size.height * .87,
         child: NestedScrollView(
           headerSliverBuilder: (context, innerBoxIsScrolled) => [
             const SliverToBoxAdapter(
@@ -34,6 +34,7 @@ class _CustomTabsState extends State<CustomTabs> {
             ),
           ],
           body: TabBarView(
+            physics: const NeverScrollableScrollPhysics(),
             children: tabsScreens.map((page) => SingleChildScrollView(child: page)).toList(),
           ),
         ),

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/helper/font_family_helper.dart';
 import 'package:mentorship_ecommerce/generated/l10n.dart';
-import 'constants.dart';
+
 import 'core/routes/app_router.dart';
 import 'core/routes/routes.dart';
 import 'core/utils/app_color.dart';
@@ -26,12 +27,11 @@ class EcommerceApp extends StatelessWidget {
         ],
         locale: const Locale('en'),
         theme: ThemeData(
+          scaffoldBackgroundColor: AppColor.whiteColor,
           cardColor: AppColor.whiteColor,
-          fontFamily: Constants.productSans,
+          fontFamily: FontFamilyHelper.productSans,
         ),
-
         initialRoute: Routes.welcome,
-
         onGenerateRoute: AppRouter().generateRouter,
       ),
     );

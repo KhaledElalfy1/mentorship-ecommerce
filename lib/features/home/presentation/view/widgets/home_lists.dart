@@ -34,9 +34,9 @@ const List<Widget> tabsScreens = <Widget>[
 ];
 
 const featuredProductlist = [
- "https://i.pinimg.com/736x/f3/f5/ba/f3f5ba216c8f16b8dee66cc43f79208c.jpg",
- "https://i.pinimg.com/736x/08/36/46/083646721338b3dfcd81f40abaf40fc5.jpg",
-"https://i.pinimg.com/736x/03/3a/be/033abee363e218f731b299617ca48c69.jpg" 
+  "https://i.pinimg.com/736x/f3/f5/ba/f3f5ba216c8f16b8dee66cc43f79208c.jpg",
+  "https://i.pinimg.com/736x/08/36/46/083646721338b3dfcd81f40abaf40fc5.jpg",
+  "https://i.pinimg.com/736x/03/3a/be/033abee363e218f731b299617ca48c69.jpg"
 ];
 
 const recommendedItemslist = [
@@ -46,20 +46,20 @@ const recommendedItemslist = [
     price: 39.99,
   ),
   RecommendedItemModel(
-    imageUrl:"https://i.pinimg.com/736x/03/3a/be/033abee363e218f731b299617ca48c69.jpg",
+    imageUrl: "https://i.pinimg.com/736x/03/3a/be/033abee363e218f731b299617ca48c69.jpg",
     title: 'Cotton T-shirt',
     price: 30.99,
   ),
 ];
 
 const modeList = [
-  ModeModel(icon: Icons.wb_sunny_outlined, title: 'Light'),
-  ModeModel(icon: Icons.nightlight_outlined, title: 'Light'),
+  ModeModel(icon: Icons.sunny, title: 'Light'),
+  ModeModel(icon: Icons.nightlight_outlined, title: 'Dark'),
 ];
 
- const List<Widget> bottomNavigationPages =  [
-    HomeView(),
-    SearchView(),
-    MyOrderView(),
-    ProfileView(),
-  ];
+const List<Widget> bottomNavigationPages = [
+  HomeView(),
+  SearchView(),
+  MyOrderView(),
+  ProfileView(),
+];

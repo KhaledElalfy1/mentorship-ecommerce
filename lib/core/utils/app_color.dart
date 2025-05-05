@@ -13,7 +13,7 @@ abstract class AppColor {
   static const starColor = Color(0xff508A7B);
   static const favoriteIconColor = Color(0xffFF6E6E);
   static const selectedTabColor = Color(0xff3A2C27);
-  static const unSelectedTabColor = Color(0xff9D9D9D);
+  static const unSelectedTabColor = Color(0xffF3F3F3);
   static const textFiledFilledColor = Color(0xffFAFAFA);
   static const textPendingColor = Color(0xffCF6212);
   static const textDeliveredColor = Color(0xff009254);
@@ -27,10 +27,10 @@ abstract class AppColor {
   static const loginButtonColor = Color(0xff2D201C);
   static const divider2Color = Color(0xffF3F3F6);
   static const spanishGrayColor = Color(0xff9D9D9D);
-  static const productBackgroundColor = Color(0xffE2E2E2);
-  static const featuredCardBackgroundColor = Color(0xffF6F6F8);
+  static const productBackgroundColor = Color(0xffEDEDEE);
+  static const featuredCardBackgroundColor = Color(0xffF8F8FA);
   static const textColor = Color(0xFF353945);
-  static const gradientColor1 = Color(0xFFEDEDEE);
+  static const gradientColor1 = Color(0xFFE2E2E2);
   static const bottomBackgroundColor = Color(0xffEDEDED);
   static const borderColor = Color(0xffF2F2F2);
   static const shadowColor = Color(0x0F0F0F33);

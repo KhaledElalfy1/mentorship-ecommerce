@@ -16,14 +16,15 @@ class UnSelectedTab extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Container(
-          width: 30.w,
-          height: 30.h,
+          width: 40.w,
+          height: 40.h,
           decoration: const BoxDecoration(
+            color: AppColor.unSelectedTabColor,
             shape: BoxShape.circle,
           ),
           child: Icon(
             icon,
-            color: AppColor.spanishGrayColor,
+            color: AppColor.unSelectedTabIconColor,
             size: 25.r,
           ),
         ),

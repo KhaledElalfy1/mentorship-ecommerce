@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/helper/extention.dart';
+import 'package:mentorship_ecommerce/core/helper/font_family_helper.dart';
 
-import '../../../../../constants.dart';
+import '../../../../../core/helper/font_weight_helper.dart';
 import '../../../../../core/utils/app_color.dart';
 import '../../../../../core/utils/styles.dart';
-import '../../../../../core/widgets/font_weight_helper.dart';
 import '../../../data/models/group_card_model.dart';
 
 class GroupRightCard extends StatelessWidget {
@@ -17,7 +17,7 @@ class GroupRightCard extends StatelessWidget {
     return ClipRRect(
       borderRadius: BorderRadius.circular(16.r),
       child: SizedBox(
-        width: 151.w,
+        width: 156.w,
         height: 194.h,
         child: Container(
           decoration: ShapeDecoration(
@@ -28,28 +28,32 @@ class GroupRightCard extends StatelessWidget {
           ),
           child: Row(
             children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 8.0).w,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    0.addVerticalSpace,
-                    Text(groupCardModel.name, style: Styles.textStyle13.copyWith(color: AppColor.coolGray)),
-                    20.addVerticalSpace,
-                    Text(
-                      groupCardModel.description,
-                      style: Styles.textStyle18.copyWith(
-                        fontFamily: Constants.productSansLight,
-                        color: AppColor.gunmetalGray,
-                        fontWeight: FontWeightHelper.light,
-                      ),
+              8.addHorizontalSpace,
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  36.addVerticalSpace,
+                  Text(groupCardModel.name, style: Styles.textStyle13.copyWith(color: AppColor.coolGray, letterSpacing: .23.sp)),
+                  16.addVerticalSpace,
+                  Text(
+                    groupCardModel.description,
+                    style: Styles.textStyle18.copyWith(
+                      fontFamily: FontFamilyHelper.productSansLight,
+                      color: AppColor.gunmetalGray,
+                      fontWeight: FontWeightHelper.light,
                     ),
-                  ],
+                  ),
+                ],
+              ),
+              17.addHorizontalSpace,
+              Expanded(
+                child: Image.network(
+                  groupCardModel.image,
+                  width: 60.w,
+                  height: 194.h,
+                  fit: BoxFit.cover,
                 ),
               ),
-              const Spacer(),
-              Image.network(groupCardModel.image,width: 70.w,height: 194.h,fit: BoxFit.fill,),
             ],
           ),
         ),

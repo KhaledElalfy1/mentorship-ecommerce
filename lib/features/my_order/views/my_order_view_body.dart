@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../core/widgets/font_weight_helper.dart';
+import '../../../core/helper/font_weight_helper.dart';
 import '../widgets/my_order_list_view.dart';
 import '../../../core/utils/app_color.dart';
 import '../widgets/custom_app_bar.dart';

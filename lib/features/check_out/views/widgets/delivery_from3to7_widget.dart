@@ -1,5 +1,5 @@
 import 'package:mentorship_ecommerce/core/routes/routes_exports.dart';
-import '../../../../core/widgets/font_weight_helper.dart';
+import '../../../../core/helper/font_weight_helper.dart';
 
 Widget deliveryFrom3to7(){
     return Padding(

@@ -12,7 +12,7 @@ class FeaturedProductsItems extends StatelessWidget {
     return SizedBox(
       height: MediaQuery.sizeOf(context).height * .3,
       child: Padding(
-        padding: const EdgeInsets.only(left: 20.0),
+        padding: const EdgeInsets.only(right: 20.0),
         child: ListView(
           scrollDirection: Axis.horizontal,
           children: List.generate(

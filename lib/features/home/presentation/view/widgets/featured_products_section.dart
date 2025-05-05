@@ -25,8 +25,7 @@ class FeaturedProductsSection extends StatelessWidget {
           featuredProductCardModel: FeaturedProductCardModel(
             name: 'NEW COLLECTION',
             description: 'HANG OUT\n & PARTY',
-            image:
-                "https://i.pinimg.com/736x/b7/dd/97/b7dd97ea8efaefa0d3ee4235f4a9975f.jpg",
+            image: "assets/images/featured_card_image.png",
           ),
         ),
       ],
