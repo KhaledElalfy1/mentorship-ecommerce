@@ -16,18 +16,19 @@ class FeaturedCardImageContent extends StatelessWidget {
           height: 132.h,
           decoration: const ShapeDecoration(
             gradient: RadialGradient(colors: [
+              AppColor.gradientColor1,
               AppColor.productBackgroundColor,
-              AppColor.gradientColor1
             ], stops: [
-              0.6,
-              1
+              0.8,
+              .1
             ]),
-            shape: OvalBorder(),
+            shape: CircleBorder(),
           ),
         ),
       ),
-      Image.network(featuredProductCardModel.image,fit: BoxFit.fill, width: 50.w,
-          height: 132.h,),
+      Image.asset(
+        featuredProductCardModel.image,
+      ),
     ]);
   }
 }

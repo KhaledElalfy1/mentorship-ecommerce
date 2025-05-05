@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/constants.dart';
+import 'package:mentorship_ecommerce/core/helper/font_family_helper.dart';
+import 'package:mentorship_ecommerce/core/helper/font_weight_helper.dart';
 import 'package:mentorship_ecommerce/core/utils/app_color.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
 import 'package:mentorship_ecommerce/features/home/data/models/top_collection_card_config_model.dart';
@@ -27,7 +28,8 @@ class TopCollectionFirstCard extends StatelessWidget {
           ellipseWidth: 88,
           borderRadius: BorderRadius.circular(16.r),
           style: Styles.textStyle20.copyWith(
-            fontFamily: Constants.productSansLight,
+            fontFamily: FontFamilyHelper.productSansLight,
+            fontWeight: FontWeightHelper.light,
             color: AppColor.coolGray,
           ),
         ),

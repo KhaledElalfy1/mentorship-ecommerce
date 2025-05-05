@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/helper/extention.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/featured_card_image_content.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/featured_card_text_content.dart';
@@ -16,6 +17,7 @@ class FeaturedCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 170.h,
       decoration: const ShapeDecoration(
         color: AppColor.featuredCardBackgroundColor,
         shape: RoundedRectangleBorder(),

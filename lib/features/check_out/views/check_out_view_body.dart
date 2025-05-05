@@ -5,7 +5,7 @@ import 'package:mentorship_ecommerce/core/helper/extention.dart';
 import 'package:mentorship_ecommerce/core/models/firebase_analytics_event_model.dart';
 import '../../../core/helper/spacing.dart';
 import '../../../core/utils/styles.dart';
-import '../../../core/widgets/font_weight_helper.dart';
+import '../../../core/helper/font_weight_helper.dart';
 import '../../../core/routes/routes.dart';
 import '../../cart/presentation/views/widgets/custom_cart_appbar.dart';
 import 'widgets/custom_align_text.dart';

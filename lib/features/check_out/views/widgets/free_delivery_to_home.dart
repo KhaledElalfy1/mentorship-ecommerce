@@ -1,6 +1,6 @@
 import '../../../../core/helper/spacing.dart';
 import '../../../../core/routes/routes_exports.dart';
-import '../../../../core/widgets/font_weight_helper.dart';
+import '../../../../core/helper/font_weight_helper.dart';
 
 class FreeDeliveryToHomeWidget extends StatelessWidget {
   const FreeDeliveryToHomeWidget({

@@ -3,7 +3,7 @@ import 'package:mentorship_ecommerce/core/utils/assets.dart';
 import 'package:mentorship_ecommerce/features/cart/presentation/views/widgets/custom_cart_appbar.dart';
 import '../../../core/routes/routes_exports.dart';
 import '../../../core/widgets/custom_shipping_button.dart';
-import '../../../core/widgets/font_weight_helper.dart';
+import '../../../core/helper/font_weight_helper.dart';
 import 'widgets/custom_progress_order.dart';
 
 class CheckOutSuccessView extends StatelessWidget {

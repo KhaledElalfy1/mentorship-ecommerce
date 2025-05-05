@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../widgets/font_weight_helper.dart';
+import '../helper/font_weight_helper.dart';
 
 abstract class Styles {
   static TextStyle textStyle14 = TextStyle(
