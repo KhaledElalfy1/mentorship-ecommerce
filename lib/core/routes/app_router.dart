@@ -24,7 +24,7 @@ class AppRouter {
       case Routes.home:
         return MaterialPageRoute(builder: (_) => const HomeView());
       case Routes.discover:
-        return MaterialPageRoute(builder: (_) => const DiscoverView());
+        return MaterialPageRoute(builder: (_) => const CategoriesSection());
       case Routes.orderInfo:
         return MaterialPageRoute(builder: (_) => const OrderInfoView());
       case Routes.orderRate:

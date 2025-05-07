@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/utils/assets.dart';
+import 'package:mentorship_ecommerce/core/widgets/shimmer_widget.dart';
+import 'package:mentorship_ecommerce/features/categorys/presentation/cubit/category_cubit.dart';
 import 'package:mentorship_ecommerce/features/discover/data/models/category_model.dart';
 import 'package:mentorship_ecommerce/features/discover/presentation/view/widget/custom_category_container.dart';
-import 'package:mentorship_ecommerce/generated/l10n.dart';
 
-class CategoriesSection extends StatefulWidget {
+/*class CategoriesSection extends StatefulWidget {
   const CategoriesSection({super.key});
 
   @override
@@ -50,4 +52,40 @@ class _CategoriesSectionState extends State<CategoriesSection> {
       ),
     );
   }
+}*/
+@override
+Widget build(BuildContext context) {
+  return BlocBuilder<CategoryCubit, CategoryState>(
+    builder: (context, state) {
+      if (state is CategoryLoading) {
+        return Column(
+          children: List.generate(3, (index) => ShimmerWidget()),
+        );
+      } else if (state is CategoryLoaded) {
+        final categories = state.categories;
+
+        return Column(
+          children: List.generate(
+            categories.length,
+            (index) => Padding(
+              padding: EdgeInsets.only(bottom: 20.0.h),
+              child: CustomCategoryContainer(
+                categoryModel: CategoryModel(
+                  backgroundColor: 0xff898280, // أو حسب الداتا الجاية
+                  circleColor: 0xffF9C9492,
+                  numberOfItems: '12',
+                  category: categories[index].name,
+                  image: Assets.accessories, // بشكل مؤقت
+                ),
+              ),
+            ),
+          ),
+        );
+      } else if (state is CategoryError) {
+        return Text('Error: ${state.message}');
+      } else {
+        return SizedBox.shrink();
+     }
+},
+);
 }
