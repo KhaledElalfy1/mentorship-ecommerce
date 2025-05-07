@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:mentorship_ecommerce/features/discover/data/models/category_model.dart';
 import '../../../../../core/utils/styles.dart';
@@ -43,11 +44,12 @@ class CustomCategoryContainer extends StatelessWidget {
                 right: 0,
                 top: 0,
                 bottom: 0,
-                child: Image.asset(
-                  categoryModel.image,
-                  width: 100.w,
+                child: CachedNetworkImage(imageUrl: categoryModel.image,
+                 width: 100.w,
                   height: 100.h,
                   fit: BoxFit.cover,
+                  placeholder: (context, url) => const CircularProgressIndicator(),
+                  errorWidget: (context, url, error) => const Icon(Icons.error),
                 ),
               )
             ],
