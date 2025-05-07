@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:mentorship_ecommerce/core/widgets/custom_text_field.dart';
-import 'package:mentorship_ecommerce/core/widgets/font_weight_helper.dart';
+import 'package:mentorship_ecommerce/core/helper/font_weight_helper.dart';
 
 import '../../../../core/helper/spacing.dart';
 import '../../../../core/routes/routes_exports.dart';

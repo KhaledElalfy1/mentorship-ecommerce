@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentorship_ecommerce/core/helper/font_family_helper.dart';
+
+import '../../../../../core/helper/font_weight_helper.dart';
 import '../../../../../core/utils/styles.dart';
-import '../../../../../core/widgets/font_weight_helper.dart';
 import '../../../data/models/user_info_model.dart';
 
 class UserInfoListTile extends StatelessWidget {
@@ -21,7 +23,11 @@ class UserInfoListTile extends StatelessWidget {
             fit: BoxFit.scaleDown,
             child: Text(
               userInfoModel.title,
-              style: Styles.textStyle16.copyWith(color: Colors.black),
+              style: Styles.textStyle16.copyWith(
+                color: Colors.black,
+                fontFamily: FontFamilyHelper.productSans,
+                fontWeight: FontWeightHelper.bold,
+              ),
               maxLines: 1,
             ),
           ),
@@ -31,6 +37,7 @@ class UserInfoListTile extends StatelessWidget {
               userInfoModel.email,
               style: Styles.textStyle12.copyWith(
                 color: Colors.black,
+                fontFamily: FontFamilyHelper.productSansMedium,
                 fontWeight: FontWeightHelper.medium,
               ),
               maxLines: 1,

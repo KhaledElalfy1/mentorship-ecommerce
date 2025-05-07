@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/helper/extention.dart';
+import 'package:mentorship_ecommerce/core/helper/font_family_helper.dart';
 
-import '../../../../../constants.dart';
+import '../../../../../core/helper/font_weight_helper.dart';
 import '../../../../../core/utils/app_color.dart';
 import '../../../../../core/utils/styles.dart';
-import '../../../../../core/widgets/font_weight_helper.dart';
 import '../../../data/models/mode_model.dart';
 
 class ModeButton extends StatelessWidget {
@@ -37,7 +37,8 @@ class ModeButton extends StatelessWidget {
             Text(
               modeModel.title,
               style: Styles.textStyle14.copyWith(
-                fontFamily: Constants.productSansMedium,
+                height: 1.43,
+                fontFamily: FontFamilyHelper.productSansMedium,
                 fontWeight: FontWeightHelper.medium,
                 color: isActive ? AppColor.gunmetalGray : AppColor.unAvtiveMode,
               ),

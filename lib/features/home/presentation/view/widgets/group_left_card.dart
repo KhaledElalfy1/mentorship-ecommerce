@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/helper/extention.dart';
+import 'package:mentorship_ecommerce/core/helper/font_family_helper.dart';
 
-import '../../../../../constants.dart';
+import '../../../../../core/helper/font_weight_helper.dart';
 import '../../../../../core/utils/app_color.dart';
 import '../../../../../core/utils/styles.dart';
-import '../../../../../core/widgets/font_weight_helper.dart';
 import '../../../data/models/group_card_model.dart';
 
 class GroupLeftCard extends StatelessWidget {
@@ -16,7 +16,7 @@ class GroupLeftCard extends StatelessWidget {
     return ClipRRect(
       borderRadius: BorderRadius.circular(16.r),
       child: SizedBox(
-        width: 151.w,
+        width: 156.w,
         height: 194.h,
         child: Container(
           decoration: ShapeDecoration(
@@ -27,18 +27,25 @@ class GroupLeftCard extends StatelessWidget {
           ),
           child: Row(
             children: [
-              Image.network(groupCardModel.image,width: 70.w,height: 194.h,fit: BoxFit.fill,),
-              5.addHorizontalSpace,
+              Image.network(
+                groupCardModel.image,
+                width: 60.w,
+                height: 194.h,
+                fit: BoxFit.cover,
+              ),
+              17.addHorizontalSpace,
               Column(
-                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  42.addVerticalSpace,
-                  Text(groupCardModel.name, style: Styles.textStyle13.copyWith(color: AppColor.coolGray)),
+                  36.addVerticalSpace,
+                  Text(
+                    groupCardModel.name,
+                    style: Styles.textStyle13.copyWith(color: AppColor.coolGray, letterSpacing: .23.sp),
+                  ),
                   16.addVerticalSpace,
                   Text(
                     groupCardModel.description,
                     style: Styles.textStyle17.copyWith(
-                      fontFamily: Constants.productSansLight,
+                      fontFamily: FontFamilyHelper.productSansLight,
                       color: AppColor.gunmetalGray,
                       fontWeight: FontWeightHelper.light,
                     ),

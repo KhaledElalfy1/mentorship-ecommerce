@@ -4,7 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../../../core/utils/svgs.dart';
 import '../../../core/utils/app_color.dart';
 import '../../../core/utils/styles.dart';
-import '../../../core/widgets/font_weight_helper.dart';
+import '../../../core/helper/font_weight_helper.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({super.key});

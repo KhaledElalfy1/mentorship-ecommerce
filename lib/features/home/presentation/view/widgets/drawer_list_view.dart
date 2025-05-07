@@ -24,7 +24,7 @@ class _DrawerListViewState extends State<DrawerListView> {
               setState(() => activeIndex = index);
             }
             if (activeIndex == 0) {
-              Navigator.pushNamed(context, Routes.update);
+              Navigator.pushNamed(context, Routes.setting);
             }
           },
           child: DrawerItem(

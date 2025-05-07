@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:mentorship_ecommerce/core/helper/font_family_helper.dart';
 import 'package:mentorship_ecommerce/features/edit_profile/presentation/views/widgets/border_of_text_field.dart';
 
-import '../../../../../constants.dart';
+import '../../../../../core/helper/font_weight_helper.dart';
 import '../../../../../core/utils/app_color.dart';
 import '../../../../../core/utils/styles.dart';
-import '../../../../../core/widgets/font_weight_helper.dart';
 
 class EditProfileEmail extends StatefulWidget {
   const EditProfileEmail({super.key});
@@ -30,7 +30,7 @@ class _EditProfileNameState extends State<EditProfileEmail> {
         label: Text(
           'Email',
           style: Styles.textStyle14.copyWith(
-            fontFamily: Constants.productSansMedium,
+            fontFamily: FontFamilyHelper.productSansMedium,
             fontWeight: FontWeightHelper.medium,
             color: AppColor.labelProfileColor,
           ),
@@ -41,7 +41,7 @@ class _EditProfileNameState extends State<EditProfileEmail> {
       ),
       style: Styles.textStyle16.copyWith(
         color: AppColor.inputColor,
-        fontFamily: Constants.productSansMedium,
+        fontFamily: FontFamilyHelper.productSansMedium,
         fontWeight: FontWeightHelper.medium,
       ),
     );

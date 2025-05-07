@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../core/helper/spacing.dart';
 import '../../../../core/utils/styles.dart';
-import '../../../../core/widgets/font_weight_helper.dart';
+import '../../../../core/helper/font_weight_helper.dart';
 import 'custom_align_text.dart';
 import 'delivery_from3to7_widget.dart';
 import 'free_delivery_to_home.dart';

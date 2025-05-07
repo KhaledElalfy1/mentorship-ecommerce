@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mentorship_ecommerce/constants.dart';
+import 'package:mentorship_ecommerce/core/helper/font_family_helper.dart';
+import 'package:mentorship_ecommerce/core/helper/font_weight_helper.dart';
 import 'package:mentorship_ecommerce/core/utils/app_color.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/core/widgets/font_weight_helper.dart';
 import 'package:mentorship_ecommerce/features/edit_profile/presentation/views/widgets/border_of_text_field.dart';
 
 class FirstNameTextField extends StatefulWidget {
@@ -30,7 +30,7 @@ class _FirstNameTextFieldState extends State<FirstNameTextField> {
           label: Text(
             'First Name',
             style: Styles.textStyle14.copyWith(
-              fontFamily: Constants.productSansMedium,
+              fontFamily: FontFamilyHelper.productSansMedium,
               fontWeight: FontWeightHelper.medium,
               color: AppColor.labelProfileColor,
             ),
@@ -41,7 +41,7 @@ class _FirstNameTextFieldState extends State<FirstNameTextField> {
         ),
         style: Styles.textStyle16.copyWith(
           color: AppColor.inputColor,
-          fontFamily: Constants.productSansMedium,
+          fontFamily: FontFamilyHelper.productSansMedium,
           fontWeight: FontWeightHelper.medium,
         ),
       ),
