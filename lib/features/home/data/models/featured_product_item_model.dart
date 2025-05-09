@@ -1,7 +1,7 @@
 import 'package:mentorship_ecommerce/features/home/domain/entities/featured_products.dart';
 
 class FeaturedProductItemModel extends FeaturedProducts {
-  FeaturedProductItemModel(
+ const FeaturedProductItemModel(
       {required super.id,
       required super.title,
       required super.images,

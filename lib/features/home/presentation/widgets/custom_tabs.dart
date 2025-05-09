@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mentorship_ecommerce/core/widgets/custom_app_bar.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/custom_tab_bar.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/home_lists.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/widgets/custom_tab_bar.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/widgets/home_lists.dart';
 
 class CustomTabs extends StatefulWidget {
   const CustomTabs({super.key});

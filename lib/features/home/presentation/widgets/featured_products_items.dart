@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mentorship_ecommerce/features/home/data/models/featured_product_item_model.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/home_lists.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/widgets/home_lists.dart';
 
 import 'featured_product_item.dart';
 
@@ -21,9 +21,10 @@ class FeaturedProductsItems extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 10.0),
               child: FeaturedProductItem(
                 featuredProductItemModel: FeaturedProductItemModel(
-                  imageUrl: featuredProductlist[index],
+                  images: [featuredProductlist[index]],
                   title: 'Turtleneck Sweater ',
                   price: 39.99,
+                  id: 5,
                 ),
               ),
             ),

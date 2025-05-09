@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:mentorship_ecommerce/core/functions/firebase_analytics_log_event.dart';
 import 'package:mentorship_ecommerce/core/models/firebase_analytics_event_model.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/home_lists.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/widgets/home_lists.dart';
 
 import '../../../my_order/widgets/bottom_nav_bar.dart';
 import '../../../search/presentation/view/widgets/search_drawer.dart';
-import 'widgets/home_drawer.dart';
+import '../widgets/home_drawer.dart';
 
 class DashboardView extends StatefulWidget {
   const DashboardView({super.key});

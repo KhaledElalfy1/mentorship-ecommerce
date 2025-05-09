@@ -1,4 +1,3 @@
-// TODO: Move all route paths to a separate file for a cleaner AppRouter.
 export '../../features/cart/presentation/views/cart_view.dart';
 export '../../features/check_out/views/check_out_success_view.dart';
 export '../../features/discover/presentation/view/discover_view.dart';
@@ -43,4 +42,3 @@ export 'package:mentorship_ecommerce/core/widgets/appbar_icon_widget.dart';
 export 'package:mentorship_ecommerce/features/product_full/presentation/view/widgets/custom_rating_widget.dart';
 export 'package:mentorship_ecommerce/features/update/presentation/view/widgets/update_screen_body.dart';
 export 'package:mentorship_ecommerce/features/update/presentation/view/update_view.dart';
-

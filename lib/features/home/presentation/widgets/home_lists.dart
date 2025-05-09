@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:mentorship_ecommerce/core/services/service_locator.dart';
 import 'package:mentorship_ecommerce/features/home/data/models/drawer_item_model.dart';
 import 'package:mentorship_ecommerce/features/home/data/models/mode_model.dart';
 import 'package:mentorship_ecommerce/features/home/data/models/recommended_item_model.dart';
 import 'package:mentorship_ecommerce/features/home/data/models/tabs_model.dart';
+import 'package:mentorship_ecommerce/features/home/domain/usecases/get_featured_products_usecase.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/cubits/cubit/featured_products_cubit.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/view/home_view.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/tabs/accessories_page.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/tabs/beauty_page.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/tabs/man_page.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/tabs/woman_page/woman_page.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/widgets/tabs/accessories_page.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/widgets/tabs/beauty_page.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/widgets/tabs/man_page.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/widgets/tabs/woman_page/woman_page.dart';
 import 'package:mentorship_ecommerce/features/my_order/views/my_order_view.dart';
 import 'package:mentorship_ecommerce/features/profile/presentation/views/profile_view.dart';
 import 'package:mentorship_ecommerce/features/search/presentation/view/search_view.dart';
@@ -41,12 +45,14 @@ const featuredProductlist = [
 
 const recommendedItemslist = [
   RecommendedItemModel(
-    imageUrl: "https://i.pinimg.com/736x/03/3a/be/033abee363e218f731b299617ca48c69.jpg",
+    imageUrl:
+        "https://i.pinimg.com/736x/03/3a/be/033abee363e218f731b299617ca48c69.jpg",
     title: 'White fashion hoodie',
     price: 39.99,
   ),
   RecommendedItemModel(
-    imageUrl: "https://i.pinimg.com/736x/03/3a/be/033abee363e218f731b299617ca48c69.jpg",
+    imageUrl:
+        "https://i.pinimg.com/736x/03/3a/be/033abee363e218f731b299617ca48c69.jpg",
     title: 'Cotton T-shirt',
     price: 30.99,
   ),
@@ -57,9 +63,14 @@ const modeList = [
   ModeModel(icon: Icons.nightlight_outlined, title: 'Dark'),
 ];
 
-const List<Widget> bottomNavigationPages = [
-  HomeView(),
-  SearchView(),
-  MyOrderView(),
-  ProfileView(),
+List<Widget> bottomNavigationPages = [
+  BlocProvider(
+    create: (context) =>
+        FeaturedProductsCubit(getIt<GetFeaturedProductsUseCase>())
+          ..featuredProductStateEmitter(),
+    child: const HomeView(),
+  ),
+  const SearchView(),
+  const MyOrderView(),
+  const ProfileView(),
 ];

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mentorship_ecommerce/core/routes/routes.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/home_lists.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/widgets/home_lists.dart';
 
 import 'drawer_item.dart';
 

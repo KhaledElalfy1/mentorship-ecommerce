@@ -3,10 +3,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/helper/extention.dart';
 import 'package:mentorship_ecommerce/core/helper/font_family_helper.dart';
 
-import '../../../../../core/helper/font_weight_helper.dart';
-import '../../../../../core/utils/app_color.dart';
-import '../../../../../core/utils/styles.dart';
-import '../../../data/models/mode_model.dart';
+import '../../../../core/helper/font_weight_helper.dart';
+import '../../../../core/utils/app_color.dart';
+import '../../../../core/utils/styles.dart';
+import '../../data/models/mode_model.dart';
 
 class ModeButton extends StatelessWidget {
   const ModeButton({super.key, required this.modeModel, required this.isActive});

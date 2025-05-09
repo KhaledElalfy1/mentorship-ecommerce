@@ -3,8 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/helper/font_family_helper.dart';
 import 'package:mentorship_ecommerce/core/helper/font_weight_helper.dart';
 
-import '../../../../../core/utils/app_color.dart';
-import '../../../../../core/utils/styles.dart';
+import '../../../../core/utils/app_color.dart';
+import '../../../../core/utils/styles.dart';
 
 class CollectionHeader extends StatelessWidget {
   const CollectionHeader({super.key, required this.collectionTitle});

@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/helper/font_family_helper.dart';
 
-import '../../../../../core/helper/font_weight_helper.dart';
-import '../../../../../core/utils/styles.dart';
-import '../../../data/models/user_info_model.dart';
+import '../../../../core/helper/font_weight_helper.dart';
+import '../../../../core/utils/styles.dart';
+import '../../data/models/user_info_model.dart';
 
 class UserInfoListTile extends StatelessWidget {
   const UserInfoListTile({super.key, required this.userInfoModel});

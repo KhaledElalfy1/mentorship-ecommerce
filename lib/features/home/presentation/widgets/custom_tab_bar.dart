@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:mentorship_ecommerce/core/utils/app_color.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/home_lists.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/selected_tab.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/unselected_tab.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/widgets/home_lists.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/widgets/selected_tab.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/widgets/unselected_tab.dart';
 
 class CustomTabBar extends StatefulWidget {
   const CustomTabBar({super.key});

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/helper/extention.dart';
 
-import '../../../../../core/utils/app_color.dart';
-import '../../../../../core/utils/styles.dart';
+import '../../../../core/utils/app_color.dart';
+import '../../../../core/utils/styles.dart';
 
 class UnSelectedTab extends StatelessWidget {
   const UnSelectedTab({super.key, required this.icon, required this.text});

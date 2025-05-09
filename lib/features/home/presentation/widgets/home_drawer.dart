@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/helper/extention.dart';
 
-import '../../../../../core/utils/assets.dart';
-import '../../../data/models/user_info_model.dart';
+import '../../../../core/utils/assets.dart';
+import '../../data/models/user_info_model.dart';
 import 'drawer_list_view.dart';
 import 'select_mode.dart';
 import 'user_info_list_tile.dart';

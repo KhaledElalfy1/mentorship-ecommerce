@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mentorship_ecommerce/core/helper/extention.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/top_collection_first_card.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/top_collection_second_card.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/widgets/top_collection_first_card.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/widgets/top_collection_second_card.dart';
 
 import 'collection_header.dart';
 import 'custom_group_cards.dart';

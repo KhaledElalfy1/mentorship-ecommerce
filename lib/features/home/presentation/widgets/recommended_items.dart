@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/home_lists.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/widgets/home_lists.dart';
 
 import 'recommended_item.dart';
 

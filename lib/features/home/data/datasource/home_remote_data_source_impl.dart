@@ -1,13 +1,13 @@
 import 'package:dartz/dartz.dart';
 import 'package:mentorship_ecommerce/core/api/api_consumer.dart';
 import 'package:mentorship_ecommerce/core/api/end_points.dart';
-import 'package:mentorship_ecommerce/features/home/data/datasource/remote_data_source.dart';
+import 'package:mentorship_ecommerce/features/home/data/datasource/home_remote_data_source.dart';
 import 'package:mentorship_ecommerce/features/home/data/models/featured_product_item_model.dart';
 
-class RemoteDataSourceImpl implements RemoteDataSource {
+class HomeRemoteDataSourceImpl implements HomeRemoteDataSource {
   final ApiConsumer _apiConsumer;
 
-  RemoteDataSourceImpl(this._apiConsumer);
+  HomeRemoteDataSourceImpl(this._apiConsumer);
   @override
   Future<Either<String, List<FeaturedProductItemModel>>>
       getFeaturedProducts() async {
