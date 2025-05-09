@@ -10,6 +10,6 @@ class GetFeaturedProductsUseCase
   GetFeaturedProductsUseCase(this._homeRepository);
   @override
   Future<Either<String, List<FeaturedProducts>>> call(NoParam param) async {
-    return await _homeRepository.getFeaturedProduct();
+    return await _homeRepository.getFeaturedProducts();
   }
 }
