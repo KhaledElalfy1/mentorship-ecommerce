@@ -3,7 +3,7 @@ import 'package:mentorship_ecommerce/core/functions/firebase_analytics_log_event
 import 'package:mentorship_ecommerce/core/helper/font_family_helper.dart';
 import 'package:mentorship_ecommerce/core/models/firebase_analytics_event_model.dart';
 import 'package:mentorship_ecommerce/core/widgets/custom_image.dart';
-import 'package:mentorship_ecommerce/features/home/data/models/featured_product_item_model.dart';
+import 'package:mentorship_ecommerce/features/home/domain/entities/featured_products.dart';
 
 import '../../../../core/helper/extention.dart';
 import '../../../../core/routes/routes.dart';
@@ -15,7 +15,7 @@ class FeaturedProductItem extends StatelessWidget {
     super.key,
     required this.featuredProductItemModel,
   });
-  final FeaturedProductItemModel featuredProductItemModel;
+  final FeaturedProducts featuredProductItemModel;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -38,12 +38,17 @@ class FeaturedProductItem extends StatelessWidget {
           ),
           14.addVerticalSpace,
           Text(
-            featuredProductItemModel.title,
+            featuredProductItemModel.title.substring(0, 20),
             style: Styles.textStyle12.copyWith(
               fontFamily: FontFamilyHelper.productSansMedium,
             ),
           ),
-          Text('\$ ${featuredProductItemModel.price}', style: Styles.textStyle16.copyWith(color: AppColor.gunmetalGray)),
+          Text(
+            '\$ ${featuredProductItemModel.price}',
+            style: Styles.textStyle16.copyWith(
+              color: AppColor.gunmetalGray,
+            ),
+          ),
         ],
       ),
     );
