@@ -4,7 +4,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 import 'package:mentorship_ecommerce/constants.dart';
 import 'package:mentorship_ecommerce/core/errors/failure.dart';
 import 'package:mentorship_ecommerce/core/services/prefs.dart';
-import 'package:mentorship_ecommerce/features/login/data/repo/login_repo.dart';
+import 'package:mentorship_ecommerce/features/login/data/repo/login_repo_with_social.dart';
 
 class UserAuthRepoImplementaion implements UserAuthRepo {
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
