@@ -4,7 +4,6 @@ import 'package:mentorship_ecommerce/features/home/presentation/cubits/cubit/fea
 import 'package:mentorship_ecommerce/features/home/presentation/cubits/cubit/featured_products_state.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/widgets/featured_products_success_body.dart';
 
-
 class FeaturedProductsItems extends StatelessWidget {
   const FeaturedProductsItems({super.key});
 
@@ -13,7 +12,9 @@ class FeaturedProductsItems extends StatelessWidget {
     return BlocBuilder<FeaturedProductsCubit, FeaturedProductsState>(
       builder: (context, state) {
         if (state is FeaturedProductsSuccess) {
-          return FeaturedProductsSuccessBody(products: state.products,);
+          return FeaturedProductsSuccessBody(
+            products: state.products,
+          );
         } else if (state is FeaturedProductsFailure) {
           return Center(
             child: Text(state.message),
@@ -27,4 +28,3 @@ class FeaturedProductsItems extends StatelessWidget {
     );
   }
 }
-
