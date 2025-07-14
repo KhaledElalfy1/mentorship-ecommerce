@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:mentorship_ecommerce/features/login/data/repo/login_repo_implementation.dart';
-import 'package:mentorship_ecommerce/features/login/presentation/manager/login_state.dart';
+import 'package:mentorship_ecommerce/features/login/data/repo/login_repo_with_social_implementation.dart';
+import 'package:mentorship_ecommerce/features/login/presentation/manager/login_with_google_manager/login_state.dart';
 
 class LoginCubit extends Cubit<LoginState>{
   final UserAuthRepoImplementaion userAuthRepoImplementaion;

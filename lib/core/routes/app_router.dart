@@ -1,9 +1,15 @@
+import 'package:dio/dio.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:mentorship_ecommerce/core/api/dio_consumer.dart';
 import 'package:mentorship_ecommerce/core/functions/firebase_analytics_log_event.dart';
 import 'package:mentorship_ecommerce/core/models/firebase_analytics_event_model.dart';
 import 'package:mentorship_ecommerce/core/routes/routes_exports.dart';
-import 'package:mentorship_ecommerce/features/login/data/repo/login_repo_implementation.dart';
-import 'package:mentorship_ecommerce/features/login/presentation/manager/login_cubit.dart';
+import 'package:mentorship_ecommerce/features/login/data/implementations/auth_data_source.dart';
+import 'package:mentorship_ecommerce/features/login/data/implementations/login_auth_repo_imple.dart';
+import 'package:mentorship_ecommerce/features/login/data/repo/login_repo_with_social_implementation.dart';
+import 'package:mentorship_ecommerce/features/login/domain/use_cases/login_use_case.dart';
+import 'package:mentorship_ecommerce/features/login/presentation/manager/login_with_api_manager/login_with_api_cubit.dart';
+import 'package:mentorship_ecommerce/features/login/presentation/manager/login_with_google_manager/login_cubit.dart';
 
 class AppRouter {
   Route? generateRouter(RouteSettings settings) {
@@ -37,11 +43,20 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const SearchView());
       case Routes.productFull:
         return MaterialPageRoute(builder: (_) => const ProductFullView());
-       case Routes.login:
+      case Routes.login:
         return MaterialPageRoute(
-            builder: (_) => BlocProvider(
-                create: (context) => LoginCubit(UserAuthRepoImplementaion()),
-                child: const LoginScreen()));
+            builder: (_) => MultiBlocProvider(providers: [
+                  BlocProvider(
+                    create: (context) =>
+                        LoginCubit(UserAuthRepoImplementaion()),
+                  ),
+                  BlocProvider(
+                      create: (context) => LoginWithApiCubit(LoginUseCase(
+                          LoginAuthRepoImple(
+                              authRemoteDataSource: AuthDataSource(
+                                  apiConsumer: DioConsumer(dio: Dio())))))),
+                ], child: const LoginScreen()));
+
       case Routes.myOrder:
         return MaterialPageRoute(builder: (_) => const MyOrderView());
       case Routes.dashboard:
