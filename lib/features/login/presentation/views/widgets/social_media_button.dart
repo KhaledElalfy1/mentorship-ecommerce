@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mentorship_ecommerce/core/helper/extention.dart';
 import 'package:mentorship_ecommerce/core/routes/routes.dart';
-import 'package:mentorship_ecommerce/features/login/presentation/manager/login_cubit.dart';
-import 'package:mentorship_ecommerce/features/login/presentation/manager/login_state.dart';
+import 'package:mentorship_ecommerce/features/login/presentation/manager/login_with_google_manager/login_cubit.dart';
+import 'package:mentorship_ecommerce/features/login/presentation/manager/login_with_google_manager/login_state.dart';
 import '../../../../../core/utils/assets.dart';
 
 class SocialMediaButtons extends StatelessWidget {
