@@ -1,15 +1,16 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/helper/extention.dart';
 import 'package:mentorship_ecommerce/core/helper/font_family_helper.dart';
+import 'package:mentorship_ecommerce/features/home/domain/entity/product_entity.dart';
 
 import '../../../../../core/utils/app_color.dart';
 import '../../../../../core/utils/styles.dart';
-import '../../../data/models/recommended_item_model.dart';
 
 class RecommendedItem extends StatelessWidget {
-  const RecommendedItem({super.key, required this.recommendedItemModel});
-  final RecommendedItemModel recommendedItemModel;
+  const RecommendedItem({super.key, required this.productEntity});
+  final ProductEntity productEntity;
 
   @override
   Widget build(BuildContext context) {
@@ -23,9 +24,19 @@ class RecommendedItem extends StatelessWidget {
           children: [
             ClipRRect(
               borderRadius: BorderRadius.all(Radius.circular(8.r)),
-              child: Image.network(
-                "https://i.pinimg.com/736x/74/10/a2/7410a228cfd8a06233b8b6103ac90b90.jpg",
-                fit: BoxFit.cover,
+              child: CachedNetworkImage(
+                imageUrl: productEntity.image ?? '',
+                imageBuilder: (context, imageProvider) => Container(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: imageProvider,
+                      fit: BoxFit.cover,
+                      colorFilter: const ColorFilter.mode(Colors.red, BlendMode.colorBurn),
+                    ),
+                  ),
+                ),
+                placeholder: (context, url) => const CircularProgressIndicator(),
+                errorWidget: (context, url, error) => const Icon(Icons.error),
               ),
             ),
             10.addHorizontalSpace,
@@ -34,14 +45,14 @@ class RecommendedItem extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  recommendedItemModel.title,
+                  productEntity.title ?? '',
                   style: Styles.textStyle12.copyWith(
                     fontFamily: FontFamilyHelper.productSansMedium,
                     color: AppColor.gunmetalGray,
                   ),
                 ),
                 Text(
-                  '\$ ${recommendedItemModel.price}',
+                  '\$ ${productEntity.price}',
                   style: Styles.textStyle16.copyWith(
                     color: AppColor.gunmetalGray,
                   ),

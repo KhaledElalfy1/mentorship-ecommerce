@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:mentorship_ecommerce/core/di/dependency_injection.dart';
 import 'package:mentorship_ecommerce/core/helper/extention.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/logic/cubit/recommended_products_cubit.dart';
 
 import '../../featured_products_section.dart';
 import '../../header_card_info.dart';
@@ -18,7 +21,10 @@ class WomanPageBody extends StatelessWidget {
         35.addVerticalSpace,
         const FeaturedProductsSection(),
         32.addVerticalSpace,
-        const RecommendedSection(),
+        BlocProvider<RecommendedProductsCubit>(
+          create: (context) => getIt<RecommendedProductsCubit>()..getRecommendedProducts(),
+          child: const RecommendedSection(),
+        ),
         34.addVerticalSpace,
         const TopCollectionSection(),
       ],
