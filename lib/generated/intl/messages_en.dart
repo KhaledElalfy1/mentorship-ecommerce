@@ -22,53 +22,48 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-    "accessories": MessageLookupByLibrary.simpleMessage("Accessories"),
-    "apply": MessageLookupByLibrary.simpleMessage("Apply"),
-    "category": MessageLookupByLibrary.simpleMessage("Category"),
-    "clear": MessageLookupByLibrary.simpleMessage("Clear"),
-    "clothing": MessageLookupByLibrary.simpleMessage("Clothing"),
-    "collection": MessageLookupByLibrary.simpleMessage("Collection"),
-    "color": MessageLookupByLibrary.simpleMessage("Color"),
-    "deliveredAddress": MessageLookupByLibrary.simpleMessage(
-      "Delivered Address",
-    ),
-    "deliveredOn": MessageLookupByLibrary.simpleMessage("Delivered on:"),
-    "discount": MessageLookupByLibrary.simpleMessage("Discount"),
-    "discover": MessageLookupByLibrary.simpleMessage("Discover"),
-    "done": MessageLookupByLibrary.simpleMessage("Done"),
-    "filter": MessageLookupByLibrary.simpleMessage("Filter"),
-    "items": MessageLookupByLibrary.simpleMessage("Items"),
-    "language": MessageLookupByLibrary.simpleMessage("Language"),
-    "order": MessageLookupByLibrary.simpleMessage("Order"),
-    "orderNumber": MessageLookupByLibrary.simpleMessage("Order Number"),
-    "price": MessageLookupByLibrary.simpleMessage("Price"),
-    "privacyPolicy": MessageLookupByLibrary.simpleMessage("Privacy Policy"),
-    "rate": MessageLookupByLibrary.simpleMessage("Rate"),
-    "rateProduct": MessageLookupByLibrary.simpleMessage("Rate Product"),
-    "rateProductToGet": MessageLookupByLibrary.simpleMessage(
-      "Rate Product to get 5 points for collect",
-    ),
-    "rating": MessageLookupByLibrary.simpleMessage("Star Rating"),
-    "recentSearch": MessageLookupByLibrary.simpleMessage("Recent Search"),
-    "returnHome": MessageLookupByLibrary.simpleMessage("Return Home"),
-    "search": MessageLookupByLibrary.simpleMessage("Search"),
-    "settings": MessageLookupByLibrary.simpleMessage("Settings"),
-    "shoes": MessageLookupByLibrary.simpleMessage("Shoes"),
-    "submitReview": MessageLookupByLibrary.simpleMessage("Submit Review"),
-    "termsOFUse": MessageLookupByLibrary.simpleMessage("Terms of Use"),
-    "thankYouForYourFeedback": MessageLookupByLibrary.simpleMessage(
-      "Thank you for your feedback!",
-    ),
-    "trackOrder": MessageLookupByLibrary.simpleMessage("Track Order"),
-    "trackingNumber": MessageLookupByLibrary.simpleMessage("Tracking Number"),
-    "weAppreciatedYourFeedback": MessageLookupByLibrary.simpleMessage(
-      "We appreciated your feedback.\nWe\'ll use your feedback to improve\n your experience.",
-    ),
-    "wouldYouLikeToWrite": MessageLookupByLibrary.simpleMessage(
-      "Would you like to write a review for this product?",
-    ),
-    "yourOrderIsDelivered": MessageLookupByLibrary.simpleMessage(
-      "Your order is delivered",
-    ),
-  };
+        "accessories": MessageLookupByLibrary.simpleMessage("Accessories"),
+        "apply": MessageLookupByLibrary.simpleMessage("Apply"),
+        "category": MessageLookupByLibrary.simpleMessage("Category"),
+        "clear": MessageLookupByLibrary.simpleMessage("Clear"),
+        "clothing": MessageLookupByLibrary.simpleMessage("Clothing"),
+        "collection": MessageLookupByLibrary.simpleMessage("Collection"),
+        "color": MessageLookupByLibrary.simpleMessage("Color"),
+        "deliveredAddress":
+            MessageLookupByLibrary.simpleMessage("Delivered Address"),
+        "deliveredOn": MessageLookupByLibrary.simpleMessage("Delivered on:"),
+        "discount": MessageLookupByLibrary.simpleMessage("Discount"),
+        "discover": MessageLookupByLibrary.simpleMessage("Discover"),
+        "done": MessageLookupByLibrary.simpleMessage("Done"),
+        "filter": MessageLookupByLibrary.simpleMessage("Filter"),
+        "items": MessageLookupByLibrary.simpleMessage("Items"),
+        "language": MessageLookupByLibrary.simpleMessage("Language"),
+        "order": MessageLookupByLibrary.simpleMessage("Order"),
+        "orderNumber": MessageLookupByLibrary.simpleMessage("Order Number"),
+        "price": MessageLookupByLibrary.simpleMessage("Price"),
+        "privacyPolicy": MessageLookupByLibrary.simpleMessage("Privacy Policy"),
+        "rate": MessageLookupByLibrary.simpleMessage("Rate"),
+        "rateProduct": MessageLookupByLibrary.simpleMessage("Rate Product"),
+        "rateProductToGet": MessageLookupByLibrary.simpleMessage(
+            "Rate Product to get 5 points for collect"),
+        "rating": MessageLookupByLibrary.simpleMessage("Star Rating"),
+        "recentSearch": MessageLookupByLibrary.simpleMessage("Recent Search"),
+        "returnHome": MessageLookupByLibrary.simpleMessage("Return Home"),
+        "search": MessageLookupByLibrary.simpleMessage("Search"),
+        "settings": MessageLookupByLibrary.simpleMessage("Settings"),
+        "shoes": MessageLookupByLibrary.simpleMessage("Shoes"),
+        "submitReview": MessageLookupByLibrary.simpleMessage("Submit Review"),
+        "termsOFUse": MessageLookupByLibrary.simpleMessage("Terms of Use"),
+        "thankYouForYourFeedback": MessageLookupByLibrary.simpleMessage(
+            "Thank you for your feedback!"),
+        "trackOrder": MessageLookupByLibrary.simpleMessage("Track Order"),
+        "trackingNumber":
+            MessageLookupByLibrary.simpleMessage("Tracking Number"),
+        "weAppreciatedYourFeedback": MessageLookupByLibrary.simpleMessage(
+            "We appreciated your feedback.\nWe\'ll use your feedback to improve\n your experience."),
+        "wouldYouLikeToWrite": MessageLookupByLibrary.simpleMessage(
+            "Would you like to write a review for this product?"),
+        "yourOrderIsDelivered":
+            MessageLookupByLibrary.simpleMessage("Your order is delivered")
+      };
 }
