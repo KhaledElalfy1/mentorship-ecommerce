@@ -6,7 +6,7 @@ import 'package:mentorship_ecommerce/core/utils/app_color.dart';
 import 'package:mentorship_ecommerce/core/utils/styles.dart';
 import 'package:mentorship_ecommerce/features/home/data/models/top_collection_card_config_model.dart';
 import 'package:mentorship_ecommerce/features/home/data/models/top_collection_main_card_model.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/widgets/top_collection_card.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/widgets/top_collection_card.dart';
 
 class TopCollectionSecondCard extends StatelessWidget {
   const TopCollectionSecondCard({super.key});

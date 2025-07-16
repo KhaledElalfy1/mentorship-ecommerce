@@ -3,15 +3,14 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/helper/extention.dart';
 import 'package:mentorship_ecommerce/core/helper/font_family_helper.dart';
 
-import '../../../../core/helper/font_weight_helper.dart';
-import '../../../../core/utils/app_color.dart';
-import '../../../../core/utils/styles.dart';
-import '../../data/models/group_card_model.dart';
+import '../../../../../../core/helper/font_weight_helper.dart';
+import '../../../../../../core/utils/app_color.dart';
+import '../../../../../../core/utils/styles.dart';
+import '../../../../data/models/group_card_model.dart';
 
-class GroupRightCard extends StatelessWidget {
-  const GroupRightCard({super.key, required this.groupCardModel});
+class GroupLeftCard extends StatelessWidget {
+  const GroupLeftCard({super.key, required this.groupCardModel});
   final GroupCardModel groupCardModel;
-
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
@@ -28,31 +27,30 @@ class GroupRightCard extends StatelessWidget {
           ),
           child: Row(
             children: [
-              8.addHorizontalSpace,
+              Image.network(
+                groupCardModel.image,
+                width: 60.w,
+                height: 194.h,
+                fit: BoxFit.cover,
+              ),
+              17.addHorizontalSpace,
               Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   36.addVerticalSpace,
-                  Text(groupCardModel.name, style: Styles.textStyle13.copyWith(color: AppColor.coolGray, letterSpacing: .23.sp)),
+                  Text(
+                    groupCardModel.name,
+                    style: Styles.textStyle13.copyWith(color: AppColor.coolGray, letterSpacing: .23.sp),
+                  ),
                   16.addVerticalSpace,
                   Text(
                     groupCardModel.description,
-                    style: Styles.textStyle18.copyWith(
+                    style: Styles.textStyle17.copyWith(
                       fontFamily: FontFamilyHelper.productSansLight,
                       color: AppColor.gunmetalGray,
                       fontWeight: FontWeightHelper.light,
                     ),
                   ),
                 ],
-              ),
-              17.addHorizontalSpace,
-              Expanded(
-                child: Image.network(
-                  groupCardModel.image,
-                  width: 60.w,
-                  height: 194.h,
-                  fit: BoxFit.cover,
-                ),
               ),
             ],
           ),

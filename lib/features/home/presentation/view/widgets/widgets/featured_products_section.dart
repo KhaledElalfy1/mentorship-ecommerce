@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mentorship_ecommerce/core/helper/extention.dart';
 
-import '../../data/models/featured_product_card_model.dart';
+import '../../../../data/models/featured_product_card_model.dart';
 import 'collection_header.dart';
 import 'featured_card.dart';
 import 'featured_products_items.dart';

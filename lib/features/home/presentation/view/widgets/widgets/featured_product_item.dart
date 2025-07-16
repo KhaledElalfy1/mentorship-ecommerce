@@ -5,10 +5,10 @@ import 'package:mentorship_ecommerce/core/models/firebase_analytics_event_model.
 import 'package:mentorship_ecommerce/core/widgets/custom_image.dart';
 import 'package:mentorship_ecommerce/features/home/domain/entities/featured_products.dart';
 
-import '../../../../core/helper/extention.dart';
-import '../../../../core/routes/routes.dart';
-import '../../../../core/utils/app_color.dart';
-import '../../../../core/utils/styles.dart';
+import '../../../../../../core/helper/extention.dart';
+import '../../../../../../core/routes/routes.dart';
+import '../../../../../../core/utils/app_color.dart';
+import '../../../../../../core/utils/styles.dart';
 
 class FeaturedProductItem extends StatelessWidget {
   const FeaturedProductItem({

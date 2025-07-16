@@ -158,7 +158,7 @@ extension RecommendedProductsStatePatterns<T> on RecommendedProductsState<T> {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(List<ProductEntity> products)? success,
+    TResult Function(List<ProductEntity> products, bool hasMore)? success,
     TResult Function(Failure failure)? error,
     required TResult orElse(),
   }) {
@@ -169,7 +169,7 @@ extension RecommendedProductsStatePatterns<T> on RecommendedProductsState<T> {
       case Loading() when loading != null:
         return loading();
       case Success() when success != null:
-        return success(_that.products);
+        return success(_that.products, _that.hasMore);
       case Error() when error != null:
         return error(_that.failure);
       case _:
@@ -194,7 +194,8 @@ extension RecommendedProductsStatePatterns<T> on RecommendedProductsState<T> {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(List<ProductEntity> products) success,
+    required TResult Function(List<ProductEntity> products, bool hasMore)
+        success,
     required TResult Function(Failure failure) error,
   }) {
     final _that = this;
@@ -204,7 +205,7 @@ extension RecommendedProductsStatePatterns<T> on RecommendedProductsState<T> {
       case Loading():
         return loading();
       case Success():
-        return success(_that.products);
+        return success(_that.products, _that.hasMore);
       case Error():
         return error(_that.failure);
       case _:
@@ -228,7 +229,7 @@ extension RecommendedProductsStatePatterns<T> on RecommendedProductsState<T> {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(List<ProductEntity> products)? success,
+    TResult? Function(List<ProductEntity> products, bool hasMore)? success,
     TResult? Function(Failure failure)? error,
   }) {
     final _that = this;
@@ -238,7 +239,7 @@ extension RecommendedProductsStatePatterns<T> on RecommendedProductsState<T> {
       case Loading() when loading != null:
         return loading();
       case Success() when success != null:
-        return success(_that.products);
+        return success(_that.products, _that.hasMore);
       case Error() when error != null:
         return error(_that.failure);
       case _:
@@ -290,7 +291,8 @@ class Loading<T> implements RecommendedProductsState<T> {
 /// @nodoc
 
 class Success<T> implements RecommendedProductsState<T> {
-  const Success(final List<ProductEntity> products) : _products = products;
+  const Success(final List<ProductEntity> products, this.hasMore)
+      : _products = products;
 
   final List<ProductEntity> _products;
   List<ProductEntity> get products {
@@ -298,6 +300,8 @@ class Success<T> implements RecommendedProductsState<T> {
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_products);
   }
+
+  final bool hasMore;
 
   /// Create a copy of RecommendedProductsState
   /// with the given fields replaced by the non-null parameter values.
@@ -311,16 +315,17 @@ class Success<T> implements RecommendedProductsState<T> {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is Success<T> &&
-            const DeepCollectionEquality().equals(other._products, _products));
+            const DeepCollectionEquality().equals(other._products, _products) &&
+            (identical(other.hasMore, hasMore) || other.hasMore == hasMore));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(_products));
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(_products), hasMore);
 
   @override
   String toString() {
-    return 'RecommendedProductsState<$T>.success(products: $products)';
+    return 'RecommendedProductsState<$T>.success(products: $products, hasMore: $hasMore)';
   }
 }
 
@@ -330,7 +335,7 @@ abstract mixin class $SuccessCopyWith<T, $Res>
   factory $SuccessCopyWith(Success<T> value, $Res Function(Success<T>) _then) =
       _$SuccessCopyWithImpl;
   @useResult
-  $Res call({List<ProductEntity> products});
+  $Res call({List<ProductEntity> products, bool hasMore});
 }
 
 /// @nodoc
@@ -345,12 +350,17 @@ class _$SuccessCopyWithImpl<T, $Res> implements $SuccessCopyWith<T, $Res> {
   @pragma('vm:prefer-inline')
   $Res call({
     Object? products = null,
+    Object? hasMore = null,
   }) {
     return _then(Success<T>(
       null == products
           ? _self._products
           : products // ignore: cast_nullable_to_non_nullable
               as List<ProductEntity>,
+      null == hasMore
+          ? _self.hasMore
+          : hasMore // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }

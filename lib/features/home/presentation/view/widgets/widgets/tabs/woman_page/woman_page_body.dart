@@ -22,7 +22,7 @@ class WomanPageBody extends StatelessWidget {
         const FeaturedProductsSection(),
         32.addVerticalSpace,
         BlocProvider<RecommendedProductsCubit>(
-          create: (context) => getIt<RecommendedProductsCubit>()..getRecommendedProducts(),
+          create: (context) => RecommendedProductsCubit(getIt())..getRecommendedProducts(),
           child: const RecommendedSection(),
         ),
         34.addVerticalSpace,

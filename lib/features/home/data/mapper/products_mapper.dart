@@ -7,7 +7,7 @@ class ProductsMapper {
       id: product.productId,
       price: product.price,
       title: product.title,
-      image: product.images?.isNotEmpty == true ? product.images!.first : null,
+      image: product.images?.first ,
     );
   }
 }

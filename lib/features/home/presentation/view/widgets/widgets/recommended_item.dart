@@ -3,10 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/core/helper/extention.dart';
 import 'package:mentorship_ecommerce/core/helper/font_family_helper.dart';
+import 'package:mentorship_ecommerce/core/utils/assets.dart';
 import 'package:mentorship_ecommerce/features/home/domain/entity/product_entity.dart';
 
-import '../../../../../core/utils/app_color.dart';
-import '../../../../../core/utils/styles.dart';
+import '../../../../../../../core/utils/app_color.dart';
+import '../../../../../../../core/utils/styles.dart';
 
 class RecommendedItem extends StatelessWidget {
   const RecommendedItem({super.key, required this.productEntity});
@@ -25,18 +26,10 @@ class RecommendedItem extends StatelessWidget {
             ClipRRect(
               borderRadius: BorderRadius.all(Radius.circular(8.r)),
               child: CachedNetworkImage(
-                imageUrl: productEntity.image ?? '',
-                imageBuilder: (context, imageProvider) => Container(
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: imageProvider,
-                      fit: BoxFit.cover,
-                      colorFilter: const ColorFilter.mode(Colors.red, BlendMode.colorBurn),
-                    ),
-                  ),
-                ),
+                imageUrl: productEntity.image ?? Assets.cardImage,
+               fit: BoxFit.cover,
                 placeholder: (context, url) => const CircularProgressIndicator(),
-                errorWidget: (context, url, error) => const Icon(Icons.error),
+                errorWidget: (context, url, error) => const SizedBox.shrink(),
               ),
             ),
             10.addHorizontalSpace,
@@ -45,7 +38,7 @@ class RecommendedItem extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  productEntity.title ?? '',
+                  productEntity.title?.substring(0,10) ?? '',
                   style: Styles.textStyle12.copyWith(
                     fontFamily: FontFamilyHelper.productSansMedium,
                     color: AppColor.gunmetalGray,

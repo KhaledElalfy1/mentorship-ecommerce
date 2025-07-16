@@ -9,6 +9,6 @@ part 'recommended_products_state.freezed.dart';
 class RecommendedProductsState<T> with _$RecommendedProductsState<T> {
   const factory RecommendedProductsState.initial() = _Initial;
   const factory RecommendedProductsState.loading() = Loading;
-  const factory RecommendedProductsState.success(List<ProductEntity> products) = Success<T>;
+  const factory RecommendedProductsState.success(List<ProductEntity> products, bool hasMore) = Success<T>;
   const factory RecommendedProductsState.error(Failure failure) = Error<T>;
 }

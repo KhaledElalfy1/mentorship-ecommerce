@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/cubits/cubit/featured_products_cubit.dart';
 import 'package:mentorship_ecommerce/features/home/presentation/cubits/cubit/featured_products_state.dart';
-import 'package:mentorship_ecommerce/features/home/presentation/widgets/featured_products_success_body.dart';
+import 'package:mentorship_ecommerce/features/home/presentation/view/widgets/widgets/featured_products_success_body.dart';
 
 class FeaturedProductsItems extends StatelessWidget {
   const FeaturedProductsItems({super.key});
