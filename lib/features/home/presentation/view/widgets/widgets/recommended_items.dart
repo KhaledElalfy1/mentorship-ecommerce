@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -15,10 +17,18 @@ class RecommendedItems extends StatefulWidget {
 
 class _RecommendedItemsState extends State<RecommendedItems> {
   final ScrollController _scrollController = ScrollController();
+   Timer? _debounce;
+  void waitToLoadMore() {
+    if (_debounce?.isActive==true) _debounce?.cancel();
+    _debounce= Timer(const Duration(seconds: 3), ()=>
+      scrolControllerListener()
+    );
+  }
+
   @override
   void initState() {
     super.initState();
-    scrolControllerListener();
+    waitToLoadMore();
   }
 
   void scrolControllerListener() {
