@@ -3,6 +3,9 @@ class EndPoints {
   static String baseUrl = "https://api.escuelajs.co/api/v1";
   static String featuredProducts = "/products/";
 
+  static String recommendedProductsEndPoint({required int id}) => '/categories/$id/products';
+
+
   static String loginEndPoint = '/auth/login';
 }
 
