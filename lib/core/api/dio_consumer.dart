@@ -2,6 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:mentorship_ecommerce/core/api/api_consumer.dart';
 import 'package:mentorship_ecommerce/core/api/api_interceptors.dart';
 import 'package:mentorship_ecommerce/core/api/end_points.dart';
+import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
 class DioConsumer extends ApiConsumer {
   final Dio dio;
@@ -10,15 +11,13 @@ class DioConsumer extends ApiConsumer {
     dio.options.baseUrl =
         EndPoints.baseUrl; // base url for API
     dio.interceptors.add(ApiInterceptors());
-    dio.interceptors.add(
-      LogInterceptor(
-        request: true,
+    dio.interceptors.add(PrettyDioLogger(
         requestHeader: true,
         requestBody: true,
         responseBody: true,
         responseHeader: true,
-        error: true,
-      ),
+       
+      )
     );
   }
   @override
@@ -93,5 +92,7 @@ class DioConsumer extends ApiConsumer {
     }
   }
   
-  void handleDioExceptions(DioException e) {}
+  void handleDioExceptions(DioException e) {
+      throw e;
+  }
 }
