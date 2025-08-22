@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentorship_ecommerce/constants.dart';
+import 'package:mentorship_ecommerce/core/api/end_points.dart';
 import 'package:mentorship_ecommerce/core/functions/firebase_analytics_log_event.dart';
+import 'package:mentorship_ecommerce/core/helper/secure_token_storage_helper.dart';
 import 'package:mentorship_ecommerce/core/models/firebase_analytics_event_model.dart';
 import 'package:mentorship_ecommerce/core/routes/routes.dart';
 import 'package:mentorship_ecommerce/core/services/prefs.dart';
@@ -36,7 +38,7 @@ class WelcomeContentWidget extends StatelessWidget {
           height: 53.h,
           width: 193.w,
           buttonText: 'Get Started',
-          onTap: () {
+          onTap: () async {
             firebaseAnalyticsLogEvent(
               firebaseAnalyticsEventModel: FirebaseAnalyticsEventModel(
                 name: "click_button",
@@ -47,15 +49,21 @@ class WelcomeContentWidget extends StatelessWidget {
                 },
               ),
             );
-            bool isBoardingViewSeen = Prefs.getBool(key: Constants.isBoardingViewSeen);
+            bool isBoardingViewSeen =
+                Prefs.getBool(key: Constants.isBoardingViewSeen);
             bool isSigndIn = Prefs.getBool(key: Constants.isSigndIn);
-            if (isSigndIn) {
-              Navigator.pushReplacementNamed(context, Routes.dashboard);
-            } else if (isBoardingViewSeen) {
-              Navigator.pushReplacementNamed(context, Routes.login);
-            } else {
-              if (context.mounted) {
-                Navigator.pushNamed(context, Routes.onboarding);
+            final token =
+                await SecureStorageHelper.read(key: ApiKeys.refreshToken);
+
+            if (context.mounted) {
+              if (token != null) {
+                Navigator.pushReplacementNamed(context, Routes.dashboard);
+              } else if (isBoardingViewSeen) {
+                Navigator.pushReplacementNamed(context, Routes.login);
+              } else {
+                if (context.mounted) {
+                  Navigator.pushNamed(context, Routes.onboarding);
+                }
               }
             }
           },
