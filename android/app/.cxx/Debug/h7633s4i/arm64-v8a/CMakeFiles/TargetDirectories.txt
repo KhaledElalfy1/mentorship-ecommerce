@@ -1,2 +1,0 @@
-C:/ecommerce_mentorship4/mentorship-ecommerce/android/app/.cxx/Debug/h7633s4i/arm64-v8a/CMakeFiles/edit_cache.dir
-C:/ecommerce_mentorship4/mentorship-ecommerce/android/app/.cxx/Debug/h7633s4i/arm64-v8a/CMakeFiles/rebuild_cache.dir
